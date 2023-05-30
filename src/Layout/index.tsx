@@ -17,6 +17,7 @@ const Layout = observer(function Layout_() {
         </Suspense>
       </div>
       <div className='layout-tabs'>
+        <div className='ico' />
         {routerList.map((item) => {
           return (
             <div
