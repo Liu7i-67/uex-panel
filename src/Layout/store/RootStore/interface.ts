@@ -1,18 +1,19 @@
+import { LoadingStore } from "@quarkunlimit/qu-mobx";
+import { RootStore } from "./";
+import { Logic } from "./Logic";
+import { Computed } from "./Computed";
+import type { IRouterItem } from "@/config/router";
 
-import { LoadingStore } from '@quarkunlimit/qu-mobx';
-import { RootStore } from './';
-import { Logic } from "./Logic"
-import { Computed } from "./Computed"
-
-
-export type TLoadingStore = LoadingStore<'loading'>;
+export type TLoadingStore = LoadingStore<"loading">;
 
 /** 逻辑接口 */
 export interface ILogic {
   loadingStore: TLoadingStore;
   rootStore: RootStore;
-}  
-  
+  routerItem: IRouterItem;
+  changeRouterItem: (routerItem: IRouterItem) => void;
+}
+
 /** 计算属性接口 */
 export interface IComputed {
   rootStore: RootStore;
@@ -24,4 +25,3 @@ export interface IRootStore {
   computed: Computed;
   loadingStore: TLoadingStore;
 }
-  
