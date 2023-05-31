@@ -1,6 +1,6 @@
-import MyWorker from "./work.js?worker";
+import MyWorker from "workerize-loader!./work";
 
-export const worker = new MyWorker();
+export const worker = MyWorker();
 worker.onmessage = (e) => {
   if (e.data === "ended") {
     worker.terminate();

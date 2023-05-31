@@ -1,8 +1,8 @@
 /*
  * @Author: liu71
  * @Date: 2023-05-30 20:55:49
- * @Last Modified by: liu71
- * @Last Modified time: 2023-05-30 22:48:48
+ * @Last Modified by: liu7i
+ * @Last Modified time: 2023-05-31 16:21:25
  */
 
 import { makeAutoObservable } from "@quarkunlimit/qu-mobx";
@@ -15,6 +15,8 @@ import {
 } from "./interface";
 import { RootStore } from "./";
 import { CopyToClipboard, getJSONToParse } from "utils/Tools";
+import { message } from "@/components/message";
+import * as formatterWorker from "utils/FormatterWorker";
 
 export class Logic implements ILogic {
   loadingStore: TLoadingStore;
@@ -27,6 +29,7 @@ export class Logic implements ILogic {
     key: "key",
     title: "title",
     str: "",
+    cleanStr: "",
   };
   output: IOutput = {
     json: "等待转换",
@@ -47,12 +50,30 @@ export class Logic implements ILogic {
       canDelete: false,
     },
   ];
+  pluginUrl: string =
+    "https://static.web.realmerit.com.cn/typescript-0.68.0.wasm";
 
   constructor(rootStore: RootStore) {
     this.rootStore = rootStore;
     this.loadingStore = rootStore.loadingStore;
     makeAutoObservable(this, {}, { autoBind: true });
   }
+
+  onFormat(str: string) {
+    console.log("fmt:", str);
+    this.formData.cleanStr = str;
+  }
+
+  onError(err: string) {
+    console.error(err);
+    message({
+      severity: "error",
+      summary: "Error",
+      detail: "Dprint格式化程序工作线程出错",
+      life: 3000,
+    });
+  }
+
   addQuickSet() {
     const item: IQuickSet = {
       key: this.formData.key,
@@ -103,8 +124,12 @@ export class Logic implements ILogic {
     this.visible = !this.visible;
   }
 
+  dprintStr() {
+    formatterWorker.formatText("file.ts", this.formData.str);
+  }
+
   formatColumns() {
-    const rowArr = this.formData.str.split("\n");
+    const rowArr = this.formData.cleanStr.split("\n");
 
     const keyArr: string[] = [];
     // 过滤掉不要的
@@ -123,15 +148,14 @@ export class Logic implements ILogic {
     const resJson: { [key: string]: string } = {};
     const valJson: { [key: string]: string } = {};
 
-    console.log("keyArr:", keyArr);
-
     // 生成对应的i18next
     keyArr.forEach((i) => {
       let result = "";
 
       if (i.includes(`${this.formData.title}:`)) {
-        const chinesePattern = /[\u4e00-\u9fa5]+/g; // 匹配中文的正则表达式
-        result = i.match(chinesePattern)?.[0] || "";
+        result = i.match(/'([^']*)'/)?.[1] || "";
+        // const chinesePattern = /[\u4e00-\u9fa5]+/g; // 匹配中文的正则表达式
+        // result = i.match(chinesePattern)?.[0] || "";
         str = result;
       } else if (i.includes(`${this.formData.key}:`)) {
         result = i.match(/'([^']*)'/)?.[1] || "";
@@ -145,8 +169,6 @@ export class Logic implements ILogic {
         val = "i18next";
       }
     });
-
-    console.log("valJson:", valJson);
 
     // 修改之前的
     rowArr.forEach((i, index) => {

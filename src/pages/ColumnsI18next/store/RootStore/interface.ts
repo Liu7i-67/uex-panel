@@ -35,6 +35,14 @@ export interface ILogic {
   saveToLocal: () => void;
   /** @param 读取本地缓存的快捷设置 */
   readLocalData: () => void;
+  /** @param dprint wasm路径 */
+  pluginUrl: string;
+  /** @function 使用dprint格式化文本 */
+  onFormat: (str: string) => void;
+  /** @function dprint格式化异常 */
+  onError: (err: string) => void;
+  /** @function 使用dprint格式化输入的参数 */
+  dprintStr: () => void;
 }
 
 /** 计算属性接口 */
@@ -60,6 +68,8 @@ export interface IFormData {
   key: string;
   /** @param 输入的文案 */
   str: string;
+  /** @param dprint格式化之后的文案 */
+  cleanStr: string;
 }
 
 export interface IOutput {

@@ -1,3 +1,4 @@
+import React from "react";
 import { Suspense } from "react";
 import { observer } from "@quarkunlimit/qu-mobx";
 import { Provider, useStore } from "./store/RootStore";
@@ -10,14 +11,14 @@ const Layout = observer(function Layout_() {
   const { logic } = root;
 
   return (
-    <div className='layout'>
-      <div className='layout-content'>
-        <Suspense fallback='loading'>
+    <div className="layout">
+      <div className="layout-content">
+        <Suspense fallback="loading">
           <logic.routerItem.component />
         </Suspense>
       </div>
-      <div className='layout-tabs'>
-        <div className='ico' />
+      <div className="layout-tabs">
+        <div className="ico" />
         {routerList.map((item) => {
           return (
             <div
@@ -26,7 +27,8 @@ const Layout = observer(function Layout_() {
                 "layout-nav": true,
                 active: logic.routerItem.title === item.title,
               })}
-              onClick={() => logic.changeRouterItem(item)}>
+              onClick={() => logic.changeRouterItem(item)}
+            >
               {item.title}
             </div>
           );

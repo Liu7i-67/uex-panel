@@ -1,4 +1,4 @@
-import { message } from "components/message";
+import { message } from "@/components/message";
 export interface IItem {
   [key: string]: boolean;
 }
@@ -7,11 +7,12 @@ export type TItem = string | IItem | number | undefined;
 
 export const classNames = (...args: TItem[]) => {
   const nameArr: string[] = [];
-  args?.forEach?.((i) => {
+  args?.forEach?.((i: string) => {
     if (["string", "number"].includes(typeof i)) {
       nameArr.push(`${i}`);
     } else if (typeof i === "object" && i !== null) {
       Object.keys(i)?.forEach?.((j) => {
+        // @ts-ignore
         if (i[j]) {
           nameArr.push(`${j}`);
         }
@@ -24,7 +25,9 @@ export const classNames = (...args: TItem[]) => {
 
 /** @function 复制内容到剪切板 */
 export const CopyToClipboard = (val: string) => {
-  if (typeof navigator.clipboard?.writeText !== "undefined") {
+  // @ts-ignore
+  if (typeof navigator?.clipboard?.writeText !== "undefined") {
+    // @ts-ignore
     navigator.clipboard.writeText(val).then(
       function () {
         message({
@@ -34,6 +37,7 @@ export const CopyToClipboard = (val: string) => {
           life: 3000,
         });
       },
+      // @ts-ignore
       function (e) {
         message({
           severity: "error",

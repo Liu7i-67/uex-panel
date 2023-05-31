@@ -7,7 +7,6 @@ let nextFormat: { filePath: string; fileText: string } | undefined;
 let abortController = new AbortController();
 
 onmessage = function (e) {
-  console.log("e：", e);
   switch (e.data.type) {
     case "LoadUrl": {
       loadUrl(e.data.url);
@@ -25,7 +24,6 @@ onmessage = function (e) {
 };
 
 function loadUrl(url: string) {
-  console.log("here:", url);
   abortController.abort();
   abortController = new AbortController();
   const signal = abortController.signal;
@@ -98,7 +96,6 @@ function formatSync(f: Formatter, filePath: string, fileText: string) {
 }
 
 function postPluginInfo(f: Formatter) {
-  console.log("data：", f, f.getPluginInfo());
   postMessage({
     type: "PluginInfo",
     info: f.getPluginInfo(),

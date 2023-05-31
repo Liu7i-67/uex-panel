@@ -11,32 +11,32 @@ export const ToolBar = observer(function ToolBar_() {
 
   return (
     <>
-      <div className='flex'>
-        <label className='form mr-20'>
+      <div className="flex">
+        <label className="form mr-20">
           <span>前缀</span>
           <InputText
-            placeholder='请输入'
+            placeholder="请输入"
             value={logic.formData.prefix}
             onChange={(e) => logic.changeFormData("prefix", e.target.value)}
           />
         </label>
-        <label className='form mr-20'>
+        <label className="form mr-20">
           <span>路径</span>
           <InputText
-            placeholder='请输入'
+            placeholder="请输入"
             value={logic.formData.path}
             onChange={(e) => logic.changeFormData("path", e.target.value)}
           />
         </label>
         <Button onClick={logic.changeVisible}>其他设置</Button>
-        <Button onClick={logic.formatColumns} className='ml-8'>
+        <Button onClick={logic.dprintStr} className="ml-8">
           转换
         </Button>
       </div>
 
       <InputTextarea
-        className='full'
-        placeholder='请输入需要转换的columns'
+        className="full"
+        placeholder="请输入需要转换的columns"
         value={logic.formData.str}
         onChange={(e) => logic.changeFormData("str", e.target.value)}
       />
