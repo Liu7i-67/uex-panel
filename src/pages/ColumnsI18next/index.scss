@@ -1,13 +1,36 @@
 .page-ColumnsI18next {
   padding: 8px;
+
+  .out-put {
+    margin-top: 8px;
+    border-radius: 4px;
+    padding: 8px;
+    min-height: 20px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    word-break: break-all;
+  }
 }
 
-.out-put {
-  margin-top: 8px;
-  border-radius: 4px;
-  padding: 8px;
-  min-height: 20px;
-  background-color: var(--primary-color);
-  color: var(--light-color);
-  word-break: break-all;
+.page-ColumnsI18next-drawer {
+  .picker-item {
+    margin: 4px 0;
+    padding: 4px;
+    background-color: lightgray;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    &:hover {
+      background-color: gray;
+      color: white;
+    }
+    .close {
+      &:hover {
+        color: red;
+        font-weight: bold;
+      }
+    }
+  }
 }

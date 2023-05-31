@@ -23,6 +23,18 @@ export interface ILogic {
   formatColumns: () => void;
   /** @function 复制输出的内容 */
   copyOutPut: (key: keyof IOutput) => void;
+  /** @param 快捷设置数据源 */
+  quick: IQuickSet[];
+  /** @function 快捷设置其他 */
+  quickSetting: (item: IQuickSet) => void;
+  /** @param 添加快捷设置 */
+  addQuickSet: () => void;
+  /** @param 删除快捷设置 */
+  deleteQuickSet: (item: IQuickSet) => void;
+  /** @param 将快捷设置缓存到本地 */
+  saveToLocal: () => void;
+  /** @param 读取本地缓存的快捷设置 */
+  readLocalData: () => void;
 }
 
 /** 计算属性接口 */
@@ -55,4 +67,11 @@ export interface IOutput {
   json: string;
   /** @param 输出替换的文案 */
   replace: string;
+}
+
+export interface IQuickSet {
+  title: string;
+  key: string;
+  id: number;
+  canDelete: boolean;
 }

@@ -67,3 +67,16 @@ export const CopyToClipboard = (val: string) => {
     life: 3000,
   });
 };
+
+/**
+ * json数据转换
+ * @param data json字符串
+ * @returns [any]
+ */
+export function getJSONToParse(data: string) {
+  let resData = null;
+  try {
+    resData = JSON.parse(data);
+  } catch (error) {}
+  return resData;
+}
