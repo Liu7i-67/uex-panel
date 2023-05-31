@@ -1,12 +1,27 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@dprint/formatter':
+    specifier: ^0.2.0
+    version: 0.2.0
   '@quarkunlimit/qu-mobx':
     specifier: ^1.0.0
     version: 1.0.0(react-dom@18.2.0)(react@18.2.0)
+  '@types/opencc-js':
+    specifier: ^1.0.0
+    version: 1.0.0
   '@vitejs/plugin-legacy':
     specifier: ^4.0.4
     version: 4.0.4(terser@5.17.6)(vite@4.3.9)
+  comlink:
+    specifier: ^4.4.1
+    version: 4.4.1
+  lz-string:
+    specifier: ^1.5.0
+    version: 1.5.0
+  opencc-js:
+    specifier: ^1.0.5
+    version: 1.0.5
   primereact:
     specifier: ^9.5.0
     version: 9.5.0(@types/react@18.0.37)(react-dom@18.2.0)(react@18.2.0)
@@ -18,6 +33,9 @@ dependencies:
     version: 18.2.0(react@18.2.0)
 
 devDependencies:
+  '@types/lz-string':
+    specifier: ^1.5.0
+    version: 1.5.0
   '@types/node':
     specifier: ^20.2.5
     version: 20.2.5
@@ -54,6 +72,15 @@ devDependencies:
   vite:
     specifier: ^4.3.9
     version: 4.3.9(@types/node@20.2.5)(sass@1.62.1)(terser@5.17.6)
+  vite-plugin-comlink:
+    specifier: ^3.0.5
+    version: 3.0.5(comlink@4.4.1)(vite@4.3.9)
+  vite-plugin-top-level-await:
+    specifier: ^1.3.1
+    version: 1.3.1(vite@4.3.9)
+  vite-plugin-wasm:
+    specifier: ^3.2.2
+    version: 3.2.2(vite@4.3.9)
 
 packages:
 
@@ -1277,6 +1304,10 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
+  /@dprint/formatter@0.2.0:
+    resolution: {integrity: sha512-E1q1JaOPeEUBhG//IUayqJQvNpqprZ0OCF8B/bIhUqSsMIp0Y74PgF8JPvDCrOdq43qiGUYAavVO8iCBHOoU/A==}
+    dev: false
+
   /@esbuild/android-arm64@0.17.19:
     resolution: {integrity: sha512-KBMWvEZooR7+kzY0BtbTQn0OAYY7CsiydT63pVEaPtVYF0hXbUaOyZog37DKxK7NF3XacBJOpYT4adIJh+avxA==}
     engines: {node: '>=12'}
@@ -1581,6 +1612,16 @@ packages:
       - react-native
     dev: false
 
+  /@rollup/plugin-virtual@3.0.1:
+    resolution: {integrity: sha512-fK8O0IL5+q+GrsMLuACVNk2x21g3yaw+sG2qn16SnUd3IlBsQyvWxLMGHmCmXRMecPjGRSZ/1LmZB4rjQm68og==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dev: true
+
   /@swc/core-darwin-arm64@1.3.60:
     resolution: {integrity: sha512-oCDKWGdSO1WyErduGfiITRDoq7ZBt9PXETlhi8BGKH/wCc/3mfSNI9wXAg3Stn8mrT0lUJtdsnwMI/eZp6dK+A==}
     engines: {node: '>=10'}
@@ -1697,8 +1738,19 @@ packages:
     resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==}
     dev: true
 
+  /@types/lz-string@1.5.0:
+    resolution: {integrity: sha512-s84fKOrzqqNCAPljhVyC5TjAo6BH4jKHw9NRNFNiRUY5QSgZCmVm5XILlWbisiKl+0OcS7eWihmKGS5akc2iQw==}
+    deprecated: This is a stub types definition. lz-string provides its own type definitions, so you do not need this installed.
+    dependencies:
+      lz-string: 1.5.0
+    dev: true
+
   /@types/node@20.2.5:
     resolution: {integrity: sha512-JJulVEQXmiY9Px5axXHeYGLSjhkZEnD+MDPDGbCbIAbMslkKwmygtZFy1X6s/075Yo94sf8GuSlFfPzysQrWZQ==}
+
+  /@types/opencc-js@1.0.0:
+    resolution: {integrity: sha512-vde1AUIJIEC2WvvHuqKWu/7P6WBqbcs4sB/B6zVFTNw/mFIUgSvWlFtYdg+NEEdkxBOeehdSZmEVVheikItS3A==}
+    dev: false
 
   /@types/prop-types@15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
@@ -2078,6 +2130,9 @@ packages:
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
     dev: true
+
+  /comlink@4.4.1:
+    resolution: {integrity: sha512-+1dlx0aY5Jo1vHy/tSsIGpSkN4tS9rZSW8FIhG0JH/crs9wwweswIo/POr451r7bZww3hFbPAKnTpimzL/mm4Q==}
 
   /commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
@@ -2573,6 +2628,12 @@ packages:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
     dev: true
 
+  /json5@2.2.1:
+    resolution: {integrity: sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==}
+    engines: {node: '>=6'}
+    hasBin: true
+    dev: true
+
   /json5@2.2.3:
     resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
     engines: {node: '>=6'}
@@ -2620,6 +2681,17 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+    dev: true
+
+  /lz-string@1.5.0:
+    resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
+    hasBin: true
+
+  /magic-string@0.26.7:
+    resolution: {integrity: sha512-hX9XH3ziStPoPhJxLq1syWuZMxbDvGNbVchfrdCtanC7D13888bMFow61x8axrx+GfHLtVeAx2kxL7tTGRl+Ow==}
+    engines: {node: '>=12'}
+    dependencies:
+      sourcemap-codec: 1.4.8
     dev: true
 
   /magic-string@0.30.0:
@@ -2731,6 +2803,10 @@ packages:
     dependencies:
       wrappy: 1.0.2
     dev: true
+
+  /opencc-js@1.0.5:
+    resolution: {integrity: sha512-LD+1SoNnZdlRwtYTjnQdFrSVCAaYpuDqL5CkmOaHOkKoKh7mFxUicLTRVNLU5C+Jmi1vXQ3QL4jWdgSaa4sKjg==}
+    dev: false
 
   /optionator@0.9.1:
     resolution: {integrity: sha512-74RlY5FCnhq4jRxVUPKDaRwrVNXMqsGsiW6AJw4XK8hmtm10wC0ypZBLw5IIp85NZMr91+qd1RvvENwg7jjRFw==}
@@ -3022,6 +3098,11 @@ packages:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
     engines: {node: '>=0.10.0'}
 
+  /sourcemap-codec@1.4.8:
+    resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
+    deprecated: Please use @jridgewell/sourcemap-codec instead
+    dev: true
+
   /strip-ansi@6.0.1:
     resolution: {integrity: sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==}
     engines: {node: '>=8'}
@@ -3152,6 +3233,45 @@ packages:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
       punycode: 2.3.0
+    dev: true
+
+  /uuid@9.0.0:
+    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
+    hasBin: true
+    dev: true
+
+  /vite-plugin-comlink@3.0.5(comlink@4.4.1)(vite@4.3.9):
+    resolution: {integrity: sha512-my8BE9GFJEaLc7l3e2SfRUL8JJsN9On8PiW7q4Eyq3g6DHUsNqo5WlS7Butuzc8ngrs24Tf1RC8Xfdda+E5T9w==}
+    peerDependencies:
+      comlink: ^4.3.1
+      vite: '>=2.9.6'
+    dependencies:
+      comlink: 4.4.1
+      json5: 2.2.1
+      magic-string: 0.26.7
+      vite: 4.3.9(@types/node@20.2.5)(sass@1.62.1)(terser@5.17.6)
+    dev: true
+
+  /vite-plugin-top-level-await@1.3.1(vite@4.3.9):
+    resolution: {integrity: sha512-55M1h4NAwkrpxPNOJIBzKZFihqLUzIgnElLSmPNPMR2Fn9+JHKaNg3sVX1Fq+VgvuBksQYxiD3OnwQAUu7kaPQ==}
+    peerDependencies:
+      vite: '>=2.8'
+    dependencies:
+      '@rollup/plugin-virtual': 3.0.1
+      '@swc/core': 1.3.60
+      uuid: 9.0.0
+      vite: 4.3.9(@types/node@20.2.5)(sass@1.62.1)(terser@5.17.6)
+    transitivePeerDependencies:
+      - '@swc/helpers'
+      - rollup
+    dev: true
+
+  /vite-plugin-wasm@3.2.2(vite@4.3.9):
+    resolution: {integrity: sha512-cdbBUNR850AEoMd5nvLmnyeq63CSfoP1ctD/L2vLk/5+wsgAPlAVAzUK5nGKWO/jtehNlrSSHLteN+gFQw7VOA==}
+    peerDependencies:
+      vite: ^2 || ^3 || ^4
+    dependencies:
+      vite: 4.3.9(@types/node@20.2.5)(sass@1.62.1)(terser@5.17.6)
     dev: true
 
   /vite@4.3.9(@types/node@20.2.5)(sass@1.62.1)(terser@5.17.6):

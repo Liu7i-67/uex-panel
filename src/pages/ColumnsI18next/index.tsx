@@ -1,17 +1,15 @@
-import React, { forwardRef, useEffect, useImperativeHandle } from "react";
 import { observer } from "@quarkunlimit/qu-mobx";
 import { Provider, useStore } from "./store/RootStore";
 import { OtherSettingDrawer } from "./modules/OtherSettingDrawer";
 import { ToolBar } from "./modules/ToolBar";
 import "./index.scss";
+import { UrlSaver } from "utils/UrlSharer";
+
+const urlSaver = new UrlSaver();
 
 const ColumnsI18next = observer(function ColumnsI18next_() {
   const root = useStore();
   const { logic } = root;
-
-  useEffect(() => {
-    logic.readLocalData();
-  }, []);
 
   return (
     <div className="page-ColumnsI18next">

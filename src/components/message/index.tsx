@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import ReactDOM from "react-dom";
+import { useEffect, useRef } from "react";
+import { createRoot } from "react-dom/client";
 import { Toast } from "primereact/toast";
 import type { ToastMessage } from "primereact/toast";
 
@@ -17,8 +17,10 @@ const Message = (props: ToastMessage) => {
   return <Toast ref={toast} />;
 };
 
+const root = createRoot(div);
+
 function notice(props: ToastMessage) {
-  return ReactDOM.render(<Message {...(props || {})} />, div);
+  return root.render(<Message {...(props || {})} />);
 }
 
 export const message = (props: ToastMessage) => notice(props);

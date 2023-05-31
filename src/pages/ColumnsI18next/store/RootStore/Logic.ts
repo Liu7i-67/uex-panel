@@ -19,7 +19,7 @@ import { CopyToClipboard, getJSONToParse } from "utils/Tools";
 export class Logic implements ILogic {
   loadingStore: TLoadingStore;
   rootStore: RootStore;
-  visible: boolean = true;
+  visible: boolean = false;
 
   formData: IFormData = {
     prefix: "i18next.t",
