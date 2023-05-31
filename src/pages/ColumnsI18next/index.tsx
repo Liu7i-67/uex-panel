@@ -4,6 +4,7 @@ import { Provider, useStore } from "./store/RootStore";
 import { OtherSettingDrawer } from "./modules/OtherSettingDrawer";
 import { ToolBar } from "./modules/ToolBar";
 import * as formatterWorker from "utils/FormatterWorker";
+import { TabView, TabPanel } from "primereact/tabview";
 import "./index.scss";
 
 const ColumnsI18next = observer(function ColumnsI18next_() {
@@ -49,9 +50,35 @@ const ColumnsI18next = observer(function ColumnsI18next_() {
       <ToolBar />
       <OtherSettingDrawer />
       <div className="mt-8">tips: 双击即可复制</div>
-      <div className="out-put" onDoubleClick={() => logic.copyOutPut("json")}>
-        {logic.output.json}
-      </div>
+      <TabView>
+        <TabPanel header="zh_CN">
+          <div
+            className="out-put"
+            onDoubleClick={() => logic.copyOutPut("json")}
+          >
+            <div></div>
+            {logic.output.json}
+          </div>
+        </TabPanel>
+        <TabPanel header="zh_HK">
+          <div
+            className="out-put"
+            onDoubleClick={() => logic.copyOutPut("jsonHK")}
+          >
+            <div></div>
+            {logic.output.jsonHK}
+          </div>
+        </TabPanel>
+        <TabPanel header="zh_TW">
+          <div
+            className="out-put"
+            onDoubleClick={() => logic.copyOutPut("jsonTW")}
+          >
+            <div></div>
+            {logic.output.jsonTW}
+          </div>
+        </TabPanel>
+      </TabView>
       <div
         className="out-put"
         onDoubleClick={() => logic.copyOutPut("replace")}

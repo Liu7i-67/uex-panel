@@ -2,7 +2,7 @@
  * @Author: liu71
  * @Date: 2023-05-30 20:55:49
  * @Last Modified by: liu7i
- * @Last Modified time: 2023-05-31 16:21:25
+ * @Last Modified time: 2023-05-31 16:51:31
  */
 
 import { makeAutoObservable } from "@quarkunlimit/qu-mobx";
@@ -17,7 +17,10 @@ import { RootStore } from "./";
 import { CopyToClipboard, getJSONToParse } from "utils/Tools";
 import { message } from "@/components/message";
 import * as formatterWorker from "utils/FormatterWorker";
+import * as OpenCC from "opencc-js";
 
+const HKConverter = OpenCC.Converter({ from: "cn", to: "hk" });
+const TWConverter = OpenCC.Converter({ from: "cn", to: "twp" });
 export class Logic implements ILogic {
   loadingStore: TLoadingStore;
   rootStore: RootStore;
@@ -32,8 +35,10 @@ export class Logic implements ILogic {
     cleanStr: "",
   };
   output: IOutput = {
-    json: "等待转换",
+    json: "等待转换ZN",
     replace: "等待转换",
+    jsonHK: "等待转换HK",
+    jsonTW: "等待转换TW",
   };
 
   quick: IQuickSet[] = [
@@ -60,7 +65,6 @@ export class Logic implements ILogic {
   }
 
   onFormat(str: string) {
-    console.log("fmt:", str);
     this.formData.cleanStr = str;
   }
 
@@ -184,5 +188,7 @@ export class Logic implements ILogic {
 
     this.output.json = JSON.stringify(resJson);
     this.output.replace = rowArr.join("\n");
+    this.output.jsonHK = HKConverter(this.output.json);
+    this.output.jsonTW = TWConverter(this.output.json);
   }
 }

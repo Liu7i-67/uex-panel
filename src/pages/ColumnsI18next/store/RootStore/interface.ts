@@ -75,6 +75,10 @@ export interface IFormData {
 export interface IOutput {
   /** @param 输出i18next的json */
   json: string;
+  /** @param 输出i18next的json-HK */
+  jsonHK: string;
+  /** @param 输出i18next的json-TW */
+  jsonTW: string;
   /** @param 输出替换的文案 */
   replace: string;
 }
