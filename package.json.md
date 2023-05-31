@@ -3,6 +3,7 @@
 - "@babel/core": 编译 React,
 - "@babel/preset-env": 编译 React,
 - "@babel/preset-react": 编译 React,
+- "@types/opencc-js": 繁简体翻译类型文件
 - "@types/react": react 类型文件,
 - "@types/react-dom": react dom 类型文件,
 - "babel-loader": 编译 React,
@@ -21,3 +22,8 @@
 
 - "react": react,
 - "react-dom": react dom
+- "@dprint/formatter": ts 格式化
+- "@quarkunlimit/qu-mobx": 状态管理库
+- "opencc-js": 繁简体翻译
+- "primereact": ui 库
+- "workerize-loader": 加载 webWork
