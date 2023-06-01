@@ -4,6 +4,7 @@ import { InputTextarea } from "primereact/inputtextarea";
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
 import { observer } from "@quarkunlimit/qu-mobx";
+import { InputSwitch } from "primereact/inputswitch";
 
 export const ToolBar = observer(function ToolBar_() {
   const root = useStore();
@@ -28,7 +29,14 @@ export const ToolBar = observer(function ToolBar_() {
             onChange={(e) => logic.changeFormData("path", e.target.value)}
           />
         </label>
-        <Button onClick={logic.changeVisible}>其他设置</Button>
+        <InputSwitch
+          checked={logic.violentPattern}
+          onChange={logic.changeViolentPattern}
+          tooltip="是否启用暴力模式，暴力模式将转换所有中文，需要自己甄别注释等"
+        />
+        <Button onClick={logic.changeVisible} className="ml-8">
+          其他设置
+        </Button>
         <Button onClick={logic.dprintStr} className="ml-8">
           转换
         </Button>

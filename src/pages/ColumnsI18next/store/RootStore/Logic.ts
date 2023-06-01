@@ -2,7 +2,7 @@
  * @Author: liu71
  * @Date: 2023-05-30 20:55:49
  * @Last Modified by: liu7i
- * @Last Modified time: 2023-05-31 16:51:31
+ * @Last Modified time: 2023-06-01 10:41:02
  */
 
 import { makeAutoObservable } from "@quarkunlimit/qu-mobx";
@@ -25,6 +25,7 @@ export class Logic implements ILogic {
   loadingStore: TLoadingStore;
   rootStore: RootStore;
   visible: boolean = false;
+  violentPattern = false;
 
   formData: IFormData = {
     prefix: "i18next.t",
@@ -62,6 +63,10 @@ export class Logic implements ILogic {
     this.rootStore = rootStore;
     this.loadingStore = rootStore.loadingStore;
     makeAutoObservable(this, {}, { autoBind: true });
+  }
+
+  changeViolentPattern() {
+    this.violentPattern = !this.violentPattern;
   }
 
   onFormat(str: string) {
@@ -133,6 +138,10 @@ export class Logic implements ILogic {
   }
 
   formatColumns() {
+    if (this.violentPattern) {
+      this.formatAll();
+      return;
+    }
     const rowArr = this.formData.cleanStr.split("\n");
 
     const keyArr: string[] = [];
@@ -188,6 +197,70 @@ export class Logic implements ILogic {
 
     this.output.json = JSON.stringify(resJson);
     this.output.replace = rowArr.join("\n");
+    this.output.jsonHK = HKConverter(this.output.json);
+    this.output.jsonTW = TWConverter(this.output.json);
+  }
+
+  formatAll() {
+    const stringPattern = /'[\u4e00-\u9fa5]+'/g; // 匹配字符串的正则表达式
+    const chinesePattern = /[\u4e00-\u9fa5]+/g; // 匹配中文的正则表达式
+    // 找到所有字符串
+    const arr = this.formData.cleanStr.matchAll(stringPattern);
+
+    let index = 0;
+    const json: { [key: string]: string } = {};
+    const vkJson: { [key: string]: string } = {};
+
+    let replace = this.formData.cleanStr;
+
+    for (let item of arr) {
+      let key = "";
+      const cStr = item[0].substring(1, item[0].length - 1);
+      if (!vkJson[cStr]) {
+        key = `key${index}`;
+        json[key] = cStr;
+        vkJson[cStr] = key;
+        index += 1;
+      } else {
+        key = vkJson[cStr];
+      }
+
+      replace = replace.replaceAll(
+        item[0],
+        `${this.formData.prefix}("${this.formData.path}${key}")`
+      );
+    }
+
+    // 找到其它的中文
+    const arr2 = this.formData.cleanStr.matchAll(chinesePattern);
+    const box: string[] = [];
+
+    for (let item of arr2) {
+      box.push(item[0]);
+    }
+
+    box.sort((i, j) => j.length - i.length);
+
+    for (let item of box) {
+      let key = "";
+      const cStr = item;
+      if (!vkJson[cStr]) {
+        key = `key${index}`;
+        json[key] = cStr;
+        vkJson[cStr] = key;
+        index += 1;
+      } else {
+        key = vkJson[cStr];
+      }
+
+      replace = replace.replaceAll(
+        item,
+        `{${this.formData.prefix}("${this.formData.path}${key}")}`
+      );
+    }
+
+    this.output.json = JSON.stringify(json);
+    this.output.replace = replace;
     this.output.jsonHK = HKConverter(this.output.json);
     this.output.jsonTW = TWConverter(this.output.json);
   }

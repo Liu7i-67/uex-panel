@@ -43,6 +43,11 @@ export interface ILogic {
   onError: (err: string) => void;
   /** @function 使用dprint格式化输入的参数 */
   dprintStr: () => void;
+  /** @param 暴力模式 */
+  violentPattern: boolean;
+  changeViolentPattern: () => void;
+  /** @function 暴力解析所有内容 */
+  formatAll: () => void;
 }
 
 /** 计算属性接口 */
