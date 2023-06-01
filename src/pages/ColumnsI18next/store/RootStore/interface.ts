@@ -50,6 +50,8 @@ export interface ILogic {
   formatAll: () => void;
   /** @function 仅翻译 */
   translation: () => void;
+  /** @param 是否初始化失败 */
+  dprintError: boolean;
 }
 
 /** 计算属性接口 */

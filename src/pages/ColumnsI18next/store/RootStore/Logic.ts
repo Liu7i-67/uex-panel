@@ -2,7 +2,7 @@
  * @Author: liu71
  * @Date: 2023-05-30 20:55:49
  * @Last Modified by: liu7i
- * @Last Modified time: 2023-06-01 11:42:33
+ * @Last Modified time: 2023-06-01 11:45:34
  */
 
 import { makeAutoObservable } from "@quarkunlimit/qu-mobx";
@@ -27,6 +27,7 @@ export class Logic implements ILogic {
   visible: boolean = false;
   violentPattern = false;
 
+  dprintError = false;
   formData: IFormData = {
     prefix: "i18next.t",
     path: "common:columns.",
@@ -77,10 +78,11 @@ export class Logic implements ILogic {
 
   onError(err: string) {
     console.error(err);
+    this.dprintError = true;
     message({
       severity: "error",
       summary: "Error",
-      detail: "Dprint格式化程序工作线程出错",
+      detail: "Dprint格式化程序工作线程出错，请自行对输入文本进行格式化",
       life: 3000,
     });
   }
@@ -136,6 +138,10 @@ export class Logic implements ILogic {
   }
 
   dprintStr() {
+    if (this.dprintError) {
+      this.formData.cleanStr = this.formData.str;
+      return;
+    }
     formatterWorker.formatText("file.ts", this.formData.str);
   }
 
