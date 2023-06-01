@@ -52,6 +52,15 @@ export interface ILogic {
   translation: () => void;
   /** @param 是否初始化失败 */
   dprintError: boolean;
+  /** @param 全部使用Trans */
+  allTrans: boolean;
+  changeAllTrans: () => void;
+  /** @param replace自动导入i18next */
+  autoImport: boolean;
+  changeAutoImport: () => void;
+  /** @param replace自动导入Trans */
+  autoImportTans: boolean;
+  changeAutoImportTans: () => void;
 }
 
 /** 计算属性接口 */

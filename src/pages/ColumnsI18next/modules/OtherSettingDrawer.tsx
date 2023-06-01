@@ -4,6 +4,7 @@ import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
 import { observer } from "@quarkunlimit/qu-mobx";
 import { Sidebar } from "primereact/sidebar";
+import { InputSwitch } from "primereact/inputswitch";
 
 export const OtherSettingDrawer = observer(function OtherSettingDrawer_() {
   const root = useStore();
@@ -21,6 +22,24 @@ export const OtherSettingDrawer = observer(function OtherSettingDrawer_() {
         value={logic.formData.keyStart}
         onChange={(e) => logic.changeFormData("keyStart", e.target.value)}
       />
+      <div className="mt-12">全部使用Trans</div>
+      <InputSwitch
+        checked={logic.allTrans}
+        onChange={logic.changeAllTrans}
+        className="mt-4"
+      />
+      <div className="mt-12">自动导入i18next</div>
+      <InputSwitch
+        checked={logic.autoImport}
+        onChange={logic.changeAutoImport}
+        className="mt-4"
+      />
+      <div className="mt-12">自动导入Trans</div>
+      <InputSwitch
+        checked={logic.autoImportTans}
+        onChange={logic.changeAutoImportTans}
+        className="mt-4"
+      />
       <div className="mt-12">中文对应的renderValue</div>
       <InputText
         placeholder="请输入"
@@ -33,6 +52,7 @@ export const OtherSettingDrawer = observer(function OtherSettingDrawer_() {
         value={logic.formData.key}
         onChange={(e) => logic.changeFormData("key", e.target.value)}
       />
+
       <Button size="small" className="mt-4" onClick={logic.addQuickSet}>
         添加到快捷设置
       </Button>

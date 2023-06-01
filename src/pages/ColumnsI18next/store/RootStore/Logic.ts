@@ -2,7 +2,7 @@
  * @Author: liu71
  * @Date: 2023-05-30 20:55:49
  * @Last Modified by: liu7i
- * @Last Modified time: 2023-06-01 14:19:56
+ * @Last Modified time: 2023-06-01 16:09:32
  */
 
 import { makeAutoObservable } from "@quarkunlimit/qu-mobx";
@@ -26,6 +26,7 @@ export class Logic implements ILogic {
   rootStore: RootStore;
   visible: boolean = false;
   violentPattern = true;
+  allTrans = false;
 
   dprintError = false;
   formData: IFormData = {
@@ -44,7 +45,8 @@ export class Logic implements ILogic {
     jsonHK: "等待转换HK",
     jsonTW: "等待转换TW",
   };
-
+  autoImport: boolean = false;
+  autoImportTans: boolean = false;
   quick: IQuickSet[] = [
     {
       key: "key",
@@ -66,6 +68,18 @@ export class Logic implements ILogic {
     this.rootStore = rootStore;
     this.loadingStore = rootStore.loadingStore;
     makeAutoObservable(this, {}, { autoBind: true });
+  }
+
+  changeAutoImport() {
+    this.autoImport = !this.autoImport;
+  }
+
+  changeAutoImportTans() {
+    this.autoImportTans = !this.autoImportTans;
+  }
+
+  changeAllTrans() {
+    this.allTrans = !this.allTrans;
   }
 
   changeViolentPattern() {
@@ -140,12 +154,6 @@ export class Logic implements ILogic {
 
   copyOutPut(key: keyof IOutput) {
     let str = this.output[key];
-    if (key === "replace") {
-      str =
-        "import i18next from 'i18next';\nimport { Trans } from 'renderer/i18n';\n" +
-        str;
-    }
-
     CopyToClipboard(str);
   }
 
@@ -216,15 +224,30 @@ export class Logic implements ILogic {
       if (i.includes(`${this.formData.title}:`)) {
         const chinesePattern = /[\u4e00-\u9fa5]+/g; // 匹配中文的正则表达式
         const result = i.match(chinesePattern)?.[0] || "";
-        rowArr[index] = i.replace(
-          `'${result}'`,
-          `${this.formData.prefix}("${this.formData.path}${valJson[result]}")`
-        );
+
+        let newStr = `${this.formData.prefix}("${this.formData.path}${valJson[result]}")`;
+
+        if (this.allTrans) {
+          newStr = `<Trans i18Key='${this.formData.path}${valJson[result]}'>{(v) => v}</Trans>`;
+        }
+
+        rowArr[index] = i.replace(`'${result}'`, newStr);
       }
     });
 
     this.output.json = JSON.stringify(resJson);
     this.output.replace = rowArr.join("\n");
+
+    if (this.autoImportTans) {
+      this.output.replace =
+        "import { Trans } from 'renderer/i18n';\n" + this.output.replace;
+    }
+
+    if (this.autoImport) {
+      this.output.replace =
+        "import i18next from 'i18next';\n" + this.output.replace;
+    }
+
     this.output.jsonHK = HKConverter(this.output.json);
     this.output.jsonTW = TWConverter(this.output.json);
     message({
@@ -265,29 +288,31 @@ export class Logic implements ILogic {
       replace = replace.replace(item[0], key);
     }
 
-    // 找到所有需要使用trans替换的字符串
-    const arrT = replace.matchAll(transPattern);
-
     let index = Number(this.formData.keyStart) || 0;
     const json: { [key: string]: string } = {};
     const vkJson: { [key: string]: string } = {};
 
-    for (let item of arrT) {
-      let key = "";
-      const cStr = item[0].substring(1, item[0].length - 3);
-      if (!vkJson[cStr]) {
-        key = `key${index}`;
-        json[key] = cStr;
-        vkJson[cStr] = key;
-        index += 1;
-      } else {
-        key = vkJson[cStr];
-      }
+    if (!this.allTrans) {
+      // 找到所有需要使用trans替换的字符串
+      const arrT = replace.matchAll(transPattern);
 
-      replace = replace.replaceAll(
-        item[0],
-        `{<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>}`
-      );
+      for (let item of arrT) {
+        let key = "";
+        const cStr = item[0].substring(1, item[0].length - 3);
+        if (!vkJson[cStr]) {
+          key = `key${index}`;
+          json[key] = cStr;
+          vkJson[cStr] = key;
+          index += 1;
+        } else {
+          key = vkJson[cStr];
+        }
+
+        replace = replace.replaceAll(
+          item[0],
+          `<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>`
+        );
+      }
     }
 
     // 找到所有字符串
@@ -305,40 +330,46 @@ export class Logic implements ILogic {
         key = vkJson[cStr];
       }
 
-      replace = replace.replaceAll(
-        item[0],
-        `${this.formData.prefix}("${this.formData.path}${key}")`
-      );
-    }
+      let newStr = `${this.formData.prefix}("${this.formData.path}${key}")`;
 
-    // 找到其它需要trans的中文
-    const arr3 = replace.matchAll(transSingePattern);
-    const box2: string[] = [];
-
-    for (let item of arr3) {
-      box2.push(item[0]);
-    }
-
-    box2.sort((i, j) => j.length - i.length);
-
-    for (let item of box2) {
-      let key = "";
-
-      const cStr = item.substring(0, item.length - 2);
-      if (!vkJson[cStr]) {
-        key = `key${index}`;
-        json[key] = cStr;
-        vkJson[cStr] = key;
-        index += 1;
-      } else {
-        key = vkJson[cStr];
+      if (this.allTrans) {
+        newStr = `<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>`;
       }
 
-      replace = replace.replaceAll(
-        item,
-        `{<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>}`
-      );
+      replace = replace.replaceAll(item[0], newStr);
     }
+
+    if (!this.allTrans) {
+      // 找到其它需要trans的中文
+      const arr3 = replace.matchAll(transSingePattern);
+      const box2: string[] = [];
+
+      for (let item of arr3) {
+        box2.push(item[0]);
+      }
+
+      box2.sort((i, j) => j.length - i.length);
+
+      for (let item of box2) {
+        let key = "";
+
+        const cStr = item.substring(0, item.length - 2);
+        if (!vkJson[cStr]) {
+          key = `key${index}`;
+          json[key] = cStr;
+          vkJson[cStr] = key;
+          index += 1;
+        } else {
+          key = vkJson[cStr];
+        }
+
+        replace = replace.replaceAll(
+          item,
+          `<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>`
+        );
+      }
+    }
+
     // 找到其它的中文
     const arr2 = replace.matchAll(chinesePattern);
     const box: string[] = [];
@@ -361,10 +392,13 @@ export class Logic implements ILogic {
         key = vkJson[cStr];
       }
 
-      replace = replace.replaceAll(
-        item,
-        `{${this.formData.prefix}("${this.formData.path}${key}")}`
-      );
+      let newStr = `{${this.formData.prefix}("${this.formData.path}${key}")}`;
+
+      if (this.allTrans) {
+        newStr = `<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>`;
+      }
+
+      replace = replace.replaceAll(item, newStr);
     }
 
     // 还原保护的注释
@@ -374,6 +408,15 @@ export class Logic implements ILogic {
 
     this.output.json = JSON.stringify(json);
     this.output.replace = replace;
+    if (this.autoImportTans) {
+      this.output.replace =
+        "import { Trans } from 'renderer/i18n';\n" + this.output.replace;
+    }
+
+    if (this.autoImport) {
+      this.output.replace =
+        "import i18next from 'i18next';\n" + this.output.replace;
+    }
     this.output.jsonHK = HKConverter(this.output.json);
     this.output.jsonTW = TWConverter(this.output.json);
     message({
