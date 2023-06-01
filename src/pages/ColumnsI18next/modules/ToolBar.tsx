@@ -40,11 +40,14 @@ export const ToolBar = observer(function ToolBar_() {
         <Button onClick={logic.dprintStr} className="ml-8">
           转换
         </Button>
+        <Button onClick={logic.translation} className="ml-8">
+          仅翻译
+        </Button>
       </div>
 
       <InputTextarea
         className="full"
-        placeholder="请输入需要转换的columns"
+        placeholder="请输入"
         value={logic.formData.str}
         onChange={(e) => logic.changeFormData("str", e.target.value)}
       />

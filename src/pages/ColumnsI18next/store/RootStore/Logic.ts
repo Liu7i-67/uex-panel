@@ -2,7 +2,7 @@
  * @Author: liu71
  * @Date: 2023-05-30 20:55:49
  * @Last Modified by: liu7i
- * @Last Modified time: 2023-06-01 10:41:02
+ * @Last Modified time: 2023-06-01 10:53:22
  */
 
 import { makeAutoObservable } from "@quarkunlimit/qu-mobx";
@@ -261,6 +261,12 @@ export class Logic implements ILogic {
 
     this.output.json = JSON.stringify(json);
     this.output.replace = replace;
+    this.output.jsonHK = HKConverter(this.output.json);
+    this.output.jsonTW = TWConverter(this.output.json);
+  }
+
+  translation() {
+    this.output.json = this.formData.str;
     this.output.jsonHK = HKConverter(this.output.json);
     this.output.jsonTW = TWConverter(this.output.json);
   }

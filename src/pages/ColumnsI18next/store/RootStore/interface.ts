@@ -48,6 +48,8 @@ export interface ILogic {
   changeViolentPattern: () => void;
   /** @function 暴力解析所有内容 */
   formatAll: () => void;
+  /** @function 仅翻译 */
+  translation: () => void;
 }
 
 /** 计算属性接口 */
