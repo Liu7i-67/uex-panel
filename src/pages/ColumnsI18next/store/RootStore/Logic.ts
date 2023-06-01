@@ -2,7 +2,7 @@
  * @Author: liu71
  * @Date: 2023-05-30 20:55:49
  * @Last Modified by: liu7i
- * @Last Modified time: 2023-06-01 11:39:49
+ * @Last Modified time: 2023-06-01 11:42:33
  */
 
 import { makeAutoObservable } from "@quarkunlimit/qu-mobx";
@@ -216,7 +216,6 @@ export class Logic implements ILogic {
     // 找到所有的注释保护起来
     const arrComment = replace.matchAll(commentPattern);
     for (let item of arrComment) {
-      console.log(item[0]);
       const key = `${Date.now() + Math.random() * 1000}-${commentIndex}`;
       commentIndex += 1;
       arrCommentObj[key] = item[0];
@@ -226,7 +225,6 @@ export class Logic implements ILogic {
     // 找到所有需要跳过的内容保护起来
     const arrComment2 = replace.matchAll(ignorePattern);
     for (let item of arrComment2) {
-      console.log(item[0]);
       const key = `${Date.now() + Math.random() * 1000}-${commentIndex}`;
       commentIndex += 1;
       arrCommentObj[key] = item[0].substring(3);
