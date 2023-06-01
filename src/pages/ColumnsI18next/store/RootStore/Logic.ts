@@ -2,7 +2,7 @@
  * @Author: liu71
  * @Date: 2023-05-30 20:55:49
  * @Last Modified by: liu7i
- * @Last Modified time: 2023-06-01 11:45:34
+ * @Last Modified time: 2023-06-01 14:19:56
  */
 
 import { makeAutoObservable } from "@quarkunlimit/qu-mobx";
@@ -25,7 +25,7 @@ export class Logic implements ILogic {
   loadingStore: TLoadingStore;
   rootStore: RootStore;
   visible: boolean = false;
-  violentPattern = false;
+  violentPattern = true;
 
   dprintError = false;
   formData: IFormData = {
@@ -73,6 +73,19 @@ export class Logic implements ILogic {
   }
 
   onFormat(str: string) {
+    if (this.formData.cleanStr === str) {
+      message({
+        severity: "info",
+        summary: "Info",
+        detail: "当前输入内容格式化后无变化",
+        life: 3000,
+      });
+      return;
+    }
+    this.output.json = "等待转换ZN";
+    this.output.replace = "等待转换";
+    this.output.jsonHK = "等待转换HK";
+    this.output.jsonTW = "等待转换TW";
     this.formData.cleanStr = str;
   }
 
@@ -126,7 +139,14 @@ export class Logic implements ILogic {
   }
 
   copyOutPut(key: keyof IOutput) {
-    CopyToClipboard(this.output[key]);
+    let str = this.output[key];
+    if (key === "replace") {
+      str =
+        "import i18next from 'i18next';\nimport { Trans } from 'renderer/i18n';\n" +
+        str;
+    }
+
+    CopyToClipboard(str);
   }
 
   changeFormData(key: keyof IFormData, value: string) {
@@ -207,6 +227,12 @@ export class Logic implements ILogic {
     this.output.replace = rowArr.join("\n");
     this.output.jsonHK = HKConverter(this.output.json);
     this.output.jsonTW = TWConverter(this.output.json);
+    message({
+      severity: "success",
+      summary: "Success",
+      detail: "转换完成",
+      life: 1000,
+    });
   }
 
   formatAll() {
@@ -214,6 +240,8 @@ export class Logic implements ILogic {
     const chinesePattern = /[\u4e00-\u9fa5]+/g; // 匹配中文的正则表达式
     const commentPattern = /\/\/ [\u4e00-\u9fa5]+/g; // 匹配注释的正则
     const ignorePattern = /别动我[\u4e00-\u9fa5]+/g; // 匹配注释的正则
+    const transPattern = /'[\u4e00-\u9fa5]+-='/g; // 匹配需要使用trans替换的字符串的正则
+    const transSingePattern = /[\u4e00-\u9fa5]+-=/g; // 匹配需要使用trans替换的中文的正则
 
     let commentIndex = 0;
     const arrCommentObj: { [key: string]: string } = {};
@@ -237,12 +265,33 @@ export class Logic implements ILogic {
       replace = replace.replace(item[0], key);
     }
 
-    // 找到所有字符串
-    const arr = replace.matchAll(stringPattern);
+    // 找到所有需要使用trans替换的字符串
+    const arrT = replace.matchAll(transPattern);
 
     let index = Number(this.formData.keyStart) || 0;
     const json: { [key: string]: string } = {};
     const vkJson: { [key: string]: string } = {};
+
+    for (let item of arrT) {
+      let key = "";
+      const cStr = item[0].substring(1, item[0].length - 3);
+      if (!vkJson[cStr]) {
+        key = `key${index}`;
+        json[key] = cStr;
+        vkJson[cStr] = key;
+        index += 1;
+      } else {
+        key = vkJson[cStr];
+      }
+
+      replace = replace.replaceAll(
+        item[0],
+        `{<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>}`
+      );
+    }
+
+    // 找到所有字符串
+    const arr = replace.matchAll(stringPattern);
 
     for (let item of arr) {
       let key = "";
@@ -262,6 +311,34 @@ export class Logic implements ILogic {
       );
     }
 
+    // 找到其它需要trans的中文
+    const arr3 = replace.matchAll(transSingePattern);
+    const box2: string[] = [];
+
+    for (let item of arr3) {
+      box2.push(item[0]);
+    }
+
+    box2.sort((i, j) => j.length - i.length);
+
+    for (let item of box2) {
+      let key = "";
+
+      const cStr = item.substring(0, item.length - 2);
+      if (!vkJson[cStr]) {
+        key = `key${index}`;
+        json[key] = cStr;
+        vkJson[cStr] = key;
+        index += 1;
+      } else {
+        key = vkJson[cStr];
+      }
+
+      replace = replace.replaceAll(
+        item,
+        `{<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>}`
+      );
+    }
     // 找到其它的中文
     const arr2 = replace.matchAll(chinesePattern);
     const box: string[] = [];
@@ -299,11 +376,23 @@ export class Logic implements ILogic {
     this.output.replace = replace;
     this.output.jsonHK = HKConverter(this.output.json);
     this.output.jsonTW = TWConverter(this.output.json);
+    message({
+      severity: "success",
+      summary: "Success",
+      detail: "转换完成",
+      life: 1000,
+    });
   }
 
   translation() {
     this.output.json = this.formData.str;
     this.output.jsonHK = HKConverter(this.output.json);
     this.output.jsonTW = TWConverter(this.output.json);
+    message({
+      severity: "success",
+      summary: "Success",
+      detail: "翻译完成",
+      life: 1000,
+    });
   }
 }

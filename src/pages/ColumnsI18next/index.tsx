@@ -49,7 +49,16 @@ const ColumnsI18next = observer(function ColumnsI18next_() {
     <div className="page-ColumnsI18next">
       <ToolBar />
       <OtherSettingDrawer />
-      <div className="mt-8">tips: 双击即可复制</div>
+      <div className="mt-8">
+        tips: 双击即可复制{" "}
+        <a
+          href="https://f1ufsuw9mx.feishu.cn/docx/JvgJd9EbPoMpTpx4EJEc9gRanvf"
+          className="ml-20"
+          target="blank"
+        >
+          帮助文档
+        </a>
+      </div>
       <I18JSON />
       <div
         className="out-put"
