@@ -2,7 +2,7 @@
  * @Author: liu71
  * @Date: 2023-05-30 20:55:49
  * @Last Modified by: liu7i
- * @Last Modified time: 2023-06-01 10:53:22
+ * @Last Modified time: 2023-06-01 11:39:49
  */
 
 import { makeAutoObservable } from "@quarkunlimit/qu-mobx";
@@ -34,7 +34,9 @@ export class Logic implements ILogic {
     title: "title",
     str: "",
     cleanStr: "",
+    keyStart: "0",
   };
+
   output: IOutput = {
     json: "等待转换ZN",
     replace: "等待转换",
@@ -204,14 +206,39 @@ export class Logic implements ILogic {
   formatAll() {
     const stringPattern = /'[\u4e00-\u9fa5]+'/g; // 匹配字符串的正则表达式
     const chinesePattern = /[\u4e00-\u9fa5]+/g; // 匹配中文的正则表达式
-    // 找到所有字符串
-    const arr = this.formData.cleanStr.matchAll(stringPattern);
+    const commentPattern = /\/\/ [\u4e00-\u9fa5]+/g; // 匹配注释的正则
+    const ignorePattern = /别动我[\u4e00-\u9fa5]+/g; // 匹配注释的正则
 
-    let index = 0;
+    let commentIndex = 0;
+    const arrCommentObj: { [key: string]: string } = {};
+    let replace = this.formData.cleanStr;
+
+    // 找到所有的注释保护起来
+    const arrComment = replace.matchAll(commentPattern);
+    for (let item of arrComment) {
+      console.log(item[0]);
+      const key = `${Date.now() + Math.random() * 1000}-${commentIndex}`;
+      commentIndex += 1;
+      arrCommentObj[key] = item[0];
+      replace = replace.replace(item[0], key);
+    }
+
+    // 找到所有需要跳过的内容保护起来
+    const arrComment2 = replace.matchAll(ignorePattern);
+    for (let item of arrComment2) {
+      console.log(item[0]);
+      const key = `${Date.now() + Math.random() * 1000}-${commentIndex}`;
+      commentIndex += 1;
+      arrCommentObj[key] = item[0].substring(3);
+      replace = replace.replace(item[0], key);
+    }
+
+    // 找到所有字符串
+    const arr = replace.matchAll(stringPattern);
+
+    let index = Number(this.formData.keyStart) || 0;
     const json: { [key: string]: string } = {};
     const vkJson: { [key: string]: string } = {};
-
-    let replace = this.formData.cleanStr;
 
     for (let item of arr) {
       let key = "";
@@ -232,7 +259,7 @@ export class Logic implements ILogic {
     }
 
     // 找到其它的中文
-    const arr2 = this.formData.cleanStr.matchAll(chinesePattern);
+    const arr2 = replace.matchAll(chinesePattern);
     const box: string[] = [];
 
     for (let item of arr2) {
@@ -258,6 +285,11 @@ export class Logic implements ILogic {
         `{${this.formData.prefix}("${this.formData.path}${key}")}`
       );
     }
+
+    // 还原保护的注释
+    Object.keys(arrCommentObj).forEach((i) => {
+      replace = replace.replace(i, arrCommentObj[i]);
+    });
 
     this.output.json = JSON.stringify(json);
     this.output.replace = replace;

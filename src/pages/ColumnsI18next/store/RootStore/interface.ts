@@ -77,6 +77,8 @@ export interface IFormData {
   str: string;
   /** @param dprint格式化之后的文案 */
   cleanStr: string;
+  /** @param 起始数字 */
+  keyStart: string;
 }
 
 export interface IOutput {

@@ -5,7 +5,6 @@ import { Button } from "primereact/button";
 import { observer } from "@quarkunlimit/qu-mobx";
 import { Sidebar } from "primereact/sidebar";
 
-
 export const OtherSettingDrawer = observer(function OtherSettingDrawer_() {
   const root = useStore();
   const { logic } = root;
@@ -16,7 +15,13 @@ export const OtherSettingDrawer = observer(function OtherSettingDrawer_() {
       onHide={logic.changeVisible}
       maskClassName="page-ColumnsI18next-drawer"
     >
-      <div>中文对应的renderValue</div>
+      <div>暴力模式生成key的起始数字</div>
+      <InputText
+        placeholder="请输入"
+        value={logic.formData.keyStart}
+        onChange={(e) => logic.changeFormData("keyStart", e.target.value)}
+      />
+      <div className="mt-12">中文对应的renderValue</div>
       <InputText
         placeholder="请输入"
         value={logic.formData.title}
