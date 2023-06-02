@@ -5,13 +5,14 @@
  * @Last Modified time: 2023-06-01 16:09:32
  */
 
-import { makeAutoObservable } from "@quarkunlimit/qu-mobx";
+import { makeAutoObservable, toJS } from "@quarkunlimit/qu-mobx";
 import {
   IFormData,
   ILogic,
   IOutput,
   IQuickSet,
   TLoadingStore,
+  IObj
 } from "./interface";
 import { RootStore } from "./";
 import { CopyToClipboard, getJSONToParse } from "utils/Tools";
@@ -27,6 +28,8 @@ export class Logic implements ILogic {
   visible: boolean = false;
   violentPattern = true;
   allTrans = false;
+  dataSourceKV:IObj = {};
+  dataSourceVK:IObj = {};
 
   dprintError = false;
   formData: IFormData = {
@@ -37,6 +40,7 @@ export class Logic implements ILogic {
     str: "",
     cleanStr: "",
     keyStart: "0",
+    dataSource: "",
   };
 
   output: IOutput = {
@@ -194,17 +198,15 @@ export class Logic implements ILogic {
     let str = "i18next";
     let val = "i18next";
 
-    const resJson: { [key: string]: string } = {};
-    const valJson: { [key: string]: string } = {};
+    const resJson: IObj = {};
+    const valJson: IObj = {};
 
     // 生成对应的i18next
     keyArr.forEach((i) => {
       let result = "";
 
       if (i.includes(`${this.formData.title}:`)) {
-        result = i.match(/'([^']*)'/)?.[1] || "";
-        // const chinesePattern = /[\u4e00-\u9fa5]+/g; // 匹配中文的正则表达式
-        // result = i.match(chinesePattern)?.[0] || "";
+        result = i.match(/'([^']*)'/)?.[1] || ""; 
         str = result;
       } else if (i.includes(`${this.formData.key}:`)) {
         result = i.match(/'([^']*)'/)?.[1] || "";
@@ -212,6 +214,15 @@ export class Logic implements ILogic {
       }
 
       if (str !== "i18next" && val !== "i18next") {
+
+        const alreadyKey = this.dataSourceVK[str];
+        if(alreadyKey){
+          valJson[str] = alreadyKey
+          str = "i18next";
+          val = "i18next";
+          return
+        } 
+
         resJson[val] = str;
         valJson[str] = val;
         str = "i18next";
@@ -267,7 +278,7 @@ export class Logic implements ILogic {
     const transSingePattern = /[\u4e00-\u9fa5]+-=/g; // 匹配需要使用trans替换的中文的正则
 
     let commentIndex = 0;
-    const arrCommentObj: { [key: string]: string } = {};
+    const arrCommentObj: IObj = {};
     let replace = this.formData.cleanStr;
 
     // 找到所有的注释保护起来
@@ -289,17 +300,19 @@ export class Logic implements ILogic {
     }
 
     let index = Number(this.formData.keyStart) || 0;
-    const json: { [key: string]: string } = {};
-    const vkJson: { [key: string]: string } = {};
+    const json: IObj = {};
+    const vkJson: IObj = {};
 
     if (!this.allTrans) {
       // 找到所有需要使用trans替换的字符串
       const arrT = replace.matchAll(transPattern);
 
       for (let item of arrT) {
-        let key = "";
         const cStr = item[0].substring(1, item[0].length - 3);
-        if (!vkJson[cStr]) {
+        let key = this.dataSourceVK[cStr]|| "";
+        if(this.dataSourceVK[cStr]){
+          vkJson[cStr] = this.dataSourceVK[cStr];
+        } else if(!vkJson[cStr]) {
           key = `key${index}`;
           json[key] = cStr;
           vkJson[cStr] = key;
@@ -318,10 +331,12 @@ export class Logic implements ILogic {
     // 找到所有字符串
     const arr = replace.matchAll(stringPattern);
 
-    for (let item of arr) {
-      let key = "";
+    for (let item of arr) { 
       const cStr = item[0].substring(1, item[0].length - 1);
-      if (!vkJson[cStr]) {
+      let key = this.dataSourceVK[cStr]|| "";
+      if(this.dataSourceVK[cStr]){
+        vkJson[cStr] = this.dataSourceVK[cStr];
+      } else  if (!vkJson[cStr]) {
         key = `key${index}`;
         json[key] = cStr;
         vkJson[cStr] = key;
@@ -350,11 +365,12 @@ export class Logic implements ILogic {
 
       box2.sort((i, j) => j.length - i.length);
 
-      for (let item of box2) {
-        let key = "";
-
+      for (let item of box2) { 
         const cStr = item.substring(0, item.length - 2);
-        if (!vkJson[cStr]) {
+        let key = this.dataSourceVK[cStr]|| "";
+        if(this.dataSourceVK[cStr]){
+          vkJson[cStr] = this.dataSourceVK[cStr];
+        } else  if (!vkJson[cStr]) {
           key = `key${index}`;
           json[key] = cStr;
           vkJson[cStr] = key;
@@ -380,10 +396,12 @@ export class Logic implements ILogic {
 
     box.sort((i, j) => j.length - i.length);
 
-    for (let item of box) {
-      let key = "";
+    for (let item of box) { 
       const cStr = item;
-      if (!vkJson[cStr]) {
+      let key = this.dataSourceVK[cStr]|| "";
+      if(this.dataSourceVK[cStr]){
+        vkJson[cStr] = this.dataSourceVK[cStr];
+      } else  if (!vkJson[cStr]) {
         key = `key${index}`;
         json[key] = cStr;
         vkJson[cStr] = key;
@@ -435,6 +453,43 @@ export class Logic implements ILogic {
       severity: "success",
       summary: "Success",
       detail: "翻译完成",
+      life: 1000,
+    });
+  }
+
+  formatDataSource() {
+    if (!this.formData.dataSource) {
+      this.dataSourceKV = {};
+      this.dataSourceVK = {};
+      return;
+    }
+    const cleanSource = getJSONToParse(this.formData.dataSource); 
+    if (
+      !cleanSource ||
+      Object.prototype.toString.call(cleanSource) !== "[object Object]"
+    ) {
+
+      this.dataSourceKV = {};
+      this.dataSourceVK = {};
+      message({
+        severity: "error",
+        summary: "Error",
+        detail: "数据源不合法或者解析后不是一个对象",
+        life: 3000,
+      });
+      return
+    }
+    this.dataSourceKV  = cleanSource;
+    const VK:{[key:string]:string} = {}
+    Object.keys(this.dataSourceKV).forEach(key=>{
+      VK[this.dataSourceKV[key] as string] = key
+    })
+
+    this.dataSourceVK = VK; 
+    message({
+      severity: "success",
+      summary: "Success",
+      detail: "数据源解析成功",
       life: 1000,
     });
   }

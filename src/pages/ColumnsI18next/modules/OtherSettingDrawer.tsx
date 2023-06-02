@@ -5,6 +5,7 @@ import { Button } from "primereact/button";
 import { observer } from "@quarkunlimit/qu-mobx";
 import { Sidebar } from "primereact/sidebar";
 import { InputSwitch } from "primereact/inputswitch";
+import { InputTextarea } from "primereact/inputtextarea";
 
 export const OtherSettingDrawer = observer(function OtherSettingDrawer_() {
   const root = useStore();
@@ -79,6 +80,17 @@ export const OtherSettingDrawer = observer(function OtherSettingDrawer_() {
           )}
         </div>
       ))}
+
+      <div className="mt-12">当前路径已有的key</div>
+      <InputTextarea
+        className="full"
+        placeholder="请输入JSON，只识别第一层的key"
+        value={logic.formData.dataSource}
+        onChange={(e) => logic.changeFormData("dataSource", e.target.value)}
+      />
+      <Button size="small" className="mt-4" onClick={logic.formatDataSource}>
+        解析
+      </Button>
     </Sidebar>
   );
 });

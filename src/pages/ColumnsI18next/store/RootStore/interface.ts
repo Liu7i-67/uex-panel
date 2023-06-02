@@ -61,7 +61,15 @@ export interface ILogic {
   /** @param replace自动导入Trans */
   autoImportTans: boolean;
   changeAutoImportTans: () => void;
+  /** @param 已有的key-value obj */
+  dataSourceKV: IObj;
+  /** @param 已有的value-key obj */
+  dataSourceVK: IObj;
+  /** @function 解析输入的数据源 */
+  formatDataSource:()=>void;
 }
+
+export interface IObj { [key: string]: string }
 
 /** 计算属性接口 */
 export interface IComputed {
@@ -86,6 +94,8 @@ export interface IFormData {
   key: string;
   /** @param 输入的文案 */
   str: string;
+  /** @param 输入的已有key */
+  dataSource: string;
   /** @param dprint格式化之后的文案 */
   cleanStr: string;
   /** @param 起始数字 */
