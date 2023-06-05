@@ -67,6 +67,8 @@ export interface ILogic {
   dataSourceVK: IObj;
   /** @function 解析输入的数据源 */
   formatDataSource:()=>void;
+  /** @function 自动扩展dataSource和startKey */
+  addOutputJsonToDataSource:()=>void;
 }
 
 export interface IObj { [key: string]: string }

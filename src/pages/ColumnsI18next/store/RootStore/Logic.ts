@@ -12,7 +12,7 @@ import {
   IOutput,
   IQuickSet,
   TLoadingStore,
-  IObj
+  IObj,
 } from "./interface";
 import { RootStore } from "./";
 import { CopyToClipboard, getJSONToParse } from "utils/Tools";
@@ -28,8 +28,8 @@ export class Logic implements ILogic {
   visible: boolean = false;
   violentPattern = true;
   allTrans = false;
-  dataSourceKV:IObj = {};
-  dataSourceVK:IObj = {};
+  dataSourceKV: IObj = {};
+  dataSourceVK: IObj = {};
 
   dprintError = false;
   formData: IFormData = {
@@ -206,7 +206,7 @@ export class Logic implements ILogic {
       let result = "";
 
       if (i.includes(`${this.formData.title}:`)) {
-        result = i.match(/'([^']*)'/)?.[1] || ""; 
+        result = i.match(/'([^']*)'/)?.[1] || "";
         str = result;
       } else if (i.includes(`${this.formData.key}:`)) {
         result = i.match(/'([^']*)'/)?.[1] || "";
@@ -214,14 +214,13 @@ export class Logic implements ILogic {
       }
 
       if (str !== "i18next" && val !== "i18next") {
-
         const alreadyKey = this.dataSourceVK[str];
-        if(alreadyKey){
-          valJson[str] = alreadyKey
+        if (alreadyKey) {
+          valJson[str] = alreadyKey;
           str = "i18next";
           val = "i18next";
-          return
-        } 
+          return;
+        }
 
         resJson[val] = str;
         valJson[str] = val;
@@ -247,6 +246,7 @@ export class Logic implements ILogic {
     });
 
     this.output.json = JSON.stringify(resJson);
+    this.addOutputJsonToDataSource();
     this.output.replace = rowArr.join("\n");
 
     if (this.autoImportTans) {
@@ -309,10 +309,10 @@ export class Logic implements ILogic {
 
       for (let item of arrT) {
         const cStr = item[0].substring(1, item[0].length - 3);
-        let key = this.dataSourceVK[cStr]|| "";
-        if(this.dataSourceVK[cStr]){
+        let key = this.dataSourceVK[cStr] || "";
+        if (this.dataSourceVK[cStr]) {
           vkJson[cStr] = this.dataSourceVK[cStr];
-        } else if(!vkJson[cStr]) {
+        } else if (!vkJson[cStr]) {
           key = `key${index}`;
           json[key] = cStr;
           vkJson[cStr] = key;
@@ -331,12 +331,12 @@ export class Logic implements ILogic {
     // 找到所有字符串
     const arr = replace.matchAll(stringPattern);
 
-    for (let item of arr) { 
+    for (let item of arr) {
       const cStr = item[0].substring(1, item[0].length - 1);
-      let key = this.dataSourceVK[cStr]|| "";
-      if(this.dataSourceVK[cStr]){
+      let key = this.dataSourceVK[cStr] || "";
+      if (this.dataSourceVK[cStr]) {
         vkJson[cStr] = this.dataSourceVK[cStr];
-      } else  if (!vkJson[cStr]) {
+      } else if (!vkJson[cStr]) {
         key = `key${index}`;
         json[key] = cStr;
         vkJson[cStr] = key;
@@ -365,12 +365,12 @@ export class Logic implements ILogic {
 
       box2.sort((i, j) => j.length - i.length);
 
-      for (let item of box2) { 
+      for (let item of box2) {
         const cStr = item.substring(0, item.length - 2);
-        let key = this.dataSourceVK[cStr]|| "";
-        if(this.dataSourceVK[cStr]){
+        let key = this.dataSourceVK[cStr] || "";
+        if (this.dataSourceVK[cStr]) {
           vkJson[cStr] = this.dataSourceVK[cStr];
-        } else  if (!vkJson[cStr]) {
+        } else if (!vkJson[cStr]) {
           key = `key${index}`;
           json[key] = cStr;
           vkJson[cStr] = key;
@@ -396,12 +396,12 @@ export class Logic implements ILogic {
 
     box.sort((i, j) => j.length - i.length);
 
-    for (let item of box) { 
+    for (let item of box) {
       const cStr = item;
-      let key = this.dataSourceVK[cStr]|| "";
-      if(this.dataSourceVK[cStr]){
+      let key = this.dataSourceVK[cStr] || "";
+      if (this.dataSourceVK[cStr]) {
         vkJson[cStr] = this.dataSourceVK[cStr];
-      } else  if (!vkJson[cStr]) {
+      } else if (!vkJson[cStr]) {
         key = `key${index}`;
         json[key] = cStr;
         vkJson[cStr] = key;
@@ -425,6 +425,7 @@ export class Logic implements ILogic {
     });
 
     this.output.json = JSON.stringify(json);
+    this.addOutputJsonToDataSource(index);
     this.output.replace = replace;
     if (this.autoImportTans) {
       this.output.replace =
@@ -463,12 +464,11 @@ export class Logic implements ILogic {
       this.dataSourceVK = {};
       return;
     }
-    const cleanSource = getJSONToParse(this.formData.dataSource); 
+    const cleanSource = getJSONToParse(this.formData.dataSource);
     if (
       !cleanSource ||
       Object.prototype.toString.call(cleanSource) !== "[object Object]"
     ) {
-
       this.dataSourceKV = {};
       this.dataSourceVK = {};
       message({
@@ -477,20 +477,42 @@ export class Logic implements ILogic {
         detail: "数据源不合法或者解析后不是一个对象",
         life: 3000,
       });
-      return
+      return;
     }
-    this.dataSourceKV  = cleanSource;
-    const VK:{[key:string]:string} = {}
-    Object.keys(this.dataSourceKV).forEach(key=>{
-      VK[this.dataSourceKV[key] as string] = key
-    })
+    this.dataSourceKV = cleanSource;
+    const VK: { [key: string]: string } = {};
+    Object.keys(this.dataSourceKV).forEach((key) => {
+      VK[this.dataSourceKV[key] as string] = key;
+    });
 
-    this.dataSourceVK = VK; 
+    this.dataSourceVK = VK;
     message({
       severity: "success",
       summary: "Success",
       detail: "数据源解析成功",
       life: 1000,
     });
+  }
+
+  addOutputJsonToDataSource(index?:number) {
+    const data = getJSONToParse(this.output.json);
+    if (!data || Object.prototype.toString.call(data) !== "[object Object]") {
+      return;
+    }
+
+    this.dataSourceKV = {...this.dataSourceKV,...data}
+    const VK: { [key: string]: string } = {};
+    Object.keys(this.dataSourceKV).forEach((key) => {
+      VK[this.dataSourceKV[key] as string] = key;
+    });
+
+    this.dataSourceVK = VK;
+    this.formData.dataSource = JSON.stringify(this.dataSourceKV)
+ 
+    if ( Object.prototype.toString.call(index) !== '[object Number]') {
+      return
+    }
+    this.formData.keyStart = `${index}`
+    
   }
 }
