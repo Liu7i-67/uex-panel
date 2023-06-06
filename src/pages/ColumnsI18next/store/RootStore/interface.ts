@@ -69,6 +69,10 @@ export interface ILogic {
   formatDataSource:()=>void;
   /** @function 自动扩展dataSource和startKey */
   addOutputJsonToDataSource:()=>void;
+  /** @param 更新公告弹窗可见状态 */
+  updateVisible:boolean;
+  /** @function 修改更新公告弹窗可见状态 */
+  changeUpdateVisible:()=>void;
 }
 
 export interface IObj { [key: string]: string }

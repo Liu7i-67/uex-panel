@@ -30,10 +30,10 @@ export const ToolBar = observer(function ToolBar_() {
           />
         </label>
         <InputSwitch
-          checked={logic.violentPattern}
-          onChange={logic.changeViolentPattern}
-          tooltip="是否启用暴力模式，暴力模式将转换所有中文，需要自己甄别注释等"
-        />
+          checked={logic.allTrans}
+          onChange={logic.changeAllTrans}
+          tooltip="是否全部使用Trans"
+        /> 
         <Button onClick={logic.changeVisible} className="ml-8">
           其他设置
         </Button>

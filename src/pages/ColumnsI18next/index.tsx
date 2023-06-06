@@ -1,11 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect ,Suspense} from "react";
 import { observer } from "@quarkunlimit/qu-mobx";
 import { Provider, useStore } from "./store/RootStore";
-import { OtherSettingDrawer } from "./modules/OtherSettingDrawer";
+import { OtherSettingDrawer } from "./modules/OtherSettingDrawer"; 
 import { ToolBar } from "./modules/ToolBar";
 import { I18JSON } from "./modules/I18JSON";
 import * as formatterWorker from "utils/FormatterWorker";
 import "./index.scss";
+
+const UpdateContentModal = React.lazy(()=>import("./modules/UpdateContentModal"))
 
 const ColumnsI18next = observer(function ColumnsI18next_() {
   const root = useStore();
@@ -49,8 +51,11 @@ const ColumnsI18next = observer(function ColumnsI18next_() {
     <div className="page-ColumnsI18next">
       <ToolBar />
       <OtherSettingDrawer />
+      <Suspense fallback="loading">
+      <UpdateContentModal/>
+      </Suspense>
       <div className="mt-8">
-        tips: 双击即可复制{" "}
+        tips: 双击即可复制
         <a
           href="https://f1ufsuw9mx.feishu.cn/docx/JvgJd9EbPoMpTpx4EJEc9gRanvf"
           className="ml-20"
@@ -58,6 +63,7 @@ const ColumnsI18next = observer(function ColumnsI18next_() {
         >
           帮助文档
         </a>
+        <span className="ml-8 update-mark" onClick={logic.changeUpdateVisible}>更新公告</span>
       </div>
       <I18JSON />
       <div

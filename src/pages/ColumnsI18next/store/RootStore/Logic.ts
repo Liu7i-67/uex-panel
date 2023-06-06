@@ -26,6 +26,7 @@ export class Logic implements ILogic {
   loadingStore: TLoadingStore;
   rootStore: RootStore;
   visible: boolean = false;
+  updateVisible:boolean= true;
   violentPattern = true;
   allTrans = false;
   dataSourceKV: IObj = {};
@@ -85,13 +86,13 @@ export class Logic implements ILogic {
   changeAllTrans() {
     this.allTrans = !this.allTrans;
     // 勾选说明肯定需要Tans
-    if(this.allTrans){ 
-      this.autoImportTans = true
-      this.autoImport = false
-      return
+    if (this.allTrans) {
+      this.autoImportTans = true;
+      this.autoImport = false;
+      return;
     }
     // 取消说明肯定需要i18next
-    this.autoImport = true
+    this.autoImport = true;
   }
 
   changeViolentPattern() {
@@ -106,6 +107,7 @@ export class Logic implements ILogic {
         detail: "当前输入内容格式化后无变化",
         life: 3000,
       });
+      this.formatColumns();
       return;
     }
     this.output.json = "等待转换ZN";
@@ -177,7 +179,13 @@ export class Logic implements ILogic {
     this.visible = !this.visible;
   }
 
+  changeUpdateVisible() {
+    this.updateVisible = !this.updateVisible;
+  }
+
   dprintStr() {
+    this.autoImport = false;
+    this.autoImportTans = false;
     if (this.dprintError) {
       this.formData.cleanStr = this.formData.str;
       return;
@@ -246,7 +254,10 @@ export class Logic implements ILogic {
         let newStr = `${this.formData.prefix}("${this.formData.path}${valJson[result]}")`;
 
         if (this.allTrans) {
+          this.autoImportTans = true;
           newStr = `<Trans i18Key='${this.formData.path}${valJson[result]}'>{(v) => v}</Trans>`;
+        } else {
+          this.autoImport = true;
         }
 
         rowArr[index] = i.replace(`'${result}'`, newStr);
@@ -333,12 +344,12 @@ export class Logic implements ILogic {
           item[0],
           `<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>`
         );
+        this.autoImportTans = true;
       }
     }
 
     // 找到所有字符串
     const arr = replace.matchAll(stringPattern);
-
     for (let item of arr) {
       const cStr = item[0].substring(1, item[0].length - 1);
       let key = this.dataSourceVK[cStr] || "";
@@ -357,9 +368,13 @@ export class Logic implements ILogic {
 
       if (this.allTrans) {
         newStr = `<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>`;
+        this.autoImportTans = true;
+      }else{
+        this.autoImport = true;
       }
 
       replace = replace.replaceAll(item[0], newStr);
+    
     }
 
     if (!this.allTrans) {
@@ -372,6 +387,10 @@ export class Logic implements ILogic {
       }
 
       box2.sort((i, j) => j.length - i.length);
+
+      if (box2.length) {
+        this.autoImportTans = true;
+      }
 
       for (let item of box2) {
         const cStr = item.substring(0, item.length - 2);
@@ -422,6 +441,9 @@ export class Logic implements ILogic {
 
       if (this.allTrans) {
         newStr = `<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>`;
+        this.autoImportTans = true;
+      } else {
+        this.autoImport = true;
       }
 
       replace = replace.replaceAll(item, newStr);
@@ -502,25 +524,24 @@ export class Logic implements ILogic {
     });
   }
 
-  addOutputJsonToDataSource(index?:number) {
+  addOutputJsonToDataSource(index?: number) {
     const data = getJSONToParse(this.output.json);
     if (!data || Object.prototype.toString.call(data) !== "[object Object]") {
       return;
     }
 
-    this.dataSourceKV = {...this.dataSourceKV,...data}
+    this.dataSourceKV = { ...this.dataSourceKV, ...data };
     const VK: { [key: string]: string } = {};
     Object.keys(this.dataSourceKV).forEach((key) => {
       VK[this.dataSourceKV[key] as string] = key;
     });
 
     this.dataSourceVK = VK;
-    this.formData.dataSource = JSON.stringify(this.dataSourceKV)
- 
-    if ( Object.prototype.toString.call(index) !== '[object Number]') {
-      return
+    this.formData.dataSource = JSON.stringify(this.dataSourceKV);
+
+    if (Object.prototype.toString.call(index) !== "[object Number]") {
+      return;
     }
-    this.formData.keyStart = `${index}`
-    
+    this.formData.keyStart = `${index}`;
   }
 }

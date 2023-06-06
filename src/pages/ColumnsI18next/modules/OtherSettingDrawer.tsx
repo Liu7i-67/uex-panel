@@ -23,24 +23,12 @@ export const OtherSettingDrawer = observer(function OtherSettingDrawer_() {
         value={logic.formData.keyStart}
         onChange={(e) => logic.changeFormData("keyStart", e.target.value)}
       />
-      <div className="mt-12">全部使用Trans</div>
+      <div className="mt-12">是否启用暴力模式</div>
       <InputSwitch
-        checked={logic.allTrans}
-        onChange={logic.changeAllTrans}
-        className="mt-4"
-      />
-      <div className="mt-12">自动导入i18next</div>
-      <InputSwitch
-        checked={logic.autoImport}
-        onChange={logic.changeAutoImport}
-        className="mt-4"
-      />
-      <div className="mt-12">自动导入Trans</div>
-      <InputSwitch
-        checked={logic.autoImportTans}
-        onChange={logic.changeAutoImportTans}
-        className="mt-4"
-      />
+          checked={logic.violentPattern}
+          onChange={logic.changeViolentPattern}
+          tooltip="是否启用暴力模式，暴力模式将转换所有中文，需要自己甄别注释等"
+        />
       <div className="mt-12">中文对应的renderValue</div>
       <InputText
         placeholder="请输入"
