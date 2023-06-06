@@ -84,10 +84,14 @@ export class Logic implements ILogic {
 
   changeAllTrans() {
     this.allTrans = !this.allTrans;
-    if(this.allTrans){
-      this.autoImport = false;
+    // 勾选说明肯定需要Tans
+    if(this.allTrans){ 
       this.autoImportTans = true
+      this.autoImport = false
+      return
     }
+    // 取消说明肯定需要i18next
+    this.autoImport = true
   }
 
   changeViolentPattern() {
