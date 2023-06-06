@@ -84,6 +84,10 @@ export class Logic implements ILogic {
 
   changeAllTrans() {
     this.allTrans = !this.allTrans;
+    if(this.allTrans){
+      this.autoImport = false;
+      this.autoImportTans = true
+    }
   }
 
   changeViolentPattern() {
