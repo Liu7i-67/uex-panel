@@ -34,7 +34,7 @@ export class Logic implements ILogic {
 
   dprintError = false;
   formData: IFormData = {
-    prefix: "i18next.t",
+    prefix: "t",
     path: "common:columns.",
     key: "key",
     title: "title",
@@ -268,14 +268,16 @@ export class Logic implements ILogic {
     this.addOutputJsonToDataSource();
     this.output.replace = rowArr.join("\n");
 
-    if (this.autoImportTans) {
+
+    if(this.autoImportTans&&this.autoImport){
+      this.output.replace =
+      "import { Trans,t } from 'renderer/i18n';\n" + this.output.replace;
+    }else if (this.autoImportTans) {
       this.output.replace =
         "import { Trans } from 'renderer/i18n';\n" + this.output.replace;
-    }
-
-    if (this.autoImport) {
+    }else if (this.autoImport) {
       this.output.replace =
-        "import i18next from 'i18next';\n" + this.output.replace;
+        "import { t } from 'renderer/i18n';\n" + this.output.replace;
     }
 
     this.output.jsonHK = HKConverter(this.output.json);
@@ -457,14 +459,16 @@ export class Logic implements ILogic {
     this.output.json = JSON.stringify(json);
     this.addOutputJsonToDataSource(index);
     this.output.replace = replace;
-    if (this.autoImportTans) {
+
+    if(this.autoImportTans&&this.autoImport){
+      this.output.replace =
+      "import { Trans , t } from 'renderer/i18n';\n" + this.output.replace;
+    }else  if (this.autoImportTans) {
       this.output.replace =
         "import { Trans } from 'renderer/i18n';\n" + this.output.replace;
-    }
-
-    if (this.autoImport) {
+    }else  if (this.autoImport) {
       this.output.replace =
-        "import i18next from 'i18next';\n" + this.output.replace;
+      "import { t } from 'renderer/i18n';\n" + this.output.replace;
     }
     this.output.jsonHK = HKConverter(this.output.json);
     this.output.jsonTW = TWConverter(this.output.json);
