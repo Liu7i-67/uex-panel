@@ -46,6 +46,9 @@ export const ToolBar = observer(function ToolBar_() {
           <Button onClick={logic.changeVisible} className="ml-8">
             其他设置
           </Button> 
+          <Button onClick={logic.changeDebugMode} className="ml-8">
+            debug
+          </Button> 
         </div>
       </div>
 

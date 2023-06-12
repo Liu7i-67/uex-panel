@@ -17,6 +17,7 @@
 - "webpack": 打包,
 - "webpack-cli": 打包,
 - "webpack-dev-server": 文件更新后实时部署并刷新网页
+- "dprint" 代码格式化
 
 # dependencies
 

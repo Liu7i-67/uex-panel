@@ -1,0 +1,64 @@
+import { LoadingStore } from '@quarkunlimit/qu-mobx';
+import { RootStore } from './';
+import { Logic } from './Logic';
+import { Computed } from './Computed';
+
+export type TLoadingStore = LoadingStore<'loading'>;
+
+/** 逻辑接口 */
+export interface ILogic {
+  /** @param 匹配的结果 */
+  result: IResult[];
+  /** @param 目标文本 */
+  cnString: string;
+  /** @param 文本类型 */
+  stringType: TI18n;
+  /** @param 匹配模式 */
+  matchType: TMatch;
+  /** @function 修改匹配模式 */
+  changeMatchType: (mode: TMatch) => void;
+  /** @function 修改目标文本 */
+  changeCnString: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  /** @function 修改文本类型 */
+  changeStringType: (str: TI18n) => void;
+  /** @function 搜索 */
+  search: () => void;
+  /** @function 载入数据源 */
+  loadResource: () => Promise<unknown>;
+  loadingStore: TLoadingStore;
+  rootStore: RootStore;
+  /** @param 数据源 */
+  resource: {
+    [key in TI18n]: string;
+  };
+}
+
+/** 计算属性接口 */
+export interface IComputed {
+  rootStore: RootStore;
+}
+
+/** 根Store接口 */
+export interface IRootStore {
+  logic: Logic;
+  computed: Computed;
+  loadingStore: TLoadingStore;
+}
+
+export type TI18n = 'zh-CN' | 'zh-TW' | 'zh-HK';
+
+/** @type FM-模糊匹配 PM-精准匹配 */
+export type TMatch = 'FM' | 'PM';
+
+export interface IResult {
+  /** @param 全部文本 */
+  full: string;
+  /** @param 序号 */
+  index: number;
+  /** @param 对应的key */
+  key: string;
+  /** @param full起始位置 */
+  findIndex: number;
+  /** @param 父级路径 */
+  path: string[];
+}

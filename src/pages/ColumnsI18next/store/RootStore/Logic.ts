@@ -26,11 +26,12 @@ export class Logic implements ILogic {
   loadingStore: TLoadingStore;
   rootStore: RootStore;
   visible: boolean = false;
-  updateVisible:boolean= true;
+  updateVisible:boolean= false;
   violentPattern = true;
   allTrans = false;
   dataSourceKV: IObj = {};
   dataSourceVK: IObj = {};
+  debugMode:boolean = true;
 
   dprintError = false;
   formData: IFormData = {
@@ -73,6 +74,10 @@ export class Logic implements ILogic {
     this.rootStore = rootStore;
     this.loadingStore = rootStore.loadingStore;
     makeAutoObservable(this, {}, { autoBind: true });
+  }
+
+  changeDebugMode (){
+    this.debugMode  = !this.debugMode
   }
 
   changeAutoImport() {

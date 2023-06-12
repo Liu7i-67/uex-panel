@@ -73,6 +73,10 @@ export interface ILogic {
   updateVisible:boolean;
   /** @function 修改更新公告弹窗可见状态 */
   changeUpdateVisible:()=>void;
+  /** @parma 是否启用debug模式 */
+  debugMode:boolean;
+  /** @function debug模式 */
+  changeDebugMode:()=>void;
 }
 
 export interface IObj { [key: string]: string }

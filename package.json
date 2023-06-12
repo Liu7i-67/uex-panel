@@ -39,6 +39,7 @@
     "primereact": "^9.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "workerize-loader": "^2.0.2"
+    "workerize-loader": "^2.0.2",
+    "dprint": "^0.26.0"
   }
 }
