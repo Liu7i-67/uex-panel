@@ -18,6 +18,10 @@ const ColumnsI18next = observer(function ColumnsI18next_() {
   const root = useStore();
   const { logic } = root;
 
+  useEffect(() => {
+    logic.initShowUpdate();
+  }, []);
+
   // 挂载事件
   useEffect(() => {
     formatterWorker.addOnFormat(logic.onFormat);

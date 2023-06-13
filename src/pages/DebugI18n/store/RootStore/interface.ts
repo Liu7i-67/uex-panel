@@ -31,6 +31,12 @@ export interface ILogic {
   resource: {
     [key in TI18n]: string;
   };
+  /** @param 是否展示自定义数据源输入框 */
+  showCustom: boolean;
+  changeShowCustom: () => void;
+  diyUrl: string;
+  changeDiyUrl: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  saveDiyUrl: () => void;
 }
 
 /** 计算属性接口 */

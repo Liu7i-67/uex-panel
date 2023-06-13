@@ -1,9 +1,9 @@
-import { LoadingStore } from "@quarkunlimit/qu-mobx";
-import { RootStore } from "./";
-import { Logic } from "./Logic";
-import { Computed } from "./Computed";
+import { LoadingStore } from '@quarkunlimit/qu-mobx';
+import { RootStore } from './';
+import { Logic } from './Logic';
+import { Computed } from './Computed';
 
-export type TLoadingStore = LoadingStore<"loading">;
+export type TLoadingStore = LoadingStore<'loading'>;
 
 /** 逻辑接口 */
 export interface ILogic {
@@ -66,20 +66,26 @@ export interface ILogic {
   /** @param 已有的value-key obj */
   dataSourceVK: IObj;
   /** @function 解析输入的数据源 */
-  formatDataSource:()=>void;
+  formatDataSource: () => void;
   /** @function 自动扩展dataSource和startKey */
-  addOutputJsonToDataSource:()=>void;
+  addOutputJsonToDataSource: () => void;
   /** @param 更新公告弹窗可见状态 */
-  updateVisible:boolean;
+  updateVisible: boolean;
   /** @function 修改更新公告弹窗可见状态 */
-  changeUpdateVisible:()=>void;
+  changeUpdateVisible: () => void;
   /** @parma 是否启用debug模式 */
-  debugMode:boolean;
+  debugMode: boolean;
   /** @function debug模式 */
-  changeDebugMode:()=>void;
+  changeDebugMode: () => void;
+  /** @param 当前更新公告的版本号 */
+  updateVersion: string;
+  /** @function 判断是否需要展示公告 */
+  initShowUpdate: () => void;
 }
 
-export interface IObj { [key: string]: string }
+export interface IObj {
+  [key: string]: string;
+}
 
 /** 计算属性接口 */
 export interface IComputed {

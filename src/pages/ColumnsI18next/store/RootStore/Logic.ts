@@ -5,70 +5,63 @@
  * @Last Modified time: 2023-06-01 16:09:32
  */
 
-import { makeAutoObservable, toJS } from "@quarkunlimit/qu-mobx";
-import {
-  IFormData,
-  ILogic,
-  IOutput,
-  IQuickSet,
-  TLoadingStore,
-  IObj,
-} from "./interface";
-import { RootStore } from "./";
-import { CopyToClipboard, getJSONToParse } from "utils/Tools";
-import { message } from "@/components/message";
-import * as formatterWorker from "utils/FormatterWorker";
-import * as OpenCC from "opencc-js";
+import { makeAutoObservable, toJS } from '@quarkunlimit/qu-mobx';
+import { IFormData, ILogic, IObj, IOutput, IQuickSet, TLoadingStore } from './interface';
+import { RootStore } from './';
+import { CopyToClipboard, getJSONToParse } from 'utils/Tools';
+import { message } from '@/components/message';
+import * as formatterWorker from 'utils/FormatterWorker';
+import * as OpenCC from 'opencc-js';
 
-const HKConverter = OpenCC.Converter({ from: "cn", to: "hk" });
-const TWConverter = OpenCC.Converter({ from: "cn", to: "twp" });
+const HKConverter = OpenCC.Converter({ from: 'cn', to: 'hk' });
+const TWConverter = OpenCC.Converter({ from: 'cn', to: 'twp' });
 export class Logic implements ILogic {
   loadingStore: TLoadingStore;
   rootStore: RootStore;
   visible: boolean = false;
-  updateVisible:boolean= false;
+  updateVisible: boolean = false;
   violentPattern = true;
   allTrans = false;
   dataSourceKV: IObj = {};
   dataSourceVK: IObj = {};
-  debugMode:boolean = true;
+  debugMode: boolean = false;
+  updateVersion = '1.2.0';
 
   dprintError = false;
   formData: IFormData = {
-    prefix: "t",
-    path: "common:columns.",
-    key: "key",
-    title: "title",
-    str: "",
-    cleanStr: "",
-    keyStart: "0",
-    dataSource: "",
+    prefix: 't',
+    path: 'common:columns.',
+    key: 'key',
+    title: 'title',
+    str: '',
+    cleanStr: '',
+    keyStart: '0',
+    dataSource: '',
   };
 
   output: IOutput = {
-    json: "等待转换ZN",
-    replace: "等待转换",
-    jsonHK: "等待转换HK",
-    jsonTW: "等待转换TW",
+    json: '等待转换ZN',
+    replace: '等待转换',
+    jsonHK: '等待转换HK',
+    jsonTW: '等待转换TW',
   };
   autoImport: boolean = false;
   autoImportTans: boolean = false;
   quick: IQuickSet[] = [
     {
-      key: "key",
-      title: "title",
+      key: 'key',
+      title: 'title',
       id: 0,
       canDelete: false,
     },
     {
-      key: "field",
-      title: "label",
+      key: 'field',
+      title: 'label',
       id: 1,
       canDelete: false,
     },
   ];
-  pluginUrl: string =
-    "https://static.web.realmerit.com.cn/typescript-0.68.0.wasm";
+  pluginUrl: string = 'https://static.web.realmerit.com.cn/typescript-0.68.0.wasm';
 
   constructor(rootStore: RootStore) {
     this.rootStore = rootStore;
@@ -76,8 +69,8 @@ export class Logic implements ILogic {
     makeAutoObservable(this, {}, { autoBind: true });
   }
 
-  changeDebugMode (){
-    this.debugMode  = !this.debugMode
+  changeDebugMode() {
+    this.debugMode = !this.debugMode;
   }
 
   changeAutoImport() {
@@ -107,18 +100,18 @@ export class Logic implements ILogic {
   onFormat(str: string) {
     if (this.formData.cleanStr === str) {
       message({
-        severity: "info",
-        summary: "Info",
-        detail: "当前输入内容格式化后无变化",
+        severity: 'info',
+        summary: 'Info',
+        detail: '当前输入内容格式化后无变化',
         life: 3000,
       });
       this.formatColumns();
       return;
     }
-    this.output.json = "等待转换ZN";
-    this.output.replace = "等待转换";
-    this.output.jsonHK = "等待转换HK";
-    this.output.jsonTW = "等待转换TW";
+    this.output.json = '等待转换ZN';
+    this.output.replace = '等待转换';
+    this.output.jsonHK = '等待转换HK';
+    this.output.jsonTW = '等待转换TW';
     this.formData.cleanStr = str;
   }
 
@@ -126,9 +119,9 @@ export class Logic implements ILogic {
     console.error(err);
     this.dprintError = true;
     message({
-      severity: "error",
-      summary: "Error",
-      detail: "Dprint格式化程序工作线程出错，请自行对输入文本进行格式化",
+      severity: 'error',
+      summary: 'Error',
+      detail: 'Dprint格式化程序工作线程出错，请自行对输入文本进行格式化',
       life: 3000,
     });
   }
@@ -152,12 +145,12 @@ export class Logic implements ILogic {
   }
 
   saveToLocal() {
-    localStorage.setItem("i18next", JSON.stringify(this.quick));
+    localStorage.setItem('i18next', JSON.stringify(this.quick));
   }
 
   readLocalData() {
     const local: IQuickSet[] = getJSONToParse(
-      localStorage.getItem("i18next") || ""
+      localStorage.getItem('i18next') || '',
     );
     if (!local) {
       return;
@@ -184,8 +177,16 @@ export class Logic implements ILogic {
     this.visible = !this.visible;
   }
 
+  initShowUpdate() {
+    const updateVersion = localStorage.getItem('updateVersion');
+    if (updateVersion !== this.updateVersion) {
+      this.updateVisible = true;
+    }
+  }
+
   changeUpdateVisible() {
     this.updateVisible = !this.updateVisible;
+    localStorage.setItem('updateVersion', this.updateVersion);
   }
 
   dprintStr() {
@@ -195,7 +196,7 @@ export class Logic implements ILogic {
       this.formData.cleanStr = this.formData.str;
       return;
     }
-    formatterWorker.formatText("file.ts", this.formData.str);
+    formatterWorker.formatText('file.ts', this.formData.str);
   }
 
   formatColumns() {
@@ -203,50 +204,50 @@ export class Logic implements ILogic {
       this.formatAll();
       return;
     }
-    const rowArr = this.formData.cleanStr.split("\n");
+    const rowArr = this.formData.cleanStr.split('\n');
 
     const keyArr: string[] = [];
     // 过滤掉不要的
     rowArr.forEach((i) => {
       if (
-        i.includes(`${this.formData.title}:`) ||
-        i.includes(`${this.formData.key}:`)
+        i.includes(`${this.formData.title}:`)
+        || i.includes(`${this.formData.key}:`)
       ) {
         keyArr.push(i);
       }
     });
 
-    let str = "i18next";
-    let val = "i18next";
+    let str = 'i18next';
+    let val = 'i18next';
 
     const resJson: IObj = {};
     const valJson: IObj = {};
 
     // 生成对应的i18next
     keyArr.forEach((i) => {
-      let result = "";
+      let result = '';
 
       if (i.includes(`${this.formData.title}:`)) {
-        result = i.match(/'([^']*)'/)?.[1] || "";
+        result = i.match(/'([^']*)'/)?.[1] || '';
         str = result;
       } else if (i.includes(`${this.formData.key}:`)) {
-        result = i.match(/'([^']*)'/)?.[1] || "";
+        result = i.match(/'([^']*)'/)?.[1] || '';
         val = result;
       }
 
-      if (str !== "i18next" && val !== "i18next") {
+      if (str !== 'i18next' && val !== 'i18next') {
         const alreadyKey = this.dataSourceVK[str];
         if (alreadyKey) {
           valJson[str] = alreadyKey;
-          str = "i18next";
-          val = "i18next";
+          str = 'i18next';
+          val = 'i18next';
           return;
         }
 
         resJson[val] = str;
         valJson[str] = val;
-        str = "i18next";
-        val = "i18next";
+        str = 'i18next';
+        val = 'i18next';
       }
     });
 
@@ -254,7 +255,7 @@ export class Logic implements ILogic {
     rowArr.forEach((i, index) => {
       if (i.includes(`${this.formData.title}:`)) {
         const chinesePattern = /[\u4e00-\u9fa5]+/g; // 匹配中文的正则表达式
-        const result = i.match(chinesePattern)?.[0] || "";
+        const result = i.match(chinesePattern)?.[0] || '';
 
         let newStr = `${this.formData.prefix}("${this.formData.path}${valJson[result]}")`;
 
@@ -271,26 +272,22 @@ export class Logic implements ILogic {
 
     this.output.json = JSON.stringify(resJson);
     this.addOutputJsonToDataSource();
-    this.output.replace = rowArr.join("\n");
+    this.output.replace = rowArr.join('\n');
 
-
-    if(this.autoImportTans&&this.autoImport){
-      this.output.replace =
-      "import { Trans,t } from 'renderer/i18n';\n" + this.output.replace;
-    }else if (this.autoImportTans) {
-      this.output.replace =
-        "import { Trans } from 'renderer/i18n';\n" + this.output.replace;
-    }else if (this.autoImport) {
-      this.output.replace =
-        "import { t } from 'renderer/i18n';\n" + this.output.replace;
+    if (this.autoImportTans && this.autoImport) {
+      this.output.replace = 'import { Trans,t } from \'renderer/i18n\';\n' + this.output.replace;
+    } else if (this.autoImportTans) {
+      this.output.replace = 'import { Trans } from \'renderer/i18n\';\n' + this.output.replace;
+    } else if (this.autoImport) {
+      this.output.replace = 'import { t } from \'renderer/i18n\';\n' + this.output.replace;
     }
 
     this.output.jsonHK = HKConverter(this.output.json);
     this.output.jsonTW = TWConverter(this.output.json);
     message({
-      severity: "success",
-      summary: "Success",
-      detail: "转换完成",
+      severity: 'success',
+      summary: 'Success',
+      detail: '转换完成',
       life: 1000,
     });
   }
@@ -335,7 +332,7 @@ export class Logic implements ILogic {
 
       for (let item of arrT) {
         const cStr = item[0].substring(1, item[0].length - 3);
-        let key = this.dataSourceVK[cStr] || "";
+        let key = this.dataSourceVK[cStr] || '';
         if (this.dataSourceVK[cStr]) {
           vkJson[cStr] = this.dataSourceVK[cStr];
         } else if (!vkJson[cStr]) {
@@ -349,7 +346,7 @@ export class Logic implements ILogic {
 
         replace = replace.replaceAll(
           item[0],
-          `<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>`
+          `<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>`,
         );
         this.autoImportTans = true;
       }
@@ -359,7 +356,7 @@ export class Logic implements ILogic {
     const arr = replace.matchAll(stringPattern);
     for (let item of arr) {
       const cStr = item[0].substring(1, item[0].length - 1);
-      let key = this.dataSourceVK[cStr] || "";
+      let key = this.dataSourceVK[cStr] || '';
       if (this.dataSourceVK[cStr]) {
         vkJson[cStr] = this.dataSourceVK[cStr];
       } else if (!vkJson[cStr]) {
@@ -376,12 +373,11 @@ export class Logic implements ILogic {
       if (this.allTrans) {
         newStr = `<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>`;
         this.autoImportTans = true;
-      }else{
+      } else {
         this.autoImport = true;
       }
 
       replace = replace.replaceAll(item[0], newStr);
-    
     }
 
     if (!this.allTrans) {
@@ -401,7 +397,7 @@ export class Logic implements ILogic {
 
       for (let item of box2) {
         const cStr = item.substring(0, item.length - 2);
-        let key = this.dataSourceVK[cStr] || "";
+        let key = this.dataSourceVK[cStr] || '';
         if (this.dataSourceVK[cStr]) {
           vkJson[cStr] = this.dataSourceVK[cStr];
         } else if (!vkJson[cStr]) {
@@ -415,7 +411,7 @@ export class Logic implements ILogic {
 
         replace = replace.replaceAll(
           item,
-          `<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>`
+          `<Trans i18Key='${this.formData.path}${key}'>{(v) => v}</Trans>`,
         );
       }
     }
@@ -432,7 +428,7 @@ export class Logic implements ILogic {
 
     for (let item of box) {
       const cStr = item;
-      let key = this.dataSourceVK[cStr] || "";
+      let key = this.dataSourceVK[cStr] || '';
       if (this.dataSourceVK[cStr]) {
         vkJson[cStr] = this.dataSourceVK[cStr];
       } else if (!vkJson[cStr]) {
@@ -465,22 +461,19 @@ export class Logic implements ILogic {
     this.addOutputJsonToDataSource(index);
     this.output.replace = replace;
 
-    if(this.autoImportTans&&this.autoImport){
-      this.output.replace =
-      "import { Trans , t } from 'renderer/i18n';\n" + this.output.replace;
-    }else  if (this.autoImportTans) {
-      this.output.replace =
-        "import { Trans } from 'renderer/i18n';\n" + this.output.replace;
-    }else  if (this.autoImport) {
-      this.output.replace =
-      "import { t } from 'renderer/i18n';\n" + this.output.replace;
+    if (this.autoImportTans && this.autoImport) {
+      this.output.replace = 'import { Trans , t } from \'renderer/i18n\';\n' + this.output.replace;
+    } else if (this.autoImportTans) {
+      this.output.replace = 'import { Trans } from \'renderer/i18n\';\n' + this.output.replace;
+    } else if (this.autoImport) {
+      this.output.replace = 'import { t } from \'renderer/i18n\';\n' + this.output.replace;
     }
     this.output.jsonHK = HKConverter(this.output.json);
     this.output.jsonTW = TWConverter(this.output.json);
     message({
-      severity: "success",
-      summary: "Success",
-      detail: "转换完成",
+      severity: 'success',
+      summary: 'Success',
+      detail: '转换完成',
       life: 1000,
     });
   }
@@ -490,9 +483,9 @@ export class Logic implements ILogic {
     this.output.jsonHK = HKConverter(this.output.json);
     this.output.jsonTW = TWConverter(this.output.json);
     message({
-      severity: "success",
-      summary: "Success",
-      detail: "翻译完成",
+      severity: 'success',
+      summary: 'Success',
+      detail: '翻译完成',
       life: 1000,
     });
   }
@@ -505,15 +498,15 @@ export class Logic implements ILogic {
     }
     const cleanSource = getJSONToParse(this.formData.dataSource);
     if (
-      !cleanSource ||
-      Object.prototype.toString.call(cleanSource) !== "[object Object]"
+      !cleanSource
+      || Object.prototype.toString.call(cleanSource) !== '[object Object]'
     ) {
       this.dataSourceKV = {};
       this.dataSourceVK = {};
       message({
-        severity: "error",
-        summary: "Error",
-        detail: "数据源不合法或者解析后不是一个对象",
+        severity: 'error',
+        summary: 'Error',
+        detail: '数据源不合法或者解析后不是一个对象',
         life: 3000,
       });
       return;
@@ -526,16 +519,16 @@ export class Logic implements ILogic {
 
     this.dataSourceVK = VK;
     message({
-      severity: "success",
-      summary: "Success",
-      detail: "数据源解析成功",
+      severity: 'success',
+      summary: 'Success',
+      detail: '数据源解析成功',
       life: 1000,
     });
   }
 
   addOutputJsonToDataSource(index?: number) {
     const data = getJSONToParse(this.output.json);
-    if (!data || Object.prototype.toString.call(data) !== "[object Object]") {
+    if (!data || Object.prototype.toString.call(data) !== '[object Object]') {
       return;
     }
 
@@ -548,7 +541,7 @@ export class Logic implements ILogic {
     this.dataSourceVK = VK;
     this.formData.dataSource = JSON.stringify(this.dataSourceKV);
 
-    if (Object.prototype.toString.call(index) !== "[object Number]") {
+    if (Object.prototype.toString.call(index) !== '[object Number]') {
       return;
     }
     this.formData.keyStart = `${index}`;

@@ -4,6 +4,7 @@ import { message } from '@/components/message';
 import { RootStore } from './';
 import { getJSONToParse } from '@/utils/Tools';
 import { seactStr } from '../../tools';
+import { ChangeEvent } from 'react';
 
 export class Logic implements ILogic {
   loadingStore: TLoadingStore;
@@ -13,11 +14,49 @@ export class Logic implements ILogic {
   resource: { 'zh-CN': string; 'zh-TW': string; 'zh-HK': string } = { 'zh-CN': '', 'zh-HK': '', 'zh-TW': '' };
   matchType: TMatch = 'FM';
   result: IResult[] = [];
+  showCustom: boolean = false;
+  diyUrl: string = '';
 
   constructor(rootStore: RootStore) {
     this.rootStore = rootStore;
     this.loadingStore = rootStore.loadingStore;
     makeAutoObservable(this, {}, { autoBind: true });
+  }
+
+  saveDiyUrl() {
+    const url = localStorage.getItem('url');
+    if (!this.diyUrl) {
+      if (!url) {
+        return;
+      }
+      localStorage.removeItem('url');
+      message({
+        severity: 'success',
+        summary: '成功',
+        detail: '自定义数据源已移除',
+        life: 3000,
+      });
+      return;
+    }
+    if (url === this.diyUrl) {
+      return;
+    }
+    localStorage.setItem('url', this.diyUrl);
+    message({
+      severity: 'success',
+      summary: '成功',
+      detail: '自定义数据源设置保存成功，请点击重载数据源加载数据',
+      life: 3000,
+    });
+  }
+
+  changeShowCustom() {
+    this.showCustom = !this.showCustom;
+  }
+
+  changeDiyUrl(e: ChangeEvent<HTMLInputElement>) {
+    const newUrl = e.target.value || '';
+    this.diyUrl = newUrl;
   }
 
   changeMatchType(mode: TMatch) {

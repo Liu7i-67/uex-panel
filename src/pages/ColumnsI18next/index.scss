@@ -39,6 +39,11 @@
     font-weight: bold;
     letter-spacing: 4px;
   }
+
+  .url-input{
+    padding: 11px;
+    margin-left: 8px;
+  }
 }
 
 .page-ColumnsI18next-drawer {
@@ -69,7 +74,7 @@
     font-weight: normal;
     color: gray;
   }
-  ul{
+  ul,ol{
     padding: 18px;
   }
 }
