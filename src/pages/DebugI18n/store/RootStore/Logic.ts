@@ -68,7 +68,6 @@ export class Logic implements ILogic {
       const strObj = getJSONToParse(str);
 
       const result: IResult[] = [];
-
       seactStr({
         resource: strObj,
         path: [],
@@ -77,7 +76,6 @@ export class Logic implements ILogic {
         key: '',
         isPM: this.matchType === 'PM',
       });
-      console.log('result:', result);
 
       this.result = result;
     });

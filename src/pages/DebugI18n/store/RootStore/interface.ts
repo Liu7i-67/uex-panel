@@ -53,12 +53,9 @@ export type TMatch = 'FM' | 'PM';
 export interface IResult {
   /** @param 全部文本 */
   full: string;
-  /** @param 序号 */
-  index: number;
   /** @param 对应的key */
   key: string;
-  /** @param full起始位置 */
-  findIndex: number;
   /** @param 父级路径 */
   path: string[];
+  [key: string]: (string | number | string[]);
 }

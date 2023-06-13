@@ -29,11 +29,9 @@ export const seactStr = (req: {
           return;
         }
         targetArr.push({
-          index: Date.now(),
           key,
           path,
           full: resource,
-          findIndex: 0,
         });
       }
       break;

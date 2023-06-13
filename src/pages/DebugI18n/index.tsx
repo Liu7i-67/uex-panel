@@ -7,6 +7,7 @@ import { SelectButton } from 'primereact/selectbutton';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { CopyToClipboard } from 'utils/Tools';
+import { FilterMatchMode } from 'primereact/api';
 
 interface IProps {
   /** @function 去翻译 */
@@ -28,6 +29,13 @@ const DebugI18n = observer(function DebugI18n_(props: IProps) {
   const root = useStore();
   const { logic } = root;
 
+  const onKeyDown = React.useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key !== 'Enter') {
+      return;
+    }
+    logic.search2();
+  }, []);
+
   return (
     <div>
       <Button onClick={props.toTrans}>
@@ -35,7 +43,12 @@ const DebugI18n = observer(function DebugI18n_(props: IProps) {
       </Button>
       <div className='flex mt-8'>
         <span>文本：</span>
-        <InputText placeholder='请输入' value={logic.cnString} onChange={logic.changeCnString} />
+        <InputText
+          placeholder='请输入'
+          value={logic.cnString}
+          onChange={logic.changeCnString}
+          onKeyDown={onKeyDown}
+        />
         <span className='ml-8'>文本类型：</span>
         <SelectButton
           optionLabel='name'
@@ -63,12 +76,39 @@ const DebugI18n = observer(function DebugI18n_(props: IProps) {
         </Button>
       </div>
       <div className='mt-24'>
-        <div>共有{logic.result.length}项</div>
-        <DataTable value={logic.result} paginator rows={10} rowsPerPageOptions={[5, 10, 25, 50]} className='mt-8'>
+        <div className='total'>共有{logic.result.length}项</div>
+        <DataTable
+          value={logic.result}
+          paginator
+          rows={10}
+          rowsPerPageOptions={[5, 10, 25, 50]}
+          className='mt-8'
+          // filters={{
+          //   key: {
+          //     value: null,
+          //     matchMode: FilterMatchMode.CONTAINS,
+          //   },
+          //   full: {
+          //     value: null,
+          //     matchMode: FilterMatchMode.CONTAINS,
+          //   },
+          // }}
+        >
+          <Column
+            field='index'
+            header='序号'
+            style={{ width: '10%' }}
+            body={(r, e) => {
+              return e.rowIndex + 1;
+            }}
+          >
+          </Column>
           <Column
             field='key'
             header='标识'
             style={{ width: '50%' }}
+            filter
+            filterPlaceholder='请输入'
             body={(record) => {
               let path = record.path?.slice?.(1).join('.');
               if (!!path && !path.includes('.')) {
@@ -80,7 +120,7 @@ const DebugI18n = observer(function DebugI18n_(props: IProps) {
             }}
           >
           </Column>
-          <Column field='full' header='完整文本' style={{ width: '50%' }}></Column>
+          <Column field='full' header='完整文本' filter filterPlaceholder='请输入' style={{ width: '40%' }}></Column>
         </DataTable>
       </div>
     </div>
