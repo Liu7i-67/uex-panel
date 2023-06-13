@@ -1,0 +1,115 @@
+{
+  "table": {
+    "claimGoodsNumber": "取货单号",
+    "billingDate": "开单日期",
+    "billingNumber": "来源订单",
+    "billerName": "开单人",
+    "deptName": "开单人部门",
+    "departmentName": "计划取货部门",
+    "customerName": "取货客户",
+    "materialName": "物料明细",
+    "statusText": "状态",
+    "outInventoryNumber": "出库单号",
+    "finishDate": "最近确认时间",
+    "handleName": "最近确认出库人",
+    "id": "操作"
+  },
+  "other": {
+    "key1": "详情",
+    "key2": "确认",
+    "key3": "待出库",
+    "key4": "部分出库",
+    "key5": "已完成",
+    "key6": "已作废"
+  },
+  "search": {
+    "claimGoodsNumber": {
+      "label": "取货单号",
+      "placeholder": "请输入取货单号"
+    },
+    "billingPicker": "开单时间",
+    "billingNumber": { "label": "来源订单", "placeholder": "请输入来源订单" },
+    "billerId": { "label": "开单人", "placeholder": "请选择开单人" },
+    "deptId": { "label": "开单人部门", "placeholder": "请选择开单人部门" },
+    "departmentId": {
+      "label": "计划取货人部门",
+      "placeholder": "请选择计划取货人部门"
+    },
+    "customerId": "取货客户",
+    "materialId": { "label": "物料明细", "placeholder": "请搜索物料" },
+    "status": {
+      "label": "状态",
+      "options": { "key1": "待出库", "key2": "部分出库", "key3": "已完成" }
+    },
+    "outInventoryNumber": {
+      "label": "出库单号",
+      "placeholder": "请输入取货单号"
+    },
+    "finishDate": "最近确认时间",
+    "handleId": {
+      "label": "最近确认出库人",
+      "placeholder": "请选择最近确认出库人"
+    }
+  },
+  "detail": {
+    "key1": "取货详情",
+    "key2": "取货物料",
+    "key3": "打印",
+    "key4": "导出",
+    "key5": "返回",
+    "key6": "确认",
+    "key7": "删除",
+    "key8": "添加",
+    "key9": "取货单号",
+    "key10": "状态",
+    "key11": "取货客户",
+    "key12": "来源订单",
+    "key13": "开单人",
+    "key14": "开单人部门",
+    "key15": "计划取货部门",
+    "key16": "开单时间",
+    "key17": "货单总价",
+    "key18": "取消",
+    "key19": "打印完成",
+    "key20": "暂不打印",
+    "key21": "11孔打印",
+    "key22": "7孔打印",
+    "key23": "再次打印",
+    "key24": "打印预览",
+    "table_1": {
+      "materialCode": "物料编码",
+      "materialName": "物料名称",
+      "anotherName": "物料别名",
+      "manufacturer": "生产厂家",
+      "specification": "规格",
+      "unitType": "型号",
+      "outAmount": "开单出库量/单位",
+      "actualAmounts": "实际出库量/单位",
+      "currentInventoryList": "库存数量/单位",
+      "sellingPrice": "销售单价",
+      "remainderAmountList": "剩余应出/单位"
+    },
+    "table_2": {
+      "warehouseName": "出库仓库",
+      "outAmount": "出库数量/单位",
+      "uid": "操作"
+    },
+    "table_3": {
+      "warehouseName": "出库仓库",
+      "outAmount": "出库数量/单位",
+      "finishDate": "出库时间",
+      "handleName": "确认出库人",
+      "outInventoryNumber": "出库单号"
+    }
+  },
+  "msg": {
+    "key1": "该仓库无对应物料信息，请从新选择入库仓库",
+    "key2": "请输入取货量",
+    "key3": "取货单内物料未选择仓库，请选择后重试",
+    "key4": "当前数据需进行电子签名，请开通电子签名在进行处理",
+    "key5": "操作成功",
+    "key6": "取货总量不能超过",
+    "key7": "确认成功！",
+    "key8": "确定"
+  }
+}

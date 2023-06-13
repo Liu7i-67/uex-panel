@@ -1,0 +1,115 @@
+{
+  "table": {
+    "paymentFlowNo": "流水單號",
+    "incomeFlag": "型別",
+    "paymentFlowConfigName": "具體類目",
+    "payMoney": "金額",
+    "operatorName": "財務",
+    "createDate": "時間",
+    "invoiceMoney": "開具發票",
+    "paymentInfo": "業務發生單號",
+    "departmentName": "發生科室",
+    "customerPhone": "相關客戶",
+    "remark": "備註",
+    "dataType": "資料型別",
+    "options": "操作"
+  },
+  "otherText": {
+    "key1": "詳情",
+    "key2": "編輯",
+    "key3": "刪除",
+    "key4": "新建流水單",
+    "key5": "總收入",
+    "key6": "總支出",
+    "key7": "今日收入",
+    "key8": "今日支出",
+    "key9": "等",
+    "key10": "專案",
+    "key11": "費用方式",
+    "key12": "支付金額",
+    "key13": "支付備註",
+    "key14": "確定刪除該財務流水嗎？",
+    "key15": "確定",
+    "key16": "刪除成功",
+    "key17": "收入",
+    "key18": "支出",
+    "yes": "是",
+    "no": "否"
+  },
+  "search": {
+    "paymentFlowNo": { "label": "流水單號", "placeholder": "請輸入流水單號" },
+    "incomeFlag": { "label": "型別", "placeholder": "請輸入流水單型別" },
+    "invoiceFlag": {
+      "label": "開具發票(是否)",
+      "placeholder": "請選擇是否開具發票"
+    },
+    "payMoney": "金額範圍",
+    "createByName": { "label": "財務", "placeholder": "請輸入財務姓名" },
+    "createDate": "時間",
+    "paymentInfo": {
+      "label": "業務發生單號",
+      "placeholder": "請輸入業務發生單號"
+    },
+    "customerInfo": "客戶",
+    "dataTypeList": {
+      "label": "資料型別",
+      "options": { "key1": "手動", "key2": "自動" }
+    },
+    "departmentId": { "label": "科室", "placeholder": "請選擇科室" },
+    "paymentFlowConfigIds": {
+      "label": "具體類目",
+      "placeholder": "請選擇具體類目"
+    }
+  },
+  "addModal": {
+    "key1": "編輯",
+    "key2": "新建",
+    "key3": "流水單",
+    "key4": "儲存"
+  },
+  "addForm": {
+    "key1": "流水型別",
+    "key2": "請選擇流水型別",
+    "key3": "收入",
+    "key4": "支出",
+    "key5": "操作人員",
+    "key6": "請選擇操作人員",
+    "key7": "具體類目",
+    "key8": "請選擇具體類目",
+    "key9": "相關客戶",
+    "key10": "業務發生單號",
+    "key11": "請選擇業務發生單號",
+    "key12": "發生科室",
+    "key13": "請選擇發生科室",
+    "key14": "操作成功",
+    "key15": "確定",
+    "key16": "取消",
+    "key17": "支出",
+    "key18": "收入",
+    "key19": "流水金額最大不能超過8位數字",
+    "key20": "流水金額",
+    "key21": "發票金額",
+    "key22": "請輸入正數,最大輸入8位,最多不超過兩位小數",
+    "key23": "請輸入發票金額",
+    "key24": "是否開具發票",
+    "key25": "請輸入備註",
+    "key26": "字元不得超過240個字",
+    "key27": "請選擇支付方式",
+    "key28": "請輸入支付金額"
+  },
+  "detail": {
+    "key1": "流水單詳情",
+    "key2": "關閉",
+    "key3": "流水型別",
+    "key4": "流水金額",
+    "key5": "財務",
+    "key6": "具體類目",
+    "key7": "發生科室",
+    "key8": "發票金額",
+    "key9": "相關客戶",
+    "key10": "業務發生單號",
+    "key11": "金額",
+    "key12": "費用方式",
+    "key13": "備註"
+  }
+}

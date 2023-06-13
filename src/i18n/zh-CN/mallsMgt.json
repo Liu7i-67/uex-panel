@@ -1,0 +1,537 @@
+{
+  "tab": {
+    "key1": "商城产品",
+    "key2": "积分礼品",
+    "key3": "无权限访问"
+  },
+  "goods": {
+    "table": {
+      "itemName": "产品分类",
+      "goodsName": "产品名称",
+      "goodNameShow": "展示名称",
+      "stockNum": "库存数",
+      "purchaseLimitNum": "每人限购",
+      "goodsLimitNum": "产品限购",
+      "allowedMemberLevelsVO": "可购客户",
+      "originPrice": "院内原价",
+      "originShowPrice": "展示原价",
+      "salePrice": "售价",
+      "orderMoneyPrice": "定金",
+      "justShowOrder": "仅展示定金",
+      "boardingType": "上架状态",
+      "boardingDate": "上架日期",
+      "offShelfDate": "下架日期",
+      "automaticOffShelfDate": "自动下架日期",
+      "pageView": "访问量",
+      "topFlag": "首页精选",
+      "hotFlag": "首页热门",
+      "showPurchaseNum": "展示购买数",
+      "actualPurchaseNum": "实际购买数",
+      "options": "操作"
+    },
+    "search": {
+      "goodsId": { "label": "产品名称", "placeholder": "请输入产品名称" },
+      "actualPurchaseNum": "实际购买数",
+      "boardingType": {
+        "label": "商上架状态",
+        "placeholder": "请选择上架状态",
+        "options": {
+          "key1": "立即上架",
+          "key2": "指定日期上架",
+          "key3": "暂不上架"
+        }
+      },
+      "boardingDate": "上架日期",
+      "offShelfDate": "下架日期",
+      "topFlag": {
+        "label": "首页精选",
+        "placeholder": "请选择",
+        "options": { "key1": "全部", "key2": "启用", "key3": "禁用" }
+      },
+      "hotFlag": {
+        "label": "首页热门",
+        "placeholder": "请选择",
+        "options": { "key1": "全部", "key2": "启用", "key3": "禁用" }
+      }
+    },
+    "other": {
+      "key1": "不限购",
+      "key2": "是",
+      "key3": "否",
+      "key4": "编辑",
+      "key5": "预览",
+      "key6": "删除",
+      "key7": "操作成功",
+      "key8": "操作失败",
+      "key9": "您确定要删除该产品",
+      "key10": "取消",
+      "key11": "确定",
+      "key12": "产品",
+      "key13": "新增产品",
+      "key15": "添加",
+      "key16": "大小不超过5M",
+      "key17": "请上传封面",
+      "key18": "请上传首页封面",
+      "key19": "定金不能大于售价",
+      "key20": "基本信息",
+      "key21": "产品详情",
+      "key22": "请输入产品详情",
+      "key23": "操作成功",
+      "key24": "请输入",
+      "key25": "套餐组合",
+      "key26": "项目名称",
+      "key27": "数量",
+      "key28": "单价",
+      "key29": "必选",
+      "key30": "赠送",
+      "key31": "积分一次性抵扣订单金额最大百分比",
+      "key32": "产品列表",
+      "key33": "编辑产品",
+      "key34": "新增产品",
+      "key35": "下一步",
+      "key36": "上一步",
+      "key37": "完成",
+      "key38": "同项目配置",
+      "key39": "特",
+      "key40": "项"
+    },
+    "view": {
+      "key1": "预览",
+      "key2": "关闭",
+      "key3": "套",
+      "key4": "不可转赠",
+      "key5": "不可退款",
+      "key6": "限购",
+      "key7": "仅限",
+      "key8": "定金",
+      "key9": "认证",
+      "key10": "已售",
+      "key11": "支付类型：定金",
+      "key12": "到院支付",
+      "key13": "项目参数",
+      "key14": "规格",
+      "key15": "支付后项目有效期",
+      "key16": "治疗后项目有效期",
+      "key17": "下单付款后",
+      "key18": "天有效",
+      "key19": "不限期",
+      "key20": "治疗日算起",
+      "key21": "天内可继续治疗",
+      "key22": "项目介绍"
+    },
+    "add": {
+      "itemId": { "label": "产品分类", "placeholder": "请选择产品分类" },
+      "goodsName": { "label": "产品名称", "placeholder": "请选择产品" },
+      "goodNameShow": {
+        "label": "展示名称",
+        "placeholder": "请输入展示名称",
+        "msg": "展示名称不可超过30个字"
+      },
+      "goodsDescription": {
+        "label": "产品简单描述",
+        "placeholder": "请输入产品简单描述，输入内容不超过50字",
+        "msg": "输入内容不超过50字"
+      },
+      "cover": {
+        "label": "封面",
+        "msg": "（比例1:1,不低于200px,最多支持上传3张图片，可拖动图片调整顺序）"
+      },
+      "stockNum": {
+        "label": "库存数",
+        "placeholder": "请输入库存数"
+      },
+      "goodsLimitNum": { "label": "产品限购", "placeholder": "不限购" },
+      "purchaseLimitNum": { "label": "每人限购", "placeholder": "不限购" },
+      "showPurchaseNum": {
+        "label": "显示购买数",
+        "placeholder": "请输入显示购买数"
+      },
+      "allowedMemberLevels": {
+        "label": "可购客户",
+        "placeholder": "不限制"
+      },
+      "maxAvailableScore": {
+        "label": "积分使用限制【最高】",
+        "placeholder": "请输入积分使用限制",
+        "tip": "数量为0时，表示在小程序商城购买该产品，不支持使用积分"
+      },
+      "goodsUnitCode": {
+        "label": "单位",
+        "placeholder": "请选择单位"
+      },
+      "originPrice": {
+        "label": "院内原价",
+        "placeholder": "请输入院内原价"
+      },
+      "packagePrice": {
+        "label": "院内套餐价",
+        "placeholder": "请输入院内套餐价"
+      },
+      "packageTotalPrice": {
+        "label": "院内总价",
+        "placeholder": "请输入院内总价"
+      },
+      "salePrice": {
+        "label": "售价",
+        "placeholder": "请输入售价"
+      },
+      "packagePrice_": {
+        "label": "套餐价",
+        "placeholder": "请输入套餐价"
+      },
+      "origin_show_price": {
+        "label": "展示原价",
+        "placeholder": "请输入展示原价"
+      },
+      "total_show_price": {
+        "label": "展示总价",
+        "placeholder": "请输入展示总价"
+      },
+      "orderMoneyFlag": "定金",
+      "orderMoneyPrice": {
+        "placeholder": "请输入",
+        "msg": "在线支付定金，到院付尾款"
+      },
+      "just_show_order": "仅展示定金",
+      "defaultCount": {
+        "label": "开单默认次数",
+        "placeholder": "请输入开单默认次数"
+      },
+      "payExpiryDate": {
+        "label": "交费后项目有效期",
+        "tip": "表示该项目从交费日算起，此期限内可治疗",
+        "key1": "天",
+        "key2": "不限期"
+      },
+      "treatExpiryDate": {
+        "label": "治疗后项目有效期",
+        "tip": "表示该项目从治疗日算起，此期限内可治疗",
+        "key1": "天",
+        "key2": "不限期"
+      },
+      "refundFlag": "可退款",
+      "donationFlag": "可转赠",
+      "boardingType": {
+        "label": "上架日期",
+        "placeholder": "请选择",
+        "options": {
+          "key1": "立即上架",
+          "key2": "指定上架日期",
+          "key3": "暂不上架"
+        }
+      },
+      "appointBoardingDate": "请选择上架日期",
+      "automaticOffShelfDate": "自动下架日期",
+      "topFlag": "首页精选",
+      "hotFlag": "首页热门",
+      "tag": "标签"
+    }
+  },
+  "type": {
+    "key1": "新增",
+    "key2": "编辑",
+    "key3": "分类",
+    "key4": "保存",
+    "key5": "删除分类会导致子分类及分类下的所有商品全部删除，是否继续？",
+    "key6": "确定删除该分类吗？",
+    "key7": "确定",
+    "key8": "删除",
+    "key9": "上级分类",
+    "key10": "请选择上级分类",
+    "key11": "分类名称",
+    "key12": "请输入分类名称",
+    "key13": "输入长度最大10"
+  },
+  "gift": {
+    "table": {
+      "itemName": "礼品分类",
+      "goodName": "礼品名称",
+      "changeLimitNum": "限兑换数",
+      "showChangeNum": "展示兑换数",
+      "integralExchangeNum": "积分兑换值",
+      "exchangeFlag": "是否可兑换",
+      "exchangeStartTime": "可兑换开始日期",
+      "exchangeEndTime": "可兑换结束日期",
+      "effectiveTimeType": "有效期",
+      "actualChangeNum": "实际兑换数",
+      "showName": "展示名称",
+      "stockNum": "库存数",
+      "pageView": "访问量",
+      "options": "操作"
+    },
+    "other": {
+      "key1": "永久可兑换",
+      "key2": "暂不可兑换",
+      "key3": "不限量",
+      "key4": "是",
+      "key5": "否",
+      "key6": "领取后",
+      "key7": "天",
+      "key8": "立即",
+      "key9": "生效，有效期",
+      "key10": "天",
+      "key11": "编辑",
+      "key12": "预览",
+      "key13": "删除",
+      "key14": "商品",
+      "key15": "优惠券",
+      "key16": "全部分类",
+      "key17": "您确定要删除该礼品",
+      "key18": "取消",
+      "key19": "确定",
+      "key20": "操作成功",
+      "key21": "操作失败",
+      "key22": "礼品",
+      "key23": "新增礼品",
+      "key24": "兑换详情",
+      "key25": "添加",
+      "key26": "大小不超过5M",
+      "key27": "到期提醒不能大于有效期，当前有效期为",
+      "key28": "请上传封面",
+      "key29": "基本信息",
+      "key30": "礼品详情",
+      "key31": "请输入礼品详情",
+      "key32": "商品",
+      "key33": "优惠券",
+      "key34": "操作成功",
+      "key35": "请输入",
+      "key36": "请选择礼品分类",
+      "key37": "该优惠已过期，请重新选择",
+      "key38": "礼品列表",
+      "key39": "编辑礼品",
+      "key40": "新增礼品",
+      "key41": "兑换日期",
+      "key42": "有效期",
+      "key43": "不适用项目",
+      "key44": "适用项目",
+      "key45": "所有项目",
+      "key46": "使用规则",
+      "key47": "取消",
+      "key48": "下一步",
+      "key49": "上一步",
+      "key50": "完成"
+    },
+    "search": {
+      "giftName": { "label": "礼品名称", "placeholder": "请输入礼品名称" },
+      "actualChangeNum": "实际兑换数",
+      "exchangeFlag": {
+        "label": "是否可兑换",
+        "placeholder": "请选择是否可兑换",
+        "options": { "key1": "是", "key2": "否" }
+      },
+      "changeStartDate": "可兑换开始日期",
+      "changeEndDate": "可兑换结束日期"
+    },
+    "detail": {
+      "key1": "兑换详情",
+      "key2": "商品",
+      "key3": "优惠券",
+      "key4": "快递到家",
+      "key5": "到家自提",
+      "key6": "收货人",
+      "key7": "手机号码",
+      "key8": "收货地址",
+      "key9": "收货人",
+      "key10": "未领取",
+      "key11": "已领取",
+      "key12": "已退回",
+      "key13": "部分退款",
+      "key14": "出库中",
+      "key15": "部分退款",
+      "key16": "待发货",
+      "key17": "待收货",
+      "key18": "已完成",
+      "key19": "售后完成",
+      "key20": "领取",
+      "key21": "发货",
+      "key22": "已发货",
+      "key23": "物流单号",
+      "key24": "物流公司",
+      "key25": "第三方系统生成的订单，请在第三方系统后台操作退费！",
+      "key26": "退款",
+      "key27": "客户选择快递到家",
+      "key28": "客户已选择到店自提",
+      "key31": "请输入退款数量",
+      "key32": "操作成功",
+      "key33": "操作失败",
+      "key34": "确定",
+      "key35": "取消",
+      "key36": "退款数量",
+      "key37": "请输入",
+      "key38": "仅退积分，不退货",
+      "key39": "所退积分",
+      "table": {
+        "name": "客户",
+        "exchangeNum": "兑换数量",
+        "exchangeTime": "兑换日期",
+        "useNum": "使用数量",
+        "refundNum": "退款数量",
+        "refundTime": "退款日期",
+        "exchangeOrderNum": "兑换单号",
+        "trackingType": "收货方式",
+        "deliverCustomerName": "收货信息",
+        "exchangeStatus": "兑换状态",
+        "trackingStatus": "快递状态",
+        "itemId": "礼品分类",
+        "giftName": "礼品名称",
+        "integralExchangeNum": "积分兑换值",
+        "options": "操作"
+      },
+      "search": {
+        "customerId": "客户",
+        "itemId": {
+          "label": "礼品分类",
+          "placeholder": "请选择礼品分类",
+          "options": { "key1": "礼品", "key2": "优惠券" }
+        },
+        "giftName": { "label": "礼品名称", "placeholder": "请输入礼品名称" },
+        "exchangeStatus": {
+          "label": "兑换状态",
+          "placeholder": "请选择兑换状态",
+          "options": {
+            "key1": "未领取",
+            "key2": "已领取",
+            "key3": "已退回",
+            "key4": "部分退款",
+            "key5": "出库中"
+          }
+        },
+        "exchangeDate": "兑换日期",
+        "refundDate": "退款日期",
+        "exchangeOrderNum": {
+          "label": "兑换单号",
+          "placeholder": "请输入兑换单号"
+        },
+        "goodsTrackingTypeList": {
+          "label": "收获方式",
+          "placeholder": "请选择收货方式",
+          "options": { "key1": "到店自提", "key2": "快递到家" }
+        }
+      }
+    },
+    "view": {
+      "key1": "永久可兑换",
+      "key2": "暂不可兑换",
+      "key3": "至",
+      "key4": "领取后",
+      "key5": "天",
+      "key6": "立即",
+      "key7": "生效",
+      "key8": "有效期",
+      "key9": "预览",
+      "key10": "关闭",
+      "key11": "限购",
+      "key12": "积分",
+      "key13": "认证",
+      "key14": "已售",
+      "key15": "礼品介绍",
+      "key16": "兑换日期",
+      "key17": "使用规则",
+      "key18": "不适用项目",
+      "key19": "适用项目",
+      "key20": "所有项目"
+    },
+    "add": {
+      "itemId": { "label": "礼品分类", "placeholder": "请选择礼品分类" },
+      "goodName": { "label": "礼品名称", "placeholder": "请选择礼品" },
+      "showName": {
+        "label": "展示名称",
+        "placeholder": "请输入展示名称",
+        "msg": "最大长度30"
+      },
+      "goodDescription": {
+        "label": "礼品简单描述",
+        "placeholder": "请输入礼品简单描述，输入内容不超过50字",
+        "msg": "输入内容不超过50字"
+      },
+      "cover": {
+        "label": "封面",
+        "msg": "（比例1:1,不低于200px,最多支持上传3张图片，可拖动图片调整顺序）"
+      },
+      "stockNum": { "label": "库存数", "placeholder": "请输入库存数" },
+      "sendNum": { "label": "发放数", "placeholder": "请输入发放数" },
+      "changeLimitNum": { "label": "限兑换量", "placeholder": "不限量" },
+      "showChangeNum": {
+        "label": "展示兑换数",
+        "placeholder": "请输入展示兑换数"
+      },
+      "integralExchangeNum": {
+        "label": "积分兑换值",
+        "placeholder": "请输入积分兑换值",
+        "key1": "积分",
+        "key2": "兑换一个"
+      },
+      "donationFlag": "可转赠",
+      "goodsUnitCode": { "label": "单位", "placeholder": "请选择单位" },
+      "exchangeType": {
+        "label": "兑换日期",
+        "placeholder": "请选择",
+        "options": {
+          "key1": "永久可兑换",
+          "key2": "指定兑换日期",
+          "key3": "暂不可兑换"
+        }
+      },
+      "exchangeStartTime": "请选择开始日期",
+      "exchangeEndTime": "请选择结束日期",
+      "tag": "标签",
+      "goodsTrackingTypeList": {
+        "label": "收货方式",
+        "placeholder": "请选择收货方式",
+        "options": { "key1": "快递到家", "key2": "到店自提" }
+      },
+      "effectiveTimeType": {
+        "label": "有效期",
+        "placeholder": "请选择",
+        "options": { "key1": "固定日期", "key2": "领取后生效" }
+      },
+      "effectiveDate": { "label": "日期", "placeholder": "请选择" },
+      "takeEffect": {
+        "label": "领取后",
+        "placeholder": "立即生效",
+        "key1": "天"
+      },
+      "effective": {
+        "label": "有效期",
+        "placeholder": "请输入"
+      },
+      "expireRemind": {
+        "label": "到期提醒",
+        "placeholder": "请输入"
+      }
+    },
+    "sendGoodsInfo": {
+      "key1": "操作成功",
+      "key2": "积分商品发货物流信息",
+      "key3": "请输入物流公司",
+      "key4": "请输入物流单号",
+      "key5": "提交",
+      "key6": "物流单号",
+      "key7": "物流公司"
+    }
+  },
+  "withDrawRecord": {
+    "table": {
+      "tenantName": "操作门店",
+      "goldCoinsNum": "金币金额",
+      "shouldOutGold": "提现金额（¥）",
+      "outScaleGold": "提现比例",
+      "createDate": "申请时间",
+      "dealTime": "审批时间",
+      "approvalStatusInt": "审批状态",
+      "withdrawalStatusInt": "提现状态",
+      "options": "操作"
+    },
+    "other": {
+      "key1": "通过",
+      "key2": "重新打款",
+      "key3": "拒绝",
+      "key4": "操作成功",
+      "key5": "提示",
+      "key6": "通过后，会直接将对应提现金额打款至对应客户微信账户，是否继续？",
+      "key7": "是否确定拒绝打款？",
+      "key8": "确认后，会直接将对应提现金额打款至对应客户微信账户，是否继续？",
+      "key9": "操作时间"
+    }
+  }
+}

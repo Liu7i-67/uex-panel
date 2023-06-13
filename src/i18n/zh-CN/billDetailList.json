@@ -1,0 +1,27 @@
+{
+  "startPayMoneyPlaceholder": "请输入起始金额",
+  "endPayMoneyPlaceholder": "请输入结束金额",
+  "cancel": "作废",
+  "cancelBillDetailConfirmContent": "是否作废该条票据明细",
+  "cancelBillDetailSuccessMsg": "票据明细作废成功",
+  "tableColumns": {
+    "customerName": "客户姓名",
+    "invoiceNo": "发票号码",
+    "billingNo": "订单单号",
+    "usedDate": "使用时间",
+    "payMoney": "结账金额",
+    "statusMessage": "票据状态",
+    "operatorName": "操作人"
+  },
+  "formList": {
+    "invoiceNo": "发票号",
+    "invoiceNoPlaceholder": "请输入发票号",
+    "billingNo": "订单单号",
+    "billingNoPlaceholder": "请输入订单单号",
+    "usedDate": "使用时间",
+    "receiveRange": "结账金额",
+    "operatorName": "操作人",
+    "operatorNamePlaceholder": "操作人",
+    "status": "票据状态"
+  }
+}

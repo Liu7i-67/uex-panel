@@ -1,0 +1,63 @@
+{
+  "module": "继续发药",
+  "button": {
+    "deal": "处理"
+  },
+  "searchList": {
+    "customerId": {
+      "label": "姓名"
+    },
+    "time": {
+      "label": "提交时间"
+    },
+    "status": {
+      "label": "状态",
+      "options": [
+        { "label": "全部", "value": 3 },
+        { "label": "待处理", "value": 0 },
+        { "label": "已通过", "value": 1 },
+        { "label": "已拒绝", "value": 2 }
+      ]
+    }
+  },
+  "columns": {
+    "customerName": "客户",
+    "customerSex": "性别",
+    "customerAge": "年龄",
+    "poolName": "所在客户池",
+    "advisoryPersonName": "所属谘询师",
+    "diagnosis": "临床诊断",
+    "diseaseRemark": "病情说明",
+    "userName": "医生",
+    "createTime": "提交时间",
+    "status": "状态",
+    "options": "操作"
+  },
+  "keywords": {
+    "reviewTitle": "审核信息",
+    "pass": "通过",
+    "reject": "拒绝",
+    "suggestion": "意见",
+    "approval": "审批"
+  },
+  "drawer": {
+    "title": "复诊处理",
+    "approval": {
+      "pass": "审批通过",
+      "reject": "审批拒绝"
+    },
+    "reason": {
+      "message": "最多输入300个字！",
+      "messagePrefix": "请输入正确的"
+    }
+  },
+  "applyInstruction": {
+    "title": "申请说明",
+    "contentTitle": "病情说明",
+    "file": "附件"
+  },
+  "warning": {
+    "noRejectReason": "请填写拒绝意见",
+    "noPerm": "抱歉，您没有查看取货管理权限！"
+  }
+}

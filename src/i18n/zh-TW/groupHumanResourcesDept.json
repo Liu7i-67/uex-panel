@@ -1,0 +1,54 @@
+{
+  "module": "集團--部門",
+  "groupTitle": "集團部門",
+  "areaTitle": "區域部門",
+  "typeTitle": "部門分類",
+  "dragError": "拖動失敗~",
+  "addSuccess": "新增成功",
+  "delSuccess": "刪除成功！",
+  "delConfirmContent": "你確定刪除該部門嗎！",
+  "noDataText": "還沒有選中的內容哦~",
+  "typeOperation": {
+    "add": "新增部門",
+    "del": "刪除部門"
+  },
+  "addModalTitle": "新增部門",
+  "editModalTitle": "編輯部門",
+  "detailItems": {
+    "title": "部門名稱",
+    "pTitle": "上級部門",
+    "useSum": "部門人數",
+    "tips": "備註"
+  },
+  "addModal": {
+    "title": {
+      "label": "部門名稱",
+      "message": "部門名稱必須填寫",
+      "placeholder": "請輸入名稱"
+    },
+    "pid": {
+      "label": "上級部門",
+      "message": "請選擇上級部門",
+      "placeholder": "請選擇上級部門"
+    }
+  },
+  "editModal": {
+    "title": {
+      "label": "部門名稱",
+      "message": "部門名稱必須填寫",
+      "placeholder": "請輸入名稱"
+    },
+    "pid": {
+      "label": "上級部門",
+      "message": "請選擇上級部門",
+      "placeholder": "請選擇上級部門"
+    },
+    "userSum": {
+      "label": "部門人數"
+    },
+    "tips": {
+      "label": "備註",
+      "placeholder": "最多240個字元"
+    }
+  }
+}

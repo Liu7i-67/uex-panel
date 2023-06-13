@@ -1,0 +1,537 @@
+{
+  "tab": {
+    "key1": "商城產品",
+    "key2": "積分禮品",
+    "key3": "無許可權訪問"
+  },
+  "goods": {
+    "table": {
+      "itemName": "產品分類",
+      "goodsName": "產品名稱",
+      "goodNameShow": "展示名稱",
+      "stockNum": "庫存數",
+      "purchaseLimitNum": "每人限購",
+      "goodsLimitNum": "產品限購",
+      "allowedMemberLevelsVO": "可購客戶",
+      "originPrice": "院內原價",
+      "originShowPrice": "展示原價",
+      "salePrice": "售價",
+      "orderMoneyPrice": "定金",
+      "justShowOrder": "僅展示定金",
+      "boardingType": "上架狀態",
+      "boardingDate": "上架日期",
+      "offShelfDate": "下架日期",
+      "automaticOffShelfDate": "自動下架日期",
+      "pageView": "訪問量",
+      "topFlag": "首頁精選",
+      "hotFlag": "首頁熱門",
+      "showPurchaseNum": "展示購買數",
+      "actualPurchaseNum": "實際購買數",
+      "options": "操作"
+    },
+    "search": {
+      "goodsId": { "label": "產品名稱", "placeholder": "請輸入產品名稱" },
+      "actualPurchaseNum": "實際購買數",
+      "boardingType": {
+        "label": "商上架狀態",
+        "placeholder": "請選擇上架狀態",
+        "options": {
+          "key1": "立即上架",
+          "key2": "指定日期上架",
+          "key3": "暫不上架"
+        }
+      },
+      "boardingDate": "上架日期",
+      "offShelfDate": "下架日期",
+      "topFlag": {
+        "label": "首頁精選",
+        "placeholder": "請選擇",
+        "options": { "key1": "全部", "key2": "啟用", "key3": "禁用" }
+      },
+      "hotFlag": {
+        "label": "首頁熱門",
+        "placeholder": "請選擇",
+        "options": { "key1": "全部", "key2": "啟用", "key3": "禁用" }
+      }
+    },
+    "other": {
+      "key1": "不限購",
+      "key2": "是",
+      "key3": "否",
+      "key4": "編輯",
+      "key5": "預覽",
+      "key6": "刪除",
+      "key7": "操作成功",
+      "key8": "操作失敗",
+      "key9": "您確定要刪除該產品",
+      "key10": "取消",
+      "key11": "確定",
+      "key12": "產品",
+      "key13": "新增產品",
+      "key15": "新增",
+      "key16": "大小不超過5M",
+      "key17": "請上傳封面",
+      "key18": "請上傳首頁封面",
+      "key19": "定金不能大於售價",
+      "key20": "基本資訊",
+      "key21": "產品詳情",
+      "key22": "請輸入產品詳情",
+      "key23": "操作成功",
+      "key24": "請輸入",
+      "key25": "套餐組合",
+      "key26": "專案名稱",
+      "key27": "數量",
+      "key28": "單價",
+      "key29": "必選",
+      "key30": "贈送",
+      "key31": "積分一次性抵扣訂單金額最大百分比",
+      "key32": "產品列表",
+      "key33": "編輯產品",
+      "key34": "新增產品",
+      "key35": "下一步",
+      "key36": "上一步",
+      "key37": "完成",
+      "key38": "同專案配置",
+      "key39": "特",
+      "key40": "項"
+    },
+    "view": {
+      "key1": "預覽",
+      "key2": "關閉",
+      "key3": "套",
+      "key4": "不可轉贈",
+      "key5": "不可退款",
+      "key6": "限購",
+      "key7": "僅限",
+      "key8": "定金",
+      "key9": "認證",
+      "key10": "已售",
+      "key11": "支付型別：定金",
+      "key12": "到院支付",
+      "key13": "專案引數",
+      "key14": "規格",
+      "key15": "支付後專案有效期",
+      "key16": "治療後專案有效期",
+      "key17": "下單付款後",
+      "key18": "天有效",
+      "key19": "不限期",
+      "key20": "治療日算起",
+      "key21": "天內可繼續治療",
+      "key22": "專案介紹"
+    },
+    "add": {
+      "itemId": { "label": "產品分類", "placeholder": "請選擇產品分類" },
+      "goodsName": { "label": "產品名稱", "placeholder": "請選擇產品" },
+      "goodNameShow": {
+        "label": "展示名稱",
+        "placeholder": "請輸入展示名稱",
+        "msg": "展示名稱不可超過30個字"
+      },
+      "goodsDescription": {
+        "label": "產品簡單描述",
+        "placeholder": "請輸入產品簡單描述，輸入內容不超過50字",
+        "msg": "輸入內容不超過50字"
+      },
+      "cover": {
+        "label": "封面",
+        "msg": "（比例1:1,不低於200px,最多支援上傳3張圖片，可拖動圖片調整順序）"
+      },
+      "stockNum": {
+        "label": "庫存數",
+        "placeholder": "請輸入庫存數"
+      },
+      "goodsLimitNum": { "label": "產品限購", "placeholder": "不限購" },
+      "purchaseLimitNum": { "label": "每人限購", "placeholder": "不限購" },
+      "showPurchaseNum": {
+        "label": "顯示購買數",
+        "placeholder": "請輸入顯示購買數"
+      },
+      "allowedMemberLevels": {
+        "label": "可購客戶",
+        "placeholder": "不限制"
+      },
+      "maxAvailableScore": {
+        "label": "積分使用限制【最高】",
+        "placeholder": "請輸入積分使用限制",
+        "tip": "數量為0時，表示在小程式商城購買該產品，不支援使用積分"
+      },
+      "goodsUnitCode": {
+        "label": "單位",
+        "placeholder": "請選擇單位"
+      },
+      "originPrice": {
+        "label": "院內原價",
+        "placeholder": "請輸入院內原價"
+      },
+      "packagePrice": {
+        "label": "院內套餐價",
+        "placeholder": "請輸入院內套餐價"
+      },
+      "packageTotalPrice": {
+        "label": "院內總價",
+        "placeholder": "請輸入院內總價"
+      },
+      "salePrice": {
+        "label": "售價",
+        "placeholder": "請輸入售價"
+      },
+      "packagePrice_": {
+        "label": "套餐價",
+        "placeholder": "請輸入套餐價"
+      },
+      "origin_show_price": {
+        "label": "展示原價",
+        "placeholder": "請輸入展示原價"
+      },
+      "total_show_price": {
+        "label": "展示總價",
+        "placeholder": "請輸入展示總價"
+      },
+      "orderMoneyFlag": "定金",
+      "orderMoneyPrice": {
+        "placeholder": "請輸入",
+        "msg": "線上支付定金，到院付尾款"
+      },
+      "just_show_order": "僅展示定金",
+      "defaultCount": {
+        "label": "開單預設次數",
+        "placeholder": "請輸入開單預設次數"
+      },
+      "payExpiryDate": {
+        "label": "交費後專案有效期",
+        "tip": "表示該專案從交費日算起，此期限內可治療",
+        "key1": "天",
+        "key2": "不限期"
+      },
+      "treatExpiryDate": {
+        "label": "治療後專案有效期",
+        "tip": "表示該專案從治療日算起，此期限內可治療",
+        "key1": "天",
+        "key2": "不限期"
+      },
+      "refundFlag": "可退款",
+      "donationFlag": "可轉贈",
+      "boardingType": {
+        "label": "上架日期",
+        "placeholder": "請選擇",
+        "options": {
+          "key1": "立即上架",
+          "key2": "指定上架日期",
+          "key3": "暫不上架"
+        }
+      },
+      "appointBoardingDate": "請選擇上架日期",
+      "automaticOffShelfDate": "自動下架日期",
+      "topFlag": "首頁精選",
+      "hotFlag": "首頁熱門",
+      "tag": "標籤"
+    }
+  },
+  "type": {
+    "key1": "新增",
+    "key2": "編輯",
+    "key3": "分類",
+    "key4": "儲存",
+    "key5": "刪除分類會導致子分類及分類下的所有商品全部刪除，是否繼續？",
+    "key6": "確定刪除該分類嗎？",
+    "key7": "確定",
+    "key8": "刪除",
+    "key9": "上級分類",
+    "key10": "請選擇上級分類",
+    "key11": "分類名稱",
+    "key12": "請輸入分類名稱",
+    "key13": "輸入長度最大10"
+  },
+  "gift": {
+    "table": {
+      "itemName": "禮品分類",
+      "goodName": "禮品名稱",
+      "changeLimitNum": "限兌換數",
+      "showChangeNum": "展示兌換數",
+      "integralExchangeNum": "積分兌換值",
+      "exchangeFlag": "是否可兌換",
+      "exchangeStartTime": "可兌換開始日期",
+      "exchangeEndTime": "可兌換結束日期",
+      "effectiveTimeType": "有效期",
+      "actualChangeNum": "實際兌換數",
+      "showName": "展示名稱",
+      "stockNum": "庫存數",
+      "pageView": "訪問量",
+      "options": "操作"
+    },
+    "other": {
+      "key1": "永久可兌換",
+      "key2": "暫不可兌換",
+      "key3": "不限量",
+      "key4": "是",
+      "key5": "否",
+      "key6": "領取後",
+      "key7": "天",
+      "key8": "立即",
+      "key9": "生效，有效期",
+      "key10": "天",
+      "key11": "編輯",
+      "key12": "預覽",
+      "key13": "刪除",
+      "key14": "商品",
+      "key15": "優惠券",
+      "key16": "全部分類",
+      "key17": "您確定要刪除該禮品",
+      "key18": "取消",
+      "key19": "確定",
+      "key20": "操作成功",
+      "key21": "操作失敗",
+      "key22": "禮品",
+      "key23": "新增禮品",
+      "key24": "兌換詳情",
+      "key25": "新增",
+      "key26": "大小不超過5M",
+      "key27": "到期提醒不能大於有效期，當前有效期為",
+      "key28": "請上傳封面",
+      "key29": "基本資訊",
+      "key30": "禮品詳情",
+      "key31": "請輸入禮品詳情",
+      "key32": "商品",
+      "key33": "優惠券",
+      "key34": "操作成功",
+      "key35": "請輸入",
+      "key36": "請選擇禮品分類",
+      "key37": "該優惠已過期，請重新選擇",
+      "key38": "禮品列表",
+      "key39": "編輯禮品",
+      "key40": "新增禮品",
+      "key41": "兌換日期",
+      "key42": "有效期",
+      "key43": "不適用專案",
+      "key44": "適用專案",
+      "key45": "所有專案",
+      "key46": "使用規則",
+      "key47": "取消",
+      "key48": "下一步",
+      "key49": "上一步",
+      "key50": "完成"
+    },
+    "search": {
+      "giftName": { "label": "禮品名稱", "placeholder": "請輸入禮品名稱" },
+      "actualChangeNum": "實際兌換數",
+      "exchangeFlag": {
+        "label": "是否可兌換",
+        "placeholder": "請選擇是否可兌換",
+        "options": { "key1": "是", "key2": "否" }
+      },
+      "changeStartDate": "可兌換開始日期",
+      "changeEndDate": "可兌換結束日期"
+    },
+    "detail": {
+      "key1": "兌換詳情",
+      "key2": "商品",
+      "key3": "優惠券",
+      "key4": "快遞到家",
+      "key5": "到家自提",
+      "key6": "收貨人",
+      "key7": "手機號碼",
+      "key8": "收貨地址",
+      "key9": "收貨人",
+      "key10": "未領取",
+      "key11": "已領取",
+      "key12": "已退回",
+      "key13": "部分退款",
+      "key14": "出庫中",
+      "key15": "部分退款",
+      "key16": "待發貨",
+      "key17": "待收貨",
+      "key18": "已完成",
+      "key19": "售後完成",
+      "key20": "領取",
+      "key21": "發貨",
+      "key22": "已發貨",
+      "key23": "物流單號",
+      "key24": "物流公司",
+      "key25": "第三方系統生成的訂單，請在第三方系統後臺操作退費！",
+      "key26": "退款",
+      "key27": "客戶選擇快遞到家",
+      "key28": "客戶已選擇到店自提",
+      "key31": "請輸入退款數量",
+      "key32": "操作成功",
+      "key33": "操作失敗",
+      "key34": "確定",
+      "key35": "取消",
+      "key36": "退款數量",
+      "key37": "請輸入",
+      "key38": "僅退積分，不退貨",
+      "key39": "所退積分",
+      "table": {
+        "name": "客戶",
+        "exchangeNum": "兌換數量",
+        "exchangeTime": "兌換日期",
+        "useNum": "使用數量",
+        "refundNum": "退款數量",
+        "refundTime": "退款日期",
+        "exchangeOrderNum": "兌換單號",
+        "trackingType": "收貨方式",
+        "deliverCustomerName": "收貨資訊",
+        "exchangeStatus": "兌換狀態",
+        "trackingStatus": "快遞狀態",
+        "itemId": "禮品分類",
+        "giftName": "禮品名稱",
+        "integralExchangeNum": "積分兌換值",
+        "options": "操作"
+      },
+      "search": {
+        "customerId": "客戶",
+        "itemId": {
+          "label": "禮品分類",
+          "placeholder": "請選擇禮品分類",
+          "options": { "key1": "禮品", "key2": "優惠券" }
+        },
+        "giftName": { "label": "禮品名稱", "placeholder": "請輸入禮品名稱" },
+        "exchangeStatus": {
+          "label": "兌換狀態",
+          "placeholder": "請選擇兌換狀態",
+          "options": {
+            "key1": "未領取",
+            "key2": "已領取",
+            "key3": "已退回",
+            "key4": "部分退款",
+            "key5": "出庫中"
+          }
+        },
+        "exchangeDate": "兌換日期",
+        "refundDate": "退款日期",
+        "exchangeOrderNum": {
+          "label": "兌換單號",
+          "placeholder": "請輸入兌換單號"
+        },
+        "goodsTrackingTypeList": {
+          "label": "收穫方式",
+          "placeholder": "請選擇收貨方式",
+          "options": { "key1": "到店自提", "key2": "快遞到家" }
+        }
+      }
+    },
+    "view": {
+      "key1": "永久可兌換",
+      "key2": "暫不可兌換",
+      "key3": "至",
+      "key4": "領取後",
+      "key5": "天",
+      "key6": "立即",
+      "key7": "生效",
+      "key8": "有效期",
+      "key9": "預覽",
+      "key10": "關閉",
+      "key11": "限購",
+      "key12": "積分",
+      "key13": "認證",
+      "key14": "已售",
+      "key15": "禮品介紹",
+      "key16": "兌換日期",
+      "key17": "使用規則",
+      "key18": "不適用專案",
+      "key19": "適用專案",
+      "key20": "所有專案"
+    },
+    "add": {
+      "itemId": { "label": "禮品分類", "placeholder": "請選擇禮品分類" },
+      "goodName": { "label": "禮品名稱", "placeholder": "請選擇禮品" },
+      "showName": {
+        "label": "展示名稱",
+        "placeholder": "請輸入展示名稱",
+        "msg": "最大長度30"
+      },
+      "goodDescription": {
+        "label": "禮品簡單描述",
+        "placeholder": "請輸入禮品簡單描述，輸入內容不超過50字",
+        "msg": "輸入內容不超過50字"
+      },
+      "cover": {
+        "label": "封面",
+        "msg": "（比例1:1,不低於200px,最多支援上傳3張圖片，可拖動圖片調整順序）"
+      },
+      "stockNum": { "label": "庫存數", "placeholder": "請輸入庫存數" },
+      "sendNum": { "label": "發放數", "placeholder": "請輸入發放數" },
+      "changeLimitNum": { "label": "限兌換量", "placeholder": "不限量" },
+      "showChangeNum": {
+        "label": "展示兌換數",
+        "placeholder": "請輸入展示兌換數"
+      },
+      "integralExchangeNum": {
+        "label": "積分兌換值",
+        "placeholder": "請輸入積分兌換值",
+        "key1": "積分",
+        "key2": "兌換一個"
+      },
+      "donationFlag": "可轉贈",
+      "goodsUnitCode": { "label": "單位", "placeholder": "請選擇單位" },
+      "exchangeType": {
+        "label": "兌換日期",
+        "placeholder": "請選擇",
+        "options": {
+          "key1": "永久可兌換",
+          "key2": "指定兌換日期",
+          "key3": "暫不可兌換"
+        }
+      },
+      "exchangeStartTime": "請選擇開始日期",
+      "exchangeEndTime": "請選擇結束日期",
+      "tag": "標籤",
+      "goodsTrackingTypeList": {
+        "label": "收貨方式",
+        "placeholder": "請選擇收貨方式",
+        "options": { "key1": "快遞到家", "key2": "到店自提" }
+      },
+      "effectiveTimeType": {
+        "label": "有效期",
+        "placeholder": "請選擇",
+        "options": { "key1": "固定日期", "key2": "領取後生效" }
+      },
+      "effectiveDate": { "label": "日期", "placeholder": "請選擇" },
+      "takeEffect": {
+        "label": "領取後",
+        "placeholder": "立即生效",
+        "key1": "天"
+      },
+      "effective": {
+        "label": "有效期",
+        "placeholder": "請輸入"
+      },
+      "expireRemind": {
+        "label": "到期提醒",
+        "placeholder": "請輸入"
+      }
+    },
+    "sendGoodsInfo": {
+      "key1": "操作成功",
+      "key2": "積分商品發貨物流資訊",
+      "key3": "請輸入物流公司",
+      "key4": "請輸入物流單號",
+      "key5": "提交",
+      "key6": "物流單號",
+      "key7": "物流公司"
+    }
+  },
+  "withDrawRecord": {
+    "table": {
+      "tenantName": "操作門店",
+      "goldCoinsNum": "金幣金額",
+      "shouldOutGold": "提現金額（¥）",
+      "outScaleGold": "提現比例",
+      "createDate": "申請時間",
+      "dealTime": "審批時間",
+      "approvalStatusInt": "審批狀態",
+      "withdrawalStatusInt": "提現狀態",
+      "options": "操作"
+    },
+    "other": {
+      "key1": "透過",
+      "key2": "重新打款",
+      "key3": "拒絕",
+      "key4": "操作成功",
+      "key5": "提示",
+      "key6": "透過後，會直接將對應提現金額打款至對應客戶微信賬戶，是否繼續？",
+      "key7": "是否確定拒絕打款？",
+      "key8": "確認後，會直接將對應提現金額打款至對應客戶微信賬戶，是否繼續？",
+      "key9": "操作時間"
+    }
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "module": "远程服务",
+  "button": {
+    "confirm": "确认",
+    "closeBatch": "关闭批量",
+    "batchDel": "批量删除",
+    "close": "关闭",
+    "batchOperate": "批量操作",
+    "immediatelyReply": "立即回复",
+    "startFaceDiagnose": "开始面诊",
+    "confirmAppoint": "确认面诊预约"
+  },
+  "msg": {
+    "addSuccess": "添加成功",
+    "noAdmin": "请先选择管理员",
+    "integralOrCash": "请至少设置现金或者积分中的一项",
+    "integral": "积分必须大于0",
+    "cash": "现金必须大于0",
+    "addConclusionSuccess": "添加结论成功",
+    "dealSuccess": "处理成功",
+    "noContent": "请先添加评论内容",
+    "noDoctor": "请先选择医生",
+    "noCustomer": "请先选择客户",
+    "assignDoctorSuccess": "分配成功",
+    "noMemberLevel": "请先选择会员等级",
+    "settingSuccess": "设置成功",
+    "appointSuccess": "确认面诊预约成功",
+    "assignSuccess": "分配成功",
+    "modifyTimeSuccess": "修改预约时间成功"
+  },
+  "weeks": ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+  "doctorList": [
+    { "label": "全部", "value": null },
+    { "label": "未分配医生", "value": "" }
+  ],
+  "recoilState": {
+    "waitForReply": "待回复",
+    "replied": "已回复",
+    "noDeal": "不处理"
+  },
+  "confirm": {
+    "delete": "确定要删除该管理员吗？",
+    "noDeal": "是否确定进行不处理？",
+    "appoint": "确定面诊预约?"
+  },
+  "key0": "在线面诊",
+  "key1": "皮肤检测",
+  "key2": "图文问诊",
+  "key3": "远程服务配置",
+  "key4": "诊断",
+  "keyword": {
+    "before": "前",
+    "after": "后",
+    "yes": "是",
+    "no": "否",
+    "assignDoctor": "分配医生",
+    "yuan": "元",
+    "all": "全部",
+    "integral": "积分",
+    "consultingSatisfaction": "咨询满意度",
+    "responseTime": "回复及时度",
+    "videoQuality": "视频质量",
+    "callQuality": "通话质量",
+    "toBeAllocated": "待分配",
+    "modifyTime": "修改预约时间",
+    "isFull": "已满",
+    "inHospital": "不在院"
+  },
+  "addCaseDrawer": {
+    "key0": "请输入关键词",
+    "key1": "暂时没有数据哦",
+    "key2": "添加案例",
+    "key3": "推荐案例",
+    "key4": "已添加"
+  },
+  "adGoodsDrawer": {
+    "key0": "商",
+    "key1": "项",
+    "key2": "暂时没有数据哦",
+    "key3": "线上售价",
+    "key4": "院内售价",
+    "key5": "推荐项目",
+    "key6": "定金",
+    "key7": "商品",
+    "key8": "添加"
+  },
+  "columns": {
+    "sysUserName": "管理员姓名",
+    "options": "操作"
+  },
+  "graphicConsultation": {
+    "teletextInterrogation": "图文问诊评估",
+    "teletextInterrogation_config": "图文问诊配置",
+    "key0": "图文问诊配置",
+    "key1": "配置一",
+    "key2": "是否有分配人员环节",
+    "key3": "设置管理员",
+    "key4": "请选择管理员",
+    "key5": "图文问诊",
+    "key6": "问诊信息",
+    "key7": "问诊医生",
+    "key8": "请选择分配医生",
+    "key9": "问诊类目",
+    "key10": "主诉说明",
+    "key11": "附件",
+    "key12": "问诊评价",
+    "key13": "咨询满意度",
+    "key14": "回复及时度",
+    "key15": "问诊结论",
+    "key16": "不处理",
+    "key17": "你还没有填写结论哟~",
+    "key18": "填写结论",
+    "key19": "请输入问诊结论"
+  },
+  "graphicConsultationList": {
+    "searchList": {
+      "customerId": {
+        "label": "客户姓名"
+      },
+      "levelName": {
+        "label": "会员等级",
+        "placeholder": "请输入会员等级"
+      },
+      "isNoticeByMiniProgram": {
+        "label": "小程序是否可通知",
+        "options": [
+          { "label": "是", "value": "0" },
+          { "label": "否", "value": "1" }
+        ]
+      },
+      "isCustomerCommented": {
+        "label": "评价状态",
+        "options": [
+          { "label": "已评价", "value": "0" },
+          { "label": "未评价", "value": "1" }
+        ]
+      },
+      "status": {
+        "label": "问诊状态",
+        "options": [
+          { "label": "待回复", "value": 0 },
+          { "label": "已回复", "value": 1 },
+          { "label": "不处理", "value": -1 }
+        ]
+      },
+      "applyTime": {
+        "label": "申请时间"
+      },
+      "counselorIds": {
+        "label": "所属",
+        "placeholder": "请输入姓名搜索"
+      },
+      "doctorId": {
+        "label": "咨询医生",
+        "placeholder": "请输入姓名搜索"
+      }
+    },
+    "columns": {
+      "phoneNumber": "客户",
+      "sex": "性别",
+      "age": "年龄",
+      "poolName": "所在客户池",
+      "counselor": "",
+      "sourceType": "客户来源",
+      "customerType": "客户类型",
+      "applyTime": "申请时间",
+      "memberLevelName": "会员等级",
+      "noticeFlag": "小程序是否可通知",
+      "doctorName": "问诊医生",
+      "faceConsultationProjectNames": "问诊类目",
+      "applyRemark": "主诉说明",
+      "haveImg": "是否带有附件",
+      "faceConsultationTime": "回复时间",
+      "doctorConclusion": "问诊结论",
+      "evaluateSatisfied": "面诊满意度",
+      "status": "问诊状态",
+      "options": "操作"
+    }
+  },
+  "onlineConsultation": {
+    "online": "在线面诊",
+    "config": "在线面诊配置",
+    "needPay": "是否需要付费使用",
+    "settingMemberLevel": "设置会员等级",
+    "settingMemberLevelPlace": "请选择会员等级",
+    "costPerVisit": "每次面诊消耗",
+    "chooseAllTips": "两个都勾上表示每次申请在线面诊都需同时支付积分和现金",
+    "key0": "当前在线面诊可用总时间",
+    "key1": "分钟",
+    "key2": "分钟！为不影响小程序该功能正常使用，请联系您的客户经理及时",
+    "key3": "配置一",
+    "key4": "可申请在线面诊对象",
+    "key5": "全部",
+    "key6": "按会员等级",
+    "key7": "配置二",
+    "key8": "限制单日最多可发起申请人数",
+    "key9": "无限制",
+    "key10": "限制",
+    "key11": "人",
+    "key12": "最大可申请时长，每日可申请时段均由预约配置进行控制",
+    "key13": "视频面诊",
+    "key14": "面诊信息",
+    "key15": "面诊医生",
+    "key16": "面诊类目",
+    "key17": "其他说明",
+    "key18": "面诊评价",
+    "key19": "面诊结论",
+    "key20": "请输入面诊结论",
+    "facialDiagnosisStatus": {
+      "toBeSeen": "待面诊",
+      "interview": "已面诊",
+      "applyFailed": "申请失败",
+      "toBeConfirmed": "待确认"
+    },
+    "columns": {
+      "phoneNumber": "客户",
+      "appointmentStartTime": "预约时间",
+      "sex": "性别",
+      "age": "年龄",
+      "poolName": "所在客户池",
+      "counselor": "所属",
+      "sourceType": "客户来源",
+      "customerType": "客户类型",
+      "applyTime": "申请时间",
+      "memberLevelName": "会员等级",
+      "noticeFlag": "小程序是否可通知",
+      "doctorName": "面诊医生",
+      "faceConsultationProjectNames": "面诊类目",
+      "applyRemark": "其他说明",
+      "faceConsultationTime": "面诊时间",
+      "doctorConclusion": "面诊结论",
+      "score": "面诊满意度",
+      "status": "面诊状态",
+      "options": "操作"
+    },
+    "searchList": {
+      "customerId": {
+        "label": "客户姓名"
+      },
+      "levelName": {
+        "label": "会员等级",
+        "placeholder": "请输入会员等级"
+      },
+      "isNoticeByMiniProgram": {
+        "label": "小程序是否可通知",
+        "options": [
+          { "label": "是", "value": "0" },
+          { "label": "否", "value": "1" }
+        ]
+      },
+      "isCustomerCommented": {
+        "label": "评价状态",
+        "options": [
+          { "label": "已评价", "value": "0" },
+          { "label": "未评价", "value": "1" }
+        ]
+      },
+      "status": {
+        "label": "面诊状态",
+        "options": [
+          { "label": "待面诊", "value": 0 },
+          { "label": "已面诊", "value": 1 },
+          { "label": "申请失败", "value": 2 },
+          { "label": "待确认", "value": 3 }
+        ]
+      },
+      "applyTime": {
+        "label": "申请时间"
+      },
+      "counselorIds": {
+        "label": "所属",
+        "placeholder": "请输入姓名搜索"
+      },
+      "doctorId": {
+        "label": "面诊医生",
+        "placeholder": "请输入姓名搜索"
+      }
+    }
+  },
+  "remoteServiceConfiguration": {},
+  "skinDetection": {},
+  "threeDDiagnosis": {},
+  "btnDisabledKeys": {
+    "remoteServiceGraphicConsultationUpdateDis": {
+      "moduleName": "远程服务-图文问诊",
+      "name": "填写结论",
+      "tips": "",
+      "reason": "没有开始图文问诊的权限"
+    },
+    "remoteServiceGraphicConsultationAssignDis": {
+      "moduleName": "远程服务-图文问诊",
+      "name": "分配医生",
+      "tips": "",
+      "reason": "原因1：没有分配权限 原因2：问诊状态是已回复 代码为!that.state.operateFlag || item.status,status 0:待回复 1: 已回复 -1: 不处理"
+    },
+    "remoteServiceGraphicConsultationConsultationDis": {
+      "moduleName": "远程服务-图文问诊",
+      "name": "立即回复",
+      "tips": "",
+      "reason": "代码为 item.status, status 0:待回复 1: 已回复 -1: 不处理"
+    },
+    "remoteServiceOnlineConsultationConfirmDis": {
+      "moduleName": "远程服务-在线面诊",
+      "name": "确认面诊预约",
+      "tips": "",
+      "reason": "面诊状态不是待确认 代码为item.status !== 3  status 0: 待面诊 1: 已面诊 2: 申请失败 3:待确认"
+    }
+  }
+}

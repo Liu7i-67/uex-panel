@@ -1,0 +1,106 @@
+{
+  "key0": "全部",
+  "key1": "取消復單",
+  "key2": "復單",
+  "key3": "修改成功",
+  "key4": "請輸入小數不超過兩位的最大八位非負數",
+  "key5": "請輸入起始金額",
+  "key6": "請輸入結束金額",
+  "key7": "部分復單成功",
+  "key8": "請選擇",
+  "key9": "包含",
+  "key10": "不包含",
+  "key11": "部分復單",
+  "key12": "取消選擇",
+  "key13": "獲取客户抽屜",
+  "key14": "關閉客户抽屜",
+  "key15": "該條訂單項",
+  "key16": "復單管理",
+  "key17": "該條訂單",
+  "key18": "全部復單",
+  "key19": "確定選擇",
+  "key20": "復單金額",
+  "key21": "基礎",
+  "key22": "配置",
+  "key23": "開始",
+  "key24": "是否",
+  "key25": "顯隱",
+  "key26": "從",
+  "button": {
+    "cancelDuplicateOrder": "取消復單",
+    "duplicateOrder": "復單"
+  },
+  "keyword": {
+    "order": "訂單",
+    "deposit": "定金",
+    "hasDuplicateOrder": "已復單",
+    "someDuplicateOrder": "部分復單",
+    "noDuplicateOrder": "未復單",
+    "charge": "收費"
+  },
+  "columns": {
+    "customerName": "客户姓名",
+    "phoneNumber": "電話",
+    "actualPayMoney": "實收",
+    "type": "收銀類型",
+    "totalPrice": "訂單金額",
+    "deductMoney": "抵扣金",
+    "virtualMoney": "虛擬金",
+    "payWay": "實收支付方式",
+    "lastChargeTime": "最新收費時間",
+    "createDate": "開單時間",
+    "billingUserName": "訂單開單人",
+    "copyFlag": "復單狀態",
+    "copyDate": "復單時間",
+    "billingNo": "訂單號",
+    "options": "操作"
+  },
+  "expandColumns": {
+    "copyFlag": "復單",
+    "billingItemName": "項目",
+    "numberOfTime": "次數",
+    "totalPrice": "總價",
+    "payWayStr": "支付方式"
+  },
+  "searchList": {
+    "customerId": {
+      "label": "客户"
+    },
+    "billingDate": {
+      "label": "開單時間"
+    },
+    "billingUserId": {
+      "label": "訂單開單人",
+      "placeholder": "請選擇訂單開單人"
+    },
+    "copyFlag": {
+      "label": "復單狀態",
+      "placeholder": "請選擇是否復單",
+      "options": [
+        { "label": "部分復單", "value": 2 },
+        { "label": "已復單", "value": 1 },
+        { "label": "未復單", "value": 0 }
+      ]
+    },
+    "billingNo": {
+      "label": "訂單號",
+      "placeholder": "請輸入訂單號"
+    },
+    "receiveRange": {
+      "label": "實際支付金額"
+    },
+    "chargeTime": {
+      "label": "收費時間"
+    },
+    "copyDate": {
+      "label": "復單時間"
+    },
+    "payMark": {
+      "label": "收銀類型",
+      "placeholder": "請選擇收銀類型"
+    },
+    "payWay": {
+      "label": "實收支付方式"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "module": "集團--許可權",
+  "role": "崗位",
+  "staff": "員工",
+  "searchStaffPlaceholder": "請輸入姓名新增員工",
+  "searchRolePlaceholder": "請搜尋崗位名稱",
+  "deletePerm": {
+    "title": "刪除許可權",
+    "content": "確定刪除該員工的所有許可權?"
+  },
+  "changePerm": {
+    "title": "許可權有改變",
+    "content": "當前許可權以發生變更,是否儲存!"
+  },
+  "savePermMsg": {
+    "noChoose": "請先選擇崗位或員工之後進行儲存!",
+    "noPerm": "該員工已經刪除該許可權,請選擇其他員工設定對應許可權,儲存!",
+    "saveSuccess": "儲存成功!",
+    "saveError": "儲存失敗!請重新儲存!"
+  },
+  "copyPerm": {
+    "title": "許可權複製",
+    "copyTitle": "選擇複製許可權的崗位",
+    "copied": "複製到",
+    "beCopiedTitle": "被複制許可權的崗位",
+    "copyError": "複製失敗",
+    "noSetPerm": "(未設定許可權)",
+    "warnMsg": "請選擇複製許可權的崗位",
+    "whetherWill": "是否將",
+    "copyTo": "的許可權配置複製給"
+  },
+  "noSetting": "未設定許可權",
+  "tablePostItem": {
+    "depart": "部門",
+    "position": "職位",
+    "userNo": "工號"
+  },
+  "personItemTips": "許可權複製",
+  "permTree": {
+    "all": "全部",
+    "dataPerm": "資料許可權",
+    "batchEnable": "批次啟用",
+    "batchDisable": "批次禁用",
+    "allEnable": "全部啟用",
+    "noneEnable": "未啟用",
+    "othersEnable": "部分啟用"
+  },
+  "search": {
+    "searchBtn": "查詢",
+    "searchPlaceholder": "僅支援第三級許可權查詢",
+    "searchMsg": "未找到對應三級許可權"
+  },
+  "sync": {
+    "syncRefresh": "同步重新整理",
+    "tips": "同步重新整理",
+    "title": "同步許可權提示",
+    "content": "請先儲存所設定的許可權，再進行同步。"
+  }
+}

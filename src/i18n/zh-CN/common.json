@@ -1,0 +1,126 @@
+{
+  "button": {
+    "refreshList": "刷新列表",
+    "refresh": "刷新",
+    "search": "搜索",
+    "reset": "重置",
+    "export": "导出",
+    "print": "打印",
+    "add": "新增",
+    "edit": "编辑",
+    "delete": "删除",
+    "void": "作废",
+    "detail": "详情",
+    "bulkEdit": "批量编辑",
+    "bulkOption": "批量操作",
+    "bulkDelete": "批量删除",
+    "save": "保存",
+    "distribute": "下发",
+    "cancel": "取消",
+    "ok": "确定",
+    "copy": "复制",
+    "increase": "添加",
+    "pass": "通过",
+    "reject": "拒绝",
+    "directPass": "直接通过",
+    "submit": "确认",
+    "submitText": "确定"
+  },
+  "table": {
+    "customer": "客户",
+    "customerName": "客户姓名",
+    "customerPool": "客户池",
+    "customerType": "客户类型",
+    "customerSource": "客户来源",
+    "remark": "备注",
+    "option": "操作",
+    "phone": "电话",
+    "status": "状态",
+    "memberLevel": "会员等级",
+    "createTime": "创建时间",
+    "orderNo": "订单号",
+    "billNo": "费用单号",
+    "name": "姓名",
+    "sex": "性别",
+    "memberNum": "会员号",
+    "fileNum": "档案号",
+    "department": "科室",
+    "post": "岗位",
+    "project": "项目"
+  },
+  "placeholder": {
+    "input": "请输入",
+    "select": "请选择",
+    "search": "请搜索"
+  },
+  "modal": {
+    "ok": "确定",
+    "submit": "提交",
+    "cancel": "取消",
+    "close": "关闭"
+  },
+  "role": {
+    "consultant": "咨询师",
+    "doctor": "医生",
+    "customerService": "客服",
+    "expert": "专家"
+  },
+  "date": {
+    "year": "年",
+    "month": "月",
+    "day": "日",
+    "sky": "天",
+    "hour": "时",
+    "minute": "分",
+    "second": "秒"
+  },
+  "msg": {
+    "success": "操作成功",
+    "saveSuccess": "保存成功",
+    "editSuccess": "编辑成功",
+    "voidSuccess": "作废成功",
+    "deleteSuccess": "删除成功",
+    "addSuccess": "新增成功",
+    "modifySuccess": "修改成功",
+    "copySuccess": "复制成功",
+    "increaseSuccess": "添加失败",
+    "error": "操作失败",
+    "saveError": "保存失败",
+    "editError": "编辑失败",
+    "voidError": "作废失败",
+    "deleteError": "删除失败",
+    "addError": "新增失败",
+    "modifyError": "修改失败",
+    "copyError": "复制失败",
+    "getError": "获取失败",
+    "increaseError": "添加失败"
+  },
+  "keyword": {
+    "operatingMedia": "运营媒体",
+    "marketingChannel": "市场渠道",
+    "null": "无",
+    "benefitCard": "权益卡",
+    "all": "全部",
+    "male": "男",
+    "female": "女",
+    "yes": "是",
+    "no": "否"
+  },
+  "status": {
+    "approve": {
+      "pendingApproval": "待审批",
+      "underApproval": "审批中",
+      "havePassed": "已通过",
+      "rejected": "已拒绝",
+      "delayedRejection": "滞后拒绝"
+    }
+  },
+  "customerSource": {
+    "secondarySource": "客户第二来源",
+    "thirdSource": "客户第三来源",
+    "oldWithNew": "老带新",
+    "other": "其他",
+    "employee": "员工",
+    "scrm": "SCRM-老带新"
+  }
+}

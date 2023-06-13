@@ -1,0 +1,41 @@
+{
+  "table": {
+    "key": "",
+    "name": "生產廠家",
+    "placeOfOrigins": "產地",
+    "phoneNumber": "聯繫電話",
+    "status": "狀態",
+    "options": "操作"
+  },
+  "other": {
+    "key1": "編輯",
+    "key2": "禁用",
+    "key3": "啓用",
+    "key4": "新增生產廠家",
+    "key5": "操作成功",
+    "key6": "操作失敗"
+  },
+  "search": {
+    "name": { "label": "生產廠家", "placeholder": "請輸入生產廠家" },
+    "placeOfOrigin": { "label": "產地", "placeholder": "請輸入產地" },
+    "phone": { "label": "聯繫電話", "placeholder": "請輸入聯繫電話" },
+    "status": { "label": "狀態", "options": { "key1": "禁用", "key2": "啓用" } }
+  },
+  "add": {
+    "key1": "編輯",
+    "key2": "新增",
+    "key3": "保存",
+    "key4": "取消",
+    "key5": "生產廠家",
+    "key6": "請輸入生產廠家",
+    "key7": "最大長度100",
+    "key8": "產地",
+    "key9": "請輸入產地",
+    "key10": "聯繫電話",
+    "key11": "請輸入聯繫電話",
+    "key12": "最大長度15",
+    "key13": "狀態",
+    "key14": "啓用",
+    "key15": "禁用"
+  }
+}

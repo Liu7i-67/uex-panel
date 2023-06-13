@@ -1,0 +1,235 @@
+{
+  "axios": {
+    "errorTips": "出现了一些未知异常，请重新尝试!",
+    "permissionException": "权限错误",
+    "parameterError": "参数错误",
+    "error": "异常",
+    "timeout": "当前查询超时，后台数据查询中，请稍后再试!",
+    "outLoginTips": "2秒后退出登录!"
+  },
+  "callCenterHelper": {
+    "normal": "普通",
+    "unknown": "未知",
+    "callIn": "呼入",
+    "callOut": "呼出",
+    "followUp": "回访",
+    "dysfunction": "暂时无法使用该功能!",
+    "callConfirmed": "你确定拨打",
+    "call": "呼叫",
+    "calling": "呼叫中,请稍等!",
+    "balanceReminder": "帐户余额不足(最低10元),请联系管理{{name}}",
+    "abnormalReminder": "功能异常!"
+  },
+  "nas": {
+    "loginError": "Nas登陆失败!",
+    "uploadError": "上传失败!"
+  },
+  "shuoXun": {
+    "keysList": [
+      { "name": "报备", "key": "report" },
+      { "name": "预约", "key": "appointment" },
+      { "name": "开单", "key": "openBilling" },
+      { "name": "财务流水(支出)", "key": "flowList" },
+      { "name": "病历", "key": "medicalRecord" },
+      { "name": "照片", "key": "photos" },
+      { "name": "短信管理", "key": "shortMessage" },
+      { "name": "云呼", "key": "cloudCall" },
+      { "name": "坐席管理", "key": "agentManage_cloud" },
+      { "name": "录音管理", "key": "recordingManagement" },
+      { "name": "报表中心", "key": "dashboards" },
+      { "name": "敏感词管理", "key": "sensitiveWordPage" },
+      { "name": "聊天记录", "key": "chatRecordPage" },
+      { "name": "客户盘点", "key": "customerList" },
+      { "name": "会员权益", "key": "scrmVIPRight" },
+      { "name": "部门", "key": "department" },
+      { "name": "岗位", "key": "tablePost" },
+      { "name": "员工管理", "key": "staff" },
+      { "name": "物料目录", "key": "material" },
+      { "name": "库存管理", "key": "inventory" },
+      { "name": "客户退货", "key": "returnGoodsManage" },
+      { "name": "入库管理", "key": "storageManage" },
+      { "name": "出库管理", "key": "outBound" },
+      { "name": "物料盘点", "key": "stockTaking" },
+      { "name": "耗材模版", "key": "templateManage" },
+      { "name": "供应商管理", "key": "supplierManage" },
+      { "name": "排班管理", "key": "shiftManagement" },
+      { "name": "回访模版", "key": "returnTemplate" },
+      { "name": "回访规则", "key": "returnVisitRules" },
+      { "name": "问卷管理", "key": "questionnaireMenu" },
+      { "name": "项目管理", "key": "projectBase" },
+      { "name": "权益卡", "key": "equityCard" },
+      { "name": "套餐管理", "key": "projectPackage" },
+      { "name": "运营媒体", "key": "onlineChannel" },
+      { "name": "市场渠道", "key": "offLineChannel" },
+      { "name": "权限管理", "key": "permissionManage" },
+      { "name": "标签管理", "key": "tagConfig" },
+      { "name": "基础配置", "key": "basicConfig" },
+      { "name": "审批流配置", "key": "approval" },
+      { "name": "开单折扣配置", "key": "billingDiscount" },
+      { "name": "数据字典", "key": "dataConfig" },
+      { "name": "新氧数据同步", "key": "soYangDataSync" },
+      { "name": "live800同步", "key": "liveDataSync" },
+      { "name": "有赞数据同步", "key": "youZanDataSync" },
+      { "name": "微盟数据同步", "key": "weiMoDataSync" },
+      { "name": "客户管理", "key": "scrmCustomerService" },
+      { "name": "线上预约", "key": "scrmOnlieAppointment" },
+      { "name": "商城管理", "key": "scrmMallManage" },
+      { "name": "卡券管理", "key": "scrmTicketManage" },
+      { "name": "内容管理", "key": "scrmMarketingManage" },
+      { "name": "远程服务", "key": "romoteService" },
+      { "name": "返利配置", "key": "rebateConfig" },
+      { "name": "我的治疗配置", "key": "scrmtreatconfig" },
+      { "name": "提现管理", "key": "withdrawalManagement" },
+      { "name": "公众号推送", "key": "noticeTemplateConfig" }
+    ]
+  },
+  "tools": {
+    "appointmentHelper": {
+      "before": "前",
+      "after": "后"
+    },
+    "closeManagement": {
+      "errorInfo": "修改失败，请重试或者联系管理员"
+    },
+    "city": {
+      "11": "北京",
+      "12": "天津",
+      "13": "河北",
+      "14": "山西",
+      "15": "内蒙古",
+      "21": "辽宁",
+      "22": "吉林",
+      "23": "黑龙江",
+      "31": "上海",
+      "32": "江苏",
+      "33": "浙江",
+      "34": "安徽",
+      "35": "福建",
+      "36": "江西",
+      "37": "山东",
+      "41": "河南",
+      "42": "湖北",
+      "43": "湖南",
+      "44": "广东",
+      "45": "广西",
+      "46": "海南",
+      "50": "重庆",
+      "51": "四川",
+      "52": "贵州",
+      "53": "云南",
+      "54": "西藏",
+      "61": "陕西",
+      "62": "甘肃",
+      "63": "青海",
+      "64": "宁夏",
+      "65": "新疆",
+      "71": "台湾",
+      "81": "香港",
+      "82": "澳门",
+      "91": "国外"
+    },
+    "chineseNumber": [
+      "零",
+      "壹",
+      "贰",
+      "叁",
+      "肆",
+      "伍",
+      "陆",
+      "柒",
+      "捌",
+      "玖"
+    ],
+    "singeChineseNumber": [
+      "",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十"
+    ],
+    "chineseMoneyUnit": ["", "拾", "佰", "仟"],
+    "chineseMoneyUnitBigger": ["", "万", "亿", "兆"],
+    "chineseMoneyUnitSmaller": ["角", "分", "毫", "厘"],
+    "mirageName": {
+      "yiPuYun": "3D影像",
+      "mirage": "美际影像"
+    },
+    "keyword": {
+      "gift": "赠送",
+      "recharge": "充值",
+      "storedValue": "储值",
+      "full": "整",
+      "moneyUnit": "元"
+    },
+    "idCard": {
+      "lengthError": "你输入的身份证长度或格式错误",
+      "areaError": "你的身份证地区非法",
+      "birthError": "身份证上的出生日期非法",
+      "error": "你输入的身份证号非法"
+    },
+    "lifeCosmetology": {
+      "normal": "普通",
+      "star": "星"
+    },
+    "weekNum": {
+      "monday": "周一",
+      "tuesday": "周二",
+      "wednesday": "周三",
+      "thursday": "周四",
+      "friday": "周五",
+      "saturday": "周六",
+      "sunday": "周日"
+    },
+    "weekDay": {
+      "monday": "星期一",
+      "tuesday": "星期二",
+      "wednesday": "星期三",
+      "thursday": "星期四",
+      "friday": "星期五",
+      "saturday": "星期六",
+      "sunday": "星期日"
+    }
+  },
+  "websocket": {
+    "linkError": "websocket链接异常!"
+  },
+  "commonData": {
+    "orderSource": {
+      "0": "院内",
+      "1": "系统小程序",
+      "2": "app",
+      "3": "有赞微商城",
+      "4": "微盟智慧零售",
+      "5": "新氧平台",
+      "6": "美际咨询助手",
+      "7": "有赞美业",
+      "8": "{{name}}赠送"
+    },
+    "appointmentSource": [
+      { "label": "院内申请", "value": 0 },
+      { "label": "SCRM", "value": 1 },
+      { "label": "app", "value": 2 },
+      { "label": "新氧预约", "value": 5 }
+    ],
+    "appointmentSourceVal": ["院内申请", "SCRM", "app", "", "", "新氧预约"],
+    "orderType": ["项目", "套", "活动", "年", "次", "权"],
+    "cashierType": {
+      "0": "订单收费",
+      "1": "订单退费",
+      "2": "转项收费",
+      "3": "定金收费",
+      "4": "定金退费",
+      "5": "{{name}}收费",
+      "6": "{{name}}退费",
+      "7": "转项退费",
+      "8": "{{name}}收费",
+      "9": "{{name}}退费"
+    }
+  }
+}

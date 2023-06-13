@@ -1,0 +1,63 @@
+{
+  "module": "繼續發藥",
+  "button": {
+    "deal": "處理"
+  },
+  "searchList": {
+    "customerId": {
+      "label": "姓名"
+    },
+    "time": {
+      "label": "提交時間"
+    },
+    "status": {
+      "label": "狀態",
+      "options": [
+        { "label": "全部", "value": 3 },
+        { "label": "待處理", "value": 0 },
+        { "label": "已通過", "value": 1 },
+        { "label": "已拒絕", "value": 2 }
+      ]
+    }
+  },
+  "columns": {
+    "customerName": "客户",
+    "customerSex": "性別",
+    "customerAge": "年齡",
+    "poolName": "所在客户池",
+    "advisoryPersonName": "所屬諮詢師",
+    "diagnosis": "臨牀診斷",
+    "diseaseRemark": "病情説明",
+    "userName": "醫生",
+    "createTime": "提交時間",
+    "status": "狀態",
+    "options": "操作"
+  },
+  "keywords": {
+    "reviewTitle": "審核信息",
+    "pass": "通過",
+    "reject": "拒絕",
+    "suggestion": "意見",
+    "approval": "審批"
+  },
+  "drawer": {
+    "title": "複診處理",
+    "approval": {
+      "pass": "審批通過",
+      "reject": "審批拒絕"
+    },
+    "reason": {
+      "message": "最多輸入300個字！",
+      "messagePrefix": "請輸入正確的"
+    }
+  },
+  "applyInstruction": {
+    "title": "申請説明",
+    "contentTitle": "病情説明",
+    "file": "附件"
+  },
+  "warning": {
+    "noRejectReason": "請填寫拒絕意見",
+    "noPerm": "抱歉，您沒有查看取貨管理權限！"
+  }
+}

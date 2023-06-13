@@ -1,0 +1,116 @@
+{
+  "title": "集團返利執行",
+  "order": "訂單消費返利",
+  "refound": "退款消費返利",
+  "searchLabel": {
+    "consumptionTime": "開單時間",
+    "openBillingTenants": "開單門店",
+    "projectName": "項目名稱",
+    "referCustomerId": "推薦人",
+    "executionWays": "執行方式",
+    "executionStatus": "執行狀態",
+    "executionUser": "執行人",
+    "billingNo": "訂單號",
+
+    "consumptionTimeRefund": "退款時間範圍",
+    "customerId": "客户",
+    "projectNameRefund": "項目名稱",
+    "status": "退款狀態",
+    "approvalStatus": "審批狀態",
+    "operatorId": "操作人",
+    "recordNo": "退款記錄號",
+    "billingNoOriginal": "源訂單號",
+    "pending": "待處理",
+    "processed": "已處理"
+  },
+  "tableColumnsTitle": {
+    "lastOperateTenant": "最近操作門店",
+    "openBillingTenant": "開單門店",
+    "feeProp": "消費性質",
+    "consumptionTime": "開單時間",
+    "consumptionTypeName": "類別名稱",
+    "typeRemarkFormBean": "狀態",
+    "unitPrice": "單價",
+    "numberOfTime": "數量",
+    "numOfRestTime": "剩餘數量",
+    "discount": "折扣",
+    "totalPrice": "開單總價",
+    "virtualGold": "虛擬金",
+    "receivedMoney": "實際消費",
+    "consumerCustomerTypeName": "消費時客户類別",
+    "chargeTime": "收費日期",
+    "dealWithMoney": "訂單金額(應付/已付)",
+    "dataSource": "訂單來源",
+    "billingUserName": "訂單開單人",
+    "sysAssistantList": "協助開單人",
+    "billingNo": "訂單號",
+    "consumptionContent": "項目內容",
+    "remark": "開單項目備註",
+    "referCustomerName": "推薦人",
+    "rebateCZAmount": "贈送儲值",
+    "rebatePointsAmount": "贈送積分",
+    "rebateCoinsAmount": "贈送金幣",
+    "executionStatus": "執行狀態",
+    "executionWays": "執行方式",
+    "executionUser": "執行人",
+    "customerName": "客户",
+    "operate": "操作",
+    "implement": "執行",
+    "awaitExcute": "待執行",
+    "auto": "自動",
+    "handle": "手動",
+    "obsolete": "作廢",
+    "obsoleted": "已作廢",
+    "excuted": "已執行",
+
+    "refundDate": "退款時間",
+    "actualRefundPrice": "退款金額",
+    "status": "退款狀態",
+    "approvalStatus": "審批狀態",
+    "recordNo": "退款記錄號",
+    "billingNoOriginal": "源訂單號",
+    "refundProject": "退款項目",
+    "receiver": "推薦人",
+    "rebateCZAmountDeduct": "扣除儲值",
+    "rebatePointsAmountDeduct": "扣除積分",
+    "rebateCoinsAmountDeduct": "扣除金幣"
+  },
+
+  "operation": {
+    "batchExecution": "批量執行",
+    "batchVoid": "批量作廢",
+    "sureClick": "確定選擇"
+  },
+  "modal": {
+    "success": "操作成功，請稍後刷新查看！",
+    "isVoid": "是否確定作廢?",
+    "isExceted": "是否確定執行?"
+  },
+  "optionExecutionStatus": [
+    {
+      "label": "已執行",
+      "value": "1"
+    },
+    {
+      "label": "待執行",
+      "value": "2"
+    },
+    {
+      "label": "已作廢",
+      "value": "3"
+    }
+  ],
+  "optionExecutionWays": [
+    {
+      "label": "自動",
+      "value": "1"
+    },
+    {
+      "label": "手動",
+      "value": "2"
+    }
+  ],
+  "placeholderInputCommon": "請輸入{{name}}",
+  "placeholderSelectCommon": "請選擇{{name}}",
+  "selectData": "請選擇數據"
+}

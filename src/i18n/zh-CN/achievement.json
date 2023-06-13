@@ -1,0 +1,180 @@
+{
+  "resultsMoneyCalculateType1": "当前统计方式按消费进行统计",
+  "resultsMoneyCalculateType2": "当前统计方式按实收进行统计",
+  "totalBaseMoney": "基础业绩总额",
+  "totalBaseMoneyProgress": "基础业绩完成进度",
+  "totalSprintMoney": "冲刺业绩总额",
+  "totalSprintMoneyProgress": "冲刺业绩完成进度",
+  "provider": {
+    "achievementStore": {
+      "deleteSuccessTips": "删除成功",
+      "deleteErrorTips": "删除失败",
+      "deleteConfirm1": "该目标业绩存在分配人员，是否确认删除?",
+      "deleteConfirm2": "是否确认删除?"
+    },
+    "distributionAchievementStore": {
+      "runResultsAllotSuccessTips": "分配成功",
+      "runResultsAllotErrorTips1": "已存在个人业绩分配",
+      "runResultsAllotErrorTips2": "分配失败",
+      "onSubmitMsg1": "请选择人员",
+      "onSubmitMsg2": "请选择时段",
+      "onSubmitMsg3": "请分配业绩金额",
+      "onSubmitMsg4": "个人业绩时段不在设定范围内，请重新设定",
+      "onSubmitMsg5": "人员客户池重复，请重新分配",
+      "onSubmitMsg6": "请分配业绩金额"
+    }
+  },
+  "achievementDetail": {
+    "title": "业绩记录",
+    "tableColumns": {
+      "resultsType": "业绩类型",
+      "resultsTypeRender1": "其他",
+      "resultsTypeRender2": "开单目标业绩",
+      "startTime": "业绩时段",
+      "overRatio": "基础业绩完成进度",
+      "money": "基础业绩未完成金额",
+      "overRatioSprint": "冲刺业绩完成进度",
+      "sprintMoney": "冲刺业绩未完成金额",
+      "sysPoolInfo": "客户池"
+    }
+  },
+  "addAchievement": {
+    "resultsAddTips": "新增成功",
+    "title": "新增业绩",
+    "formList": {
+      "resultsType": "业绩类型",
+      "resultsTypeValue": "开单目标业绩",
+      "time": "业绩时段",
+      "timeRules": "业绩时段必须填写",
+      "money": "基础业绩金额",
+      "moneyPlaceholder": "请输入业绩金额",
+      "moneyRules": "业绩金额必须填写",
+      "sprintMoneyFlag": "冲刺业绩",
+      "sprintMoney": "请输入冲刺业绩",
+      "sprintMoneyRules": "冲刺业绩必须填写"
+    }
+  },
+  "addGroup": {
+    "title": "管理团队",
+    "addSuccessTips": "新增成功",
+    "editSuccessTips": "编辑成功",
+    "namePlaceholder": "请输入团队名称",
+    "submit": "提交",
+    "checkStatusMsg1": "当前团队仍有未完成的业绩任务，是否确认删除？",
+    "checkStatusMsg2": "是否确认删除？",
+    "checkStatusSuccess": "操作成功",
+    "tableColumns": {
+      "name": "团队名称"
+    }
+  },
+  "distributionAchievement": {
+    "title": "分配开单目标业绩",
+    "time": "业绩时段",
+    "titleTips1": "已完成状态下不支持编辑",
+    "titleTips2": "编辑",
+    "add": "添加人员",
+    "button": {
+      "continue": "继续分配"
+    },
+    "formList": {
+      "name": "人员",
+      "namePlaceholder": "请选择人员",
+      "startTime": "时段",
+      "money": "基础业绩金额",
+      "overRatio": "完成进度",
+      "teamId": "所属团队",
+      "teamIdPlaceholder": "请选择所属团队",
+      "sprintMoney": "冲刺业绩金额",
+      "overRatioSprint": "冲刺完成进度",
+      "poolIdList": "客户池",
+      "poolIdListTooltip": "仅显示客户池中的客户产生的业绩，为空默认全部客户池",
+      "poolIdListPlaceholder": "请选择客户池",
+      "copy": "复制"
+    },
+    "achievementCard": {
+      "baseMoney": "基础业绩金额",
+      "assignedMoney": "已分配金额",
+      "notAssignedMoney": "未分配金额",
+      "proccess": "基础业绩完成进度",
+      "crashMoney": "冲刺业绩金额",
+      "crashProccess": "冲刺业绩完成进度"
+    }
+  },
+  "components": {
+    "achievementGroupItem": {
+      "team": "团队",
+      "time": "业绩时段",
+      "proccess": "完成进度",
+      "notFinishMoney": "未完成金额"
+    },
+    "achievementHeader": {
+      "sourceTypeList": {
+        "all": "全院",
+        "personal": "个人",
+        "team": "团队"
+      },
+      "button": {
+        "add": "新增业绩",
+        "manage": "管理团队"
+      },
+      "time": "业绩时段"
+    },
+    "achievementItem": {
+      "targetMoney": "开单目标业绩",
+      "all": "全院",
+      "startTime": "业绩时段",
+      "overMoney": "基础业绩完成进度",
+      "crashProccess": "冲刺业绩完成进度",
+      "notFinishMoney": "未分配金额",
+      "assigned": "分配"
+    },
+    "achievementSelfItem": {
+      "targetMoney": "开单目标业绩",
+      "startTime": "业绩时段",
+      "baseMoney": "基础业绩完成进度",
+      "crashProccess": "冲刺业绩完成进度",
+      "notFinishMoney": "未完成金额"
+    },
+    "tableColumns": {
+      "resultsType": "业绩类型",
+      "resultsTypeRender1": "其他",
+      "resultsTypeRender2": "开单目标业绩",
+      "startTime": "业绩时段",
+      "money": "基础业绩总目标金额",
+      "overMoney": "已完成金额",
+      "noOverMoney": "基础业绩未完成金额",
+      "overRatio": "基础业绩完成比",
+      "noAllotMoney": "基础业绩未分配金额",
+      "sprintMoney": "冲刺业绩总目标金额",
+      "overRatioSprint": "冲刺业绩完成比",
+      "createDate": "创建日期",
+      "createName": "创建人"
+    },
+    "selefTableColumns": {
+      "name": "所属人",
+      "resultsType": "业绩类型",
+      "resultsTypeRender1": "其他",
+      "resultsTypeRender2": "开单目标业绩",
+      "startTime": "业绩时段",
+      "money": "基础业绩总目标金额",
+      "overMoney": "已完成金额",
+      "noOverMoney": "基础业绩未完成金额",
+      "overRatio": "基础业绩完成比",
+      "sprintMoney": "冲刺业绩总目标金额",
+      "overRatioSprint": "冲刺业绩完成比"
+    },
+    "teamTableColumns": {
+      "teamName": "所属团队",
+      "resultsType": "业绩类型",
+      "resultsTypeRender1": "其他",
+      "resultsTypeRender2": "开单目标业绩",
+      "startTime": "业绩时段",
+      "money": "基础业绩总目标金额",
+      "overMoney": "已完成金额",
+      "noOverMoney": "基础业绩未完成金额",
+      "overRatio": "基础业绩完成比",
+      "sprintMoney": "冲刺业绩总目标金额",
+      "overRatioSprint": "冲刺业绩完成比"
+    }
+  }
+}

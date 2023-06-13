@@ -1,0 +1,70 @@
+{
+  "customActiveEchart": {
+    "title": "活躍度概覽",
+    "activeLine": {
+      "7day": "7日",
+      "15day": "15日",
+      "30day": "30日",
+      "unit": "分",
+      "ecTitle": "折線圖堆疊",
+      "ecName": "日期",
+      "titleSty": "客戶活躍度變化趨勢圖",
+      "radioName": "近",
+      "startPlaceholder": "開始時間",
+      "endPlaceholder": "結束時間"
+    },
+    "activePie": {
+      "titleSty": "客戶觸發場景餅狀圖"
+    },
+    "provider": {
+      "customActiveLine": {
+        "warningTips": "日期跨度不能超過120天"
+      }
+    }
+  },
+  "customerActivity": {
+    "tableColumns": {
+      "customerName": "客戶",
+      "customerTypeName": "客戶型別",
+      "membershipGradeName": "會員等級",
+      "currentActiveStatusName": "當前活躍度狀態",
+      "lastActiveStatusName": "前一次活躍度狀態",
+      "statusChangeTime": "活躍度狀態變化時間",
+      "currentActiveScore": "當前活躍分值",
+      "lastActiveScore": "前一次活躍分值",
+      "scoreChangeTime": "活躍分值變化時間",
+      "onlineTime": "線上活躍時間(最近)",
+      "offlineTime": "線下活躍時間(最近)",
+      "notTriggerDay": "未活躍天數",
+      "notTriggerDayTooltip": "已配置的觸發場景，未觸發任何場景的天數",
+      "nextTime": "下次計算時間"
+    },
+    "formList": {
+      "customerId": "客戶",
+      "activeStatus": "活躍度狀態",
+      "customerType": "客戶型別",
+      "membershipGrade": "會員等級",
+      "statusChange": "活躍度狀態變化時間",
+      "scoreChange": "活躍度分值變化時間",
+      "online": "線上活躍時間(最近)",
+      "offline": "線下活躍時間(最近)",
+      "noScoreDay": "未活躍度天數",
+      "noScoreDayRules1": "輸入天數是正整數",
+      "noScoreDayRules2": "最大值為2147483647"
+    },
+    "activeStatusOptions": {
+      "0": "超活",
+      "1": "活躍",
+      "2": "淺睡",
+      "3": "深睡"
+    },
+    "customerTypeOptions": {
+      "-1": "空",
+      "0": "初診",
+      "1": "複診",
+      "2": "老客人",
+      "3": "其他"
+    },
+    "nameAndPhone": "客戶"
+  }
+}

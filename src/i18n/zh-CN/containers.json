@@ -1,0 +1,192 @@
+{
+  "layout": {
+    "phoneBox": {
+      "startingUp": "呼叫中心启动中,请稍等",
+      "plugInInstallationFailure": "插件安装失败,请联系管理员",
+      "callNotification": "来电通知",
+      "name": "姓名",
+      "phone": "手机号",
+      "started": "呼叫中心已启动!",
+      "disconnected": "呼叫中心已断开!",
+      "recordingError": "获取(生成)录音文件失败,可能是没有权限!",
+      "checkEvenNiuYun": "请确认是否开通七牛云!"
+    },
+    "record": {
+      "cancelRecording": "取消录音",
+      "recording": "正在录音",
+      "pauseRecording": "暂停录音",
+      "endRecording": "结束录音",
+      "beingRecorded": "正在录音中...",
+      "continueRecording": "继续录音",
+      "modalTitle": "提示",
+      "modalContent": "当前咨询或面诊已完成，是否结束录音",
+      "reupload": "重新上传",
+      "uploadSuccess": "上传成功!",
+      "cancelConfirmation": "确认取消本次录音吗?",
+      "noMicrophone": "获取麦克风失败!"
+    },
+    "sidebar": {
+      "password": {
+        "passwordFormatCheck": "18位字母数字或特殊字符的密码！",
+        "passwordInconsistency": "两次密码输入不一致!",
+        "originalPassword": "原密码",
+        "originalPasswordPlaceholder": "请输入原密码",
+        "newPassword": "新密码",
+        "newPasswordPlaceholder": "请输入新密码",
+        "newPasswordConfirm": "请再次输入新密码",
+        "changePassword": "修改密码",
+        "editSuccess": "密码修改成功",
+        "reLogin": "重新登录"
+      },
+      "collect": {
+        "myCollection": "我的收藏",
+        "dragPrompt": "拖动图标可调整左侧栏显示顺序"
+      },
+      "router": {
+        "agileReport": "敏捷报表",
+        "approve": "审批",
+        "cloudClassroom": "云课堂"
+      },
+      "userInfo": {
+        "currentStore": "当前门店",
+        "changePassword": "修改密码",
+        "logOut": "退出登录"
+      }
+    },
+    "tabs": {
+      "endOfCountdown": "倒计时已结束，请关注。",
+      "setTheCountdown": "请设置倒计时！",
+      "voiceReminder": "请输入语音提醒！",
+      "cancelTheTiming": "取消计时",
+      "timeOut": "暂停计时",
+      "continue": "继续",
+      "setTheCountdownTitle": "设置倒计时",
+      "countdownUnderway": "倒计时进行中",
+      "reminders": "提醒事项：",
+      "voiceReminderTips": "语音提醒：",
+      "voiceReminderPlaceholder": "请输入语音提醒内容",
+      "timerListModalColumns": {
+        "key": "序号",
+        "customerName": "客户姓名",
+        "duration": "倒计时",
+        "matter": "提醒事项",
+        "options": "操作",
+        "noCustomer": "无指定客户",
+        "pause": "暂停",
+        "continue": "继续"
+      },
+      "timerListModal": {
+        "title": "倒计时列表",
+        "addedCountdown": "新增倒计时",
+        "settingSuccess": "设置成功！",
+        "modalTitle": "提示",
+        "modalContent": "确认删除该计时器吗?",
+        "reminders": "提醒事项"
+      },
+      "timerTipsModal": {
+        "minuteReminder": "分钟后提醒",
+        "closeReminder": "关闭提醒",
+        "countdownReminder": "倒计时提醒"
+      },
+      "businessFunc": {
+        "valueAddedService": "增值服务",
+        "logOut": "确定退出登录吗",
+        "timer": "计时器",
+        "enquiryCall": "咨询叫号",
+        "treatmentCall": "治疗叫号",
+        "quickSearch": "快速搜索客户(快捷键:F1)",
+        "quickSearchF2": "腕带扫描搜索客户(快捷键:F2)",
+        "exitFullScreen": "退出全屏",
+        "fullScreen": "全屏",
+        "quickSearchError": "快速搜索功能异常!",
+        "scanError": "扫码功能异常!"
+      },
+      "paste": "粘贴",
+      "sweep": "扫一扫",
+      "attention": "关注公众号",
+      "operatingInstruction": "可随时查阅系统更新内容及新功能操作指引",
+      "version": "当前版本号",
+      "sharedCustomer": "共享客户",
+      "nonSharedCustomer": "非共享客户",
+      "establishmentStore": "建档门店"
+    },
+    "quickSearch": {
+      "key0": "请输入客户完整的电话号码进行查询",
+      "key1": "请输入客户完整的电话号码或会员号或档案号进行查询",
+      "key2": "请输入客户完整的电话号码或会员号进行查询",
+      "key3": "请输入客户完整的电话号码或档案号进行查询",
+      "key4": "客户档案",
+      "key5": "客户盘点",
+      "key6": "报备",
+      "key7": "当前号码无匹配客户",
+      "key12": "新增客户",
+      "key13": "新增报备"
+    },
+    "right": {
+      "key0": "关闭",
+      "key1": "关闭其他",
+      "key2": "关闭到右侧",
+      "key3": "全部关闭"
+    },
+    "selfTenant": {
+      "key0": "报备未建档",
+      "key2": "最近面诊医生",
+      "key4": "最近到访",
+      "key5": "今日到访",
+      "key6": "初诊医生",
+      "key7": "老客人",
+      "key8": "未到院",
+      "key9": "会员号",
+      "key10": "档案号",
+      "key11": "初诊",
+      "key12": "复诊",
+      "key13": "来源",
+      "key14": "岁"
+    },
+    "setting": { "key0": "闪记", "key1": "检查更新", "key2": "检查中" },
+    "key0": "欢迎",
+    "key1": "流水牌",
+    "scan": {
+      "key0": "接待",
+      "key1": "非法二维码",
+      "key2": "请用扫码枪扫描二维码"
+    },
+    "closeConfirmModal": {
+      "key0": "提示",
+      "key1": "我知道了",
+      "key2": "回访",
+      "key3": "面诊",
+      "key4": "咨询",
+      "key5": "您可以点击下方名称完成相应工作内容",
+      "key6": "面诊二次确认",
+      "key7": "项目开发计划",
+      "key8": "待回访计划",
+      "key9": "性格标签",
+      "key10": "关闭系统前请完成以下内容",
+      "key11": "否则无法退出系统",
+      "key12": "您好"
+    },
+    "title": {
+      "key0": "门店选择",
+      "key1": "请选择要切换的门店",
+      "key2": "切换",
+      "key3": "打开",
+      "key4": "即将退出登录",
+      "key5": "当前门店吗",
+      "key6": "切换失败",
+      "key7": "请稍等",
+      "key8": "切换中",
+      "key9": "确认",
+      "key10": "提示",
+      "key11": "确认关闭系统吗"
+    },
+    "index": {
+      "key0": "取消",
+      "key1": "确定",
+      "key2": "前去查看",
+      "key3": "您的权限有变动,需要重新登录,是否立即重新登录?",
+      "key4": "取消收藏模块失败",
+      "key5": "收藏模块失败"
+    }
+  }
+}

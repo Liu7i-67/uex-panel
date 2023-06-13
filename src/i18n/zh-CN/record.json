@@ -1,0 +1,60 @@
+{
+  "module": "录音管理",
+  "button": {
+    "record": "录音",
+    "download": "下载录音",
+    "voice2text": "录音转文字"
+  },
+  "voice2textBalance": "语音转文字余额",
+  "tariffDesc": "资费标准说明",
+  "tariffDescOne": "按照录音时间进行收费，收费标准：3.00元/小时（不足一分钟按一分钟计算）",
+  "tariffDescTwo": "建议100.00元起充（最低需要有10.00元余额）",
+  "insufficientBalance": "余额不足，将无法使用语音转文字功能,请联系客户经理,进行",
+  "keyword": {
+    "yuan": "元",
+    "consult": "咨询",
+    "faceDiagnose": "面诊",
+    "tips": "提示"
+  },
+  "columns": {
+    "key": "key",
+    "customerId": "客户",
+    "customerTypeName": "客户类型",
+    "receptionTypeName": "来院类型",
+    "startTime_fmt": "录音开始时间",
+    "endTime_fmt": "录音结束时间",
+    "recordingDuration_fmt": "录音时长",
+    "userName": "录音人",
+    "_id": "操作"
+  },
+  "searchList": {
+    "date": {
+      "label": "录音时间"
+    },
+    "customerId": {
+      "label": "客户信息"
+    },
+    "userId": {
+      "label": "录音人",
+      "placeholder": "请输入录音人姓名"
+    },
+    "type": {
+      "label": "模块",
+      "placeholder": "请选择模块"
+    }
+  },
+  "msg": {
+    "downloading": "请稍等,录音下载中...",
+    "downloadError": "下载失败",
+    "isTrans": "转换中，请稍候查看!",
+    "transTextError": "转换文字失败!"
+  },
+  "needTimeDeal": "转文字需要时间处理，请稍后进行查看",
+  "recordTitle": "录音文字",
+  "modalTitle": "录音收听",
+  "chooseRecord": "请选择要播放的录音",
+  "clickToLookDetail": "单击查看转换文字",
+  "isLooking": "转化文字中,请稍候查看",
+  "playRecording": "播放录音",
+  "nowPlaying": "(播放中)"
+}

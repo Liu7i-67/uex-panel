@@ -1,0 +1,118 @@
+{
+  "table": {
+    "key": "",
+    "typeId": "物料類別",
+    "name": "物料名稱",
+    "anotherName": "物料別名",
+    "specification": "規格",
+    "materialCode": "物料編碼",
+    "warehouseName": "倉庫名稱",
+    "warehouseInventoryList": "倉庫庫量",
+    "takeNotUseList": "倉庫預領未用+未還量",
+    "offlineSumList": "倉庫線下實際庫量",
+    "disableFlag": "是否禁用",
+    "validityPeriodFlag": "是否過期",
+    "adventFlag": "是否臨期",
+    "amountWarnFlag": "是否缺貨",
+    "purchasePrice": "進價(元)/單位",
+    "purchaseTotalPrice": "進價合計(元)",
+    "sellingPrice": "售價(元)",
+    "unitType": "型號",
+    "options": "操作"
+  },
+  "other": {
+    "key1": "臨期",
+    "key2": "高值",
+    "key3": "倉庫預領未用+未還量",
+    "key4": "倉庫線下實際庫量",
+    "key5": "是",
+    "key6": "否",
+    "key7": "隱藏所有進價",
+    "key8": "檢視所有進價",
+    "key9": "詳情",
+    "key10": "暫無匯出的資料",
+    "key11": "匯出物料",
+    "key12": "由於您匯出的內容過多，請稍後到首頁-我的下載內進行匯出檔案的下載。",
+    "key13": "網路異常",
+    "key14": "全部匯出",
+    "key15": "部分匯出",
+    "key16": "匯出操作",
+    "key17": "確定選擇",
+    "key18": "條",
+    "key19": "取消選擇",
+    "key20": "數量預警",
+    "key21": "效期預警",
+    "key22": "高值耗材",
+    "key23": "物料進價總計",
+    "key24": "庫存詳情",
+    "key25": "刪除"
+  },
+  "search": {
+    "name": { "label": "商品名稱", "placeholder": "按照名稱/編碼/規格搜尋" },
+    "warehouse": { "label": "倉庫", "placeholder": "請選擇倉庫" },
+    "materialType": {
+      "label": "請選擇物料類別",
+      "placeholder": "請選擇物料類別"
+    },
+    "validTime": "過期時間",
+    "disableFlag": {
+      "label": "是否禁用",
+      "options": { "key1": "是", "key2": "否" }
+    },
+    "validityPeriodFlag": {
+      "label": "是否過期",
+      "options": { "key1": "是", "key2": "否" }
+    },
+    "adventFlag": {
+      "label": "是否臨期",
+      "options": { "key1": "是", "key2": "否" }
+    },
+    "amountWarnFlag": {
+      "label": "是否缺貨",
+      "options": { "key1": "是", "key2": "否" }
+    }
+  },
+  "detail": {
+    "key1": "物料類別",
+    "key2": "物料名稱",
+    "key3": "物料編碼",
+    "key4": "物料別名",
+    "key5": "規格",
+    "key6": "有效期",
+    "key7": "總庫存量/單位",
+    "key8": "售價",
+    "key9": "型號",
+    "key10": "預設預警量/單位",
+    "key11": "所在倉庫數",
+    "key12": "狀態",
+    "key13": "基本資訊",
+    "key14": "庫存物料",
+    "key15": "顯示庫存為0的批次",
+    "key16": "返回",
+    "table": {
+      "warehouseName": "所在倉庫",
+      "batchNumber": "批次",
+      "manufacturerName": "生產廠家",
+      "placeOrigin": "產地",
+      "approvalNumber": "批准文號",
+      "supplier": "供應商",
+      "status": "狀態",
+      "validityPeriod": "有效期",
+      "inventoryAmountList": "庫存量/單位",
+      "purchasePrice": "進價(元)單位",
+      "options": "操作"
+    }
+  },
+  "expandTable": {
+    "tenantName": "所在門店",
+    "batchNumber": "批次",
+    "manufacturer": "生產廠家",
+    "placeOrigin": "產地",
+    "validityPeriod": "有效期",
+    "purchasePrice": "進價(元)/單位",
+    "supplier": "供應商",
+    "warehouseInventoryList": "庫存量/單位",
+    "statusText": "狀態",
+    "approvalNumber": "批准文號"
+  }
+}

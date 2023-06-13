@@ -1,0 +1,180 @@
+{
+  "resultsMoneyCalculateType1": "當前統計方式按消費進行統計",
+  "resultsMoneyCalculateType2": "當前統計方式按實收進行統計",
+  "totalBaseMoney": "基礎業績總額",
+  "totalBaseMoneyProgress": "基礎業績完成進度",
+  "totalSprintMoney": "衝刺業績總額",
+  "totalSprintMoneyProgress": "衝刺業績完成進度",
+  "provider": {
+    "achievementStore": {
+      "deleteSuccessTips": "刪除成功",
+      "deleteErrorTips": "刪除失敗",
+      "deleteConfirm1": "該目標業績存在分配人員，是否確認刪除?",
+      "deleteConfirm2": "是否確認刪除?"
+    },
+    "distributionAchievementStore": {
+      "runResultsAllotSuccessTips": "分配成功",
+      "runResultsAllotErrorTips1": "已存在個人業績分配",
+      "runResultsAllotErrorTips2": "分配失敗",
+      "onSubmitMsg1": "請選擇人員",
+      "onSubmitMsg2": "請選擇時段",
+      "onSubmitMsg3": "請分配業績金額",
+      "onSubmitMsg4": "個人業績時段不在設定範圍內，請重新設定",
+      "onSubmitMsg5": "人員客户池重複，請重新分配",
+      "onSubmitMsg6": "請分配業績金額"
+    }
+  },
+  "achievementDetail": {
+    "title": "業績記錄",
+    "tableColumns": {
+      "resultsType": "業績類型",
+      "resultsTypeRender1": "其他",
+      "resultsTypeRender2": "開單目標業績",
+      "startTime": "業績時段",
+      "overRatio": "基礎業績完成進度",
+      "money": "基礎業績未完成金額",
+      "overRatioSprint": "衝刺業績完成進度",
+      "sprintMoney": "衝刺業績未完成金額",
+      "sysPoolInfo": "客户池"
+    }
+  },
+  "addAchievement": {
+    "resultsAddTips": "新增成功",
+    "title": "新增業績",
+    "formList": {
+      "resultsType": "業績類型",
+      "resultsTypeValue": "開單目標業績",
+      "time": "業績時段",
+      "timeRules": "業績時段必須填寫",
+      "money": "基礎業績金額",
+      "moneyPlaceholder": "請輸入業績金額",
+      "moneyRules": "業績金額必須填寫",
+      "sprintMoneyFlag": "衝刺業績",
+      "sprintMoney": "請輸入衝刺業績",
+      "sprintMoneyRules": "衝刺業績必須填寫"
+    }
+  },
+  "addGroup": {
+    "title": "管理團隊",
+    "addSuccessTips": "新增成功",
+    "editSuccessTips": "編輯成功",
+    "namePlaceholder": "請輸入團隊名稱",
+    "submit": "提交",
+    "checkStatusMsg1": "當前團隊仍有未完成的業績任務，是否確認刪除？",
+    "checkStatusMsg2": "是否確認刪除？",
+    "checkStatusSuccess": "操作成功",
+    "tableColumns": {
+      "name": "團隊名稱"
+    }
+  },
+  "distributionAchievement": {
+    "title": "分配開單目標業績",
+    "time": "業績時段",
+    "titleTips1": "已完成狀態下不支持編輯",
+    "titleTips2": "編輯",
+    "add": "添加人員",
+    "button": {
+      "continue": "繼續分配"
+    },
+    "formList": {
+      "name": "人員",
+      "namePlaceholder": "請選擇人員",
+      "startTime": "時段",
+      "money": "基礎業績金額",
+      "overRatio": "完成進度",
+      "teamId": "所屬團隊",
+      "teamIdPlaceholder": "請選擇所屬團隊",
+      "sprintMoney": "衝刺業績金額",
+      "overRatioSprint": "衝刺完成進度",
+      "poolIdList": "客户池",
+      "poolIdListTooltip": "僅顯示客户池中的客户產生的業績，為空默認全部客户池",
+      "poolIdListPlaceholder": "請選擇客户池",
+      "copy": "複製"
+    },
+    "achievementCard": {
+      "baseMoney": "基礎業績金額",
+      "assignedMoney": "已分配金額",
+      "notAssignedMoney": "未分配金額",
+      "proccess": "基礎業績完成進度",
+      "crashMoney": "衝刺業績金額",
+      "crashProccess": "衝刺業績完成進度"
+    }
+  },
+  "components": {
+    "achievementGroupItem": {
+      "team": "團隊",
+      "time": "業績時段",
+      "proccess": "完成進度",
+      "notFinishMoney": "未完成金額"
+    },
+    "achievementHeader": {
+      "sourceTypeList": {
+        "all": "全院",
+        "personal": "個人",
+        "team": "團隊"
+      },
+      "button": {
+        "add": "新增業績",
+        "manage": "管理團隊"
+      },
+      "time": "業績時段"
+    },
+    "achievementItem": {
+      "targetMoney": "開單目標業績",
+      "all": "全院",
+      "startTime": "業績時段",
+      "overMoney": "基礎業績完成進度",
+      "crashProccess": "衝刺業績完成進度",
+      "notFinishMoney": "未分配金額",
+      "assigned": "分配"
+    },
+    "achievementSelfItem": {
+      "targetMoney": "開單目標業績",
+      "startTime": "業績時段",
+      "baseMoney": "基礎業績完成進度",
+      "crashProccess": "衝刺業績完成進度",
+      "notFinishMoney": "未完成金額"
+    },
+    "tableColumns": {
+      "resultsType": "業績類型",
+      "resultsTypeRender1": "其他",
+      "resultsTypeRender2": "開單目標業績",
+      "startTime": "業績時段",
+      "money": "基礎業績總目標金額",
+      "overMoney": "已完成金額",
+      "noOverMoney": "基礎業績未完成金額",
+      "overRatio": "基礎業績完成比",
+      "noAllotMoney": "基礎業績未分配金額",
+      "sprintMoney": "衝刺業績總目標金額",
+      "overRatioSprint": "衝刺業績完成比",
+      "createDate": "創建日期",
+      "createName": "創建人"
+    },
+    "selefTableColumns": {
+      "name": "所屬人",
+      "resultsType": "業績類型",
+      "resultsTypeRender1": "其他",
+      "resultsTypeRender2": "開單目標業績",
+      "startTime": "業績時段",
+      "money": "基礎業績總目標金額",
+      "overMoney": "已完成金額",
+      "noOverMoney": "基礎業績未完成金額",
+      "overRatio": "基礎業績完成比",
+      "sprintMoney": "衝刺業績總目標金額",
+      "overRatioSprint": "衝刺業績完成比"
+    },
+    "teamTableColumns": {
+      "teamName": "所屬團隊",
+      "resultsType": "業績類型",
+      "resultsTypeRender1": "其他",
+      "resultsTypeRender2": "開單目標業績",
+      "startTime": "業績時段",
+      "money": "基礎業績總目標金額",
+      "overMoney": "已完成金額",
+      "noOverMoney": "基礎業績未完成金額",
+      "overRatio": "基礎業績完成比",
+      "sprintMoney": "衝刺業績總目標金額",
+      "overRatioSprint": "衝刺業績完成比"
+    }
+  }
+}

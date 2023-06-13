@@ -1,0 +1,151 @@
+{
+  "h5title": "H5表单",
+  "base": "基础字段",
+  "advanced": "高级字段",
+  "layout": "布局字段",
+  "child": "子表单",
+  "title": "标题",
+  "divider": "分割线",
+  "grid": "栅格布局",
+  "tabs": "选项卡",
+  "placeholderTime": "请选择时间",
+  "darg": "拖",
+  "rush": "刷",
+  "copy": "复",
+  "delete": "删",
+  "dargMsg": "从左侧拖拽添加字段",
+  "preview": "预览",
+  "previewOkText": "获取表单数据",
+  "jsonError": "解析json异常",
+  "sort": "序号",
+  "l": "大",
+  "m": "中",
+  "s": "小",
+  "subformWarn": "子表单内只允许拖拽普通字段",
+  "formFiled": {
+    "input": "单行文本",
+    "input-number": "数字输入框",
+    "textarea": "多行文本",
+    "select": "下拉选择框",
+    "time-picker": "时间选择框",
+    "date-picker": "日期选择框",
+    "radio": "单选框",
+    "checkbox": "多选框",
+    "switch": "开关",
+    "rate": "评分",
+    "slider": "滑块"
+  },
+  "settings": {
+    "fromLayout": "表单布局方式",
+    "mark": "字段标识",
+    "markPlaceholder": "请输入字段标识",
+    "titlePlaceholder": "请输入标题",
+    "width": "宽度",
+    "widthPlaceholder": "请输入宽度(%|px)",
+    "widthForm": "宽度",
+    "widthFormPlaceholder": "请输入宽度(%|px)",
+    "titleWidth": "标签宽度",
+    "auto": "自定义",
+    "content": "占位内容",
+    "contentPlaceholder": "请输入占位内容",
+    "option": "操作属性",
+    "disable": "禁用",
+    "check": "必填",
+    "required": "必填",
+    "requiredMsg": "请输入自定义提示",
+    "layout": "布局方式",
+    "block": "块级",
+    "inline": "行内",
+    "components": "组件",
+    "isRange": "是否为范围选择",
+    "showTime": "是否开启时间选择功能",
+    "type": "显示类型",
+    "date": "日期",
+    "format": "格式化",
+    "default": "默认值",
+    "defaultPlaceholder": "请输入默认值",
+    "orientation": "文案位置",
+    "left": "左侧",
+    "center": "居中",
+    "right": "右侧",
+    "normalTip": "文字是否显示为普通正文样式",
+    "yes": "是",
+    "no": "否",
+    "gutter": "栅格间隔",
+    "optionsList": "列配置项:(总数为{{num}})",
+    "addCol": "添加列",
+    "justifyTitle": "水平排列方式",
+    "alignTitle": "垂直排列方式",
+    "step": "步长",
+    "minNum": "最小值",
+    "maxNum": "最大值",
+    "allowHalf": "允许半选",
+    "clear": "清空",
+    "multiple": "是否多选",
+    "showInput": "显示输入框",
+    "optionType": "风格类型",
+    "defaultValue": "默认",
+    "card": "卡片式页签",
+    "setTab": "标签配置项",
+    "addTab": "添加标签",
+    "titleSize": "标题大小",
+    "fontWeight": "标题是否加粗",
+    "fontOrientation": "标题位置",
+    "scorePlaceholder": "请填写分数",
+    "select": "选项",
+    "useScore": "不填为不计分",
+    "addSelect": "添加选项",
+    "horizontal": "水平",
+    "vertical": "垂直",
+    "size": "字段组件的尺寸",
+    "labelAlign": "对齐方式",
+    "labelStart": "左对齐",
+    "labelEnd": "右对齐",
+    "fileds": "字段属性",
+    "form": "表单属性",
+    "justify": [
+      {
+        "label": "左对齐",
+        "value": "start"
+      },
+      {
+        "label": "右对齐",
+        "value": "end"
+      },
+      {
+        "label": "居中",
+        "value": "center"
+      },
+      {
+        "label": "两端对齐",
+        "value": "space-between"
+      },
+      {
+        "label": "每个项目两侧的间隔相等",
+        "value": "space-around"
+      }
+    ],
+    "align": [
+      {
+        "label": "顶部对齐",
+        "value": "top"
+      },
+      {
+        "label": "居中",
+        "value": "middle"
+      },
+      {
+        "label": "底部对齐",
+        "value": "bottom"
+      }
+    ]
+  },
+  "tools": {
+    "confirm": "清空将无法还原,确认清空吗?",
+    "undo": "撤销",
+    "redo": "重做",
+    "input": "导入",
+    "show": "生成",
+    "inputTitle": "请选择json文件上传"
+  }
+}

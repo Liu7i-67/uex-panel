@@ -1,0 +1,123 @@
+{
+  "module": "集团--人力--员工",
+  "groupTitle": "集团员工",
+  "areaTitle": "区域员工",
+  "searchList": {
+    "searchCondition": {
+      "label": "姓名/电话/工号",
+      "placeholder": "请输入姓名、电话或工号"
+    },
+    "deptId": {
+      "label": "部门",
+      "placeholder": "请选择部门"
+    },
+    "roleId": {
+      "label": "岗位",
+      "placeholder": "请输入岗位"
+    },
+    "entryDate": {
+      "label": "入职时间"
+    }
+  },
+  "addStaff": "新增员工",
+  "editStaff": "修改员工",
+  "addModal": {
+    "name": {
+      "label": "姓名",
+      "placeholder": "请输入姓名",
+      "msg": "姓名长度2-8，不能全为空格"
+    },
+    "sex": {
+      "label": "性别",
+      "msg": "请选择性别！"
+    },
+    "deptIds": {
+      "label": "部门",
+      "placeholder": "请选择部门",
+      "msg": "部门不能为空！"
+    },
+    "remark": {
+      "label": "备注",
+      "placeholder": "请输入备注"
+    },
+    "phone": {
+      "label": "电话",
+      "extra": "",
+      "placeholder": "请输入正确的电话",
+      "validMsg": "请输入正确的电话!",
+      "hasStaff": "当前门店已经存在该员工",
+      "groupHasStaff": "该号码已在集团存在,不可修改,请进行新增"
+    },
+    "weChatPhone": {
+      "label": "企微电话",
+      "placeholder": "请输入正确的企微电话",
+      "msg": "请输入正确的企微电话！"
+    },
+    "entryDate": {
+      "label": "入职日期",
+      "placeholder": "请输入年-月-日",
+      "msg": "入职日期不能为空！"
+    },
+    "roleIds": {
+      "label": "岗位",
+      "placeholder": "请选择岗位",
+      "msg": "岗位不能为空！"
+    },
+    "jobStatus": {
+      "label": "是否离职",
+      "radioOne": "在职",
+      "radioTwo": "离职"
+    },
+
+    "leaveDate": {
+      "label": "离职日期",
+      "placeholder": "请输入年-月-日"
+    }
+  },
+  "detailModal": {
+    "title": "员工信息详情",
+    "columns": {
+      "name": "姓名",
+      "phone": "电话",
+      "weChatPhone": "企微电话",
+      "sex": "性别",
+      "deptStr": "部门",
+      "roleStr": "岗位",
+      "jobStatus": "是否在职",
+      "status": "是否启用",
+      "entryDate": "入职日期",
+      "leaveDate": "离职日期",
+      "remark": "备注"
+    }
+  },
+  "all": "全部",
+  "statusDisable": "禁用",
+  "statusEnable": "启用",
+  "jobStatusDisable": "离职",
+  "jobStatusEnable": "在职",
+  "man": "男",
+  "woman": "女",
+  "resetPwd": {
+    "content": "确认重置该员工密码?",
+    "success": "成功重置密码！密码为nr123456"
+  },
+  "deleteStaff": {
+    "content": "确认删除该员工吗?",
+    "delSuccess": "删除成功！",
+    "delErr": "删除失败",
+    "delErrTip": "客户池中还有客户未处理，无法进行删除操作!"
+  },
+  "tableList": {
+    "name": "姓名11",
+    "phone": "电话",
+    "weChatPhone": "企微电话",
+    "sex": "性别",
+    "deptStr": "部门",
+    "roleStr": "岗位",
+    "jobStatus": "是否在职",
+    "status": "是否启用",
+    "entryDate": "入职日期",
+    "options": "操作",
+    "resetPass": "重置密码"
+  }
+}

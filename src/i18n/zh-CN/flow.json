@@ -1,0 +1,89 @@
+{
+  "title": "流水牌-体",
+  "navButtons": [
+    {
+      "num": 0,
+      "keyName": "appointment",
+      "key": "flowAppointmentView",
+      "name": "预约",
+      "label": "预约"
+    },
+    {
+      "num": 0,
+      "keyName": "toReceive",
+      "key": "flowPendingReceptionView",
+      "name": "待接待",
+      "label": "待接待"
+    },
+    {
+      "num": 0,
+      "keyName": "reception",
+      "key": "flowReceptionView",
+      "name": "接待",
+      "label": "接待"
+    },
+    {
+      "num": 0,
+      "keyName": "flowToConView",
+      "key": "flowToConView",
+      "name": "待分诊",
+      "label": "待分诊"
+    },
+    {
+      "num": 0,
+      "keyName": "consultation",
+      "key": "flowConsultationView",
+      "name": "咨询",
+      "label": "咨询"
+    },
+    {
+      "num": 0,
+      "keyName": "consultation_face",
+      "key": "flowAssessmentView",
+      "name": "面诊",
+      "label": "面诊"
+    },
+    {
+      "num": 0,
+      "keyName": "payment",
+      "key": "flowPaymentView",
+      "name": "收银",
+      "label": "收银"
+    },
+    {
+      "num": 0,
+      "keyName": "treatment",
+      "key": "flowTreatmentView",
+      "name": "治疗",
+      "label": "治疗"
+    },
+    {
+      "num": 0,
+      "keyName": "deduct",
+      "key": "flowBuckleView",
+      "name": "划扣",
+      "label": "划扣"
+    },
+    {
+      "num": 0,
+      "keyName": "refund",
+      "key": "flowClaimView",
+      "name": "退取货",
+      "label": "退取货"
+    },
+    {
+      "num": 0,
+      "keyName": "leave",
+      "key": "flow_exit_view",
+      "name": "离院",
+      "label": "离院"
+    },
+    {
+      "num": 0,
+      "keyName": "backVisit",
+      "key": "flowReturnVisitView",
+      "name": "回访",
+      "label": "回访"
+    }
+  ]
+}

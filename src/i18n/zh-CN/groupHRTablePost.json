@@ -1,0 +1,39 @@
+{
+  "module": "集团--人力--岗位",
+  "groupTitle": "集团岗位",
+  "areaTitle": "区域岗位",
+  "addStaff": "新增岗位",
+  "editStaff": "编辑岗位",
+  "searchCondition": {
+    "label": "岗位名称",
+    "placeholder": "请输入岗位名称"
+  },
+  "addModal": {
+    "title": {
+      "label": "岗位：",
+      "placeholder": "请输入岗位名称",
+      "msg": "必填！"
+    },
+    "tips": {
+      "label": "岗位职责：",
+      "placeholder": "最多240个字符"
+    }
+  },
+  "detailModal": {
+    "title": "岗位详情",
+    "columns": {
+      "title": "岗位名称",
+      "updateDate": "更新时间",
+      "createDate": "创建时间",
+      "tips": "岗位职责"
+    }
+  },
+  "deleteTablePostTitle": "确认删除该岗位吗?",
+  "tableList": {
+    "title": "岗位名称",
+    "tips": "岗位职责",
+    "createDate": "创建时间",
+    "updateDate": "更新时间",
+    "options": "操作"
+  }
+}

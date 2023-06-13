@@ -1,0 +1,64 @@
+{
+  "handleChangeDiscountSuccess": "配置成功",
+  "handleChangeDiscountError": "配置失败",
+  "billingDiscountConfiguration": "开单折扣配置",
+  "useBillingDiscountConfiguration": "使用开单折扣配置",
+  "billingDiscountConfigurationTips": "开启则开单时需要按配置的折扣力度进行优惠,若超出配置力度,需审批通过后订单生效;若配置发生调整,已按原配置成功开单的记录不发生变化;关闭时开单人可任意折扣",
+  "giveDiscountConfiguration": "赠送(即实际0折)参与折扣配置",
+  "giveDiscountConfigurationTips": "开启则任意赠送均受折扣配置约束,关闭则赠送不触发审批机制",
+  "approverEndsApprovalControl": "审批人结束审批控制",
+  "approverEndsApprovalControlTips": "开启则在开单折扣超出审批人自身折扣配置时，该审批人在审批通过时不能结束该审批。若审批人处于审批流程最后一级，则该审批人不提供审批通过的功能",
+  "empty": "额...内容空空如也",
+  "selectUserMsg": "请先选择用户",
+  "palceholder": "请输入",
+  "seachPlaceholder": "请搜索",
+  "add": "添加",
+  "components": {
+    "discountConfig": {
+      "handleDeleteDiscountConfirmContentt": "确定删除该条配置吗?",
+      "tableColumns": {
+        "billingUserName": "开单人",
+        "discount": "默认折扣力度",
+        "minBillDiscount": "最小开单折扣",
+        "minBillDiscountTooltip": "低于最小开单折扣时，则无法进行开单"
+      },
+      "discountConfiguration": "折扣配置",
+      "discountConfigurationPlaceholder": "请选择用户",
+      "add": "添加"
+    },
+    "saleProConfig": {
+      "contentText1": "该条配置",
+      "contentText2": "该折扣力度的配置",
+      "contentText": "已选中的配置",
+      "handleDeleteDiscountConfirmContent": "确定删除{{contentText}}吗?",
+      "handleBlurDiscountMsg": "独立销售项配置修改成功",
+      "tableColumns": {
+        "saleItemName": "销售项",
+        "saleItemType": "类型",
+        "discount": "默认折扣力度"
+      },
+      "addSuccess": "添加成功",
+      "independent": "独立销售项配置",
+      "bulkEdit": "批量修改",
+      "billingUserNameText": "配置约束所有开单人的销售项折扣力度",
+      "default": "默认",
+      "discountIntensity": "折扣力度"
+    }
+  },
+  "virtualGoldConfig": {
+    "handleAddConfirmTitle": "新增虚拟金类型",
+    "handleAddPlaceholder": "请输入虚拟金类型",
+    "onOkMsg": "虚拟金类型不能为空",
+    "handleUpdateMsg": "【系统开关-开启账户余额】已开启，不可单独使用赠送{{name}}",
+    "tableColumns": {
+      "name": "虚拟金类型",
+      "status": "是否启用",
+      "configStatus": "是否参与业绩统计",
+      "refundConfigStatus": "虚拟金支付抵扣退返"
+    },
+    "rechargeGift": "充值赠送",
+    "integral": "积分",
+    "cardCoupon": "卡券",
+    "benefitCardGift": "权益卡赠送金"
+  }
+}

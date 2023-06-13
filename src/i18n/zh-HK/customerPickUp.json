@@ -1,0 +1,115 @@
+{
+  "table": {
+    "claimGoodsNumber": "取貨單號",
+    "billingDate": "開單日期",
+    "billingNumber": "來源訂單",
+    "billerName": "開單人",
+    "deptName": "開單人部門",
+    "departmentName": "計劃取貨部門",
+    "customerName": "取貨客户",
+    "materialName": "物料明細",
+    "statusText": "狀態",
+    "outInventoryNumber": "出庫單號",
+    "finishDate": "最近確認時間",
+    "handleName": "最近確認出庫人",
+    "id": "操作"
+  },
+  "other": {
+    "key1": "詳情",
+    "key2": "確認",
+    "key3": "待出庫",
+    "key4": "部分出庫",
+    "key5": "已完成",
+    "key6": "已作廢"
+  },
+  "search": {
+    "claimGoodsNumber": {
+      "label": "取貨單號",
+      "placeholder": "請輸入取貨單號"
+    },
+    "billingPicker": "開單時間",
+    "billingNumber": { "label": "來源訂單", "placeholder": "請輸入來源訂單" },
+    "billerId": { "label": "開單人", "placeholder": "請選擇開單人" },
+    "deptId": { "label": "開單人部門", "placeholder": "請選擇開單人部門" },
+    "departmentId": {
+      "label": "計劃取貨人部門",
+      "placeholder": "請選擇計劃取貨人部門"
+    },
+    "customerId": "取貨客户",
+    "materialId": { "label": "物料明細", "placeholder": "請搜索物料" },
+    "status": {
+      "label": "狀態",
+      "options": { "key1": "待出庫", "key2": "部分出庫", "key3": "已完成" }
+    },
+    "outInventoryNumber": {
+      "label": "出庫單號",
+      "placeholder": "請輸入取貨單號"
+    },
+    "finishDate": "最近確認時間",
+    "handleId": {
+      "label": "最近確認出庫人",
+      "placeholder": "請選擇最近確認出庫人"
+    }
+  },
+  "detail": {
+    "key1": "取貨詳情",
+    "key2": "取貨物料",
+    "key3": "打印",
+    "key4": "導出",
+    "key5": "返回",
+    "key6": "確認",
+    "key7": "刪除",
+    "key8": "添加",
+    "key9": "取貨單號",
+    "key10": "狀態",
+    "key11": "取貨客户",
+    "key12": "來源訂單",
+    "key13": "開單人",
+    "key14": "開單人部門",
+    "key15": "計劃取貨部門",
+    "key16": "開單時間",
+    "key17": "貨單總價",
+    "key18": "取消",
+    "key19": "打印完成",
+    "key20": "暫不打印",
+    "key21": "11孔打印",
+    "key22": "7孔打印",
+    "key23": "再次打印",
+    "key24": "打印預覽",
+    "table_1": {
+      "materialCode": "物料編碼",
+      "materialName": "物料名稱",
+      "anotherName": "物料別名",
+      "manufacturer": "生產廠家",
+      "specification": "規格",
+      "unitType": "型號",
+      "outAmount": "開單出庫量/單位",
+      "actualAmounts": "實際出庫量/單位",
+      "currentInventoryList": "庫存數量/單位",
+      "sellingPrice": "銷售單價",
+      "remainderAmountList": "剩餘應出/單位"
+    },
+    "table_2": {
+      "warehouseName": "出庫倉庫",
+      "outAmount": "出庫數量/單位",
+      "uid": "操作"
+    },
+    "table_3": {
+      "warehouseName": "出庫倉庫",
+      "outAmount": "出庫數量/單位",
+      "finishDate": "出庫時間",
+      "handleName": "確認出庫人",
+      "outInventoryNumber": "出庫單號"
+    }
+  },
+  "msg": {
+    "key1": "該倉庫無對應物料信息，請從新選擇入庫倉庫",
+    "key2": "請輸入取貨量",
+    "key3": "取貨單內物料未選擇倉庫，請選擇後重試",
+    "key4": "當前數據需進行電子簽名，請開通電子簽名在進行處理",
+    "key5": "操作成功",
+    "key6": "取貨總量不能超過",
+    "key7": "確認成功！",
+    "key8": "確定"
+  }
+}

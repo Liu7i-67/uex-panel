@@ -1,0 +1,38 @@
+{
+  "columns": {
+    "title": "標題",
+    "userName": "釋出人",
+    "publishDate": "釋出時間",
+    "type": "狀態",
+    "isTop": "是否置頂",
+    "options": "操作"
+  },
+  "options": {
+    "detail": "詳情",
+    "edit": "編輯",
+    "cancel": "取消釋出",
+    "public": "釋出",
+    "delete": "刪除"
+  },
+  "typeOptions": [
+    { "label": "全部", "value": "" },
+    { "label": "未釋出", "value": 0 },
+    { "label": "已釋出", "value": 1 }
+  ],
+  "hasPublic": "已釋出",
+  "unPublic": "未釋出",
+  "edit": "編輯公告",
+  "add": "新增公告",
+  "titleWarn": "請輸入公告標題",
+  "contentWarn": "請輸入公告內容",
+  "aTitle": "公告管理",
+  "title": "公告標題",
+  "titlePlaceholder": "請輸入標題",
+  "top": "置頂至",
+  "upload": "檔案上傳",
+  "back": "返回",
+  "detailTitle": "公告",
+  "deleteConfirm": "確認刪除?",
+  "publicConfirm": "確定釋出？",
+  "unPublicConfirm": "確定取消釋出？"
+}

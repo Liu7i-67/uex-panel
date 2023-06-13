@@ -1,0 +1,50 @@
+{
+  "buttonGroup": {
+    "all": "全部",
+    "tomorrow": "明日"
+  },
+  "editPlan": "编辑计划",
+  "viewPlan": "查看计划",
+  "customerName": "客户",
+  "expertName": "专家",
+  "expertNamePlaceholder": "请选择专家",
+  "appointmentTime": "预约时间",
+  "tableColumns": {
+    "bespeakTypeName": "预约类型",
+    "bespeakProject": "项目",
+    "planContent": "预约计划内容",
+    "bespeakUserName": "预约创建人",
+    "planCreateByName": "计划添加人",
+    "status": "状态"
+  },
+  "components": {
+    "customerConfig": {
+      "personalInfo": "个人信息",
+      "phone": "电话",
+      "age": "年龄",
+      "poolName": "客户池",
+      "customerType": "类型",
+      "project": "最近项目",
+      "lastRecord": "上次预约记录",
+      "startTime": "预约时间",
+      "projectName": "预约项目"
+    },
+    "detailPlan": {
+      "createByName": "添加人",
+      "cancelText": "关闭",
+      "title": "查看计划",
+      "sideTitle": "客户档案",
+      "sideBtnText": "客户档案"
+    },
+    "editPlan": {
+      "createByName": "添加人",
+      "content": "内容",
+      "contentPlaceholder": "请输入计划内容，不超过500字",
+      "okText": "保存",
+      "cancelText": "取消",
+      "title": "编辑计划",
+      "sideTitle": "客户档案",
+      "sideBtnText": "客户档案"
+    }
+  }
+}

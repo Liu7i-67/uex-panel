@@ -1,0 +1,38 @@
+{
+  "columns": {
+    "title": "標題",
+    "userName": "發佈人",
+    "publishDate": "發佈時間",
+    "type": "狀態",
+    "isTop": "是否置頂",
+    "options": "操作"
+  },
+  "options": {
+    "detail": "詳情",
+    "edit": "編輯",
+    "cancel": "取消發佈",
+    "public": "發佈",
+    "delete": "刪除"
+  },
+  "typeOptions": [
+    { "label": "全部", "value": "" },
+    { "label": "未發佈", "value": 0 },
+    { "label": "已發佈", "value": 1 }
+  ],
+  "hasPublic": "已發佈",
+  "unPublic": "未發佈",
+  "edit": "編輯公告",
+  "add": "新增公告",
+  "titleWarn": "請輸入公告標題",
+  "contentWarn": "請輸入公告內容",
+  "aTitle": "公告管理",
+  "title": "公告標題",
+  "titlePlaceholder": "請輸入標題",
+  "top": "置頂至",
+  "upload": "文件上傳",
+  "back": "返回",
+  "detailTitle": "公告",
+  "deleteConfirm": "確認刪除?",
+  "publicConfirm": "確定發佈？",
+  "unPublicConfirm": "確定取消發佈？"
+}

@@ -1,0 +1,120 @@
+{
+  "table": {
+    "recipientApplyNumber": "领用申请单号",
+    "warehouseName": "仓库",
+    "applyDate": "申请时间",
+    "sysUserName": "领用申请人",
+    "departmentName": "申请科室",
+    "customerName": "相关客户",
+    "status": "领用申请单状态",
+    "action": "操作"
+  },
+  "search": {
+    "recipientApplyNumber": {
+      "label": "领用申请单号",
+      "placeholder": "请输入领用申请单号"
+    },
+    "warehouseId": { "label": "仓库", "placeholder": "请输入仓库" },
+    "date": "申请时间",
+    "sysUserId": { "label": "领用申请人", "placeholder": "请输入领用申请人" },
+    "departmentId": { "label": "申请科室", "placeholder": "请输入申请科室" },
+    "customerId": "相关客户",
+    "status": {
+      "label": "领用申请状态",
+      "placeholder": "请选择领用申请单状态",
+      "options": { "key1": "待出库", "key2": "已出库", "key3": "已作废" }
+    }
+  },
+  "other": {
+    "key1": "详情",
+    "key2": "打印",
+    "key3": "编辑",
+    "key4": "作废",
+    "key5": "新增领用申请",
+    "key6": "打印",
+    "key7": "取消",
+    "key8": "打印完成",
+    "key9": "暂不打印",
+    "key10": "打印预览",
+    "key11": "纵向",
+    "key12": "横向",
+    "key13": "再次打印",
+    "key14": "无法获取打印数据",
+    "key15": "编辑领用申请",
+    "key16": "新增领用申请",
+    "key17": "领用申请详情",
+    "key18": "操作成功",
+    "key19": "操作失败",
+    "key20": "确定要作废？",
+    "key21": "确定",
+    "key22": "取消"
+  },
+  "detail": {
+    "key1": "领用申请单号",
+    "key2": "仓库",
+    "key3": "申请时间",
+    "key4": "申请科室",
+    "key5": "领用申请人",
+    "key6": "相关客户",
+    "key7": "领用申请单状态",
+    "key8": "未完成",
+    "key9": "作废",
+    "key10": "完成",
+    "key11": "备注",
+    "key12": "领用申请详情",
+    "key13": "领用申请物料",
+    "table": {
+      "materialCode": "物料编码",
+      "name": "物料名称",
+      "anotherName": "物料别名",
+      "specification": "规格",
+      "unitType": "型号",
+      "applySum": "出库量/单位",
+      "inventory": "库存数量/单位",
+      "outInventoryRemark": "出库备注"
+    }
+  },
+  "add": {
+    "table": {
+      "materialCode": "物料编码",
+      "name": "物料名称",
+      "anotherName": "物料别名",
+      "specification": "规格",
+      "unitType": "型号",
+      "applySum": "出库量/单位",
+      "unitList": "库存数量/单位",
+      "outInventoryRemark": "备注",
+      "action": "操作"
+    },
+    "form": {
+      "warehouseId": { "label": "仓库", "placeholder": "请选择仓库" },
+      "departmentId": {
+        "label": "领用申请科室",
+        "placeholder": "请选择领用申请科室"
+      },
+      "sysUserId": { "label": "领用申请人", "placeholder": "请选择领用申请人" },
+      "customerId": "相关客户",
+      "remark": {
+        "label": "备注",
+        "placeholder": "输入内容不超过300字"
+      }
+    },
+    "other": {
+      "key1": "删除",
+      "key2": "领用申请详情",
+      "key3": "申请物料",
+      "key4": "添加",
+      "key5": "取消",
+      "key6": "保存",
+      "key7": "保存并新增",
+      "key8": "你还没有添加任何物料哦",
+      "key9": "添加物料",
+      "key10": "请选择要出库的仓库!",
+      "key11": "物料的出库量超过采购数量，不能出库！",
+      "key12": "操作成功",
+      "key13": "领用申请物料不能为空",
+      "key14": "备注内容不能超过300字",
+      "key15": "请输入合适的出库量"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "buttonGroup": {
+    "all": "全部",
+    "tomorrow": "明日"
+  },
+  "editPlan": "編輯計劃",
+  "viewPlan": "檢視計劃",
+  "customerName": "客戶",
+  "expertName": "專家",
+  "expertNamePlaceholder": "請選擇專家",
+  "appointmentTime": "預約時間",
+  "tableColumns": {
+    "bespeakTypeName": "預約型別",
+    "bespeakProject": "專案",
+    "planContent": "預約計劃內容",
+    "bespeakUserName": "預約建立人",
+    "planCreateByName": "計劃新增人",
+    "status": "狀態"
+  },
+  "components": {
+    "customerConfig": {
+      "personalInfo": "個人資訊",
+      "phone": "電話",
+      "age": "年齡",
+      "poolName": "客戶池",
+      "customerType": "型別",
+      "project": "最近專案",
+      "lastRecord": "上次預約記錄",
+      "startTime": "預約時間",
+      "projectName": "預約專案"
+    },
+    "detailPlan": {
+      "createByName": "新增人",
+      "cancelText": "關閉",
+      "title": "檢視計劃",
+      "sideTitle": "客戶檔案",
+      "sideBtnText": "客戶檔案"
+    },
+    "editPlan": {
+      "createByName": "新增人",
+      "content": "內容",
+      "contentPlaceholder": "請輸入計劃內容，不超過500字",
+      "okText": "儲存",
+      "cancelText": "取消",
+      "title": "編輯計劃",
+      "sideTitle": "客戶檔案",
+      "sideBtnText": "客戶檔案"
+    }
+  }
+}

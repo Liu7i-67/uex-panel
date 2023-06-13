@@ -1,0 +1,133 @@
+{
+  "test": "切换语言",
+  "closeAccountBtnText": "关账",
+  "closeAccountRefreshBtnText": "刷新",
+  "tableColumns": {
+    "closeAccountDate": "关账日期",
+    "createDate": "操作日期",
+    "closeAccountUserName": "关账人",
+    "revokeUserName": "撤销人",
+    "revokeStatus": "撤销状态",
+    "syncFlag": "数据同步状态",
+    "oprations": "操作"
+  },
+  "revokeStatus": {
+    "revoked": "已撤销",
+    "normal": "正常"
+  },
+  "syncFlag": {
+    "default": "未同步",
+    "success": "已同步",
+    "processing": "同步中"
+  },
+  "oprations": {
+    "disableCannelRevokedTips": "关账记录已撤销",
+    "disableCannelNotSupportTips": "数据已同步金蝶，不支持撤销关账",
+    "disableCannelOnlyTips": "仅能撤销最近一次关账",
+    "disableSyncEndTips": "数据已同步金蝶",
+    "disableSyncingTips": "数据正在同步中",
+    "disableSyncRevokedTips": "关账记录已撤销",
+    "oprationBtn": {
+      "cannel": "撤销",
+      "synced": "关账数据已同步金蝶",
+      "sync": "关账数据同步金蝶"
+    }
+  },
+  "confirmBtn": {
+    "confirm": "确认",
+    "cancel": "取消"
+  },
+  "confirmTitle": {
+    "cannel": "撤销后系统关账日期为上一次未撤销的关账日期？",
+    "sync": "{{lastDate}}~{{currentDate}}之间的关账数据同步金蝶以后不支持撤销，确认同步？",
+    "cancelSuccessMsg": "撤销关账成功",
+    "syncSuccessMsg": "操作成功"
+  },
+
+  "accountClosingModal": {
+    "modelTitle": "关账确认",
+    "content": "确认关账后，选择日期的24:00之前的业务数据不支持修改",
+    "label": "请选择关账日期",
+    "popover": "关联日期为选中日期当天24:00，不支持选择当天",
+    "logic": {
+      "message": {
+        "getCloseAccountLatestDateMsg": "当前无法进行关账操作，可操作关账时间为：上次关账时间到昨天。",
+        "onOkMsg": "请选择关账日期"
+      }
+    }
+  },
+
+  "accountOptionModal": {
+    "modelTitle": "关账确认",
+    "content": "数据已关账，修改关账数据需要审批通过后生效，确认修改？",
+    "label": "修改原因",
+    "logic": {
+      "message": {
+        "addCloseAccountApprovalMsg": "操作成功，已发起审批"
+      }
+    }
+  },
+
+  "accountOptionSnapshotModal": {
+    "ISSUE_MATERIAL": {
+      "modelTitle": "出库物料快照",
+      "tableColumns": {
+        "materialCode": "物料编码",
+        "name": "物料名称",
+        "anotherName": "物料别名",
+        "specification": "规格",
+        "unitType": "型号",
+        "outAmount": "出库量/单位",
+        "purchasePrice": "进价(元)/单位",
+        "outSum": "合计(元)",
+        "remark": "出库备注",
+        "storePrice": "跨店成本单价",
+        "storePriceSum": "跨店成本总价"
+      }
+    },
+    "ISSUE_MATERIAL_CHILD": {
+      "modelTitle": "出库物料快照",
+      "tableColumns": {
+        "name": "物料名称",
+        "anotherName": "物料别名",
+        "specification": "规格",
+        "unitType": "型号",
+        "outAmount": "出库量/单位",
+        "remark": "出库备注"
+      },
+      "subColumns": {
+        "outAmount": "出库量"
+      }
+    },
+    "RECEIPT_MATERIAL": {
+      "modelTitle": "入库物料快照",
+      "tableColumns": {
+        "materialCode": "物料编码",
+        "name": "物料名称",
+        "approvalNumber": "批准文号",
+        "anotherName": "物料别名",
+        "specification": "规格",
+        "unitType": "型号",
+        "storageAmount": "入库量/单位",
+        "realpurchasePrice": "进价单价/单位",
+        "tax": "税金",
+        "taxRate": "税率",
+        "total": "合计(元)",
+        "unitList": "库存数量/单位",
+        "supplierList": "供应商",
+        "manufacturerName": "生产厂家",
+        "batchNumber": "批次",
+        "validityPeriod": "有效期",
+        "dosageFormText": "剂型",
+        "purchasePrice": "备案价格(元)",
+        "remark": "入库备注"
+      }
+    },
+    "WAREHOUSING_CHANGE_Detail": {
+      "title": "入库详情"
+    },
+    "WRITE_OFF_MATERIALS": {
+      "modelTitle": "核销物料快照"
+    }
+  }
+}

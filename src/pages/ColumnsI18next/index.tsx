@@ -5,7 +5,9 @@ import { OtherSettingDrawer } from './modules/OtherSettingDrawer';
 import { ToolBar } from './modules/ToolBar';
 import { I18JSON } from './modules/I18JSON';
 import { classNames } from 'utils/Tools';
+import { Button } from 'primereact/button';
 import * as formatterWorker from 'utils/FormatterWorker';
+import { changeLocale, t } from '@/i18n';
 import './index.scss';
 
 const DebugI18n = React.lazy(() => import('../DebugI18n'));
@@ -58,6 +60,12 @@ const ColumnsI18next = observer(function ColumnsI18next_() {
 
   return (
     <div className='page-ColumnsI18next'>
+      <div>{t('accountClosingManagement:test')}</div>
+      <div>
+        <Button className='mr-8' onClick={() => changeLocale('zh-CN')}>zh-CN</Button>
+        <Button className='mr-8' onClick={() => changeLocale('zh-TW')}>zh-TW</Button>
+        <Button onClick={() => changeLocale('zh-HK')}>zh-HK</Button>
+      </div>
       <Suspense fallback='loading'>{logic.debugMode && <DebugI18n toTrans={logic.changeDebugMode} />}</Suspense>
       <div className={classNames({ hidden: logic.debugMode })}>
         <ToolBar />

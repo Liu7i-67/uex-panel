@@ -1,0 +1,85 @@
+{
+  "module": "问卷管理",
+  "button": {
+    "addStaff": "添加员工",
+    "close": "关闭",
+    "detail": "查看详情",
+    "publish": "发布",
+    "questionDetail": "问卷详情"
+  },
+  "formSetting": "表单配置",
+  "addQuestionnaire": "新增问卷",
+  "searchList": {
+    "name": {
+      "label": "问卷名称",
+      "placeholder": "请输入问卷名称"
+    },
+    "createDate": {
+      "label": "创建时间"
+    },
+    "publishTime": {
+      "label": "发布时间"
+    },
+    "status": {
+      "label": "问卷名称",
+      "placeholder": "请选择状态",
+      "options": [
+        { "value": 0, "label": "待发布" },
+        { "value": 1, "label": "已发布" },
+        { "value": 2, "label": "已作废" }
+      ]
+    }
+  },
+  "columns": {
+    "key": "key",
+    "name": "问卷名称",
+    "createDate": "创建时间",
+    "publishTime": "发布时间",
+    "status": "状态",
+    "id": "操作"
+  },
+  "detailColumns": {
+    "key": "key",
+    "customerName": "客户",
+    "totalScore": "分数",
+    "fillDate": "填写时间",
+    "fillFlag": "是否填写",
+    "id": "操作"
+  },
+  "statusObj": ["待发布", "已发布", "已作废", "发布中"],
+  "keyword": {
+    "total": "总计",
+    "person": "人",
+    "specialPerson": "指定会员",
+    "customerPool": "客户池",
+    "customer": "客户",
+    "participateCount": "参与问卷总人数(已填写/总数)",
+    "yes": "是",
+    "no": "否",
+    "publishingObject": "发布对象"
+  },
+  "formConfig": {
+    "name": {
+      "label": "问卷名称",
+      "placeholder": "请输入问卷名称",
+      "message": "请输入问卷名称"
+    }
+  },
+  "warning": {
+    "noSetting": "请配置表单项",
+    "noCustomer": "请选择客户"
+  },
+
+  "beforeDelete": {
+    "title": "确定要删除?"
+  },
+  "confirm": {
+    "publish": "您确定要发布本次问卷？",
+    "reset": "已发布问卷，重新配置表单后，将会重置该问卷所有数据，是否继续?",
+    "invalid": "作废后，客户所有表单均失效，是否继续?",
+    "delete": "删除后，该问卷所有数据将被清空，是否继续?"
+  },
+  "msg": {
+    "success": "操作成功，请稍后刷新列表"
+  }
+}

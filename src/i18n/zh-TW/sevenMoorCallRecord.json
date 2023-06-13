@@ -1,0 +1,128 @@
+{
+  "module": "sevenMoorCallRecord雲呼記錄",
+  "button": {
+    "record": "錄音",
+    "download": "下載錄音",
+    "voice2text": "錄音轉文字",
+    "bindSeat": "繫結坐席",
+    "cancelBind": "解綁"
+  },
+  "callRecord": "通話記錄",
+  "missCallRecord": "未接來電",
+  "keyword": {
+    "all": "全部",
+    "returnVisit": "回訪",
+    "normal": "普通",
+    "tips": "提示",
+    "balance": "餘額",
+    "yuan": "元"
+  },
+  "msg": {
+    "delayWaiting": "通話記錄存在5分鐘左右的延遲，請您耐心等待。",
+    "pleaseWait": "請稍等,錄音下載中...",
+    "downloadError": "下載失敗",
+    "gerRecordError": "獲取錄音失敗!",
+    "searchRecordError": "暫未查詢到錄音!",
+    "isTrans": "錄音轉換中，請稍候重新整理列表檢視。",
+    "inTransition": "轉換中，請稍候重新整理列表檢視。",
+    "transFail": "轉換文字失敗!",
+    "parseFail": "解析文字失敗!",
+    "bindSeatSuccess": "繫結坐席成功"
+  },
+  "searchList": {
+    "customerId": {
+      "label": "姓名"
+    },
+    "date": {
+      "label": "日期"
+    },
+    "callType": {
+      "label": "型別",
+      "placeholder": "請選擇呼叫型別",
+      "options": [
+        { "label": "全部", "value": "" },
+        { "label": "撥出", "value": "dialout" },
+        { "label": "呼入", "value": "normal" }
+      ]
+    },
+    "userId": {
+      "label": "接聽坐席",
+      "placeholder": "請輸入坐席姓名"
+    },
+    "module": {
+      "label": "業務型別",
+      "placeholder": "請選擇業務型別"
+    }
+  },
+  "columns": {
+    "userId": "客戶",
+    "money": "費用",
+    "createDate": "日期",
+    "callType": "呼叫型別",
+    "module": "業務型別",
+    "elapsed": "時長",
+    "state": "通話狀態",
+    "userName": "接聽坐席",
+    "options": "操作"
+  },
+  "stateMap": {
+    "": "呼入已接",
+    "2": "撥出已接",
+    "3": "呼入未接",
+    "4": "撥出未接"
+  },
+  "confirm": {
+    "listenTitle": "錄音收聽",
+    "cancelText": "關閉",
+    "title": "提示",
+    "content": "轉文字需要時間處理，請稍後進行檢視",
+    "cancelBindTitle": "解綁坐席",
+    "cancelBindContent": "確定要解綁坐席嗎?"
+  },
+  "missRecordSearchList": {
+    "customerId": {
+      "label": "姓名"
+    },
+    "date": {
+      "label": "日期"
+    },
+
+    "userId": {
+      "label": "應接聽坐席",
+      "placeholder": "請輸入坐席姓名"
+    }
+  },
+  "missColumns": {
+    "userId": "客戶",
+    "createDate": "日期",
+    "userName": "應接聽坐席"
+  },
+  "callTypeMap": { "sip": "系統直呼", "gateway": "話機" },
+  "agentColumns": {
+    "userId": "員工姓名",
+    "sitId": "坐席",
+    "sitCallType": "通話方式",
+    "options": "操作"
+  },
+  "addSeat": {
+    "exten": {
+      "label": "坐席",
+      "message": "請選擇坐席",
+      "placeholder": "請選擇坐席"
+    },
+    "sitCallType": {
+      "label": "通話方式",
+      "message": "請選擇通話方式",
+      "placeholder": "請選擇通話方式",
+      "options": [
+        { "label": "話機", "value": "gateway" },
+        { "label": "系統直呼", "value": "sip" }
+      ]
+    },
+    "userId": {
+      "label": "員工",
+      "placeholder": "請選擇員工",
+      "message": "請選擇員工"
+    }
+  }
+}

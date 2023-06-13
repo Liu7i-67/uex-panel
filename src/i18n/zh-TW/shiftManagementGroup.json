@@ -1,0 +1,177 @@
+{
+  "moduleKey": "shiftManagementGroup",
+  "module": "集團排班管理",
+  "byTenant": "按門店",
+  "byExpert": "按專家",
+  "key0": "是否複製",
+  "key": "的班次，到",
+  "key2": "的班次",
+  "key3": "本",
+  "key4": "剩餘",
+  "key5": "個員工未排班",
+  "date": {
+    "week": "周"
+  },
+  "searchList": {
+    "tenantId": {
+      "label": "門店"
+    },
+    "expertIds": {
+      "label": "員工",
+      "placeholder": "請輸入員工姓名"
+    },
+    "deptIds": {
+      "label": "部門",
+      "placeholder": "請選擇部門"
+    }
+  },
+  "weekTitle": [
+    "",
+    "星期一",
+    "星期二",
+    "星期三",
+    "星期四",
+    "星期五",
+    "星期六",
+    "星期天"
+  ],
+  "monthTitle": [
+    "星期一",
+    "星期二",
+    "星期三",
+    "星期四",
+    "星期五",
+    "星期六",
+    "星期天"
+  ],
+  "valueWeek": [
+    { "value": 2, "label": "週一" },
+    { "value": 3, "label": "週二" },
+    { "value": 4, "label": "週三" },
+    { "value": 5, "label": "週四" },
+    { "value": 6, "label": "週五" },
+    { "value": 7, "label": "週六" },
+    { "value": 1, "label": "周天" }
+  ],
+  "keyword": {
+    "to": "至",
+    "shiftTime": "排班時間(周)",
+    "shiftDoctor": "排班醫生",
+    "noStaff": "請選擇員工",
+    "noTenant": "請選擇門店",
+    "chooseNormalShift": "選擇普通班次",
+    "chooseDefaultShift": "選擇預設班次",
+    "noAssignDoctor": "無指定醫生",
+    "noData": "暫無資料～",
+    "normalShift": "普通班次",
+    "defaultShift": "預設班次",
+    "enable": "啟用",
+    "disable": "禁用",
+    "doctorSelected": "醫生選擇",
+    "notSelected": "未選",
+    "selected": "已選",
+    "allSelected": "全選",
+    "applicableStore": "適用門店"
+  },
+  "button": {
+    "confirm": "確認",
+    "backPrefix": "返回本",
+    "copyPrefix": "複製上",
+    "copySuffix": "排班",
+    "shiftManagement": "班次管理",
+    "copyShift": "複製班次",
+    "pasteShift": "貼上班次",
+    "addNormalShift": "新建普通班次",
+    "addDefaultShift": "新建預設班次",
+    "editNormalShift": "編輯普通班次",
+    "editDefaultShift": "編輯預設班次"
+  },
+  "confirm": {
+    "title": "提示資訊",
+    "contentPrefix": "當前",
+    "contentSuffix": "排班資料將會被替換，是否複製",
+    "delContent": "刪除排班會一併刪除員工已安排的班次，確定刪除該班次？"
+  },
+  "msg": {
+    "copyLastMonthSuccess": "複製上月排班成功",
+    "copyLastWeekSuccess": "複製上週排班成功",
+    "noTenant": "請選擇門店獲取對應班次",
+    "notCurrentTenant": "此班次不屬於當前門店，請重新選擇",
+    "noShift": "請選擇班次",
+    "overThreeShift": "當天已滿3個班次，無法再新增排班",
+    "repeatShift": "不能重複填充班次",
+    "copySuccess": "複製成功",
+    "maxEffective": "生效時間最大間隔時間段為五年",
+    "endBefore": "結束時間需小於",
+    "startOverEnd": "配置開始時間需小於配置結束時間",
+    "timeOver": "日期跨度不能超過120天",
+    "noStore": "請填寫適用門店",
+    "noInSetting": "選中門店的時間維度配置未在設定時間配置內",
+    "noApplicableStore": "請先選擇適用門店再編輯醫生",
+    "pleaseFillUp": "請您先填寫上方的適用門店 然後再繼續新增",
+    "pleaseChooseStore": "請勾選適用門店"
+  },
+  "columns": {
+    "name": "預設班次名稱",
+    "color": "標籤顏色",
+    "tenantNamesStr": "適用門店",
+    "startTime": "班次時間",
+    "status": "狀態",
+    "options": "操作",
+    "weekDays": "排班時間(周)",
+    "expertInfo": "所屬醫生"
+  },
+  "statusDesc": "班次狀態說明",
+  "enableDesc": "啟用：啟用後，則展示在排班管理介面",
+  "disableDesc": "禁用：禁用後，則不展示在排班管理介面，班次狀態不會影響已設定的排班時間",
+  "timeConfig": "時間配置",
+  "tagColor": "標籤顏色",
+  "tagColorSuggest": "標籤顏色設定建議",
+  "applicableStoreDoctor": "適用門店及所屬醫生",
+  "formList": {
+    "name": {
+      "label": "普通班次名稱",
+      "placeholder": "請輸入普通班次名稱",
+      "message": "普通班次名稱必須填寫"
+    },
+    "status": {
+      "label": "狀態",
+      "options": [
+        { "label": "啟用", "value": 1 },
+        { "label": "禁用", "value": 0 }
+      ]
+    },
+    "defaultName": {
+      "label": "預設班次名稱",
+      "placeholder": "請輸入預設班次名稱",
+      "message": "預設班次名稱必須填寫"
+    },
+    "time": {
+      "label": "時間配置",
+      "message": "請選擇時間配置"
+    },
+    "effectiveTime": {
+      "label": "生效時間",
+      "tips": "生效時間最大間隔時間段為五年",
+      "message": "生效時間必選"
+    },
+    "tenantId": {
+      "label": "適用門店",
+      "placeholder": "請選擇適用門店"
+    },
+    "doctor": {
+      "label": "所屬醫生"
+    },
+    "weekDay": {
+      "label": "排班時間",
+      "message": "排班時間必選"
+    }
+  },
+  "colorData": [
+    { "note": "淺藍色", "shift": "早班", "color": "#7ecef4" },
+    { "note": "淡黃色", "shift": "午班", "color": "#f7bd20" },
+    { "note": "淡紫色", "shift": "晚班", "color": "#a89bda" },
+    { "note": "紅色", "shift": "警示班次", "color": "#dc4c40" },
+    { "note": "灰色", "shift": "其他班次", "color": "#a0a4ad" }
+  ]
+}

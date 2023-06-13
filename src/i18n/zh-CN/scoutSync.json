@@ -1,0 +1,85 @@
+{
+  "module": "探马同步scoutSync",
+  "tanMaSyncStaffRelate": "员工关联",
+  "tanMaSyncCustomerRelate": "客户关联",
+  "noAuthority": "暂无权限",
+  "customerRelateColumns": {
+    "name": "客户姓名",
+    "wechatNickname": "客户昵称",
+    "mobilesJson": "授权手机号",
+    "createDate": "授权时间",
+    "isRelated": "是否关联",
+    "options": "操作"
+  },
+  "customerRelateSearch": {
+    "name": { "label": "客户姓名", "placeholder": "请输入客户姓名" },
+    "mobilesJson": {
+      "label": "授权手机号",
+      "placeholder": "请输入授权手机号"
+    },
+    "createTimeStart": { "label": "授权时间" },
+    "isRelated": {
+      "label": "是否关联",
+      "options": [
+        { "label": "是", "value": 1 },
+        { "label": "否", "value": 0 }
+      ]
+    }
+  },
+  "staffRelateSearch": {
+    "name": {
+      "label": "睿美云员工姓名",
+      "placeholder": "请输入睿美云员工姓名"
+    },
+    "mobile": {
+      "label": "授权手机号",
+      "placeholder": "请输入授权手机号"
+    },
+    "createTimeStart": { "label": "授权时间" },
+    "isRelated": {
+      "label": "是否关联",
+      "options": [
+        { "label": "是", "value": 1 },
+        { "label": "否", "value": 0 }
+      ]
+    },
+    "synchFlag": {
+      "label": "数据同步",
+      "options": [
+        { "label": "是", "value": 1 },
+        { "label": "否", "value": 0 }
+      ]
+    }
+  },
+  "staffRelateColumns": {
+    "name": "客户姓名",
+    "tanMaUserName": "探马员工姓名",
+    "phone": "企微电话号码",
+    "mobile": "授权手机号",
+    "DataSyncStatus": "数据同步状态",
+    "customerNum": "添加客户数量（探马）",
+    "createDate": "授权时间",
+    "isRelated": "是否关联",
+    "options": "操作",
+    "wechatNickname": "探马昵称",
+    "mobilesJson": "授权手机号",
+    "qwCustomerTime": "添加好友时间"
+  },
+  "button": {
+    "offRelate": "断开关联",
+    "onRelate": "关联",
+    "batchSync": "批量同步",
+    "article": "条",
+    "confirmSelect": "确定选择",
+    "cancelSelect": "取消选择",
+    "refreshData": "数据更新",
+    "dataSync": "数据同步"
+  },
+  "keyword": {
+    "yes": "是",
+    "no": "否",
+    "refreshDataTips": "点击获取探马系统的企微员工最新数据",
+    "dataSyncStatusTips": "当前仅姓名同步，睿美云同步至探马",
+    "customerNumTips": "员工未关联时，无法获取员工对应客户数据"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "propsTitle": "新增加工件訂單",
+  "add": "添加加工件",
+  "addBtn": "新增加工件",
+  "confirmTitle": "加工件訂單一旦提交不允許再修改，請確認是否提交",
+  "stagingBtn": "暫存",
+  "addPart": "加工件",
+  "commonAdd": "添加",
+  "commonAddWarn": "請選擇加工件",
+  "associatedImages": "關聯影像",
+  "upload": "本地上傳",
+
+  "tableColumns": {
+    "confirmTitle": "確認刪除該加工件",
+    "toothPosition": "牙位",
+    "toothColor": "牙色",
+    "toothColorEmpty": "選擇牙色",
+    "mutToothColor": "多牙色",
+    "toothColorOptions": {
+      "A0": "多牙色",
+      "A1": "A1",
+      "A2": "A2"
+    },
+    "manufacturerName": "廠商",
+    "name": "名稱",
+    "num": "數量",
+    "singlePrice": "單價",
+    "totalPrice": "總價"
+  },
+  "formListColumns": {
+    "associateOrders": "關聯訂單",
+    "remark": "備註",
+    "remarkPlaceholder": "請輸入備註"
+  },
+  "formListDataColumns": {
+    "custom": "客户姓名",
+    "customRules": "請選擇客户",
+    "partsBillingUserName": "下單人",
+    "partsBillingUserNameRules": "請選擇下單人",
+    "partsBillingUserPhone": "下單人電話",
+    "partsBillingUserPhoneRules": "請輸入電話號碼",
+    "deptId": "科室",
+    "deptIdPlaceholder": "請選擇所屬科室",
+    "doctorId": "醫生",
+    "doctorIdPlaceholder": "請選擇醫生",
+    "mailDate": "寄件日期",
+    "wishReturnTime": "期望返回時間",
+    "emergency0": "急用",
+    "emergency1": "需準時",
+    "machinedPartsType": "加工件類型",
+    "machinedPartsTypePlaceholder": "請選擇加工件類型",
+    "machinedPartsType0": "種植件",
+    "machinedPartsType1": "活動件",
+    "machinedPartsType2": "其他件",
+    "dentalImplantTypeValue": "種植體類型",
+    "dentalImplantTypeValuePlaceholder": "請選擇種植體類型",
+    "mouldColumns": "取模柱數",
+    "mouldColumnsPlaceholder": "請輸入取模柱數",
+    "substitutesNumber": "替代體數",
+    "substitutesNumberPlaceholder": "請輸入替代體數",
+    "dentalCrownTypeValue": "牙冠種類",
+    "dentalCrownTypeValuePlaceholder": "請選擇牙冠種類",
+    "dentalCrownNumber": "牙冠顆數",
+    "dentalCrownNumberPlaceholder": "請輸入牙冠顆數",
+    "supportType": "支架種類",
+    "supportTypePlaceholder": "請輸入支架種類",
+    "healingAbutment": "癒合基台",
+    "healingAbutmentPlaceholder": "請輸入癒合基台",
+    "finishedAbutment": "成品基台",
+    "finishedAbutmentPlaceholder": "請輸入成品基台",
+    "supportNumber": "支架數量",
+    "supportNumberPlaceholder": "請輸入數量"
+  },
+  "store": {
+    "successMsg": "保存成功",
+    "stageSuccessMsg": "暫存成功",
+    "uploadErrorMsg": "上傳失敗～",
+    "warningMsg": "請先選擇客户"
+  },
+  "choosePhotoDrawer": {
+    "header": "口腔影像"
+  },
+  "components": {
+    "associateOrders": {
+      "orderTitle": "普通訂單",
+      "placeholder": "請輸入治療項目搜索",
+      "orderTitle2": "定金訂單"
+    },
+    "toothPosition": {
+      "btnText1": "全口-恆",
+      "btnText2": "上半口-恆",
+      "btnText3": "下半口-恆",
+      "btnText4": "上頜",
+      "btnText5": "下頜"
+    }
+  }
+}

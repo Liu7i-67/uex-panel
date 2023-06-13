@@ -1,0 +1,85 @@
+{
+  "module": "探馬同步scoutSync",
+  "tanMaSyncStaffRelate": "員工關聯",
+  "tanMaSyncCustomerRelate": "客户關聯",
+  "noAuthority": "暫無權限",
+  "customerRelateColumns": {
+    "name": "客户姓名",
+    "wechatNickname": "客户暱稱",
+    "mobilesJson": "授權手機號",
+    "createDate": "授權時間",
+    "isRelated": "是否關聯",
+    "options": "操作"
+  },
+  "customerRelateSearch": {
+    "name": { "label": "客户姓名", "placeholder": "請輸入客户姓名" },
+    "mobilesJson": {
+      "label": "授權手機號",
+      "placeholder": "請輸入授權手機號"
+    },
+    "createTimeStart": { "label": "授權時間" },
+    "isRelated": {
+      "label": "是否關聯",
+      "options": [
+        { "label": "是", "value": 1 },
+        { "label": "否", "value": 0 }
+      ]
+    }
+  },
+  "staffRelateSearch": {
+    "name": {
+      "label": "睿美雲員工姓名",
+      "placeholder": "請輸入睿美雲員工姓名"
+    },
+    "mobile": {
+      "label": "授權手機號",
+      "placeholder": "請輸入授權手機號"
+    },
+    "createTimeStart": { "label": "授權時間" },
+    "isRelated": {
+      "label": "是否關聯",
+      "options": [
+        { "label": "是", "value": 1 },
+        { "label": "否", "value": 0 }
+      ]
+    },
+    "synchFlag": {
+      "label": "數據同步",
+      "options": [
+        { "label": "是", "value": 1 },
+        { "label": "否", "value": 0 }
+      ]
+    }
+  },
+  "staffRelateColumns": {
+    "name": "客户姓名",
+    "tanMaUserName": "探馬員工姓名",
+    "phone": "企微電話號碼",
+    "mobile": "授權手機號",
+    "DataSyncStatus": "數據同步狀態",
+    "customerNum": "添加客户數量（探馬）",
+    "createDate": "授權時間",
+    "isRelated": "是否關聯",
+    "options": "操作",
+    "wechatNickname": "探馬暱稱",
+    "mobilesJson": "授權手機號",
+    "qwCustomerTime": "添加好友時間"
+  },
+  "button": {
+    "offRelate": "斷開關聯",
+    "onRelate": "關聯",
+    "batchSync": "批量同步",
+    "article": "條",
+    "confirmSelect": "確定選擇",
+    "cancelSelect": "取消選擇",
+    "refreshData": "數據更新",
+    "dataSync": "數據同步"
+  },
+  "keyword": {
+    "yes": "是",
+    "no": "否",
+    "refreshDataTips": "點擊獲取探馬系統的企微員工最新數據",
+    "dataSyncStatusTips": "當前僅姓名同步，睿美雲同步至探馬",
+    "customerNumTips": "員工未關聯時，無法獲取員工對應客户數據"
+  }
+}

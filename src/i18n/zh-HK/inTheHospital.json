@@ -1,0 +1,485 @@
+{
+  "assessment": {
+    "tableColumns": {
+      "customerName": "客户",
+      "smartLabelList": "客户標籤",
+      "receptionType": "來院類型",
+      "recentAppointTime": "最近預約時間",
+      "urgentFlag": "緊急客人",
+      "pros": "項目",
+      "consultationTime": "分診時間",
+      "waitTime": "已等待",
+      "conUserName": "接診諮詢師",
+      "assUserName": "面診醫生",
+      "statusName": "面診狀態",
+      "subStatusName": "面診提交狀態",
+      "cancelFlag": "狀態",
+      "secondConfirmStatus": "面診二次確認",
+      "bargainFlagName": "消費狀態",
+      "dynamicFormSetting": "表單",
+      "customerRemark": "主訴",
+      "handleRemark": "治療方案",
+      "vipNum": "會員號",
+      "confirmTime": "面診確認時間",
+      "submitTime": "面診提交時間",
+      "manualStartTime": "面診開始時間",
+      "ignoreStatus": "是否填寫病歷",
+      "options": "操作"
+    },
+    "tableBtn": {
+      "assessment": "面診",
+      "billing": "開單",
+      "returnVisit": "回訪",
+      "video": "影像",
+      "medicalRecord": "病例",
+      "inValid": "作廢"
+    },
+    "otherText": {
+      "viewMedicalRecord": "查看病例",
+      "inputMedicalRecord": "填寫病例",
+      "ignored": "已忽略",
+      "no": "否",
+      "yes": "是",
+      "minute": "分鐘",
+      "revoked": "已作廢",
+      "normal": "正常",
+      "confirmed": "已確認",
+      "unconfirmed": "未確認",
+      "image": "影像",
+      "ignore_reason": "忽略原因",
+      "close": "關閉",
+      "key1": "未到院客户不可開單",
+      "key2": "作廢成功",
+      "key3": "是否作廢該條諮詢",
+      "key4": "作廢",
+      "key5": "未到院客户不可面診"
+    },
+    "searchList": {
+      "status": {
+        "label": "面診狀態",
+        "placeholder": "請選擇面診狀態",
+        "options": {
+          "watingAssessmentStatus": "待面診",
+          "assessmentingStatus": "面診中",
+          "assessmentedStatus": "已面診"
+        }
+      },
+      "customerkey": { "label": "客户", "placeholder": "請輸入客户姓名或電話" },
+      "type": { "label": "項目", "placeholder": "請選擇項目" },
+      "assUserName": {
+        "label": "面診醫生",
+        "placeholder": "請輸入面診醫生姓名"
+      },
+      "toUserName": {
+        "label": "接診諮詢師",
+        "placeholder": "請輸入接診諮詢師"
+      },
+      "ifUrgent": {
+        "label": "是否緊急",
+        "placeholder": "請選擇是否緊急",
+        "options": { "yes": "是", "no": "否" }
+      },
+      "searchKey": {
+        "label": "表單查詢",
+        "placeholder": "請輸入關鍵字"
+      },
+      "submitTime": "面診提交時間",
+      "confirmTime": "面診確認時間",
+      "startTime": "面診開始時間",
+      "subStatus": {
+        "label": "面診提交狀態",
+        "options": {
+          "noSubmit": "未提交",
+          "waitEnsure": "待確認",
+          "enSured": "已確認"
+        }
+      },
+      "hasMedicalRecord": {
+        "label": "是否填寫病歷",
+        "options": { "yes": "是", "no": "否" }
+      }
+    },
+    "listButton": {
+      "add": "新增面診"
+    }
+  },
+  "consultation": {
+    "tableColumns": {
+      "customerName": "客户",
+      "smartLabelList": "客户標籤",
+      "customerType": "客户類型",
+      "receptionType": "來院類型",
+      "recentAppointTime": "最近預約時間",
+      "urgentFlag": "緊急客人",
+      "pros": "就診項目",
+      "conPros": "諮詢項目",
+      "receptionTime": "接待時間",
+      "waitTime": "已等待",
+      "userName": "接診諮詢師",
+      "statusName": "諮詢狀態",
+      "cancelFlag": "狀態",
+      "bargainFlagName": "消費狀態",
+      "dynamicFormSetting": "表單",
+      "customerRemark": "主訴",
+      "handleRemark": "治療方案",
+      "vipNum": "會員號",
+      "ignoreStatus": "是否填寫病歷",
+      "options": "操作"
+    },
+    "searchList": {
+      "status": {
+        "label": "諮詢狀態",
+        "placeholder": "請選擇諮詢狀態",
+        "options": { "key1": "待就診", "key2": "已就診" }
+      },
+      "customerkey": { "label": "客户", "placeholder": "請輸入客户姓名或電話" },
+      "type": { "label": "就診項目", "placeholder": "請選擇就診項目" },
+      "conProKey": { "label": "諮詢項目", "placeholder": "請輸入諮詢項目" },
+      "ifUrgent": {
+        "label": "是否緊急",
+        "placeholder": "請選擇是否緊急",
+        "options": { "no": "否", "yes": "是" }
+      },
+      "userId": { "label": "接診諮詢師", "placeholder": "請選擇接診諮詢師" },
+      "dateRange": "諮詢時間",
+      "searchKey": { "label": "表單查詢", "placeholder": "請輸入關鍵字" },
+      "customerType": {
+        "label": "客户類型",
+        "options": {
+          "key1": "初診",
+          "key2": "複診",
+          "key3": "老客人",
+          "key4": "其他"
+        }
+      },
+      "bargainFlag": {
+        "label": "消費狀態",
+        "placeholder": "請選擇消費狀態",
+        "options": { "key1": "成交", "key2": "未成交" }
+      },
+      "topProjectTypeId": {
+        "label": "分診項目科室",
+        "placeholder": "請選擇分診項目科室"
+      },
+      "topProjectType": { "label": "分診項目", "placeholder": "請輸入分診項目" }
+    },
+    "tableBtn": {
+      "key1": "面診",
+      "billing": "開單",
+      "returnVisit": "回訪",
+      "video": "影像",
+      "medicalRecord": "病例",
+      "inValid": "作廢"
+    },
+    "listButton": {
+      "add": "新增諮詢"
+    },
+    "otherText": {
+      "viewMedicalRecord": "查看病例",
+      "inputMedicalRecord": "填寫病例",
+      "ignored": "已忽略",
+      "no": "否",
+      "yes": "是",
+      "minute": "分鐘",
+      "revoked": "已作廢",
+      "normal": "正常",
+      "image": "影像",
+      "ignore_reason": "忽略原因",
+      "close": "關閉",
+      "key1": "未到院客户不可開單",
+      "key2": "作廢成功",
+      "key3": "是否作廢該條諮詢",
+      "key4": "作廢",
+      "key5": "未到院客户不可諮詢",
+      "key6": "本月",
+      "key7": "上月",
+      "key8": "最近三個月",
+      "key9": "本年",
+      "key10": "電話",
+      "key11": "就診人數",
+      "key12": "總計實收",
+      "key13": "總計消費",
+      "key14": "初診",
+      "key15": "其中實收",
+      "key16": "實收金額",
+      "key17": "其中消費",
+      "key18": "消費金額",
+      "key19": "複診",
+      "key20": "老客人",
+      "key21": "人"
+    }
+  },
+  "reception": {
+    "otherText": {
+      "key1": "接待",
+      "key2": "待接待",
+      "yes": "是",
+      "no": "否",
+      "viewMedicalRecord": "查看病例",
+      "inputMedicalRecord": "填寫病例",
+      "ignored": "已忽略",
+      "key3": "詳情",
+      "key4": "轉移",
+      "key5": "轉交",
+      "key6": "新增接待",
+      "key7": "數據上傳",
+      "key8": "部分選擇",
+      "key9": "全部選擇",
+      "key10": "確定選擇",
+      "key11": "取消",
+      "key12": "條",
+      "key13": "忽略原因",
+      "key14": "關閉",
+      "key15": "請選擇數據",
+      "key16": "操作成功，請稍後刷新查看",
+      "key17": "請輸入客户姓名或電話",
+      "key18": "SCRM-老帶新",
+      "key19": "請搜索員工姓名",
+      "key20": "員工",
+      "key21": "請輸入其他",
+      "key22": "其他",
+      "key23": "老帶新",
+      "key24": "請輸入",
+      "key25": "全部",
+      "key26": "導出失敗",
+      "key27": "今日未到院",
+      "key28": "今日已到院",
+      "key29": "接待"
+    },
+    "table_1": {
+      "customerPhones": "客户",
+      "smartLabelList": "客户標籤",
+      "customerPoolName": "客户池",
+      "customerSex": "性別",
+      "customerType": "客户類型",
+      "consumeStatusName": "消費狀態",
+      "receptionTypeName": "就診類型",
+      "urgentFlag": "緊急客人",
+      "receptionProject": "分診項目",
+      "triageToUserNameLs": "接診諮詢師",
+      "consultationPersonName": "面診人",
+      "arrivePurpose": "到院目的",
+      "receiverName": "接待人",
+      "assistReceiverName": "協助接待人",
+      "autoFlag": "接待模式",
+      "createDate": "接待時間",
+      "toConsultationUserNameLs": "接待",
+      "sourceTypeName": "來源類型",
+      "customerSource": "客户來源",
+      "flowSysUserName": "接待所屬",
+      "sysUserName": "當前所屬",
+      "preUserName": "報備人",
+      "bespeackTime": "預約單號",
+      "expertName": "預約人",
+      "ignoreStatus": "是否填寫病歷",
+      "remark": "備註",
+      "integralTotal": "會員等級",
+      "vipNum": "會員號",
+      "deptName": "就診科室",
+      "topProjectTypeName": "分診項目科室",
+      "uploadFlag": "是否上傳",
+      "id": "操作"
+    },
+    "search_1": {
+      "customerId": "客户",
+      "receptionType": { "label": "就診類型", "placeholder": "請輸入就診類型" },
+      "arrivePurpose": { "label": "到院目的", "placeholder": "請輸入到院目的" },
+      "dateRange": "接待時間",
+      "triageToUserId": {
+        "label": "接診諮詢師",
+        "placeholder": "請輸入接診諮詢師"
+      },
+      "urgentFlag": "僅緊急客人",
+      "receiverId": { "label": "接待人", "placeholder": "請搜索接待人" },
+      "assistReceiverId": {
+        "label": "協助接待人",
+        "placeholder": "請搜索協助接待人"
+      },
+      "customerSex": {
+        "label": "性別",
+        "placeholder": "請選擇性別",
+        "options": { "man": "男", "woman": "女" }
+      },
+      "customerType": {
+        "label": "客户類型",
+        "placeholder": "請輸入客户類型",
+        "options": {
+          "key1": "初診",
+          "key2": "複診",
+          "key3": "老客人",
+          "key4": "其他"
+        }
+      },
+      "isAppointTriage": {
+        "label": "指定接診",
+        "options": { "yes": "是", "no": "否" }
+      },
+      "autoFlag": {
+        "label": "接待模式",
+        "options": { "key1": "自動", "key2": "手動" }
+      },
+      "member": { "label": "會員等級", "placeholder": "請輸入會員等級" },
+      "deptId": { "label": "就診科室", "placeholder": "請選擇就診科室" },
+      "topProjectType": {
+        "label": "分診項目科室",
+        "placeholder": "請輸入分診項目科室"
+      },
+      "topProjectTypeName": {
+        "label": "分診項目",
+        "placeholder": "請輸入分診項目"
+      },
+      "consumeStatusList": {
+        "label": "消費狀態",
+        "options": { "key1": "未成交", "key2": "成交", "key3": "待收費" }
+      },
+      "consultationPerson": {
+        "label": "面診人",
+        "placeholder": "請輸入面診人"
+      },
+      "medicalNo": { "label": "病歷號", "placeholder": "請輸入病歷號" },
+      "uploadFlag": {
+        "label": "是否上傳",
+        "options": { "yes": "是", "no": "否" }
+      },
+      "sourcePathName": "客户來源"
+    },
+    "table_2": {
+      "phoneNumber": "客户",
+      "operateSourceValue": "操作來源",
+      "placeName": "位置",
+      "operateName": "操作人員",
+      "byConsultation": "所屬諮詢",
+      "recentToHospital": "最近到院",
+      "hospitalNote": "到院備註",
+      "receptionStatus": "處理狀態",
+      "dealWithName": "處理人員",
+      "createDate": "創建時間",
+      "id": "操作"
+    },
+    "search_2": {
+      "customerId": "客户",
+      "operateSource": {
+        "label": "操作來源",
+        "placeholder": "請輸入操作來源",
+        "options": {
+          "key1": "諮詢操作",
+          "key2": "面診操作",
+          "key3": "開單操作",
+          "key4": "收銀操作",
+          "key5": "治療操作",
+          "key6": "劃扣操作",
+          "key7": "核銷操作",
+          "key8": "小程序操作",
+          "key9": "小程序退款操作",
+          "key10": "跨院接待"
+        }
+      },
+      "receptionStatus": {
+        "label": "處理狀態",
+        "placeholder": "請選擇處理狀態",
+        "options": {
+          "key1": "未處理",
+          "key2": "已處理",
+          "key3": "已作廢",
+          "key4": "異常",
+          "key5": "待審批"
+        }
+      },
+
+      "createDate": "創建時間",
+      "hospitalNote": {
+        "label": "到院備註",
+        "placeholder": "請選擇到院備註",
+        "options": { "key1": "今日已到院", "key2": "今日未到院" }
+      },
+      "createBy": { "label": "操作人員", "placeholder": "請輸入操作人員" },
+      "byConsultation": { "label": "所屬諮詢", "placeholder": "請輸入所屬諮詢" }
+    },
+    "detail": {
+      "key1": "客户姓名",
+      "key2": "客户來源",
+      "key3": "操作來源",
+      "key4": "位置",
+      "key5": "操作人員",
+      "key6": "所屬諮詢",
+      "key7": "最近到院",
+      "key8": "到院備註",
+      "key9": "處理人員",
+      "key10": "創建時間"
+    },
+    "assistReceptionConfig": {
+      "key1": "添加協助接待人",
+      "key2": "協助接待人",
+      "key3": "請輸入協助接待人",
+      "key4": "添加",
+      "key5": "協助接待人列表",
+      "key6": "協助接待人姓名",
+      "key7": "操作",
+      "key8": "刪除",
+      "key9": "確定要刪除該協助接待人嗎？",
+      "key10": "取消",
+      "key11": "確定",
+      "key12": "刪除成功",
+      "key13": "添加成功",
+      "key14": "請輸入正確的分診人"
+    },
+    "triageConfig": {
+      "key1": "添加分診人",
+      "key2": "分診人列表",
+      "key3": "確定要刪除該分診人嗎？",
+      "key4": "取消",
+      "key5": "確定",
+      "key6": "刪除成功",
+      "key7": "添加方式",
+      "key8": "分診人姓名",
+      "key9": "操作",
+      "key10": "刪除",
+      "key11": "崗位",
+      "key12": "個人",
+      "key13": "自動更新列表內數據",
+      "key14": "添加成功",
+      "key15": "請選擇分診人或者崗位",
+      "key16": "崗位",
+      "key17": "請輸入崗位",
+      "key18": "添加",
+      "key19": "分診人",
+      "key20": "請輸入分診人"
+    }
+  },
+  "waitTriage": {
+    "otherText": {
+      "key1": "開單",
+      "key2": "詳情",
+      "key3": "待分診",
+      "key4": "已分診",
+      "key5": "作廢"
+    },
+    "table": {
+      "name": "客户姓名",
+      "poolName": "客户池",
+      "customerTypeName": "客人類型",
+      "sourceAll": "客户來源",
+      "consultationReceptionTypeName": "就診類型",
+      "receptionTime": "接待時間",
+      "mamagerName": "接待",
+      "assistReceiverName": "協助接待",
+      "receiverName": "接待人",
+      "pros": "分診項目",
+      "dynamicFormSetting": "表單",
+      "relatedService": "相關客服",
+      "status": "分診狀態",
+      "vipNum": "會員號",
+      "options": "操作"
+    },
+    "search": {
+      "customerId": "客户",
+      "types": "客人類型",
+      "statues": {
+        "label": "分診狀態",
+        "options": { "key1": "待分診", "key2": "已分診" }
+      },
+      "userId": { "label": "接待", "placeholder": "請輸入接待" },
+      "searchKey": { "label": "表單查詢", "placeholder": "請輸入關鍵字" }
+    }
+  }
+}

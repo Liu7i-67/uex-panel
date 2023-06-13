@@ -1,0 +1,485 @@
+{
+  "assessment": {
+    "tableColumns": {
+      "customerName": "客户",
+      "smartLabelList": "客户标签",
+      "receptionType": "来院类型",
+      "recentAppointTime": "最近预约时间",
+      "urgentFlag": "紧急客人",
+      "pros": "项目",
+      "consultationTime": "分诊时间",
+      "waitTime": "已等待",
+      "conUserName": "接诊咨询师",
+      "assUserName": "面诊医生",
+      "statusName": "面诊状态",
+      "subStatusName": "面诊提交状态",
+      "cancelFlag": "状态",
+      "secondConfirmStatus": "面诊二次确认",
+      "bargainFlagName": "消费状态",
+      "dynamicFormSetting": "表单",
+      "customerRemark": "主诉",
+      "handleRemark": "治疗方案",
+      "vipNum": "会员号",
+      "confirmTime": "面诊确认时间",
+      "submitTime": "面诊提交时间",
+      "manualStartTime": "面诊开始时间",
+      "ignoreStatus": "是否填写病历",
+      "options": "操作"
+    },
+    "tableBtn": {
+      "assessment": "面诊",
+      "billing": "开单",
+      "returnVisit": "回访",
+      "video": "影像",
+      "medicalRecord": "病例",
+      "inValid": "作废"
+    },
+    "otherText": {
+      "viewMedicalRecord": "查看病例",
+      "inputMedicalRecord": "填写病例",
+      "ignored": "已忽略",
+      "no": "否",
+      "yes": "是",
+      "minute": "分钟",
+      "revoked": "已作废",
+      "normal": "正常",
+      "confirmed": "已确认",
+      "unconfirmed": "未确认",
+      "image": "影像",
+      "ignore_reason": "忽略原因",
+      "close": "关闭",
+      "key1": "未到院客户不可开单",
+      "key2": "作废成功",
+      "key3": "是否作废该条咨询",
+      "key4": "作废",
+      "key5": "未到院客户不可面诊"
+    },
+    "searchList": {
+      "status": {
+        "label": "面诊状态",
+        "placeholder": "请选择面诊状态",
+        "options": {
+          "watingAssessmentStatus": "待面诊",
+          "assessmentingStatus": "面诊中",
+          "assessmentedStatus": "已面诊"
+        }
+      },
+      "customerkey": { "label": "客户", "placeholder": "请输入客户姓名或电话" },
+      "type": { "label": "项目", "placeholder": "请选择项目" },
+      "assUserName": {
+        "label": "面诊医生",
+        "placeholder": "请输入面诊医生姓名"
+      },
+      "toUserName": {
+        "label": "接诊咨询师",
+        "placeholder": "请输入接诊咨询师"
+      },
+      "ifUrgent": {
+        "label": "是否紧急",
+        "placeholder": "请选择是否紧急",
+        "options": { "yes": "是", "no": "否" }
+      },
+      "searchKey": {
+        "label": "表单查询",
+        "placeholder": "请输入关键字"
+      },
+      "submitTime": "面诊提交时间",
+      "confirmTime": "面诊确认时间",
+      "startTime": "面诊开始时间",
+      "subStatus": {
+        "label": "面诊提交状态",
+        "options": {
+          "noSubmit": "未提交",
+          "waitEnsure": "待确认",
+          "enSured": "已确认"
+        }
+      },
+      "hasMedicalRecord": {
+        "label": "是否填写病历",
+        "options": { "yes": "是", "no": "否" }
+      }
+    },
+    "listButton": {
+      "add": "新增面诊"
+    }
+  },
+  "consultation": {
+    "tableColumns": {
+      "customerName": "客户",
+      "smartLabelList": "客户标签",
+      "customerType": "客户类型",
+      "receptionType": "来院类型",
+      "recentAppointTime": "最近预约时间",
+      "urgentFlag": "紧急客人",
+      "pros": "就诊项目",
+      "conPros": "咨询项目",
+      "receptionTime": "接待时间",
+      "waitTime": "已等待",
+      "userName": "接诊咨询师",
+      "statusName": "咨询状态",
+      "cancelFlag": "状态",
+      "bargainFlagName": "消费状态",
+      "dynamicFormSetting": "表单",
+      "customerRemark": "主诉",
+      "handleRemark": "治疗方案",
+      "vipNum": "会员号",
+      "ignoreStatus": "是否填写病历",
+      "options": "操作"
+    },
+    "searchList": {
+      "status": {
+        "label": "咨询状态",
+        "placeholder": "请选择咨询状态",
+        "options": { "key1": "待就诊", "key2": "已就诊" }
+      },
+      "customerkey": { "label": "客户", "placeholder": "请输入客户姓名或电话" },
+      "type": { "label": "就诊项目", "placeholder": "请选择就诊项目" },
+      "conProKey": { "label": "咨询项目", "placeholder": "请输入咨询项目" },
+      "ifUrgent": {
+        "label": "是否紧急",
+        "placeholder": "请选择是否紧急",
+        "options": { "no": "否", "yes": "是" }
+      },
+      "userId": { "label": "接诊咨询师", "placeholder": "请选择接诊咨询师" },
+      "dateRange": "咨询时间",
+      "searchKey": { "label": "表单查询", "placeholder": "请输入关键字" },
+      "customerType": {
+        "label": "客户类型",
+        "options": {
+          "key1": "初诊",
+          "key2": "复诊",
+          "key3": "老客人",
+          "key4": "其他"
+        }
+      },
+      "bargainFlag": {
+        "label": "消费状态",
+        "placeholder": "请选择消费状态",
+        "options": { "key1": "成交", "key2": "未成交" }
+      },
+      "topProjectTypeId": {
+        "label": "分诊项目科室",
+        "placeholder": "请选择分诊项目科室"
+      },
+      "topProjectType": { "label": "分诊项目", "placeholder": "请输入分诊项目" }
+    },
+    "tableBtn": {
+      "key1": "面诊",
+      "billing": "开单",
+      "returnVisit": "回访",
+      "video": "影像",
+      "medicalRecord": "病例",
+      "inValid": "作废"
+    },
+    "listButton": {
+      "add": "新增咨询"
+    },
+    "otherText": {
+      "viewMedicalRecord": "查看病例",
+      "inputMedicalRecord": "填写病例",
+      "ignored": "已忽略",
+      "no": "否",
+      "yes": "是",
+      "minute": "分钟",
+      "revoked": "已作废",
+      "normal": "正常",
+      "image": "影像",
+      "ignore_reason": "忽略原因",
+      "close": "关闭",
+      "key1": "未到院客户不可开单",
+      "key2": "作废成功",
+      "key3": "是否作废该条咨询",
+      "key4": "作废",
+      "key5": "未到院客户不可咨询",
+      "key6": "本月",
+      "key7": "上月",
+      "key8": "最近三个月",
+      "key9": "本年",
+      "key10": "电话",
+      "key11": "就诊人数",
+      "key12": "总计实收",
+      "key13": "总计消费",
+      "key14": "初诊",
+      "key15": "其中实收",
+      "key16": "实收金额",
+      "key17": "其中消费",
+      "key18": "消费金额",
+      "key19": "复诊",
+      "key20": "老客人",
+      "key21": "人"
+    }
+  },
+  "reception": {
+    "otherText": {
+      "key1": "接待",
+      "key2": "待接待",
+      "yes": "是",
+      "no": "否",
+      "viewMedicalRecord": "查看病例",
+      "inputMedicalRecord": "填写病例",
+      "ignored": "已忽略",
+      "key3": "详情",
+      "key4": "转移",
+      "key5": "转交",
+      "key6": "新增接待",
+      "key7": "数据上传",
+      "key8": "部分选择",
+      "key9": "全部选择",
+      "key10": "确定选择",
+      "key11": "取消",
+      "key12": "条",
+      "key13": "忽略原因",
+      "key14": "关闭",
+      "key15": "请选择数据",
+      "key16": "操作成功，请稍后刷新查看",
+      "key17": "请输入客户姓名或电话",
+      "key18": "SCRM-老带新",
+      "key19": "请搜索员工姓名",
+      "key20": "员工",
+      "key21": "请输入其他",
+      "key22": "其他",
+      "key23": "老带新",
+      "key24": "请输入",
+      "key25": "全部",
+      "key26": "导出失败",
+      "key27": "今日未到院",
+      "key28": "今日已到院",
+      "key29": "接待"
+    },
+    "table_1": {
+      "customerPhones": "客户",
+      "smartLabelList": "客户标签",
+      "customerPoolName": "客户池",
+      "customerSex": "性别",
+      "customerType": "客户类型",
+      "consumeStatusName": "消费状态",
+      "receptionTypeName": "就诊类型",
+      "urgentFlag": "紧急客人",
+      "receptionProject": "分诊项目",
+      "triageToUserNameLs": "接诊咨询师",
+      "consultationPersonName": "面诊人",
+      "arrivePurpose": "到院目的",
+      "receiverName": "接待人",
+      "assistReceiverName": "协助接待人",
+      "autoFlag": "接待模式",
+      "createDate": "接待时间",
+      "toConsultationUserNameLs": "接待",
+      "sourceTypeName": "来源类型",
+      "customerSource": "客户来源",
+      "flowSysUserName": "接待所属",
+      "sysUserName": "当前所属",
+      "preUserName": "报备人",
+      "bespeackTime": "预约单号",
+      "expertName": "预约人",
+      "ignoreStatus": "是否填写病历",
+      "remark": "备注",
+      "integralTotal": "会员等级",
+      "vipNum": "会员号",
+      "deptName": "就诊科室",
+      "topProjectTypeName": "分诊项目科室",
+      "uploadFlag": "是否上传",
+      "id": "操作"
+    },
+    "search_1": {
+      "customerId": "客户",
+      "receptionType": { "label": "就诊类型", "placeholder": "请输入就诊类型" },
+      "arrivePurpose": { "label": "到院目的", "placeholder": "请输入到院目的" },
+      "dateRange": "接待时间",
+      "triageToUserId": {
+        "label": "接诊咨询师",
+        "placeholder": "请输入接诊咨询师"
+      },
+      "urgentFlag": "仅紧急客人",
+      "receiverId": { "label": "接待人", "placeholder": "请搜索接待人" },
+      "assistReceiverId": {
+        "label": "协助接待人",
+        "placeholder": "请搜索协助接待人"
+      },
+      "customerSex": {
+        "label": "性别",
+        "placeholder": "请选择性别",
+        "options": { "man": "男", "woman": "女" }
+      },
+      "customerType": {
+        "label": "客户类型",
+        "placeholder": "请输入客户类型",
+        "options": {
+          "key1": "初诊",
+          "key2": "复诊",
+          "key3": "老客人",
+          "key4": "其他"
+        }
+      },
+      "isAppointTriage": {
+        "label": "指定接诊",
+        "options": { "yes": "是", "no": "否" }
+      },
+      "autoFlag": {
+        "label": "接待模式",
+        "options": { "key1": "自动", "key2": "手动" }
+      },
+      "member": { "label": "会员等级", "placeholder": "请输入会员等级" },
+      "deptId": { "label": "就诊科室", "placeholder": "请选择就诊科室" },
+      "topProjectType": {
+        "label": "分诊项目科室",
+        "placeholder": "请输入分诊项目科室"
+      },
+      "topProjectTypeName": {
+        "label": "分诊项目",
+        "placeholder": "请输入分诊项目"
+      },
+      "consumeStatusList": {
+        "label": "消费状态",
+        "options": { "key1": "未成交", "key2": "成交", "key3": "待收费" }
+      },
+      "consultationPerson": {
+        "label": "面诊人",
+        "placeholder": "请输入面诊人"
+      },
+      "medicalNo": { "label": "病历号", "placeholder": "请输入病历号" },
+      "uploadFlag": {
+        "label": "是否上传",
+        "options": { "yes": "是", "no": "否" }
+      },
+      "sourcePathName": "客户来源"
+    },
+    "table_2": {
+      "phoneNumber": "客户",
+      "operateSourceValue": "操作来源",
+      "placeName": "位置",
+      "operateName": "操作人员",
+      "byConsultation": "所属咨询",
+      "recentToHospital": "最近到院",
+      "hospitalNote": "到院备注",
+      "receptionStatus": "处理状态",
+      "dealWithName": "处理人员",
+      "createDate": "创建时间",
+      "id": "操作"
+    },
+    "search_2": {
+      "customerId": "客户",
+      "operateSource": {
+        "label": "操作来源",
+        "placeholder": "请输入操作来源",
+        "options": {
+          "key1": "咨询操作",
+          "key2": "面诊操作",
+          "key3": "开单操作",
+          "key4": "收银操作",
+          "key5": "治疗操作",
+          "key6": "划扣操作",
+          "key7": "核销操作",
+          "key8": "小程序操作",
+          "key9": "小程序退款操作",
+          "key10": "跨院接待"
+        }
+      },
+      "receptionStatus": {
+        "label": "处理状态",
+        "placeholder": "请选择处理状态",
+        "options": {
+          "key1": "未处理",
+          "key2": "已处理",
+          "key3": "已作废",
+          "key4": "异常",
+          "key5": "待审批"
+        }
+      },
+
+      "createDate": "创建时间",
+      "hospitalNote": {
+        "label": "到院备注",
+        "placeholder": "请选择到院备注",
+        "options": { "key1": "今日已到院", "key2": "今日未到院" }
+      },
+      "createBy": { "label": "操作人员", "placeholder": "请输入操作人员" },
+      "byConsultation": { "label": "所属咨询", "placeholder": "请输入所属咨询" }
+    },
+    "detail": {
+      "key1": "客户姓名",
+      "key2": "客户来源",
+      "key3": "操作来源",
+      "key4": "位置",
+      "key5": "操作人员",
+      "key6": "所属咨询",
+      "key7": "最近到院",
+      "key8": "到院备注",
+      "key9": "处理人员",
+      "key10": "创建时间"
+    },
+    "assistReceptionConfig": {
+      "key1": "添加协助接待人",
+      "key2": "协助接待人",
+      "key3": "请输入协助接待人",
+      "key4": "添加",
+      "key5": "协助接待人列表",
+      "key6": "协助接待人姓名",
+      "key7": "操作",
+      "key8": "删除",
+      "key9": "确定要删除该协助接待人吗？",
+      "key10": "取消",
+      "key11": "确定",
+      "key12": "删除成功",
+      "key13": "添加成功",
+      "key14": "请输入正确的分诊人"
+    },
+    "triageConfig": {
+      "key1": "添加分诊人",
+      "key2": "分诊人列表",
+      "key3": "确定要删除该分诊人吗？",
+      "key4": "取消",
+      "key5": "确定",
+      "key6": "删除成功",
+      "key7": "添加方式",
+      "key8": "分诊人姓名",
+      "key9": "操作",
+      "key10": "删除",
+      "key11": "岗位",
+      "key12": "个人",
+      "key13": "自动更新列表内数据",
+      "key14": "添加成功",
+      "key15": "请选择分诊人或者岗位",
+      "key16": "岗位",
+      "key17": "请输入岗位",
+      "key18": "添加",
+      "key19": "分诊人",
+      "key20": "请输入分诊人"
+    }
+  },
+  "waitTriage": {
+    "otherText": {
+      "key1": "开单",
+      "key2": "详情",
+      "key3": "待分诊",
+      "key4": "已分诊",
+      "key5": "作废"
+    },
+    "table": {
+      "name": "客户姓名",
+      "poolName": "客户池",
+      "customerTypeName": "客人类型",
+      "sourceAll": "客户来源",
+      "consultationReceptionTypeName": "就诊类型",
+      "receptionTime": "接待时间",
+      "mamagerName": "接待",
+      "assistReceiverName": "协助接待",
+      "receiverName": "接待人",
+      "pros": "分诊项目",
+      "dynamicFormSetting": "表单",
+      "relatedService": "相关客服",
+      "status": "分诊状态",
+      "vipNum": "会员号",
+      "options": "操作"
+    },
+    "search": {
+      "customerId": "客户",
+      "types": "客人类型",
+      "statues": {
+        "label": "分诊状态",
+        "options": { "key1": "待分诊", "key2": "已分诊" }
+      },
+      "userId": { "label": "接待", "placeholder": "请输入接待" },
+      "searchKey": { "label": "表单查询", "placeholder": "请输入关键字" }
+    }
+  }
+}

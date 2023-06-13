@@ -1,0 +1,44 @@
+{
+  "dataSync": "劃扣資料同步",
+  "doctorConfig": "九陣醫生名單配置",
+  "syncStatus": "同步狀態",
+  "syncStatusPlaceholder": "選擇同步狀態",
+  "syncStatusSuccess": "同步成功",
+  "syncStatusError": "同步失敗",
+  "tableColumns": {
+    "key": "序號",
+    "customerName": "客戶姓名",
+    "customerNameTooltip": "()內為客戶在睿美雲系統的名字，()外為當時劃扣時傳的客戶姓名。若姓名一致則只展示當時資料",
+    "mainPhone": "手機號",
+    "genderName": "性別",
+    "age": "年齡",
+    "billingTypeName": "訂單型別",
+    "billingNo": "關聯訂單號",
+    "totalPrice": "訂單總金額",
+    "deductRecordNo": "關聯劃扣記錄號",
+    "doctorName": "治療醫生",
+    "doctorNameTooltip": "涉及多個主導治療醫生時,只會傳第一個主導治療醫生資料",
+    "syncStatus": "同步狀態",
+    "syncStatusSuccess": "同步成功",
+    "syncStatusError": "同步失敗",
+    "updateDate": "同步時間",
+    "sync": "同步"
+  },
+  "formList": {
+    "deductRecordNo": "劃扣記錄號",
+    "deductRecordNoPlaceholder": "請輸入劃扣記錄號",
+    "syncTime": "同步時間",
+    "billingNo": "訂單號",
+    "billingNoPlaceholder": "請輸入訂單號",
+    "billingType": "訂單型別",
+    "billingTypePlaceholder": "請選擇訂單型別"
+  },
+  "doctorConfigPage": {
+    "addDoctor": "新增醫生名單",
+    "staff": "員工",
+    "staffPlaceholder": "請輸入姓名、電話號碼",
+    "roster": "醫院醫師花名冊",
+    "name": "姓名"
+  },
+  "selectStaff": "請選擇員工"
+}

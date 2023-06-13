@@ -1,0 +1,151 @@
+{
+  "h5title": "H5表單",
+  "base": "基礎欄位",
+  "advanced": "高階欄位",
+  "layout": "佈局欄位",
+  "child": "子表單",
+  "title": "標題",
+  "divider": "分割線",
+  "grid": "柵格佈局",
+  "tabs": "選項卡",
+  "placeholderTime": "請選擇時間",
+  "darg": "拖",
+  "rush": "刷",
+  "copy": "復",
+  "delete": "刪",
+  "dargMsg": "從左側拖拽新增欄位",
+  "preview": "預覽",
+  "previewOkText": "獲取表單資料",
+  "jsonError": "解析json異常",
+  "sort": "序號",
+  "l": "大",
+  "m": "中",
+  "s": "小",
+  "subformWarn": "子表單內只允許拖拽普通欄位",
+  "formFiled": {
+    "input": "單行文字",
+    "input-number": "數字輸入框",
+    "textarea": "多行文字",
+    "select": "下拉選擇框",
+    "time-picker": "時間選擇框",
+    "date-picker": "日期選擇框",
+    "radio": "單選框",
+    "checkbox": "多選框",
+    "switch": "開關",
+    "rate": "評分",
+    "slider": "滑塊"
+  },
+  "settings": {
+    "fromLayout": "表單佈局方式",
+    "mark": "欄位標識",
+    "markPlaceholder": "請輸入欄位標識",
+    "titlePlaceholder": "請輸入標題",
+    "width": "寬度",
+    "widthPlaceholder": "請輸入寬度(%|px)",
+    "widthForm": "寬度",
+    "widthFormPlaceholder": "請輸入寬度(%|px)",
+    "titleWidth": "標籤寬度",
+    "auto": "自定義",
+    "content": "佔位內容",
+    "contentPlaceholder": "請輸入佔位內容",
+    "option": "操作屬性",
+    "disable": "禁用",
+    "check": "必填",
+    "required": "必填",
+    "requiredMsg": "請輸入自定義提示",
+    "layout": "佈局方式",
+    "block": "塊級",
+    "inline": "行內",
+    "components": "元件",
+    "isRange": "是否為範圍選擇",
+    "showTime": "是否開啟時間選擇功能",
+    "type": "顯示型別",
+    "date": "日期",
+    "format": "格式化",
+    "default": "預設值",
+    "defaultPlaceholder": "請輸入預設值",
+    "orientation": "文案位置",
+    "left": "左側",
+    "center": "居中",
+    "right": "右側",
+    "normalTip": "文字是否顯示為普通正文樣式",
+    "yes": "是",
+    "no": "否",
+    "gutter": "柵格間隔",
+    "optionsList": "列配置項:(總數為{{num}})",
+    "addCol": "新增列",
+    "justifyTitle": "水平排列方式",
+    "alignTitle": "垂直排列方式",
+    "step": "步長",
+    "minNum": "最小值",
+    "maxNum": "最大值",
+    "allowHalf": "允許半選",
+    "clear": "清空",
+    "multiple": "是否多選",
+    "showInput": "顯示輸入框",
+    "optionType": "風格型別",
+    "defaultValue": "預設",
+    "card": "卡片式頁籤",
+    "setTab": "標籤配置項",
+    "addTab": "新增標籤",
+    "titleSize": "標題大小",
+    "fontWeight": "標題是否加粗",
+    "fontOrientation": "標題位置",
+    "scorePlaceholder": "請填寫分數",
+    "select": "選項",
+    "useScore": "不填為不計分",
+    "addSelect": "新增選項",
+    "horizontal": "水平",
+    "vertical": "垂直",
+    "size": "欄位元件的尺寸",
+    "labelAlign": "對齊方式",
+    "labelStart": "左對齊",
+    "labelEnd": "右對齊",
+    "fileds": "欄位屬性",
+    "form": "表單屬性",
+    "justify": [
+      {
+        "label": "左對齊",
+        "value": "start"
+      },
+      {
+        "label": "右對齊",
+        "value": "end"
+      },
+      {
+        "label": "居中",
+        "value": "center"
+      },
+      {
+        "label": "兩端對齊",
+        "value": "space-between"
+      },
+      {
+        "label": "每個專案兩側的間隔相等",
+        "value": "space-around"
+      }
+    ],
+    "align": [
+      {
+        "label": "頂部對齊",
+        "value": "top"
+      },
+      {
+        "label": "居中",
+        "value": "middle"
+      },
+      {
+        "label": "底部對齊",
+        "value": "bottom"
+      }
+    ]
+  },
+  "tools": {
+    "confirm": "清空將無法還原,確認清空嗎?",
+    "undo": "撤銷",
+    "redo": "重做",
+    "input": "匯入",
+    "show": "生成",
+    "inputTitle": "請選擇json檔案上傳"
+  }
+}

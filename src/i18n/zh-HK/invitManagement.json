@@ -1,0 +1,104 @@
+{
+  "table": {
+    "customerName": "客户姓名",
+    "customerType": "客户類型",
+    "exclusiveServerName": "專屬護士",
+    "inviterName": "邀約人",
+    "activityDate": "活動日期",
+    "activityDeadlineDate": "邀約截止日期",
+    "code": "邀約編碼",
+    "comeDate": "到院日期",
+    "validateDay": "邀約有效期(天)",
+    "isCome": "是否到院",
+    "recCounselorName": "接診諮詢師",
+    "isValid": "是否有效",
+    "realVisiter": "實際回訪人",
+    "isDeal": "是否成交",
+    "billingUserName": "訂單開單人",
+    "poolName": "客户池",
+    "inviteProject": "邀約項目",
+    "visitContent": "回訪結果",
+    "dealProject": "消費項目",
+    "dealMoney": "消費金額",
+    "reporter": "報備人",
+    "source": "客户來源",
+    "reportDate": "報備日期",
+    "firstTreatDate": "初診日期",
+    "firstCostDate": "首次消費",
+    "latestCostDate": "最近消費"
+  },
+  "otherText": {
+    "yes": "是",
+    "no": "否",
+    "key1": "導入客户信息模版下載",
+    "key2": "新增邀約",
+    "key3": "刪除",
+    "key4": "邀約內容",
+    "key5": "消費金額",
+    "key6": "消費人數",
+    "key7": "有效到院人數",
+    "key8": "邀約人數",
+    "key9": "項目",
+    "key10": "天",
+    "key11": "邀約有效期",
+    "key12": "邀約截止日期",
+    "key13": "活動日期",
+    "key14": "確定",
+    "key15": "取消",
+    "key16": "刪除邀約後，將刪除邀約信息及本次邀約生成的已回訪記錄及未回訪計劃，確認刪除?",
+    "key17": "客户導入邀約",
+    "key18": "客户盤點邀約",
+    "key19": "請輸入活動名稱",
+    "key20": "客户盤點",
+    "key21": "全部",
+    "key22": "請輸入客户",
+    "key23": "SCRM-老帶新",
+    "key24": "請搜索員工姓名",
+    "key25": "員工",
+    "key26": "其他",
+    "key27": "請輸入其他",
+    "key28": "老帶新",
+    "key29": "請選擇",
+    "key30": "到院/邀約(人)",
+    "key31": "活動時間"
+  },
+  "search": {
+    "customerIds": "客户",
+    "activityDate": "活動日期",
+    "customerTypes": "客户類型",
+    "isCome": {
+      "label": "是否到院",
+      "options": { "key1": "已到院", "key2": "未到院" }
+    },
+    "counselorIds": { "placeholder": "請輸入姓名搜索" },
+    "exclusiveServerIds": {
+      "label": "專屬護士",
+      "placeholder": "請輸入姓名搜索"
+    },
+    "inviterName": {
+      "label": "邀約人",
+      "placeholder": "請輸入邀約人"
+    },
+    "idValid": {
+      "label": "是否有效",
+      "options": { "key1": "有效", "key2": "無效" }
+    },
+    "isDeal": {
+      "label": "是否成交",
+      "options": { "key1": "已成交", "key2": "未成交" }
+    },
+    "realVisiterIds": {
+      "label": "實際回訪人",
+      "placeholder": "請選擇實際回訪人"
+    },
+    "billingUserIds": {
+      "label": "訂單開單人",
+      "placeholder": "請選擇訂單開單人"
+    },
+    "isVisited": {
+      "label": "是否邀約回訪",
+      "options": { "key1": "已回訪", "key2": "未回訪" }
+    },
+    "sourcePathName": "客户來源"
+  }
+}

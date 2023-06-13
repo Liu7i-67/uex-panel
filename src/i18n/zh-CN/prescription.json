@@ -1,0 +1,365 @@
+{
+  "module": "处方",
+  "button": {
+    "add": "开具处方",
+    "template": "处方模版",
+    "deal": "处理",
+    "close": "关闭",
+    "cancel": "取消打印",
+    "print": "打印",
+    "confirm": "确认",
+    "determine": "确定",
+    "retry": "重新提交",
+    "handleDistributeMedicine": "暂不发药",
+    "confirmDistributeMedicine": "确认发药",
+    "increase": "增加"
+  },
+  "drugWaiting": "待发药",
+  "continueMedicine": " 复诊续药（待处理）",
+  "tabName": {
+    "continueMedicine": "复诊购药",
+    "prescriptionTemplate": "处方模版",
+    "claimGoods": "取货管理"
+  },
+  "warning": {
+    "noPerm": "抱歉，您没有查看取货管理权限！"
+  },
+  "searchList": {
+    "customerId": {
+      "label": "姓名"
+    },
+    "diagnosis": {
+      "label": "临床诊断"
+    },
+    "userId": {
+      "label": "开具医生"
+    },
+    "approvalStatus": {
+      "label": "审核状态"
+    },
+    "distributeMedicineFlag": {
+      "label": "发药状态"
+    },
+    "time": {
+      "label": "开具时间"
+    },
+    "printNo": {
+      "label": "处方笺编号"
+    },
+    "status": {
+      "label": "处方状态",
+      "placeholder": "请选择处方状态"
+    },
+    "billingStatus": {
+      "label": "订单状态",
+      "placeholder": "请选择收银状态"
+    },
+    "typeId": {
+      "label": "处方类型",
+      "placeholder": "请选择处方类型"
+    }
+  },
+  "orderStatus": {
+    "unpaid": "未付款",
+    "paid": "已付款",
+    "invalid": "已作废",
+    "overdue": "欠费",
+    "suspended": "挂起",
+    "refunded": "已退款"
+  },
+  "unknownSex": "未知",
+  "distributeMedicineStatus": {
+    "waitMedicine": "待发药",
+    "dispensedMedicine": "已发药",
+    "notYetMedicine": "暂不发药",
+    "someMedicine": "部分发药",
+    "cancelled": "已取消",
+    "beingFunded": "签署中",
+    "signatureFailure": "签署失败"
+  },
+  "approvalStatus": {
+    "beingAbolished": "作废中",
+    "notInEffect": "未生效",
+    "becameEffect": "已生效",
+    "hasInvalid": "已作废",
+    "havePassed": "已通过"
+  },
+  "tableList": {
+    "customerPhoneNo": "电话",
+    "customerName": "客户姓名",
+    "customerSex": "性别",
+    "customerAge": "年龄",
+    "poolName": "所在客户池",
+    "advisoryPersonName": "所属咨询师",
+    "diagnosis": "临床诊断",
+    "userName": "开具医师",
+    "typeName": "处方类型",
+    "printNo": "处方笺编号",
+    "billingNo": "订单号",
+    "approvalStatus": "审核状态",
+    "createTime": "开具时间",
+    "status": "处方状态",
+    "distributeMedicineFlag": "发药状态",
+    "billingStatus": "订单状态",
+    "detail": "详情",
+    "print": "打印111111",
+    "giveMedicine": "确认发药",
+    "invalid": "作废"
+  },
+  "invalidPrescription": {
+    "title": "作废处方",
+    "form": {
+      "reason": {
+        "label": "作废理由",
+        "message": "请输入理由",
+        "placeholder": "请输入理由"
+      }
+    },
+    "warning": "请填写作废理由"
+  },
+  "printModal": {
+    "title": "打印预览"
+  },
+  "approveModal": {
+    "title": {
+      "zero": "审批通过",
+      "one": "审批拒绝",
+      "two": "作废处方"
+    },
+    "label": {
+      "zero": "通过意见",
+      "one": "拒绝意见",
+      "two": "作废原因"
+    }
+  },
+  "prescriptionDrawer": {
+    "title": "开具处方",
+    "subTitle": "处方医嘱",
+    "closeWarn": "关闭抽屉会导致当前开具处方内容丢失，是否继续？",
+    "baseInfo": {
+      "name": "姓名",
+      "sex": "性别",
+      "age": "年龄",
+      "userName": "开具医师"
+    }
+  },
+  "prescriptionDetail": {
+    "approve": {
+      "title": "审核信息",
+      "havePassed": "审批通过",
+      "rejected": "审批拒绝"
+    },
+    "warning": {
+      "errInput": "输入信息有误！",
+      "noSign": "当前数据需进行电子签名，请开通电子签名在进行处理"
+    },
+    "approveReason": {
+      "message": "最多输入300个字！",
+      "messagePrefix": "请输入正确的"
+    }
+  },
+  "timeLine": {
+    "stepType": {
+      "zero": "开具处方",
+      "one": "处方编辑",
+      "two": "待审批",
+      "three": "审批中",
+      "four": "已通过",
+      "five": "已拒绝",
+      "six": "已作废",
+      "seven": "已打印",
+      "eight": "已发药",
+      "nine": "暂不发药",
+      "ten": "部分发药"
+    },
+    "updateUserName": "操作人",
+    "remark": "操作说明"
+  },
+  "formConfig": {
+    "chargeType": {
+      "label": "费别"
+    },
+    "departmentId": {
+      "label": "科室",
+      "message": "请选择科室"
+    },
+    "medicalRecordNo": {
+      "label": "门诊/病历号",
+      "placeholder": "请输入门诊/病历号",
+      "message": "病历号不能为空,请完善客户档案!"
+    },
+    "bedNo": {
+      "label": "床号",
+      "placeholder": "请输入床号"
+    },
+    "createTime": {
+      "label": "开具日期",
+      "placeholder": "请输入开具日期",
+      "message": "请输入开具日期"
+    },
+    "diagnosisType": {
+      "label": "临床诊断",
+      "message": "请选择临床诊断"
+    },
+    "diagnosis": {
+      "label": "临床诊断",
+      "message": "请输入临床诊断",
+      "placeholder": "请输入(最多50个字)"
+    },
+    "needApprovalFlag": {
+      "label": "需要审批"
+    },
+    "totalPrice": {
+      "label": "处方总价"
+    },
+    "chargeFlag": {
+      "label": "需要收费",
+      "message": "请选择是否需要收费"
+    },
+    "customerAddress": {
+      "label": "地址",
+      "message": "请输入地址!",
+      "placeholder": "请输入地址"
+    },
+    "phone": {
+      "label": "电话"
+    },
+    "proxyName": {
+      "label": "代办人姓名"
+    },
+    "proxySex": {
+      "label": "代办人性别"
+    },
+    "proxyAge": {
+      "label": "代办人年龄"
+    },
+    "customerIdCardNo": {
+      "label": "患者身份证号",
+      "validMessage": "请输入正确身份证号码!",
+      "message": "患者身份证号不正确,请完善客户档案!"
+    },
+    "proxyIdCardNo": {
+      "label": "代办人身份证号"
+    }
+  },
+  "templateForm": {
+    "title": "保存为处方模版",
+    "name": {
+      "label": "",
+      "message": "请输入模版名称",
+      "placeholder": "请输入模版名称"
+    },
+    "warning": {
+      "noPrescriptionText": "正文不可为空",
+      "prescriptionTextFalsy": "处方正文填写有误，无法保存为模版",
+      "noName": "请先输入模版名称"
+    },
+    "saveSuccess": "保存处方模版成功"
+  },
+  "templateDrawer": {
+    "title": "选择处方模版",
+    "searchPlaceholder": "请输入模版名称"
+  },
+  "prescriptionHistory": {
+    "title": "就诊历史",
+    "doctor": "医生",
+    "createTime": "时间",
+    "diagnosis": "诊断"
+  },
+  "preOperation": "术前",
+  "inOperation": "术中",
+  "afterOperation": "术后",
+  "yes": "是",
+  "no": "否",
+  "frequency": "次",
+  "oneFrequency": "一次",
+  "prescriptionText": "处方正文",
+  "needToCharge": "是否需要收费",
+  "treatDoctor": "治疗医生",
+  "treatProject": "治疗项目",
+  "totalPrice": "总价",
+  "dynamics": "处方动态",
+  "updatePrescription": {
+    "hasChoose": "已选择",
+    "needAuditPop": "当前账号无开具对应处方资质，需有对应资质的账户审核后，处方才可生效",
+    "dynamics": "处方动态",
+    "success": {
+      "save": "保存成功",
+      "giveMedicine": "确认发药成功"
+    },
+    "confirm": {
+      "changeType": "修改处方类型，会导致已填写的所有处方内容清空，是否继续？",
+      "beforeGiveMedicine": "确定要发药吗？",
+      "beforeSave": "该操作会导致已填写的处方内容被覆盖，是否继续？",
+      "beforeDistributeMedicine": "需选择对应仓库出库后，才能确认发药，是否前往取货出库？"
+    },
+    "warning": {
+      "pleaseRefund": "请进行后续退款操作",
+      "noInvalidReason": "请填写作废理由",
+      "exceedOriginPrice": "输入的总价不能比实际处方总价大, 请重新输入!",
+      "diagnosisFalsy": "请输入正确的临床诊断!",
+      "noText": "请输入处方正文",
+      "overshoot": "药品的处方总价不能超过99999999.99元",
+      "idFalsy": "该患者身份证号异常，请查实！",
+      "noMedicalRecordNo": "客户病历号为空，不能开具处方，请先完善客户病历号后，再开具处方",
+      "noSalePrice": "所选物料未配置售价单位，不可开处方",
+      "noWarehouse": "处方所选模版中有药品仓库为空，无法开具处方，请重新开药！"
+    }
+  },
+  "btnDisabledKeys": {
+    "prescriptionPrintDis": {
+      "moduleName": "处方",
+      "name": "打印",
+      "tips": "",
+      "reason": "不能打印未生效的处方(即record.status!== 1)"
+    },
+    "prescriptionGiveMedicineDis": {
+      "moduleName": "处方",
+      "name": "确认发药",
+      "tips": "",
+      "reason": "原因1：处方状态不是已生效 原因2：发药状态是已发药    原因2：发药状态是签署中 代码为 record.status !== 1 || record.distributeMedicineFlag === 1 || record.distributeMedicineFlag === 8"
+    },
+    "prescriptionInvalidDis": {
+      "moduleName": "处方",
+      "name": "作废",
+      "tips": "",
+      "reason": "原因1：发药状态是已发药  原因2：发药状态是部分发药   原因3：发药状态是签署中 原因4：处方状态是已作废 原因5：处方状态是签署中   原因6：处方状态是作废中 代码为 record.distributeMedicineFlag === 1 || record.distributeMedicineFlag === 3 || record.distributeMedicineFlag === 8|| record.status === 2|| record.status === 8|| record.status === -1"
+    },
+    "continueMedicineDealDis": {
+      "moduleName": "处方-复诊购药",
+      "name": "处理",
+      "tips": "",
+      "reason": "原因1：处方状态是已处理原因2：处方状态是已拒绝 原因3：处方状态是签署中原因4：处方的开具人不是当前登录用户 代码为 record.status === 1 || record.status === 2 || record.status === 8  || record.userId !== userInfo.id  "
+    },
+    "prescriptionDetailInvalidDis": {
+      "moduleName": "处方-处方详情",
+      "name": "作废",
+      "tips": "",
+      "reason": " 原因1：处方状态是已作废 原因2：处方状态是作废中"
+    },
+    "prescriptionDetailApprovalDis": {
+      "moduleName": "处方-处方详情的审批操作",
+      "name": "通过/拒绝",
+      "tips": "",
+      "reason": "处方状态是签署中"
+    },
+    "prescriptionRecommitDis": {
+      "moduleName": "处方-处方详情",
+      "name": "重新提交",
+      "tips": "",
+      "reason": "处方状态是签署中"
+    },
+    "prescriptionDetailPrintDis": {
+      "moduleName": "处方-处方详情-处方历史的打印或者处方详情里面的打印",
+      "name": "打印",
+      "tips": "不是已生效的处方，不能打印",
+      "reason": "不是已生效的处方，不能打印"
+    },
+    "prescriptionTempNotGiveMedicineDis": {
+      "moduleName": "处方-处方详情",
+      "name": "暂不发药",
+      "tips": "不是已生效的处方，不能打印",
+      "reason": "处方状态是作废中"
+    }
+  }
+}

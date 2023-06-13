@@ -1,0 +1,65 @@
+{
+  "module": "修復治療配置",
+  "button": {
+    "addStaff": "添加員工"
+  },
+  "keyword": {
+    "project": "項目",
+    "shortProject": "項",
+    "package": "套餐",
+    "shortPackage": "套",
+    "title": "在院營銷",
+    "setting": "配置",
+    "allChoose": "全選",
+    "lookForward": "盡情期待!",
+    "pleaseSearch": "請搜索",
+    "pleaseSearchSuffix": "名,按下回車進行搜索",
+    "surgery": "手術類",
+    "nonSurgical": "非手術類",
+    "approvalProcessSetting": "審批流設置",
+    "noApprovalRequired": "無需審批",
+    "addApprovalProcess": "添加審批流程",
+    "allowCloseApproval": "允許結束審批"
+  },
+  "deleteBefore": {
+    "title": "刪除配置?",
+    "batchContent": "確定批量刪除所選數據",
+    "content": "確定刪除該員工的",
+    "contentSuffix": "配置數據",
+    "deleteItemTitle": "刪除數據",
+    "deleteItemContent": "確定刪除該條數據"
+  },
+  "resetContent": "取消將會重置到上一次保存的狀態",
+  "removeContent": "是否刪除該流程環節",
+  "staff": {
+    "placeholder": "請輸入需要搜索的員工",
+    "noData": "暫無可配置員工，請先添加",
+    "searchPlaceHolder": "按下enter健,搜索員工"
+  },
+  "msg": {
+    "hasAddProject": "該項目已經添加過了",
+    "hasAddPackage": "該員工已添加過配送套餐!",
+    "addSuccess": "添加成功",
+    "noApprover": "審批人不能為空"
+  },
+  "btnDisabledKeys": {
+    "presentOrderAddDis": {
+      "moduleName": "修復治療配置",
+      "name": "添加",
+      "tips": "",
+      "reason": "沒有選擇員工"
+    },
+    "presentOrderSaveDis": {
+      "moduleName": "修復治療配置",
+      "name": "保存",
+      "tips": "",
+      "reason": "原因1：沒有選擇員工  原因2：項目列表沒有數據"
+    },
+    "presentOrderDelDis": {
+      "moduleName": "修復治療配置",
+      "name": "刪除",
+      "tips": "",
+      "reason": "原因1：沒有選擇員工  原因2：項目列表沒有數據"
+    }
+  }
+}

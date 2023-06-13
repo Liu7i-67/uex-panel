@@ -1,0 +1,263 @@
+{
+  "activeReports": {
+    "allergyFlag": "過敏史",
+    "bedNo": "床號",
+    "diagnosis": "診斷",
+    "loadingTip": "請稍等,預覽生成中...",
+    "errLoad": "載入失敗!",
+    "title": "腕帶列印"
+  },
+  "errorBoundary": "模組崩潰了",
+  "neForm": {
+    "errMsg": "引數異常",
+    "innerReportMonth": "最大時間範圍不能超出{{time}}個月",
+    "errType": "錯誤型別",
+    "minNum": "最小值",
+    "maxNum": "最大值",
+    "await": "等",
+    "unit": "項"
+  },
+  "neScroll": {
+    "noMore": "沒有更多了..."
+  },
+  "neToothPositionMap": {
+    "baseType": {
+      "DECIDUOUS": "全口-乳",
+      "DECIDUOUS_UP": "上半口-乳",
+      "DECIDUOUS_DOWN": "下半口-乳",
+      "PERMANENT": "全口-恆",
+      "PERMANENT_UP": "上半口-恆",
+      "PERMANENT_DOWN": "下半口-恆",
+      "UPPER_JAW": "上頜",
+      "LOWER_JAW": "下頜"
+    }
+  },
+  "neApprovalSteps": {
+    "end": "已結束審批",
+    "reject": "共拒絕",
+    "effectTime": "生效時間",
+    "personNum": "等{{num}}人",
+    "unit": "人",
+    "rejectMsg": "拒絕意見",
+    "passMsg": "透過意見",
+    "rejectMsgWarn": "請填寫拒絕意見"
+  },
+  "ngApprovalStepsPopover": {
+    "list": {
+      "0": "待審批",
+      "1": "審批中",
+      "2": "已透過",
+      "3": "已拒絕",
+      "6": "滯後拒絕",
+      "7": "自動拒絕"
+    }
+  },
+  "ngBraftEditor": {
+    "placeholder": "請輸入正文內容",
+    "errMsg": "生成加密地址失敗",
+    "warnMsg": "該富文字不能上傳影片"
+  },
+  "ngCardItem": {
+    "onlyOnline": "僅線上訂單可用",
+    "onlyOffline": "僅線上訂單可用",
+    "activeTime": "活動時間",
+    "expirationDate": "有效期",
+    "project": "適用專案",
+    "all": "全部",
+    "rule": "適用規則",
+    "limit": "領取限制",
+    "total": "已領取/總數",
+    "unLimit": "不限量",
+    "unLimitTime": "無限期",
+    "alwaysPut": "始終投放",
+    "notPut": "暫不投放",
+    "immediately": "領取後立即生效,有效期{{effective}}天",
+    "expirationDateInfo": "領取後{{takeEffect}}天生效,有效期{{effective}}天",
+    "into": "至",
+    "cardTypeText": "代金券",
+    "conditionsOfUse": "滿{{consumeAmount}}元可用，抵扣{{deductionAmount}}元",
+    "discountCard": "折扣券",
+    "conditionsOfUseDiscount": "{{headInfo}}，滿{{consumeAmount }}可用`",
+    "count": "折",
+    "upperLimit": "，最高優惠{{upperLimit}}元",
+    "experienceCoupon": "體驗券",
+    "experienceMsg": "0元體驗"
+  },
+  "ngCustomerActivityBadge": {
+    "list": {
+      "superLive": "超活",
+      "active": "活躍",
+      "lightSleep": "淺睡",
+      "deepSleep": "深睡"
+    }
+  },
+  "ngCustomerInfoModal": {
+    "customerDetail": "檔案詳情",
+    "customerFile": "客戶檔案"
+  },
+  "ngCustomerPicker": {
+    "reception": " 接待",
+    "createTenant": "建檔門店",
+    "addCustomer": "新建客戶",
+    "shared": "共享客戶",
+    "notShared": "非共享客戶",
+    "customerTypeObj": {
+      "初診": "#5dd7b7",
+      "複診": "#f29878",
+      "老客人": "#819cea"
+    },
+    "recentVisit": "最近到訪",
+    "todayVisit": "最近到訪",
+    "notFile": "報備未建檔",
+    "latestTreatDoctorName": "最近面診醫生",
+    "sourcePathName": "來源",
+    "firstTreatDoctorName": "初診醫生",
+    "latestArriveDate": "最近到訪：未到院",
+    "year": "歲",
+    "notFund": "未找到",
+    "notFoundLeft": "很抱歉，沒有找到與",
+    "notFoundRight": "相關的資料",
+    "placeholder": "請輸入客戶姓名(拼音)、電話、會員號、檔案號進行搜尋"
+  },
+  "ngCustomerSourceType": {
+    "placeholder": "請輸入客戶姓名或電話"
+  },
+  "ngDatePicker": { "startTime": "開始時間", "endTime": "結束時間" },
+  "ngDownBtn": {
+    "msgInfo": "由於您匯出的內容過多，請稍後到HOME頁-任務-匯出記錄內進行匯出檔案的下載。"
+  },
+  "ngIatTextArea": {
+    "errMsg": "該瀏覽器不支援語音輸入，請更換谷歌瀏覽器",
+    "devicesErrMsg": "獲取麥克風失敗",
+    "add": "語音錄入",
+    "pending": "正在錄入"
+  },
+  "ngIntBillingSituation": {
+    "titleLeft": "您今日已為客戶{{customerName}}開具{{titleMsg}}訂單",
+    "hasPay": "已繳費",
+    "notPay": "未繳費",
+    "and": "且",
+    "billing": "開單",
+    "viewNow": "立即檢視",
+    "continue": "繼續開單",
+    "normal": "普通",
+    "deposit": "定金"
+  },
+  "ngMesList": {
+    "avatar": "頭像"
+  },
+  "ngModal": {
+    "saveAndAdd": "儲存並新增"
+  },
+  "ngMultiDimension": {
+    "tooltip": "勾選後在{{defaultItem}}基礎資訊展示",
+    "class": "分類",
+    "title": "分類名稱",
+    "titleMsg": "分類名稱必須填寫",
+    "checkMsg": "預設在{{defaultItem}}基礎資訊展示",
+    "addClass": " 新增{{defaultItem}}分類維度"
+  },
+  "ngNodata": {
+    "text": "暫時沒有資料哦～"
+  },
+  "ngNotSelfContainer": {
+    "noAuth": "無權檢視"
+  },
+  "ngSideModal": {
+    "sideBtnText": "側邊按鈕",
+    "title": "標題"
+  },
+  "ngSimpleTable": {
+    "tip": "提示：本操作將修改指定所有使用者列表項，請謹慎操作；對應使用者重新登入後生效",
+    "allUser": "全部使用者",
+    "role": "指定崗位",
+    "title": "儲存至特定使用者",
+    "checkbox": "可選欄位",
+    "allCheck": "全選",
+    "checked": "當前選定的欄位",
+    "setTitle": "列表項設定",
+    "placeholder": "請輸入搜尋",
+    "saveUser": "儲存至特定使用者",
+    "total": "共{{total}}條"
+  },
+  "ngSlider": {
+    "rightRotate": "右旋轉",
+    "leftRotate": "左旋轉",
+    "prev": "上一張",
+    "next": "下一張"
+  },
+  "ngTableSearch": {
+    "more": "更多"
+  },
+  "ngTextIcon": {
+    "onTime": "準",
+    "reWork": "返工",
+    "urgent": "急",
+    "arrears": "欠",
+    "arrearsTip": "存在欠費訂單，欠費金額合計",
+    "forward": "轉",
+    "wxBind": "已繫結小程式",
+    "noWxBind": "未繫結小程式",
+    "confirm": "繫結小程式，完成客戶確認",
+    "noConfirm": "繫結小程式，未進行客戶確認",
+    "popover": "未新增任何員工",
+    "tenantName": "建檔醫院{{tenantName}}",
+    "and": "共",
+    "not": "非",
+    "special": "特",
+    "expired": "過",
+    "activeW": "已與HIS系統檔案同步",
+    "seed": "種",
+    "seedTip": "種子客戶",
+    "initial": "始",
+    "initialTip": "初始客戶",
+    "initSeed": "始/種",
+    "initSeedTip": "初始客戶和種子客戶",
+    "activities": "活",
+    "circle": "關聯賬戶"
+  },
+  "ngThumbnail": {
+    "nodata": "沒有檔案需要展示"
+  },
+  "ngTimeText": {
+    "timeAgo": "之前"
+  },
+  "ngTree": {
+    "placeholder": "請輸入分類名稱"
+  },
+  "ngUpload": {
+    "nodata": "沒有新增檔案",
+    "aliOssErr": "生成加密地址失敗!",
+    "success": "成功獲取資料，資料非空",
+    "uploadInfo": "請新增上傳檔案",
+    "tips": "新增圖片或檔案"
+  },
+  "ngUploadImg": {
+    "takePhotoTip": "部分型號相機無法自動獲取拍攝照片，請點選【獲取照片】按鈕手動獲取",
+    "err": "檔案上傳失敗",
+    "maxLen": "上傳圖片超出最多數量限制!",
+    "fileSize": "{{name}}的檔案大小超過{{fileSize}}M限制!",
+    "video": "影片預覽",
+    "uploadHideStatus": "超過上傳數量限制，無法上傳",
+    "changeHeaderImg": "更改頭像",
+    "takePhotoErr": {
+      "title": "錯誤",
+      "content": "相機未開啟或相機網路裝置未連線，請確認連線相機網路並開啟相機後重連",
+      "okText": "重連",
+      "cancelText": "取消"
+    },
+    "takePic": "請開啟相機和相機網路再進行拍攝操作",
+    "reconnect": "重連",
+    "connecting": "正在連線相機中",
+    "noMore": "沒有啦~",
+    "kafei": "卡菲照片庫",
+    "return": "單擊返回拍照",
+    "upload": "上傳",
+    "getPhoto": "獲取照片",
+    "getPhotoTip": "部分型號相機無法自動獲取拍攝照片，請點選【獲取照片】按鈕手動獲取",
+    "total": "共選擇",
+    "picNumber": "張照片",
+    "allCheck": "全選",
+    "notStart": "你還未開始拍照～"
+  }
+}

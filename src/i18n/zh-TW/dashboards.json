@@ -1,0 +1,3387 @@
+{
+  "file": "dashboards",
+  "placeholderSelect": "請選擇{{name}}",
+  "placeholderInput": "請輸入{{name}}",
+  "moreSearch": "更多條件",
+  "noAuth": "暫無許可權操作",
+  "true": "是",
+  "false": "否",
+  "have": "有",
+  "not": "無",
+  "all": "全部",
+  "channelLeader": "市場渠道負責人",
+  "people": "人",
+  "printPreview": "列印預覽",
+  "datePlaceholder": [
+    "開始日期",
+    "結束日期"
+  ],
+  "dateOptions": [
+    {
+      "label": "年",
+      "value": 0
+    },
+    {
+      "label": "月",
+      "value": 1
+    },
+    {
+      "label": "日",
+      "value": 2
+    }
+  ],
+  "quickTimeOptions": [
+    {
+      "label": "今日",
+      "value": "day"
+    },
+    {
+      "label": "本週",
+      "value": "week"
+    },
+    {
+      "label": "本月",
+      "value": "month"
+    },
+    {
+      "label": "本季度",
+      "value": "quarter"
+    },
+    {
+      "label": "本年度",
+      "value": "yaer"
+    }
+  ],
+  "dateBtnGroup": [
+    "按日統計",
+    "按月統計"
+  ],
+  "flagOptions": [
+    {
+      "label": "是",
+      "value": 1
+    },
+    {
+      "label": "否",
+      "value": 0
+    }
+  ],
+  "flagOptions2": [
+    {
+      "label": "是",
+      "value": true
+    },
+    {
+      "label": "否",
+      "value": false
+    }
+  ],
+  "headTitle": {
+    "title": "智慧資料駕駛艙",
+    "controlCabinTitle": "駕駛艙"
+  },
+  "bi": {
+    "loginError": "登入失敗",
+    "iframeTitle": "敏捷報表"
+  },
+  "projectSearch": {
+    "belongsPackage": "所屬套餐",
+    "project": "專案",
+    "package": "套餐",
+    "annualCard": "年卡",
+    "onceCard": "次卡",
+    "material": "藥/商品",
+    "projectType": "專案分類",
+    "packageType": "套餐分類",
+    "annualCardType": "年卡分類",
+    "onceCardType": "次卡分類",
+    "materialType": "藥/商品分類",
+    "placeholder": "請選擇{{name}}"
+  },
+  "stockControl": {
+    "input": {
+      "title": "入庫金額合計",
+      "inventoryDetail": "入庫詳情",
+      "updateInventory": "修正入庫",
+      "addInventory": "新增入庫",
+      "tableColumns": {
+        "warehouseName": "倉庫",
+        "deptNames": "部門",
+        "materialTypes": "物料分類",
+        "materialName": "入庫物料",
+        "materialCode": "物料編碼",
+        "anotherName": "物料別名",
+        "manufacturer": "生產廠家",
+        "specification": "規格",
+        "dosageFormName": "劑型",
+        "batchNumber": "批次",
+        "approvalNumber": "批准文號",
+        "validityPeriod": "有效期",
+        "storageAmountAndUnit": "入庫數量/業務單位",
+        "purchasePrice": "進價(單價)",
+        "tax": "稅金",
+        "taxRate": "稅率",
+        "purchaseTotalPrice": "入庫金額(總價)",
+        "supplierName": "供應商",
+        "fromDept": "來源部門",
+        "storageTypeName": "入庫類別",
+        "createDate": "入庫時間",
+        "storageNumber": "入庫單號",
+        "remark": "入庫單備註",
+        "purchaseNumber": "採購單號",
+        "outWarehouseName": "調出倉庫",
+        "responsibleName": "責任人",
+        "detailRemark": "入庫物料備註"
+      },
+      "searchList": {
+        "storagendDate": "入庫時間",
+        "customDeptId": "部門",
+        "warehouseId": "倉庫",
+        "materialTypes": "物料分類",
+        "materialInfo": "物料",
+        "materialInfoOther": "物料名稱/編號/規格",
+        "anotherName": "物料別名",
+        "userId": "責任人",
+        "type": "入庫型別",
+        "storageNumber": "入庫單號",
+        "purchaseNumber": "採購單號",
+        "supplierId": "供應商",
+        "batchNumber": "批次",
+        "materiaSpecification": "規格",
+        "outWarehouseId": "調出倉庫"
+      }
+    },
+    "inventory": {
+      "tableColumns": {
+        "warehouseName": "倉庫",
+        "materialCode": "物料編碼",
+        "materialName": "物料名稱",
+        "manufacturer": "生產廠家",
+        "specification": "規格",
+        "batchNumber": "批次",
+        "inventoryDate": "盈虧處理時間",
+        "userName": "盤點人",
+        "inventoryList": "庫存量",
+        "checkAmountList": "實際量",
+        "deviationList": "偏差"
+      },
+      "searchList": {
+        "warehouseId": "倉庫",
+        "userId": "盤點人",
+        "date": "盈虧處理時間"
+      }
+    },
+    "invoicingStatistics": {
+      "tabList": [
+        "科室倉庫進銷存統計表",
+        "進銷存全域性統計表"
+      ],
+      "enterAmountTitle": "入庫明細",
+      "outAmountTitle": "出庫明細",
+      "statisticalInfo": {
+        "initMoneySumTotal": "初始貨值總計",
+        "inMoneySumTotal": "入庫貨值總計",
+        "outMoneySumTotal": "出庫貨值總計",
+        "restMoneySumTotal": "剩餘貨值總計",
+        "taxSumTotal": "稅金總計"
+      },
+      "searchList": {
+        "warehouseId": "倉庫",
+        "searchParam": "物料名稱/編碼",
+        "anotherName": "物料別名",
+        "specification": "規格",
+        "supplierId": "供應商",
+        "time": "統計時間",
+        "typeId": "物料分類"
+      },
+      "tableColumns": {
+        "materialCode": "商品編碼",
+        "name": "物料名稱",
+        "type": "物料分類",
+        "manufacturer": "生產廠家",
+        "specification": "規格",
+        "initAmountUnitList": "初始庫存量",
+        "initMoneySum": "初始貨值",
+        "inAmountUnitList": "入庫數量",
+        "inMoneySum": "入庫貨值",
+        "outAmountUnitList": "出庫數量",
+        "outMoneySum": "出庫貨值",
+        "restAmountUnitList": "剩餘庫存數量",
+        "restMoneySum": "剩餘貨值",
+        "taxSum": "稅金",
+        "warehouseName": "倉庫",
+        "options": "操作",
+        "purchasePrice": "單價",
+        "storageSum": "總計",
+        "unitList": "出庫數量/單位",
+        "outTime": "出庫時間",
+        "outBoundTypeText": "出庫型別",
+        "deptName": "領用部門",
+        "recipientName": "領用人",
+        "batchNumber": "批次號",
+        "inTime": "入庫時間",
+        "inBoundTypeText": "入庫型別",
+        "deptName2": "來源部門",
+        "unitList2": "入庫數量/單位"
+      }
+    },
+    "invoicingStatisticsInventory": {
+      "receiptId": "具體單據",
+      "unit": "單位",
+      "statisticalInfo": {
+        "initMoneySumTotal": "初始貨值總計",
+        "inMoneySumTotal": "入庫貨值總計",
+        "outMoneySumTotal": "出庫貨值總計",
+        "restMoneySumTotal": "剩餘貨值總計",
+        "taxSumTotal": "稅金總計"
+      },
+      "typeOptions": [
+        {
+          "label": "入庫單",
+          "value": 1
+        },
+        {
+          "label": "出庫單",
+          "value": 2
+        }
+      ],
+      "searchList": {
+        "type": "查詢單據型別"
+      },
+      "tableColumns": {
+        "materialCode": "商品編碼",
+        "name": "物料名稱",
+        "type": "物料分類",
+        "manufacturer": "生產廠家",
+        "specification": "規格",
+        "initAmountUnitList": "初始庫存量",
+        "initMoneySum": "初始貨值",
+        "inAmountUnitList": "入庫數量",
+        "inMoneySum": "入庫貨值",
+        "outAmountUnitList": "出庫數量",
+        "outMoneySum": "出庫貨值",
+        "restAmountUnitList": "剩餘庫存數量",
+        "restMoneySum": "剩餘貨值",
+        "taxSum": "稅金",
+        "warehouseName": "倉庫",
+        "options": "操作"
+      },
+      "extraFields": {
+        "initAmountUnitList": {
+          "key": "initAmount",
+          "title": "初始庫存量"
+        },
+        "inAmountUnitList": {
+          "key": "inAmount",
+          "title": "入庫數量"
+        },
+        "outAmountUnitList": {
+          "key": "outAmount",
+          "title": "出庫數量"
+        },
+        "restAmountUnitList": {
+          "key": "restAmount",
+          "title": "剩餘庫存數量"
+        }
+      }
+    },
+    "outBoundManage": {
+      "searchList": {
+        "warehouseIds": "倉庫",
+        "types": "出庫類別",
+        "date": "出庫時間",
+        "materialId": "物料名稱"
+      },
+      "tableColumns": {
+        "warehouseName": "倉庫",
+        "materialCode": "物料編碼",
+        "materialName": "物料名稱",
+        "anotherName": "別名",
+        "manufacturer": "生產廠家",
+        "specification": "規格",
+        "outInventoryType": "出庫型別",
+        "outAmount": "出庫數量/業務單位"
+      }
+    },
+    "output": {
+      "outputAmount": "出庫金額合計",
+      "tableColumns": {
+        "warehouseName": "倉庫",
+        "deptNames": "部門",
+        "materialTypes": "物料分類",
+        "materialName": "出庫物料",
+        "materialCode": "物料編碼",
+        "anotherName": "物料別名",
+        "manufacturer": "生產廠家",
+        "specification": "規格",
+        "batchNumber": "批次",
+        "approvalNumber": "批准文號",
+        "validityPeriod": "有效期",
+        "supplierName": "供應商",
+        "outAmountNum": "出庫數量/業務單位",
+        "purchasePrice": "進價(單價)",
+        "outAmountTotalPrice": "出庫金額(總價)",
+        "sellingPrice": "銷售價格(總價)",
+        "outBoundTypeName": "出庫類別",
+        "createDate": "出庫完成時間",
+        "outInventoryNumber": "出庫單號",
+        "customer": "客戶",
+        "vipNum": "會員號",
+        "outInventoryUser": "出庫人",
+        "receiveDeptName": "領用部門",
+        "receiveUserName": "領用人",
+        "remark": "出庫單備註",
+        "detailRemark": "出庫物料備註",
+        "inWarehouseName": "調入倉庫",
+        "outWarehouseName": "調撥出庫",
+        "storePrice": "跨店成本單價",
+        "storePriceSum": "跨店成本總價"
+      },
+      "searchList": {
+        "storagendDate": "出庫完成時間",
+        "customDept": "部門",
+        "warehouseIds": "倉庫",
+        "customerIds": "客戶",
+        "materialTypes": "物料分類",
+        "materialInfo": "物料",
+        "materialInfoPlaceholder": "物料名稱/編號/規格",
+        "anotherName": "物料別名",
+        "supplierId": "供應商",
+        "userIds": "出庫人",
+        "type": "出庫型別",
+        "outInventoryNumber": "出庫單號",
+        "receiveDeptIds": "領用部門",
+        "receiveUserIds": "領用人",
+        "batchNumber": "批次",
+        "materiaSpecification": "規格",
+        "inWarehouseId": "調入倉庫"
+      }
+    },
+    "transferSchedule": {
+      "tableColumns": {
+        "outWarehouseName": "調出倉庫",
+        "enterWarehouseName": "調入倉庫",
+        "typeName": "物料分類",
+        "name": "物料名稱",
+        "anotherName": "物料別名",
+        "specification": "規格",
+        "batchNumber": "批次",
+        "validityPeriodStr": "有效期",
+        "purchasePriceAndUnitStr": "進價/單位",
+        "shiftSum": "調撥成本",
+        "transferAmount": "調撥數量",
+        "transferUnitName": "單位",
+        "supplierName": "供應商",
+        "createDate": "調撥申請日期",
+        "finishDate": "調撥完成日期",
+        "shiftNumber": "調撥單號",
+        "shiftUser": "調撥人",
+        "applicantUser": "申領人",
+        "relatedCustomer": "相關客戶",
+        "customerTreatInfo": "客戶治療"
+      },
+      "searchList": {
+        "date": "調撥申請日期",
+        "outWarehouseIds": "調出倉庫",
+        "enterWarehouseIds": "調入倉庫",
+        "materialTypes": "物料分類",
+        "materialName": "物料名稱",
+        "materialNameOther": "物料名稱/別名",
+        "endDate": "調撥完成日期",
+        "shiftNumber": "調撥單號",
+        "customerIds": "相關客戶"
+      }
+    }
+  },
+  "operatingReports": {
+    "customerConsumptionDetail": {
+      "happenTime": "業務發生時間",
+      "customerInfo": "客戶資訊",
+      "modalTitle": "客戶搜尋",
+      "errorMsg": "日期選擇不能超過{{month}}個月",
+      "tenantNameOther": "他門店",
+      "tenantName": "本門店",
+      "delete": "已刪",
+      "customerSource": "客戶來源",
+      "employeeName": "員工姓名",
+      "deptName": "報備部門",
+      "statisticalInfo": {
+        "totalDealNum": "合計人數",
+        "totalDealMoney": "已付金額總計（含虛擬金）",
+        "firstDealNum": "初診成交人數",
+        "secondDealNum": "複診成交人數",
+        "oldDealNum": "老客人成交人數",
+        "emptyDealNum": "空成交人數",
+        "otherDealNum": "其他成交人數",
+        "transferCount": "轉項人數",
+        "transferMoney": "轉項金額總計",
+        "refundCount": "退費人數",
+        "refundMoney": "退費金額總計",
+        "dealNum": "成交金額總計"
+      },
+      "tableColumns": {
+        "date": "消費日期",
+        "customerName": "姓名",
+        "customerPhone": "客戶電話",
+        "preparationName": "報備人",
+        "recTypeName": "客人型別",
+        "consumeNature": "消費性質",
+        "cardNo": "客戶卡號",
+        "documentId": "檔案號",
+        "age": "年齡",
+        "smartLabelsJson": "業績標籤",
+        "billNo": "訂單號",
+        "billingNo": "繳費單號",
+        "paymentTenantName": "費用發生門店",
+        "paymentBillingUserName": "費用單開單人",
+        "payMark": "收銀型別",
+        "projectDept": "專案所屬科室",
+        "projectType": "分類",
+        "type": "類別",
+        "packageName": "套餐名稱",
+        "packageNameTip": "歸屬套餐",
+        "packageNameIcon": "套",
+        "paymentItemName": "專案/商品/藥品",
+        "courseFlag": "補療程",
+        "billItemTenantName": "專案開單門店",
+        "spec": "規格",
+        "unitPrice": "單價",
+        "numberOfTime": "次數",
+        "discount": "折扣",
+        "discountMoney": "折扣金額",
+        "totalPrice": "成交價",
+        "performanceStatisticsStr": "業績價",
+        "billPrice": "訂單金額",
+        "actualPayMoney": "已付金額",
+        "equityMoneyGroup": "{{name}}本金",
+        "givenEquityMoneyGroup": "{{name}}贈送金",
+        "cash": "現金",
+        "nonCash": "非現金",
+        "depositDeductMoney": "定金",
+        "storevalueDeductMoney": "{{name}}餘額",
+        "deductGivenBalance": "贈送餘額",
+        "cardDeductMoney": "卡券",
+        "integralDeductMoney": "積分",
+        "dynamicDeductMoney": "自定義虛擬金",
+        "dynamicDeductDetail": "自定義虛擬金明細",
+        "debt": "欠款金額",
+        "orderClearMoney": "清訖金額",
+        "doctorName": "計劃治療醫生",
+        "poolName": "客戶池",
+        "exclusiveServerName": "專屬客服",
+        "billingUserName": "訂單開單人",
+        "sysAssistantList": "協助開單人",
+        "assistReceiverName": "協助接待人",
+        "chargeUserName": "收費操作人",
+        "preDeptName": "報備部門",
+        "channelType": "客人來源分類",
+        "detailChannel": "客人具體來源",
+        "firstVisitDate": "初診日期",
+        "firstCostDate": "首次消費日期",
+        "preEndDate": "報備有效期",
+        "departmentName": "計劃治療科室",
+        "operator": "操作員",
+        "channelStatus": "機構狀態",
+        "triageToUserName": "現場諮詢",
+        "relatedDoctor": "相關醫生",
+        "relatedCounselor": "相關{{name}}",
+        "relatedCustomerService": "相關客服",
+        "relatedOther": "其他相關人員",
+        "preparationTargetName": "目標報備人",
+        "checkDetails": "稽覈資訊",
+        "tenantName": "客戶所屬門店",
+        "rePay": "（補繳）",
+        "dynamicColumnTitle": "負責{{name}}"
+      },
+      "searchList": {
+        "customerType": "客戶型別",
+        "consumeType": "消費性質",
+        "smartLabelIds": "業績標籤",
+        "billItemTenantIds": "專案開單門店",
+        "tenantIds": "費用發生門店",
+        "billingUserIds": "訂單開單人",
+        "paymentBillingUserIds": "費用單開單人",
+        "packageIds": "套餐名稱",
+        "projectTypes": "專案分類",
+        "projectIds": "專案名稱",
+        "type": "類別",
+        "courseFlag": "是否補療程",
+        "billingNo": "訂單號",
+        "customPreDeptIds": "報備部門",
+        "orderClearFlagList": "已清訖"
+      },
+      "returnVisitLabel": {
+        "0": "無",
+        "1": "有"
+      },
+      "consumeTypeOptions": [
+        {
+          "label": "首單消費",
+          "value": "0"
+        },
+        {
+          "label": "再消費",
+          "value": "1"
+        },
+        {
+          "label": "其他",
+          "value": "2"
+        }
+      ],
+      "typeOptions": [
+        {
+          "value": "0",
+          "label": "專案"
+        },
+        {
+          "value": "1",
+          "label": "套餐"
+        },
+        {
+          "value": "2",
+          "label": "商品"
+        },
+        {
+          "value": "3",
+          "label": "藥品"
+        },
+        {
+          "value": "4",
+          "label": "年卡"
+        },
+        {
+          "value": "5",
+          "label": "次卡"
+        }
+      ],
+      "courseFlagOptions": [
+        {
+          "label": "是",
+          "value": 1
+        },
+        {
+          "label": "否",
+          "value": 0
+        }
+      ]
+    },
+    "customerLikeStatistics": {
+      "time": "時間維度",
+      "data": "錄入日期",
+      "preview": "員工維度檢視",
+      "employeeName": "員工姓名",
+      "dept": "部門",
+      "tableColumns": {
+        "entryTime": "錄入日期",
+        "createClueUser": "員工姓名",
+        "deptName": "部門",
+        "deptTotal": "部門錄入線索量",
+        "total": "錄入線索量",
+        "totalTooltip": "該日期內，該員工錄入的線索總數量",
+        "appTotal": "移動端錄入數量",
+        "appTotalTooltip": "該日期內，該員工錄入透過移動端錄入的線索總數量",
+        "pcTotal": "PC端錄入數量",
+        "pcTotalTooltip": "該日期內，該員工錄入透過PC端錄入的線索總數量",
+        "liked": "錄入線索被點贊數",
+        "likedTooltip": "該日期內，該員工錄入的線索被其他同事點贊數",
+        "upNum": "點贊線索數",
+        "upNumTooltip": "該日期內，該員工對其他同事錄入線索的點贊數"
+      }
+    },
+    "dailyEndStatistics": {
+      "printFinish": "列印完成",
+      "printFail": "暫不列印",
+      "printPreview": "列印預覽",
+      "printAgain": "再次列印",
+      "printTitle": "日結統計清單",
+      "businessTime": "營業時間",
+      "statisticsTime": "統計時間",
+      "printSecondTitle": "營業收支明細彙總",
+      "businessDetail": "業務明細",
+      "amount": "總額",
+      "cash": "現金",
+      "bankCard": "銀行卡",
+      "card": "券/其他",
+      "deposit": "劃定金",
+      "businessType": "預收款",
+      "debt": "欠款"
+    },
+    "departmentDeductDetail": {
+      "countInfo": "合計劃扣業績",
+      "treatDepts": "治療科室",
+      "deductDepts": "劃扣科室",
+      "employeeName": "員工姓名",
+      "tenant": "本門店",
+      "otherTenant": "他門店",
+      "tableColumns": {
+        "deductTime": "劃扣日期",
+        "customerName": "客戶",
+        "phoneNumber": "客戶電話",
+        "vipNum": "會員號",
+        "currentCounselorName": "歸屬諮詢（當前）",
+        "customerType": "客戶型別",
+        "treatDeptName": "治療科室",
+        "projectType": "類別",
+        "packageName": "套餐名稱",
+        "projectName": "專案名稱",
+        "projectNumber": "專案編碼",
+        "billingNo": "關聯訂單",
+        "billingDate": "開單日期",
+        "billItemTenantName": "專案開單門店",
+        "doctors": "治療醫生",
+        "otherRoleUserName": "其他崗位",
+        "injectionSite": "治療部位",
+        "anesthesiaName": "麻醉方式",
+        "deviceParam": "裝置引數",
+        "deductNum": "劃扣次數",
+        "times": "當前剩餘/總次數",
+        "unitOriginalPrice": "原價",
+        "unitOrderPrice": "成交價",
+        "deductPerformance": "劃扣業績",
+        "channelType": "客人來源分類",
+        "detailChannel": "客人具體來源",
+        "deductDeptName": "劃扣科室",
+        "deductUserName": "劃扣人",
+        "deductRemark": "劃扣說明",
+        "treatmentTime": "治療日期",
+        "tenantName": "客戶所屬門店",
+        "treatmentNo": "業務單號",
+        "manualNum": "手工費計次",
+        "manualPrice": "手工費",
+        "isFirstDeductFlag": "訂單專案是否首次治療"
+      },
+      "searchList": {
+        "times": "治療日期",
+        "deductTimes": "劃扣日期",
+        "customerType": "客戶型別",
+        "customTreatDeptIds": "治療科室",
+        "treatDoctorIds": "治療醫生",
+        "otherRoleIds": "參與崗位",
+        "otherRoleUserIds": "參與人員",
+        "customerIds": "客戶",
+        "projectName": "專案名稱",
+        "billingDate": "開單日期",
+        "customDeductDeptIds": "劃扣科室",
+        "deductUserIds": "劃扣人",
+        "anesthesiaValue": "麻醉方式",
+        "billItemTenantIds": "專案開單門店",
+        "isFirstDeductFlagList": "訂單專案是否首次治療",
+        "channelType": "客戶來源"
+      },
+      "isFirstDeductFlagList": [
+        {
+          "label": "全部",
+          "value": "all"
+        },
+        {
+          "label": "是",
+          "value": "1"
+        },
+        {
+          "label": "否",
+          "value": "0"
+        }
+      ]
+    },
+    "departmentVerificationDetail": {
+      "treatDeptIds": "治療科室",
+      "verificationDeptIds": "核銷科室",
+      "tenant": "本門店",
+      "otherTenant": "他門店",
+      "tableColumns": {
+        "treatmentTime": "治療日期",
+        "customerName": "客戶姓名",
+        "phoneNumber": "客戶電話",
+        "vipNum": "會員號",
+        "currentCounselorName": "歸屬諮詢（當前）",
+        "treatDeptName": "治療科室",
+        "projectName": "專案",
+        "projectNumber": "專案編碼",
+        "billingNo": "關聯訂單",
+        "injectionSite": "治療部位",
+        "anesthesiaName": "麻醉方式",
+        "doctors": "治療醫生",
+        "otherRoleUserName": "其他崗位",
+        "deviceParam": "裝置引數",
+        "verificationDeptName": "核銷科室",
+        "verificationUserName": "核銷人",
+        "verificationTime": "核銷日期",
+        "verificationRemark": "核銷說明",
+        "materialName": "核銷物品",
+        "materialCode": "物料編碼",
+        "specification": "物品規格",
+        "standard": "標準量",
+        "verificationNumber": "核銷量",
+        "isOverVerifyNumberFlag": "是否超量核銷",
+        "verificationUnitName": "核銷單位",
+        "purchaseUnitName": "採購單位",
+        "purchasePrice": "進價",
+        "verificationValue": "核銷成本",
+        "tenantName": "客戶所屬門店"
+      },
+      "searchList": {
+        "times": "治療日期",
+        "customerIds": "客戶",
+        "projectName": "專案名稱",
+        "customerType": "客人型別",
+        "customTreatDeptIds": "治療科室",
+        "treatDoctorIds": "治療醫生",
+        "otherRoleIds": "參與崗位",
+        "otherRoleUserIds": "參與人員",
+        "verificationMaterial": "核銷物品",
+        "customVerificationDeptIds": "核銷科室",
+        "verificationUserIds": "核銷人",
+        "anesthesiaValue": "麻醉方式",
+        "billItemTenantIds": "專案開單門店",
+        "isOverVerifyNumberFlagList": "是否超量核銷",
+        "verifyTime": "核銷日期"
+      },
+      "isOverVerifyNumberFlagList": [
+        {
+          "label": "否",
+          "value": 0
+        },
+        {
+          "label": "是",
+          "value": 1
+        }
+      ]
+    },
+    "depositAndStoredRetentionStatistics": {
+      "type": "有（含負）",
+      "statisticalInfo": {
+        "totalDepositAmountTotal": "定金累計",
+        "totalRefundDepositAmount": "定金退款",
+        "totalDeductDepositAmount": "定金抵扣",
+        "totalDepositAmount": "定金保有",
+        "totalBalanceTotal": "{{name}}累計",
+        "totalRefundBalanceAmount": "{{name}}退款",
+        "totalDeductBalanceAmount": "{{name}}抵扣",
+        "totalBalance": "{{name}}保有",
+        "totalGivenBalanceTotal": "贈送金累計",
+        "totalRefundGivenBalanceAmount": "贈送金退款",
+        "totalDeductGivenBalanceAmount": "贈送金抵扣",
+        "totalGivenBalance": "贈送金保有",
+        "totalIntegralTotal": "積分累計",
+        "totalConsumeIntegral": "積分消費",
+        "totalIntegral": "積分保有"
+      },
+      "tableColumns": {
+        "name": "客戶",
+        "vipNum": "會員號",
+        "vipLevel": "會員等級",
+        "customerTypeName": "客戶型別",
+        "belongCounselorName": "歸屬諮詢",
+        "deposit": "定金",
+        "depositAmount": "定金保有",
+        "depositAmountTotal": "定金累計",
+        "refundDepositAmount": "定金退款",
+        "deductDepositAmount": "定金抵扣",
+        "balanceTotal": "{{name}}累計",
+        "refundBalanceAmount": "{{name}}退款",
+        "deductBalanceAmount": "{{name}}抵扣",
+        "balance": "{{name}}保有",
+        "givenBalances": "贈送金",
+        "givenBalanceTotal": "贈送金累計",
+        "refundGivenBalanceAmount": "贈送金退款",
+        "deductGivenBalanceAmount": "贈送金抵扣",
+        "givenBalance": "贈送金保有",
+        "jifen": "積分",
+        "integralTotal": "積分累計",
+        "consumeIntegral": "積分消耗",
+        "integral": "積分保有"
+      },
+      "searchList": {
+        "customerId": "客戶",
+        "vipNum": "會員號",
+        "memberLevelId": "會員等級",
+        "customerTypeList": "客人型別",
+        "deposit": "定金保有",
+        "balance": "{{name}}保有",
+        "givenBalance": "贈送金保有",
+        "integral": "積分保有"
+      }
+    },
+    "hospitalPerformanceB": {
+      "employeeName": "員工姓名",
+      "tableColumns": {
+        "createDate": "開單日期",
+        "customerName": "客戶",
+        "phoneNumber": "客戶電話",
+        "customerType": "客戶型別",
+        "sysUserName": "歸屬{{name}}",
+        "userService": "{{name}}對應客服",
+        "feeProp": "消費性質",
+        "payType": "型別",
+        "objType": "專案型別",
+        "objName": "專案/產品",
+        "departmentName": "開單/治療科室",
+        "actualMoney": "業績",
+        "billingUserName": "開單人",
+        "treatDoctor": "治療醫生",
+        "otherDoctor": "輔助醫生",
+        "preUserName": "報備人",
+        "sourceTypeName": "來源分類",
+        "sourceDetail": "具體來源",
+        "opUserName": "操作人"
+      },
+      "searchList": {
+        "customerId": "客戶",
+        "times": "開單日期",
+        "customerType": "客戶型別",
+        "feeProp": "消費性質",
+        "payMark": "型別",
+        "payItemMark": "專案型別",
+        "objName": "專案/產品",
+        "deptId": "開單/治療科室",
+        "billingUserId": "開單人",
+        "sysUserId": "歸屬{{name}}",
+        "serviceId": "{{name}}對應客服",
+        "doctorId": "治療醫生",
+        "otherDoctorId": "輔助醫生",
+        "preUserId": "報備人",
+        "opUserId": "操作人",
+        "channelType": "客戶來源"
+      },
+      "customerTypeOptions": [
+        {
+          "label": "初診",
+          "value": 0
+        },
+        {
+          "label": "複診",
+          "value": 1
+        },
+        {
+          "label": "老客人",
+          "value": 2
+        }
+      ]
+    },
+    "incomeConfirmation": {
+      "warningMsg": "日期範圍請勿超過{{num}}個月！",
+      "tableColumns": {
+        "chargeTime": "月份",
+        "deductThisMonth": "預收金額",
+        "dealMonthNoDeductMoney": "本月專案成交未劃扣金額",
+        "dealHisNoDeductMoney": "歷史專案未劃扣金額",
+        "dealTotalNoDeductMoney": "累計未劃扣金額",
+        "inMonthDepositMoney": "本月定金收入（含開單、退入）",
+        "outMonthDepositMoney": "本月定金支出（含抵扣、退款）",
+        "totalNoDeductDepositMoney": "累計未抵扣定金",
+        "inMonthBalanceMoney": "本月{{name}}收入（含開單、退入）",
+        "outMonthBalanceMoney": "本月{{name}}支出（含抵扣、退款）",
+        "totalNoUseBalanceMoney": "累計未使用{{name}}金",
+        "monthCollectMoney": "本月預收金額",
+        "collectSurplusMoney": "預收賬款餘額總計",
+        "confirmMoney": "收入確認金額",
+        "dealMonthDeductMoney": "本月成交本月已劃扣",
+        "dealHisMonthDeductMoney": "歷史成交本月已劃扣",
+        "totalMonthDeductMoney": "本月累計劃扣",
+        "goodsMoney": "本月商品收支",
+        "pillMoney": "本月藥品收支",
+        "inMonthConfirmMoney": "本月確認收入",
+        "totalHisDeductMoney": "歷史累計劃扣金額",
+        "inHisConfirmMoney": "歷史累計確認收入",
+        "monthPaymentMoney": "本月收銀金額"
+      }
+    },
+    "openingOrder": {
+      "warningMsg": "月份請勿超過24個月！",
+      "warningMsg2": "日期請勿超過31天！",
+      "dateDimension": "時間維度",
+      "date": "時間",
+      "billingUser": "訂單開單人",
+      "isConsulFlag": "僅諮詢師",
+      "tableColumns": {
+        "pid": "時間",
+        "billingUserName": "訂單開單人",
+        "totalIncome": "總營收",
+        "billingMoney": "開單實收",
+        "depositMoney": "定金金額",
+        "balanceMoney": "{{name}}金額",
+        "goodsPillMoney": "商/藥品金額",
+        "actualRefundMoney": "退款金額",
+        "performanceMoney": "業績金額",
+        "firstNum": "初診人數",
+        "firstTypeDealNum": "初診成交人數",
+        "firstTypeDealRate": "初診成交率",
+        "firstTypeDealMoney": "初診金額",
+        "firstTypeCusNum": "初診客單",
+        "secondNum": "複診人數",
+        "secondTypeDealNum": "複診成交人數",
+        "secondTypeDealRate": "複診成交率",
+        "secondTypeDealMoney": "複診金額",
+        "secondTypeCusNum": "複診客單",
+        "threeNum": "老客人人數",
+        "oldTypeDealNum": "老客人成交人數",
+        "oldTypeDealRate": "老客人成交率",
+        "oldTypeDealMoney": "老客人金額",
+        "oldTypeCusNum": "老客人客單",
+        "notArrDealNum": "未到院成交人數",
+        "notArrDealMoney": "未到院成交金額",
+        "totalIncomeTooltip": "開單實收+定金金額+{{name}}金額的合計金額",
+        "billingMoneyTooltip": "開單實收來源為專案+套餐+商品+藥品的金額，且包括轉項補繳金額，不含定金{{name}}的購買和抵扣，不包含任何退款",
+        "depositMoneyTooltip": "定金金額為定金類金額，不包括定金退款",
+        "balanceMoneyTooltip": "{{StoredValueName}}金額為{{RechargeName}}金額，不包括{{RechargeName}}贈送金額，不包括{{StoredValueName}}退款",
+        "goodsPillMoneyTooltip": "商品藥品金額，不包商品藥品的退款",
+        "actualRefundMoneyTooltip": "包括專案類、定金{{name}}類、商品藥品類的退款，且包括轉項退款",
+        "performanceMoneyTooltip": "業績金額為專案類（參與業績統計的）開單金額，不含商品藥品和定金{{name}}及其抵扣金額，不包括專案類退款",
+        "firstNumTooltip": "初診客戶接診人數，同天客戶去重（只包含已到院客戶）",
+        "firstTypeDealNumTooltip": "初診客戶消費人數，同天客戶去重（只包含已到院客戶）",
+        "firstTypeDealRateTooltip": "初診成交人數除以初診人數（只包含已到院客戶）",
+        "firstTypeDealMoneyTooltip": "初診客戶消費專案類的金額（只包含已到院客戶）",
+        "secondNumTooltip": "複診客戶接診人數，同天客戶去重",
+        "secondTypeDealNumTooltip": "複診客戶消費人數，同天客戶去重",
+        "secondTypeDealRateTooltip": "複診成交人數除以複診人數",
+        "secondTypeDealMoneyTooltip": "複診客戶消費專案類的金額",
+        "threeNumTooltip": "老客人接診人數，同天客戶去重",
+        "oldTypeDealNumTooltip": "老客人消費人數，同天客戶去重",
+        "oldTypeDealRateTooltip": "老客人成交人數除以老客人人數",
+        "oldTypeDealMoneyTooltip": "老客人客戶消費專案類的金額",
+        "notArrDealNumTooltip": "客戶未到院，專案類開單人數",
+        "notArrDealMoneyTooltip": "客戶未到院，專案類開單金額"
+      }
+    },
+    "orderArrears": {
+      "people": "人",
+      "statisticalInfo": {
+        "oweFeeCustomerNum": "欠費人數",
+        "oewFeeTotalMoney": "欠費總額",
+        "totalMoney": "訂單金額總和",
+        "actualRecieveTotalMoney": "訂單實收總和"
+      },
+      "searchList": {
+        "date": "開單時間",
+        "customerIds": "客戶",
+        "billingUserIds": "訂單開單人",
+        "arrearsRange": "欠費合計",
+        "approvalStatus": "審批狀態",
+        "billingNo": "訂單號"
+      },
+      "tableColumns": {
+        "customerName": "客戶",
+        "phoneNumber": "電話",
+        "counselor": "諮詢師",
+        "billingNo": "訂單號",
+        "approvalStatus": "審批狀態",
+        "billingUserName": "訂單開單人",
+        "billDate": "開單時間",
+        "billPrice": "訂單總價",
+        "billingActualRecieveTotal": "實收合計",
+        "billingOweFeeTotal": "欠費合計",
+        "itemName": "費用項",
+        "unitPrice": "單價",
+        "numberOfTime": "數量",
+        "discountPrice": "折扣",
+        "projectTotalPrice": "總價",
+        "projectActualRecieveMoney": "實收",
+        "uncollectedPrice": "欠費"
+      }
+    },
+    "revenueCostReport": {
+      "errorMsg": "日期選擇不能超過{{num}}個月",
+      "hospitalPlatform": "院內平臺",
+      "hospitalBilling": "院內開單",
+      "verifyTime": "核銷時間",
+      "totalPerformanceMoneySum": "本次業績結算金額合計",
+      "first": "(一)",
+      "two": "(二)",
+      "searchModalTitle": "客戶搜尋",
+      "product": "產品",
+      "projectType": "專案分類",
+      "project": "專案",
+      "dateInfoTitle": "業務發生查詢",
+      "employeeName": "員工姓名",
+      "searchInitData": {
+        "firstTreatDate": {
+          "label": "初診日期",
+          "filed": "firstTreatDate",
+          "pFiled": "dateInfo",
+          "optionKey": "firstTreatDate"
+        },
+        "latestArriveDate": {
+          "label": "最近到院日期",
+          "filed": "latestArriveDate",
+          "optionKey": "latestArriveDate",
+          "pFiled": "dateInfo"
+        },
+        "firstCostDate": {
+          "label": "首次消費日期",
+          "filed": "firstCostDate",
+          "optionKey": "firstCostDate",
+          "pFiled": "dateInfo"
+        },
+        "latestCostDate": {
+          "label": "最近消費日期",
+          "filed": "latestCostDate",
+          "optionKey": "latestCostDate",
+          "pFiled": "dateInfo"
+        },
+        "firstVisitedDate": {
+          "label": "首次回訪日期",
+          "filed": "firstVisitedDate",
+          "optionKey": "firstVisitedDate",
+          "pFiled": "dateInfo"
+        },
+        "latestVisitedDate": {
+          "label": "最近回訪日期",
+          "filed": "latestVisitedDate",
+          "optionKey": "latestVisitedDate",
+          "pFiled": "dateInfo"
+        },
+        "name": {
+          "label": "姓名",
+          "filed": "name",
+          "optionKey": "name",
+          "noShow": true,
+          "pFiled": "baseInfo"
+        },
+        "phone": {
+          "label": "電話",
+          "filed": "phone",
+          "optionKey": "phoneNumber",
+          "noShow": true,
+          "pFiled": "baseInfo"
+        },
+        "documentId": {
+          "label": "檔案號",
+          "filed": "documentId",
+          "optionKey": "documentId",
+          "pFiled": "baseInfo"
+        },
+        "sex": {
+          "label": "性別",
+          "filed": "sex",
+          "optionKey": "sex",
+          "pFiled": "baseInfo"
+        },
+        "age": {
+          "label": "年齡",
+          "filed": "age",
+          "optionKey": "age",
+          "pFiled": "baseInfo"
+        },
+        "area": {
+          "label": "現住地址",
+          "filed": "area",
+          "optionKey": "area",
+          "pFiled": "baseInfo"
+        },
+        "marriedFlag": {
+          "label": "婚姻狀況",
+          "filed": "marriedFlag",
+          "optionKey": "marriedFlag",
+          "pFiled": "baseInfo"
+        },
+        "fertilityFlag": {
+          "label": "生育狀況",
+          "filed": "fertilityFlag",
+          "optionKey": "fertilityFlag",
+          "pFiled": "baseInfo"
+        },
+        "career": {
+          "label": "職業",
+          "filed": "career",
+          "optionKey": "career",
+          "pFiled": "baseInfo"
+        },
+        "income": {
+          "label": "收入",
+          "filed": "income",
+          "optionKey": "income",
+          "pFiled": "baseInfo"
+        },
+        "birthday": {
+          "label": "出生日期",
+          "filed": "birthday",
+          "optionKey": "birthday",
+          "pFiled": "baseInfo"
+        },
+        "perResidence": {
+          "label": "所屬地域",
+          "filed": "perResidence",
+          "optionKey": "perResidence",
+          "pFiled": "baseInfo"
+        },
+        "nickName": {
+          "label": "暱稱",
+          "filed": "nickName",
+          "optionKey": "nickName",
+          "pFiled": "baseInfo"
+        },
+        "country": {
+          "label": "國籍",
+          "filed": "country",
+          "optionKey": "country",
+          "pFiled": "baseInfo"
+        },
+        "address": {
+          "label": "詳細住址",
+          "filed": "address",
+          "optionKey": "address",
+          "pFiled": "baseInfo"
+        },
+        "idCardNumber": {
+          "label": "身份證號",
+          "filed": "idCardNumber",
+          "optionKey": "idCardNumber",
+          "pFiled": "baseInfo"
+        },
+        "weiXin": {
+          "label": "微信",
+          "filed": "weiXin",
+          "optionKey": "weiXin",
+          "pFiled": "baseInfo"
+        },
+        "urgentContactName": {
+          "label": "緊急聯絡人",
+          "filed": "urgentContactName",
+          "optionKey": "urgentContactName",
+          "pFiled": "baseInfo"
+        },
+        "urgentContactCall": {
+          "label": "緊急聯絡人電話",
+          "filed": "urgentContactCall",
+          "optionKey": "urgentContactCall",
+          "pFiled": "baseInfo"
+        },
+        "passportType": {
+          "label": "護照",
+          "filed": "passportType",
+          "optionKey": "passportType",
+          "pFiled": "baseInfo"
+        },
+        "passportNum": {
+          "label": "護照號碼",
+          "filed": "passportNum",
+          "optionKey": "passportNum",
+          "pFiled": "baseInfo"
+        },
+        "smartLabelTypeIds": {
+          "label": "智慧標籤分類",
+          "filed": "smartLabelTypeIds",
+          "optionKey": "",
+          "pFiled": "labelInfo"
+        },
+        "smartLabelIds": {
+          "label": "智慧標籤",
+          "filed": "smartLabelIds",
+          "optionKey": "",
+          "pFiled": "labelInfo"
+        },
+        "smartLabelRemarkFlag": {
+          "label": "標籤是否備註",
+          "filed": "smartLabelRemarkFlag",
+          "optionKey": "",
+          "pFiled": "labelInfo"
+        },
+        "smartLabelStatus": {
+          "label": "標籤是否備註",
+          "filed": "smartLabelStatus",
+          "optionKey": "",
+          "pFiled": "labelInfo"
+        },
+        "allergyLabels": {
+          "label": "過敏標籤",
+          "filed": "allergyLabels",
+          "optionKey": "",
+          "pFiled": "labelInfo"
+        },
+        "personalityLabels": {
+          "label": "個性標籤",
+          "filed": "personalityLabels",
+          "optionKey": "",
+          "pFiled": "labelInfo"
+        },
+        "type": {
+          "label": "客戶型別",
+          "filed": "type",
+          "optionKey": "type",
+          "pFiled": "consultInfo"
+        },
+        "sysUserId": {
+          "label": "{{name}}",
+          "filed": "sysUserId",
+          "optionKey": "sysUserName",
+          "pFiled": "consultInfo"
+        },
+        "poolId": {
+          "label": "客戶池",
+          "filed": "poolId",
+          "optionKey": "poolName",
+          "noShow": true,
+          "pFiled": "consultInfo"
+        },
+        "propensity": {
+          "label": "意向專案",
+          "filed": "propensity",
+          "optionKey": "propensity",
+          "pFiled": "consultInfo"
+        },
+        "sourceType": {
+          "label": "客戶來源",
+          "filed": "sourceType",
+          "optionKey": "sourceType",
+          "pFiled": "consultInfo"
+        },
+        "onlineChannel": {
+          "label": "運營媒體",
+          "filed": "onlineChannel",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "underlineChannel": {
+          "label": "市場渠道",
+          "filed": "underlineChannel",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "oldNew": {
+          "label": "老帶新",
+          "filed": "oldNew",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "sourceTypeUser": {
+          "label": "員工",
+          "filed": "sourceTypeUser",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "other": {
+          "label": "其他",
+          "filed": "other",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "preUserId": {
+          "label": "報備人",
+          "filed": "preUserId",
+          "optionKey": "preUserName",
+          "pFiled": "consultInfo"
+        },
+        "preDeptId": {
+          "label": "報備部門",
+          "filed": "preDeptId",
+          "optionKey": "preDeptName",
+          "pFiled": "consultInfo"
+        },
+        "preDate": {
+          "label": "報備時間",
+          "filed": "preDate",
+          "optionKey": "preDate",
+          "pFiled": "consultInfo"
+        },
+        "consulProject": {
+          "label": "諮詢專案",
+          "filed": "consulProject",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "costProject": {
+          "label": "消費專案",
+          "filed": "costProject",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "atLestUnDone": {
+          "label": "最近幾天未成交",
+          "filed": "atLestUnDone",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "existVisitFlag": {
+          "label": "回訪計劃",
+          "filed": "existVisitFlag",
+          "optionKey": "existVisitFlag",
+          "pFiled": "consultInfo"
+        },
+        "unDoneReson": {
+          "label": "未成交原因",
+          "filed": "unDoneReson",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "noVisitDay": {
+          "label": "未回訪天數",
+          "filed": "noVisitDay",
+          "optionKey": "noVisitDay",
+          "pFiled": "consultInfo"
+        },
+        "deposit": {
+          "label": "定金金額",
+          "filed": "deposit",
+          "optionKey": "deposit",
+          "pFiled": "consultInfo"
+        },
+        "arrearsFlag": {
+          "label": "欠費記錄",
+          "filed": "arrearsFlag",
+          "optionKey": "arrearsFlag",
+          "pFiled": "consultInfo"
+        },
+        "arrears": {
+          "label": "欠費金額",
+          "filed": "arrears",
+          "optionKey": "arrears",
+          "pFiled": "consultInfo"
+        },
+        "doctorId": {
+          "label": "相關醫生",
+          "filed": "doctorId",
+          "optionKey": "relatedDoctor",
+          "pFiled": "consultInfo"
+        },
+        "consulId": {
+          "label": "相關{{name}}",
+          "filed": "consulId",
+          "optionKey": "relatedConsul",
+          "pFiled": "consultInfo"
+        },
+        "serverId": {
+          "label": "相關客服",
+          "filed": "serverId",
+          "optionKey": "relatedServer",
+          "pFiled": "consultInfo"
+        },
+        "propensityFriend": {
+          "label": "朋友意向",
+          "filed": "propensityFriend",
+          "optionKey": "propensityFriend",
+          "pFiled": "consultInfo"
+        },
+        "costAmount": {
+          "label": "消費總額",
+          "filed": "costAmount",
+          "optionKey": "costAmount",
+          "pFiled": "valueInfo"
+        },
+        "costThisYear": {
+          "label": "本年消費",
+          "filed": "costThisYear",
+          "optionKey": "costThisYear",
+          "pFiled": "valueInfo"
+        },
+        "costPower": {
+          "label": "消費能力",
+          "filed": "costPower",
+          "optionKey": "costPower",
+          "pFiled": "valueInfo"
+        },
+        "newCount": {
+          "label": "介紹客戶數",
+          "filed": "newCount",
+          "optionKey": "newCount",
+          "pFiled": "valueInfo"
+        },
+        "newName": {
+          "label": "介紹客戶",
+          "filed": "newName",
+          "optionKey": "newName",
+          "pFiled": "valueInfo"
+        },
+        "oldName": {
+          "label": "推薦人",
+          "filed": "oldName",
+          "optionKey": "oldName",
+          "pFiled": "valueInfo"
+        },
+        "vipNum": {
+          "label": "會員號",
+          "filed": "vipNum",
+          "optionKey": "vipNum",
+          "pFiled": "valueInfo"
+        },
+        "vipGrade": {
+          "label": "VIP等級",
+          "filed": "vipGrade",
+          "optionKey": "vipGrade",
+          "pFiled": "valueInfo"
+        },
+        "balance": {
+          "label": "賬戶餘額",
+          "filed": "balance",
+          "optionKey": "balance",
+          "pFiled": "valueInfo"
+        },
+        "integral": {
+          "label": "可用積分",
+          "filed": "integral",
+          "optionKey": "integral",
+          "pFiled": "valueInfo"
+        },
+        "vipActiveDate": {
+          "label": "會員有效期",
+          "filed": "vipActiveDate",
+          "optionKey": "vipActiveDate",
+          "pFiled": "valueInfo"
+        },
+        "responseFlag": {
+          "label": "客訴",
+          "filed": "responseFlag",
+          "optionKey": "",
+          "pFiled": "othertInfo"
+        },
+        "plasticFlag": {
+          "label": "皮膚/整形治療史",
+          "filed": "plasticFlag",
+          "optionKey": "plasticFlag",
+          "pFiled": "othertInfo"
+        },
+        "clueContent": {
+          "label": "客戶線索",
+          "filed": "clueContent",
+          "optionKey": "",
+          "pFiled": "othertInfo"
+        },
+        "visitContent": {
+          "label": "回訪資訊",
+          "filed": "visitContent",
+          "optionKey": "",
+          "pFiled": "othertInfo"
+        },
+        "allergyFlag": {
+          "label": "過敏史",
+          "filed": "allergyFlag",
+          "optionKey": "allergyFlag",
+          "pFiled": "othertInfo"
+        },
+        "reviewContent": {
+          "label": "複查資訊",
+          "filed": "reviewContent",
+          "optionKey": "",
+          "pFiled": "othertInfo"
+        },
+        "responseContent": {
+          "label": "客訴資訊",
+          "filed": "responseContent",
+          "optionKey": "",
+          "pFiled": "othertInfo"
+        },
+        "sickHistory": {
+          "label": "既往病史",
+          "filed": "sickHistory",
+          "optionKey": "",
+          "pFiled": "othertInfo"
+        }
+      },
+      "tableColumns": {
+        "date": "業務發生時間",
+        "businessTenantName": "業務發生門店",
+        "settlementSourceName": "業績來源",
+        "totalPerformanceMoney": "本次業績結算金額",
+        "serviceNo": "業務單號",
+        "serviceUserName": "業務人",
+        "serviceUserRoleNames": "業務人崗位",
+        "otherServiceInfo": "其他業務人",
+        "deductOperateUserName": "劃扣操作人",
+        "serviceCustomerType": "業務發生時客戶型別",
+        "packageName": "所屬套餐",
+        "firstType": "科室(一級分類)",
+        "secondType": "產品(二級分類)",
+        "thirdType": "專案(三級分類)",
+        "billingItemName": "產品名稱",
+        "billingItemCode": "專案編碼",
+        "billItemTenantName": "專案開單門店",
+        "billingSourceConfigName": "開單來源",
+        "numberOfTime": "劃扣數量",
+        "residueNum": "剩餘次數",
+        "treatmentTime": "治療時間",
+        "historyTotalPerformanceMoney": "截止目前該專案累計結算業績金額（截止該行）",
+        "projectActualPerformanceMoney": "該專案應結算業績金額（最終結果值）",
+        "performanceDeptName": "業績發生科室",
+        "billingNo": "關聯訂單",
+        "billingDate": "開單日期",
+        "customerName": "客戶姓名",
+        "vipNum": "會員號",
+        "documentId": "檔案號",
+        "billingUserName": "原訂單開單人",
+        "exclusiveServerName": "專屬客服",
+        "sysAssistantList": "原協助開單人",
+        "customerLabelNamesPublic": "公共標籤",
+        "customerLabelNamesPrivate": "個人標籤",
+        "counsolerName": "開單時歸屬{{name}}",
+        "currentSysUserName": "當前歸屬{{name}}",
+        "crossCounselorName": "跨院諮詢師",
+        "customerTypeName": "客戶型別",
+        "feePropName": "消費性質",
+        "smartLabelsNames": "原訂單業績標籤",
+        "projectNumOfTime": "專案次數",
+        "projectOriginalTotalPrice": "專案原價",
+        "discountPercent": "專案折扣率",
+        "projectDiscountPrice": "專案折扣",
+        "projectTotalPrice": "專案成交價",
+        "projectOweFeeMoney": "專案尚欠費",
+        "projectRefundMoney": "專案已退款",
+        "projectPerformanceMoney": "專案業績",
+        "preDate": "報備日期",
+        "preUserName": "報備人",
+        "preDeptName": "報備部門",
+        "preEndDate": "報備有效期",
+        "channelType": "客人來源分類",
+        "detailChannel": "客人具體來源",
+        "channelPerson": "{{name}}負責人",
+        "channelConsoler": "{{name}}諮詢師",
+        "channelServiceProvider": "{{name}}所屬服務商",
+        "channelServiceProviderDeveloper": "服務商開發人",
+        "channelServiceProviderConsoler": "服務商諮詢師",
+        "receiverName": "開單日接待人",
+        "assistReceiverName": "開單日協助接待人",
+        "firstTreatDate": "初診日期",
+        "firstCostDate": "客戶首次消費日期",
+        "firstDeductTime": "客戶首次治療劃扣日期",
+        "customerPhone": "客戶電話",
+        "dataSource": "訂單來源",
+        "manualNum": "手工費計次",
+        "manualPrice": "手工費",
+        "tenantName": "客戶所屬門店",
+        "isFirstDeductFlag": "訂單專案是否首次治療",
+        "currentExclusiveServerName": "當前專屬客服",
+        "currentManagerNames": "當前負責崗位",
+        "verifyTime": "核銷時間",
+        "verificationCost": "業務成本(總核銷成本)",
+        "grossProfitMargin": "毛利率",
+        "verifyDeptName": "核銷科室",
+        "verifyUserName": "核銷人",
+        "verifyRemark": "核銷說明",
+        "materialName": "核銷物品",
+        "materialCode": "物料編碼",
+        "specification": "物品規格",
+        "standard": "標準量",
+        "verificationNumber": "核銷量",
+        "isOverVerifyNumberFlag": "是否超量核銷",
+        "verificationUnitName": "核銷單位",
+        "purchaseUnitName": "採購單位",
+        "purchasePriceAndName": "進價",
+        "verificationValue": "核銷成本",
+        "outInventoryNumber": "核銷出庫單",
+        "receptionRole": "負責{{name}}"
+      },
+      "feePropNameOptions": [
+        {
+          "label": "首單消費",
+          "value": "0"
+        },
+        {
+          "label": "再消費",
+          "value": "1"
+        },
+        {
+          "label": "其他",
+          "value": "2"
+        }
+      ],
+      "performanceSourceOptions": [
+        {
+          "label": "繳費",
+          "value": "0"
+        },
+        {
+          "label": "退款",
+          "value": "1"
+        },
+        {
+          "label": "執行劃扣",
+          "value": "3"
+        },
+        {
+          "label": "取消執行劃扣",
+          "value": "4"
+        }
+      ],
+      "billItemTenantIdsOptions": [
+        {
+          "label": "他門店",
+          "value": "other"
+        },
+        {
+          "label": "本門店",
+          "value": "{{tenantId}}"
+        }
+      ],
+      "returnVisitLabel": {
+        "0": "無",
+        "1": "有"
+      },
+      "consumeTypeOptions": [
+        {
+          "label": "首單消費",
+          "value": "0"
+        },
+        {
+          "label": "再消費",
+          "value": "1"
+        },
+        {
+          "label": "其他",
+          "value": "2"
+        }
+      ],
+      "projectIsRefundOptions": [
+        {
+          "label": "全部",
+          "value": "all"
+        },
+        {
+          "label": "是",
+          "value": "1"
+        },
+        {
+          "label": "否",
+          "value": "0"
+        }
+      ],
+      "isFirstDeductFlagListOptions": [
+        {
+          "label": "全部",
+          "value": "all"
+        },
+        {
+          "label": "是",
+          "value": "1"
+        },
+        {
+          "label": "否",
+          "value": "0"
+        }
+      ],
+      "customerTypeOptions": [
+        {
+          "label": "初診",
+          "value": "0"
+        },
+        {
+          "label": "複診",
+          "value": "1"
+        },
+        {
+          "label": "老客人",
+          "value": "2"
+        },
+        {
+          "label": "其它",
+          "value": "3"
+        }
+      ],
+      "cusBelongTenantIdsOptions": [
+        {
+          "label": "他門店",
+          "value": "other"
+        },
+        {
+          "label": "本門店",
+          "value": "{{tenantId}}"
+        }
+      ],
+      "key0": "業績來源",
+      "key1": "業績發生科室",
+      "key2": "業務發生門店",
+      "key3": "門店",
+      "key4": "業務發生時間",
+      "key5": "本次業績結算金額",
+      "key6": "開單來源",
+      "key7": "專案開單門店",
+      "key8": "他門店",
+      "key9": "本門店",
+      "key10": "業務人",
+      "key11": "業務人崗位",
+      "key12": "消費時所在客戶池",
+      "key13": "客戶來源",
+      "key14": "關聯訂單資訊查詢",
+      "key15": "開單時歸屬{{name}}",
+      "key16": "當前歸屬{{name}}",
+      "key17": "{{name}}所屬服務商",
+      "key18": "{{name}}負責人",
+      "key19": "{{name}}諮詢師",
+      "billingNo": "關聯訂單",
+      "billingUserIds": "原訂單開單人",
+      "billingAssistUserId": "原協助開單人",
+      "consumeType": "消費性質",
+      "projectIsRefund": "專案是否退款",
+      "dataSources": "訂單來源",
+      "preDeptIds": "報備人部門",
+      "firstTreatDate": "初診日期",
+      "channelServiceProviderConsolerIds": "服務商諮詢師",
+      "treatmentTime": "治療時間",
+      "currentManagerIds": "當前負責崗位",
+      "billingDate": "開單日期",
+      "labelType": "智慧標籤分類",
+      "smartLabelIds": "原訂單業績標籤",
+      "isFirstDeductFlagList": "訂單專案是否首次治療",
+      "preDate": "報備日期",
+      "receptionUserIds": "開單日接待人",
+      "firstDealDate": "客戶首次消費日期",
+      "channelServiceProviderDeveloperIds": "服務商開發人",
+      "currentExclusiveServerId": "當前專屬客服",
+      "customerIds": "客戶姓名",
+      "crossCounselorIds": "跨院諮詢師",
+      "labels": "智慧標籤",
+      "customerType": "客戶型別",
+      "projectIsOwe": "專案是否欠費",
+      "preUserIds": "報備人",
+      "assistReceptionUserIds": "開單日協助接待人",
+      "firstDeductDate": "客戶首次治療劃扣",
+      "cusBelongTenantIds": "客戶所屬（建檔）門店"
+    },
+    "salesPerformanceReport": {
+      "key0": "銷售",
+      "key1": "新增客戶數",
+      "key2": "已回訪/應回訪",
+      "key3": "新增客戶線索數量（按客戶計）",
+      "key4": "成交業績",
+      "key5": "實收業績",
+      "key6": "定金"
+    },
+    "triageStatistics": {
+      "handledTypesOptions": [
+        {
+          "label": "未就診",
+          "value": 0
+        },
+        {
+          "label": "已就診",
+          "value": 1
+        },
+        {
+          "label": "就診中",
+          "value": 2
+        }
+      ],
+      "key0": "接待人部門",
+      "key1": "員工姓名",
+      "key2": "客戶姓名或電話",
+      "key3": "初診人數/成交人數/成交率",
+      "key4": "初診人數/成交人數/成交率",
+      "key5": "老客人數/成交人數/成交率",
+      "key6": "客戶",
+      "key7": "諮詢日期",
+      "key8": "就診型別",
+      "key9": "諮詢人員",
+      "key10": "客戶型別",
+      "key11": "接待人部門",
+      "key12": "報備部門",
+      "key13": "協助接待人",
+      "key14": "諮詢專案",
+      "key15": "就診狀態",
+      "key16": "消費狀態",
+      "key17": "分診專案科室",
+      "key18": "未成交原因分類",
+      "key19": "客戶來源",
+      "key20": "未就診",
+      "key21": "已就診",
+      "key22": "就診中",
+      "key23": "姓名",
+      "key24": "客人電話",
+      "key25": "客人型別",
+      "key26": "就診型別",
+      "key27": "消費狀態",
+      "key28": "就診狀態",
+      "key29": "客戶卡號",
+      "key30": "地區",
+      "key31": "諮詢日期",
+      "key32": "諮詢時間",
+      "key33": "就診專案",
+      "key34": "諮詢專案",
+      "key35": "客人主訴",
+      "key36": "處理方案",
+      "key37": "未成交原因分類",
+      "key38": "未成交原因",
+      "key39": "報備說明",
+      "key40": "分診專案科室",
+      "key41": "客人來源分類",
+      "key42": "客人具體來源",
+      "key43": "諮詢人員",
+      "key44": "協助接待人",
+      "key45": "報備人",
+      "key46": "報備日期",
+      "key47": "客服人員",
+      "key48": "分診接待",
+      "key49": "接待人部門",
+      "key50": "前次諮詢",
+      "key51": "預約時間",
+      "key52": "預約人員",
+      "key53": "接待時間",
+      "key54": "接待備註",
+      "key55": "操作人",
+      "key56": "報備部門",
+      "key57": "所屬門店"
+    },
+    "unDeductedPerformanceStatisticsAndDetails": {
+      "warningMsg": "日期範圍請勿超過{{num}}個月！",
+      "key0": "月份",
+      "key1": "本月已劃扣",
+      "key2": "本月未劃扣",
+      "key3": "歷史專案本月轉項退款",
+      "key4": "本月繳費",
+      "key5": "上月繳費",
+      "key6": "商品",
+      "key7": "藥品",
+      "key8": "歷史已經劃扣",
+      "key9": "歷史未劃扣",
+      "key10": "本月合計劃扣",
+      "key11": "歷史累計劃扣",
+      "key12": "累計未劃扣",
+      "key13": "本月定金彙總",
+      "key14": "本月收銀彙總",
+      "key15": "本月{{num}}彙總"
+    },
+    "hospitalPerformanceDetails": {
+      "customerType": "客戶型別",
+      "payWay": "支付方式",
+      "queryTime": "查詢時間",
+      "employeeName": "員工姓名",
+      "key0": "101 全院業績概況(僅專案)",
+      "key1": "102 科室業績概況(僅專案)",
+      "key2": "104 客戶來源業績概況",
+      "key3": "105A{{name}}業績概況(按訂單開單人)",
+      "key4": "105B{{name}}業績概況(按歸屬諮詢)",
+      "key5": "106 科室執行/劃扣業績",
+      "key6": "107 主治醫生執行/劃扣業績",
+      "key7": "109 賬務收銀報表（支付方式）",
+      "key8": "110 全院日經營報表",
+      "key9": "111 全院業績日/月報表",
+      "channel": {
+        "channelOptions": [
+          {
+            "label": "按來源型別",
+            "value": "channelType"
+          },
+          {
+            "label": "按具體來源",
+            "value": "channel"
+          }
+        ],
+        "key0": "104 客戶來源業績概況",
+        "key1": "總計",
+        "key2": "客戶來源",
+        "key3": "來源(一級)",
+        "key4": "來源名",
+        "key5": "所屬分類",
+        "key6": "來院人數",
+        "key7": "全院專案成交量",
+        "key8": "全院專案成交業績",
+        "key9": "人均消費",
+        "key10": "商品",
+        "key11": "藥品",
+        "key12": "定金",
+        "key13": "營收金額",
+        "key14": "新增客戶數"
+      },
+      "commodityPerformance": {
+        "key0": "商品銷售業績"
+      },
+      "comprehensive": {
+        "key0": "101 全院業績概況",
+        "key1": "分診客人開單成交，同時滿足以下條件的客戶數（按天去重）：",
+        "key2": "1. 當天經前臺分診至諮詢",
+        "key3": "2. 由諮詢或其助理開單（不含定金和{{name}}單）",
+        "key4": "3. 已完成繳費",
+        "key5": "即門診成交客人的成交業績－退款業績之和，需同時滿足：",
+        "key6": "1. 當天經前臺分診至諮詢",
+        "key7": "2. 由諮詢或其助理開單（不含定金和{{name}}單）",
+        "key8": "開單成交客戶中同時滿足以下條件的客戶數（按天去重）：",
+        "key9": "1. 由非諮詢及關聯崗位開單（不含定金和{{name}}單）",
+        "key10": "2. 已完成繳費",
+        "key11": "新老客",
+        "key12": "全院業績",
+        "key13": "來院人數",
+        "key14": "有效到院客戶人數之和，按天去重（包含所有未經前臺人工接待的客戶）",
+        "key15": "全院成交量",
+        "key16": "來院客戶中開單成交專案（不參與業績統計的專案除外）並且完成繳費的客戶人數",
+        "key17": "全院成交業績",
+        "key18": "來院客戶中開單成交且完成繳費的專案業績金額之和－當日專案退費業績之和",
+        "key19": "人均消費",
+        "key20": "開單客戶的人均消費金額",
+        "key21": "門診諮詢業績",
+        "key22": "門診量",
+        "key23": "經前臺分診至諮詢的客戶人數之和（按天去重）",
+        "key24": "門診成交量",
+        "key25": "門診成交率",
+        "key26": "現場諮詢接待客戶的成交率（門診成交量/門診量）",
+        "key27": "門診成交業績",
+        "key28": "門診成交佔比",
+        "key29": "二開業績",
+        "key30": "二開成交量",
+        "key31": "二開成交業績",
+        "key32": "非諮詢或諮詢關聯的客服、助理開單的專案成交業績－專案退款業績之和",
+        "key33": "二開成交佔比"
+      },
+      "consultant": {
+        "key0": "105A{{name}}業績概況(按訂單開單人)",
+        "key1": "105B{{name}}業績概況(按歸屬諮詢)",
+        "key2": "分診客人開單成交，同時滿足以下條件的客戶數（按天去重）：",
+        "key3": "1. 當天經前臺分診至諮詢",
+        "key4": "2. 由諮詢或其助理開單",
+        "key5": "3. 已完成繳費",
+        "key6": "即門診成交客人的成交業績－退款業績之和，需同時滿足：",
+        "key7": "1. 當天經前臺分診至諮詢",
+        "key8": "2. 由諮詢或其助理開單",
+        "key9": "科室(專案一級分類)",
+        "key10": "經前臺分診至諮詢的客戶人數之和（按天去重）",
+        "key11": "現場諮詢接待客戶的成交率（門診成交量/門診量）",
+        "key12": "科室(專案一級分類)",
+        "key13": "有效到院客戶人數之和，按天去重（包含所有未經前臺人工接待的客戶）",
+        "key14": "來院客戶中開單成交專案（不參與業績統計的專案除外）並且完成繳費的客戶人數",
+        "key15": "新老客",
+        "key16": "門診量",
+        "key17": "門診成交量",
+        "key18": "門診成交率",
+        "key19": "門診成交金額",
+        "key20": "門診成交業績",
+        "key21": "人均成交金額",
+        "key22": "人均成交業績",
+        "key23": "來院量",
+        "key24": "總成交量",
+        "key25": "總成交率",
+        "key26": "總成交金額",
+        "key27": "總成交業績"
+      },
+      "dailyOperation": {
+        "key0": "110 全院日經營報表",
+        "key1": "有效到院客戶人數之和，按天去重（包含所有未經前臺人工接待的客戶）",
+        "key2": "來院客戶中開單成交專案（不參與業績統計的專案除外）並且完成繳費的客戶人數",
+        "key3": "來院客戶中開單成交且完成繳費的專案業績金額之和－當日專案退費業績之和",
+        "key4": "本各科室/分類佔比統計規則",
+        "key5": "新客-初診佔比：新客-初診 / 新客小計 *100*",
+        "key6": "新客-複診佔比：新客-複診 / 新客小計 *100*",
+        "key7": "新客小計佔比：新客小計/ 本科室（分類）合計合計 *100%",
+        "key8": "老客小計佔比：老客小計/ 本科室（分類）合計合計 *100%",
+        "key9": "合計佔比：本科室（分類）合計合計 *100% / 全院總成交 *100",
+        "key10": "科室",
+        "key11": "新老客",
+        "key12": "來院量",
+        "key13": "總成交量",
+        "key14": "總成交率",
+        "key15": "總成交業績",
+        "key16": "人均消費",
+        "key17": "開單客戶的人均消費金額",
+        "key18": "來院量佔比",
+        "key19": "成交量佔比",
+        "key20": "成交額佔比",
+        "key21": "日均來院量",
+        "key22": "日均成交量",
+        "key23": "日均成交額"
+      },
+      "dailyOrMonthOperation": {
+        "key0": "111 全院業績日/月報表",
+        "key1": "全院業績(僅專案)",
+        "key2": "有效到院客戶人數之和，按天去重（包含所有未經前臺人工接待的客戶）",
+        "key3": "來院客戶中開單成交專案（不參與業績統計的專案除外）並且完成繳費的客戶人數",
+        "key4": "來院客戶中開單成交且完成繳費的專案業績金額之和－當日專案退費業績之和",
+        "key5": "新客(僅專案)",
+        "key6": "有效到院客戶人數之和，按天去重（包含所有未經前臺人工接待的客戶）",
+        "key7": "經前臺分診至諮詢的客戶人數之和（按天去重）",
+        "key8": "分診客人開單成交，同時滿足以下條件的客戶數（按天去重）：",
+        "key9": "1. 當天經前臺分診至諮詢",
+        "key10": "2. 由諮詢或其助理開單（不含定金和{{name}}單）",
+        "key11": "3. 已完成繳費",
+        "key12": "現場諮詢接待客戶的成交率（門診成交量/門診量）",
+        "key13": "即門診成交客人的成交業績－退款業績之和，需同時滿足：",
+        "key14": "1. 當天經前臺分診至諮詢",
+        "key15": "2. 由諮詢或其助理開單（不含定金和{{name}}單）",
+        "key16": "老客(僅專案)",
+        "key17": "有效到院客戶人數之和，按天去重（包含所有未經前臺人工接待的客戶）",
+        "key18": "經前臺分診至諮詢的客戶人數之和（按天去重）",
+        "key19": "分診客人開單成交，同時滿足以下條件的客戶數（按天去重）：",
+        "key20": "1. 當天經前臺分診至門診",
+        "key21": "2. 由門診或其助理開單（不含定金、{{name}}單和{{name2}}訂單）",
+        "key22": "3. 已完成繳費",
+        "key23": "現場諮詢接待客戶的成交率（門診成交量/門診量）",
+        "key24": "即門診成交客人的成交業績－退款業績之和，需同時滿足：",
+        "key25": "1. 當天經前臺分診至諮詢",
+        "key26": "2. 由諮詢或其助理開單（不含定金和{{name}}單）",
+        "key27": "{{name}}收支",
+        "key28": "來院人數",
+        "key29": "全院成交量",
+        "key30": "全院成交業績",
+        "key31": "門診量",
+        "key32": "門診成交量",
+        "key33": "門診成交率",
+        "key34": "門診成交業績",
+        "key35": "門診人均消費",
+        "key36": "商品銷售業績",
+        "key37": "藥品銷售業績",
+        "key38": "定金收支"
+      },
+      "departmentPerformance": {
+        "key0": "102 科室業績概況",
+        "key1": "總計",
+        "key2": "科室（一級分類）",
+        "key3": "有效到院客戶人數之和，按天去重（只包含前臺人工接待的客戶）",
+        "key4": "來院客戶中開單成交專案（不參與業績統計的專案除外）並且完成繳費的客戶人數",
+        "key5": "來院客戶中開單成交且完成繳費的專案業績金額之和－當日專案退費業績之和",
+        "key6": "經前臺分診至諮詢的客戶人數之和（按天去重）",
+        "key7": "分診客人開單成交，同時滿足以下條件的客戶數（按天去重）：",
+        "key8": "1. 當天經前臺分診至門診",
+        "key9": "2. 由門診或其助理開單（不含定金、{{name}}單和{{name2}}訂單）",
+        "key10": "3. 已完成繳費",
+        "key11": "現場諮詢接待客戶的成交率（門診成交量/門診量）",
+        "key12": "即門診成交客人的成交業績－退款業績之和，需同時滿足：",
+        "key13": "1. 當天經前臺分診至諮詢",
+        "key14": "2. 由諮詢或其助理開單（不含定金和{{name}}單）",
+        "key15": "開單成交客戶中同時滿足以下條件的客戶數（按天去重）：",
+        "key16": "1. 由非諮詢及關聯崗位開單（不含定金和{{name}}單）",
+        "key17": "2. 已完成繳費",
+        "key18": "非諮詢或諮詢關聯的客服、助理開單的專案成交業績－專案退款業績之和",
+        "key19": "總業績",
+        "key20": "門診諮詢業績",
+        "key21": "門診成交佔比",
+        "key22": "二開業績",
+        "key23": "二開成交量",
+        "key24": "二開成交業績",
+        "key25": "二開成交佔比"
+      },
+      "doctors": {
+        "key0": "107 主治醫生執行/劃扣業績",
+        "key1": "總計",
+        "key2": "合計",
+        "key3": "科室",
+        "key4": "主治醫生",
+        "key5": "產品（二級分類）",
+        "key6": "執行/劃扣客戶數",
+        "key7": "執行/劃扣客戶數",
+        "key8": "執行/劃扣客戶數"
+      },
+      "finance": {
+        "key0": "業績（萬元）：",
+        "key1": "退款",
+        "key2": "開單業績",
+        "key3": "產品（一級)",
+        "key4": "產品（二級)",
+        "key5": "開單業績（萬元）",
+        "key6": "開單業績：當天（查詢日期範圍內）所有開單業績總金額",
+        "key7": "開單實收（萬元）",
+        "key8": "開單實收：當天（查詢日期範圍內）所有開單已繳費金額總和",
+        "key9": "補繳費（萬元）",
+        "key10": "補繳費：當天（查詢日期範圍內）繳費的，非當天（非查詢日期範圍內）開單繳費的金額之和。例：前兩天開單，今天補繳費",
+        "key11": "專案退款（萬元）",
+        "key12": "專案退款：當天（查詢日期範圍內）的專案/商品/套餐退款金額之和",
+        "key13": "實收業績（萬元）",
+        "key14": "實收業績 = 開單實收 + 補繳費 - 專案退款"
+      },
+      "financialPaymentMethod": {
+        "key0": "109 賬務收銀報表（支付方式）",
+        "key1": "實收",
+        "key2": "實退",
+        "key3": "收支彙總"
+      },
+      "financialSubject": {
+        "key0": "108 賬務收銀報表（科目）",
+        "key1": "收入",
+        "key2": "收入包括：",
+        "key3": "1. 專案/商品/定金/{{name}}成交支付",
+        "key4": "2. 專案轉項轉入",
+        "key5": "3. 退款轉入",
+        "key6": "支出",
+        "key7": "支出包括：",
+        "key8": "1. 專案/商品/定金/{{name}}退款",
+        "key9": "2. 專案轉項轉出",
+        "key10": "3. 用於專案抵扣",
+        "key11": "收支彙總"
+      },
+      "product": {
+        "key0": "產品業績概況",
+        "key1": "合計",
+        "key2": "總成交業績（萬元）",
+        "key3": "總成交業績：查詢日期範圍內院內所有完成繳費且未退款的總業績金額（含諮詢接待開單、到院直接開單及各崗位二開）",
+        "key4": "諮詢接待量：查詢日期範圍內現場諮詢接待人數之和（按諮詢記錄統計）",
+        "key5": "諮詢成交量：查詢日期範圍內現場諮詢接待人數中開單的客戶人數之和",
+        "key6": "諮詢成交率：查詢日期範圍內現場諮詢接待客戶的成交率",
+        "key7": "諮詢成交業績（萬元）",
+        "key8": "諮詢成交業績：查詢日期範圍內現場諮詢接待客戶中諮詢開單且完成繳費且未退費的業績金額",
+        "key9": "產品型別",
+        "key10": "新老客",
+        "key11": "全院業績",
+        "key12": "人均消費",
+        "key13": "開單客戶的人均消費金額",
+        "key14": "門診諮詢業績",
+        "key15": "諮詢接待量",
+        "key16": "諮詢成交量",
+        "key17": "諮詢成交率"
+      },
+      "sectionExecution": {
+        "key0": "106 科室執行/劃扣業績",
+        "key1": "總計",
+        "key2": "科室",
+        "key3": "產品（二級分類）",
+        "key4": "執行/劃扣客戶數",
+        "key5": "執行/劃扣量",
+        "key6": "執行/劃扣業績"
+      }
+    }
+  },
+  "financialStatement": {
+    "cashierStatement": {
+      "errorMsg": "日期選擇不能超過{{num}}個月",
+      "consumeTypeOption": [
+        {
+          "label": "首單消費",
+          "value": "0"
+        },
+        {
+          "label": "再消費",
+          "value": "1"
+        },
+        {
+          "label": "其他",
+          "value": "2"
+        }
+      ],
+      "billItemTenantIdsOptions": [
+        {
+          "label": "他門店",
+          "value": "other"
+        },
+        {
+          "label": "本門店",
+          "value": "{{tenantId}}"
+        }
+      ],
+      "key0": "客戶姓名或電話",
+      "key1": "產品型別",
+      "key2": "專案",
+      "key3": "專案分類",
+      "key4": "商/藥品",
+      "key5": "商/藥品分類",
+      "key6": "年卡",
+      "key7": "次卡",
+      "key8": "定金",
+      "key9": "總{{name}}抵扣金額",
+      "key10": "{{name}}本金支付合計",
+      "key11": "{{name}}贈送金支付合計",
+      "key12": "總結餘",
+      "key13": "初診人數",
+      "key14": "初診實收",
+      "key15": "複診人數",
+      "key16": "複診實收",
+      "key17": "老客人人數",
+      "key18": "老客人實收",
+      "key19": "其他人數",
+      "key20": "其他實收",
+      "key21": "總定金抵扣金額",
+      "key22": "總實收",
+      "key23": "總實退",
+      "key24": "本次結算業績彙總",
+      "key25": "資料異常，無法修改客戶型別",
+      "key26": "修改消費時客戶型別",
+      "key27": "消費時客戶型別",
+      "key28": "修改為",
+      "key29": "接診時{{name}}",
+      "key30": "當前歸屬{{name}}",
+      "key31": "開單時{{name}}",
+      "key32": "客戶所屬（建檔）門店",
+      "key33": "繳費時間",
+      "key34": "實際入賬時間",
+      "key35": "客戶",
+      "key36": "當前客戶型別",
+      "key37": "請選擇當前客戶型別",
+      "key38": "專屬客服",
+      "key39": "請選擇專屬客服",
+      "key40": "消費性質",
+      "key41": "消費時客戶型別",
+      "key42": "請選擇消費時客戶型別",
+      "key43": "消費時所在客戶池",
+      "key44": "請選擇消費時所在客戶池",
+      "key45": "原訂單開單時客戶型別",
+      "key46": "請選擇原訂單開單時客戶型別",
+      "key47": "請選擇",
+      "key48": "原訂單開單人",
+      "key49": "原訂單業績標籤",
+      "key50": "訂單號",
+      "key51": "請輸入訂單號",
+      "key52": "費用發生門店",
+      "key53": "請選擇門店",
+      "key54": "報備專案",
+      "key55": "請搜尋報備專案",
+      "key56": "支付方式備註",
+      "key57": "請輸入支付方式備註",
+      "key58": "原協助開單人",
+      "key59": "智慧標籤分類",
+      "key60": "請選擇智慧標籤分類",
+      "key61": "智慧標籤",
+      "key62": "請選擇智慧標籤",
+      "key63": "報備人",
+      "key64": "報備部門",
+      "key65": "請選擇所屬部門",
+      "key66": "協助接待人",
+      "key67": "開單日期",
+      "key68": "訂單來源",
+      "key69": "專案開單門店",
+      "key70": "計劃治療科室",
+      "key71": "費用單型別",
+      "key72": "請選擇費用單型別",
+      "key73": "客戶負責崗",
+      "key74": "請輸入姓名",
+      "key75": "當前會員等級",
+      "key76": "請選擇當前會員等級",
+      "key77": "已清訖",
+      "key78": "客戶來源",
+      "key79": "客戶第二來源",
+      "key80": "客戶第三來源",
+      "key81": "接診{{name}}",
+      "key82": "當前歸屬{{name}}",
+      "key83": "{{name}}本金",
+      "key84": "{{name}}贈送金",
+      "key85": "{{name}}訂單的收退直接顯示正負費用；",
+      "key86": "定金的退入{{name}}記0，其餘顯示正負費用；",
+      "key87": "普通訂單首次收費記訂單金額（正），補費記0，轉項或退款是轉/退入{{name}}/定金的記0，其餘顯示正負費用",
+      "key88": "本次實付/實退",
+      "key89": "定金支付/轉入定金",
+      "key90": "{{name}}餘額支付/轉入{{name}}餘額",
+      "key91": "將{{name}}修改為",
+      "key92": "來源（一級）",
+      "key93": "來源（二級）",
+      "key94": "科室（一級分類）",
+      "key95": "產品（二級分類）",
+      "key96": "專案（三級分類）",
+      "key97": "專案/商品/藥品編碼",
+      "key98": "專案定金支付/轉入定金",
+      "key99": "專案{{name}}餘額支付/轉入{{name}}餘額",
+      "key100": "開單時{{name}}",
+      "key101": "專案本次實付/實退",
+      "key102": "(一)",
+      "key103": "(二)",
+      "key104": "繳費時間",
+      "key105": "費用單型別",
+      "key106": "實際入賬時間",
+      "key107": "客戶姓名",
+      "key108": "會員號",
+      "key109": "檔案號",
+      "key110": "電話號碼",
+      "key111": "當前客戶型別",
+      "key112": "當前會員等級",
+      "key113": "初診日期",
+      "key114": "客戶首次消費日期",
+      "key115": "客戶首次治療劃扣日期",
+      "key116": "繳費單號",
+      "key117": "費用發生門店",
+      "key118": "費用單備註",
+      "key119": "收銀員",
+      "key120": "繳費金額",
+      "key121": "欠費金額",
+      "key122": "費用單對應當時的欠費金額",
+      "key123": "清訖金額",
+      "key124": "應收金額",
+      "key125": "現金",
+      "key126": "非現金",
+      "key127": "實收明細",
+      "key128": "贈送餘額支付",
+      "key129": "卡券支付",
+      "key130": "積分支付",
+      "key131": "自定義虛擬金支付明細",
+      "key132": "支付方式備註",
+      "key133": "原協助開單人",
+      "key134": "公共標籤",
+      "key135": "個人標籤",
+      "key136": "關聯訂單",
+      "key137": "訂單來源",
+      "key138": "開單日期",
+      "key139": "原訂單開單人",
+      "key140": "原訂單開單時客戶型別",
+      "key141": "訂單備註",
+      "key142": "原訂單業績標籤",
+      "key143": "消費時客戶類別",
+      "key144": "消費時所在客戶池",
+      "key145": "消費性質",
+      "key146": "專屬客服",
+      "key147": "客戶負責崗",
+      "key148": "報備日期",
+      "key149": "報備人",
+      "key150": "報備有效期",
+      "key151": "客戶來源型別",
+      "key152": "客戶具體來源",
+      "key153": "老帶新老客來源",
+      "key154": "開單日接待人",
+      "key155": "開單日協助接待人",
+      "key156": "報備部門",
+      "key157": "報備專案",
+      "key158": "產品類別",
+      "key159": "所屬套餐",
+      "key160": "產品名稱",
+      "key161": "專案實收明細",
+      "key162": "專案贈送餘額支付",
+      "key163": "專案卡券支付",
+      "key164": "專案積分支付",
+      "key165": "專案自定義虛擬金支付明細",
+      "key166": "專案開單門店",
+      "key167": "規格",
+      "key168": "數量",
+      "key169": "成交單價",
+      "key170": "專案原單價",
+      "key171": "折扣",
+      "key172": "開單來源",
+      "key173": "是否重單",
+      "key174": "專案成交價",
+      "key175": "本次結算業績",
+      "key176": "計劃治療科室",
+      "key177": "計劃治療醫生",
+      "key178": "開單專案備註",
+      "key179": "客戶第二來源",
+      "key180": "客戶第三來源",
+      "key181": "客戶所屬門店",
+      "key182": "市場渠道負責人",
+      "key183": "歸屬套餐",
+      "key184": "套"
+    },
+    "depositAndStoredStatistics": {
+      "quickTimeOptions": [
+        {
+          "label": "今日",
+          "value": "day"
+        },
+        {
+          "label": "本月",
+          "value": "month"
+        }
+      ],
+      "typeOptions": [
+        {
+          "label": "{{name}}",
+          "value": "儲值"
+        },
+        {
+          "label": "定金",
+          "value": "定金"
+        },
+        {
+          "label": "贈送金",
+          "value": "贈送金"
+        }
+      ],
+      "type2Options": [
+        {
+          "label": "收入（開單）",
+          "value": "收入（開單）"
+        },
+        {
+          "label": "收入（轉項轉入）",
+          "value": "收入（轉項轉入）"
+        },
+        {
+          "label": "收入（退款轉入）",
+          "value": "收入（退款轉入）"
+        },
+        {
+          "label": "收入（抵扣退返）",
+          "value": "收入（抵扣退返）"
+        },
+        {
+          "label": "收入（返利）",
+          "value": "收入（返利）"
+        },
+        {
+          "label": "收入（轉贈）",
+          "value": "收入（轉贈）"
+        },
+        {
+          "label": "支出（抵扣）",
+          "value": "支出（抵扣）"
+        },
+        {
+          "label": "支出（退款）",
+          "value": "支出（退款）"
+        },
+        {
+          "label": "支出（失效）",
+          "value": "支出（失效）"
+        },
+        {
+          "label": "支出（返利）",
+          "value": "支出（返利）"
+        },
+        {
+          "label": "支出（轉贈）",
+          "value": "支出（轉贈）"
+        }
+      ],
+      "key0": "定金及{{name}}收支統計",
+      "key1": "定金及{{name}}收支明細",
+      "key2": "時間",
+      "key3": "客戶",
+      "key4": "型別",
+      "key5": "請選擇",
+      "key6": "收支型別",
+      "key7": "業務單號",
+      "key8": "請輸入業務單號",
+      "key9": "費用單號",
+      "key10": "請輸入費用單號",
+      "key11": "收支項/型別",
+      "key12": "收入",
+      "key13": "開單",
+      "key14": "返利",
+      "key15": "轉項轉入",
+      "key16": "退款轉入",
+      "key17": "轉贈",
+      "key18": "抵扣退返",
+      "key19": "收入小計",
+      "key20": "支出",
+      "key21": "退款",
+      "key22": "抵扣",
+      "key23": "失效",
+      "key24": "支出小計",
+      "key25": "收支彙總",
+      "key26": "時間",
+      "key27": "客戶",
+      "key28": "會員號",
+      "key29": "型別",
+      "key30": "收支型別",
+      "key31": "金額",
+      "key32": "業務單號",
+      "key33": "費用單號",
+      "key34": "收支項"
+    },
+    "financialMethod": {
+      "chargeTypeOptions": [
+        {
+          "label": "訂單收費",
+          "value": 0
+        },
+        {
+          "label": "退單收費",
+          "value": 1
+        },
+        {
+          "label": "定金收費",
+          "value": 2
+        },
+        {
+          "label": "轉項收費",
+          "value": 3
+        },
+        {
+          "label": "定金收費",
+          "value": 4
+        },
+        {
+          "label": "{{name}}收費",
+          "value": 5
+        },
+        {
+          "label": "{{name}}收費",
+          "value": 6
+        },
+        {
+          "label": "轉項退費",
+          "value": 7
+        }
+      ],
+      "key0": "月份請勿超過24個月！",
+      "key1": "日期請勿超過31天！",
+      "key2": "請選擇收費員",
+      "key3": "請選擇收銀型別",
+      "key4": "入賬日期維度",
+      "key5": "入賬日期",
+      "key6": "收銀型別",
+      "key7": "收費員",
+      "key8": "總計",
+      "key9": "年",
+      "key10": "月",
+      "key11": "日",
+      "key12": "入賬日期",
+      "key13": "收銀型別",
+      "key14": "收費員",
+      "key15": "小計(元)",
+      "key16": "總計(元)"
+    },
+    "paymentMethod": {
+      "chargeTypeOptions": [
+        {
+          "label": "訂單收費",
+          "value": 0
+        },
+        {
+          "label": "退單收費",
+          "value": 1
+        },
+        {
+          "label": "定金收費",
+          "value": 2
+        },
+        {
+          "label": "轉項收費",
+          "value": 3
+        },
+        {
+          "label": "定金收費",
+          "value": 4
+        },
+        {
+          "label": "{{name}}收費",
+          "value": 5
+        },
+        {
+          "label": "{{name}}收費",
+          "value": 6
+        },
+        {
+          "label": "轉項退費",
+          "value": 7
+        }
+      ],
+      "key0": "月份請勿超過24個月！",
+      "key1": "日期請勿超過31天！",
+      "key2": "請選擇收費員",
+      "key3": "請選擇收銀型別",
+      "key4": "請選擇支付方式",
+      "key5": "入賬日期維度",
+      "key6": "入賬日期",
+      "key7": "收銀型別",
+      "key8": "支付方式",
+      "key9": "收費員",
+      "key10": "總計",
+      "key11": "年",
+      "key12": "月",
+      "key13": "日"
+    },
+    "paymentStatistics": {
+      "tabOptions": [
+        "收銀統計",
+        "財務統計"
+      ]
+    },
+    "salesAndExecution": {
+      "dateConfig": [
+        {
+          "label": "今日",
+          "start": [
+            "YYYY-MM-DD"
+          ],
+          "end": [
+            "YYYY-MM-DD"
+          ]
+        },
+        {
+          "label": "本月",
+          "start": [
+            "YYYY-MM-01"
+          ],
+          "end": [
+            "YYYY-MM-DD"
+          ]
+        },
+        {
+          "label": "上月",
+          "start": [
+            "YYYY-MM-01",
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "end": [
+            "YYYY-MM-01",
+            [
+              0,
+              0,
+              -1
+            ]
+          ]
+        }
+      ],
+      "feePropNameOptions": [
+        {
+          "label": "首單消費",
+          "value": "0"
+        },
+        {
+          "label": "再消費",
+          "value": "1"
+        },
+        {
+          "label": "其他",
+          "value": "2"
+        }
+      ],
+      "billItemTenantIdsOptions": [
+        {
+          "label": "他門店",
+          "value": "other"
+        },
+        {
+          "label": "本門店",
+          "value": "{{tenantId}}"
+        }
+      ],
+      "performanceSourceOptions": [
+        {
+          "label": "繳費",
+          "value": "0"
+        },
+        {
+          "label": "退款",
+          "value": "1"
+        },
+        {
+          "label": "轉項",
+          "value": "2"
+        }
+      ],
+      "performanceSourceOptions2": [
+        {
+          "label": "繳費",
+          "value": "0"
+        },
+        {
+          "label": "退款",
+          "value": "1"
+        },
+        {
+          "label": "執行劃扣",
+          "value": "3"
+        },
+        {
+          "label": "取消執行劃扣",
+          "value": "4"
+        }
+      ],
+      "currentCustomerTypeOptions": [
+        {
+          "label": "初診",
+          "value": "0"
+        },
+        {
+          "label": "複診",
+          "value": "1"
+        },
+        {
+          "label": "老客人",
+          "value": "2"
+        },
+        {
+          "label": "其它",
+          "value": "3"
+        }
+      ],
+      "consumeTypeOptions": [
+        {
+          "label": "首單消費",
+          "value": "0"
+        },
+        {
+          "label": "再消費",
+          "value": "1"
+        },
+        {
+          "label": "其他",
+          "value": "2"
+        }
+      ],
+      "billingIsRefundOptions": [
+        {
+          "label": "全部",
+          "value": "all"
+        },
+        {
+          "label": "是",
+          "value": "1"
+        },
+        {
+          "label": "否",
+          "value": "0"
+        }
+      ],
+      "key0": "日期選擇不能超過{{num}}個月",
+      "key1": "711銷售業績結算明細",
+      "key2": "712執行業績結算明細",
+      "key3": "實付/實退合計",
+      "key4": "定金支付/轉入定金合計",
+      "key5": "{{name}}餘額支付/轉入{{name}}餘額",
+      "key6": "{{name}}本金支付合計",
+      "key7": "{{name}}贈送金支付合計",
+      "key8": "業務發生時間：",
+      "key9": "本次業績結算金額合計",
+      "key10": "本次業績結算金額合計",
+      "key11": "自定義虛擬金支付合計",
+      "key12": "贈送餘額支付合計",
+      "key13": "卡券支付合計",
+      "key14": "積分支付合計",
+      "key15": "相關{{name}}",
+      "key16": "皮膚/整形治療史",
+      "key17": "初診日期",
+      "key18": "最近到院日期",
+      "key19": "首次消費日期",
+      "key20": "最近消費日期",
+      "key21": "首次回訪日期",
+      "key22": "最近回訪日期",
+      "key23": "姓名",
+      "key24": "電話",
+      "key25": "檔案號",
+      "key26": "性別",
+      "key27": "年齡",
+      "key28": "現住地址",
+      "key29": "婚姻狀況",
+      "key30": "生育狀況",
+      "key31": "職業",
+      "key32": "收入",
+      "key33": "出生日期",
+      "key34": "所屬地域",
+      "key35": "暱稱",
+      "key36": "國籍",
+      "key37": "詳細住址",
+      "key38": "身份證號",
+      "key39": "微信",
+      "key40": "緊急聯絡人",
+      "key41": "緊急聯絡人電話",
+      "key42": "護照",
+      "key43": "護照號碼",
+      "key44": "智慧標籤分類",
+      "key45": "智慧標籤",
+      "key46": "標籤是否備註",
+      "key47": "過敏標籤",
+      "key48": "個性標籤",
+      "key49": "客戶型別",
+      "key50": "客戶池",
+      "key51": "意向專案",
+      "key52": "客戶來源",
+      "key53": "運營媒體",
+      "key54": "市場渠道",
+      "key55": "老帶新",
+      "key56": "員工",
+      "key57": "其他",
+      "key58": "報備人",
+      "key59": "報備部門",
+      "key60": "報備時間",
+      "key61": "諮詢專案",
+      "key62": "消費專案",
+      "key63": "最近幾天未成交",
+      "key64": "回訪計劃",
+      "key65": "未成交原因",
+      "key66": "未回訪天數",
+      "key67": "定金金額",
+      "key68": "欠費記錄",
+      "key69": "欠費金額",
+      "key70": "相關醫生",
+      "key71": "相關客服",
+      "key72": "朋友意向",
+      "key73": "消費總額",
+      "key74": "本年消費",
+      "key75": "消費能力",
+      "key76": "介紹客戶數",
+      "key77": "介紹客戶",
+      "key78": "推薦人",
+      "key79": "會員號",
+      "key80": "賬戶餘額",
+      "key81": "可用積分",
+      "key82": "會員有效期",
+      "key83": "客訴",
+      "key84": "客戶線索",
+      "key85": "回訪資訊",
+      "key86": "過敏史",
+      "key87": "複查資訊",
+      "key88": "客訴資訊",
+      "key89": "既往病史",
+      "key90": "VIP等級",
+      "key91": "本次業績結算金額（總）",
+      "key92": "實付/實退",
+      "key93": "{{name}}本金",
+      "key94": "{{name}}贈送金",
+      "key95": "定金支付/轉入定金",
+      "key96": "{{name}}餘額支付/轉入{{name}}餘額",
+      "key97": "科室(一級分類)",
+      "key98": "產品(二級分類)",
+      "key99": "專案(三級分類)",
+      "key100": "專案/商品編碼",
+      "key101": "院內平臺",
+      "key102": "若是轉項轉入的專案，取值轉項操作人，轉出的取值原專案開單人",
+      "key103": "本次結算業績金額（該專案）",
+      "key104": "截止目前該專案累計結算業績金額（截止該行）",
+      "key105": "該專案應結算業績金額（最終結果值）",
+      "key106": "(一)",
+      "key107": "(二)",
+      "key108": "開單時歸屬{{name}}",
+      "key109": "原訂單{{name}}餘額支付",
+      "key110": "{{name}}負責人",
+      "key111": "接診{{name}}",
+      "key112": "負責{{name}}",
+      "key113": "在專案劃扣時，進行劃扣操作的員工，非系統內記錄的實際選擇的劃扣人",
+      "key114": "在專案劃扣時，實際選擇的劃扣人，非進行劃扣操作的員工",
+      "key115": "",
+      "key116": "",
+      "key117": "業務成本(核銷成本)",
+      "key118": "當前歸屬{{name}}",
+      "key119": "{{name}}諮詢師",
+      "key120": "{{name}}所屬服務商",
+      "key121": "業務發生時間",
+      "key122": "業務發生門店",
+      "key123": "業績來源",
+      "key124": "業務單號",
+      "key125": "業務人",
+      "key126": "業務人崗位",
+      "key127": "業務發生時客戶型別",
+      "key128": "贈送餘額支付",
+      "key129": "卡券支付",
+      "key130": "積分支付",
+      "key131": "自定義虛擬金支付",
+      "key132": "自定義虛擬金支付明細",
+      "key133": "產品類別",
+      "key134": "所屬套餐",
+      "key135": "產品名稱",
+      "key136": "專案開單門店",
+      "key137": "開單來源",
+      "key138": "院內開單",
+      "key139": "專案開單人",
+      "key140": "規格",
+      "key141": "數量",
+      "key142": "剩餘次數",
+      "key143": "專案成交價",
+      "key144": "業績發生科室",
+      "key145": "關聯訂單",
+      "key146": "開單日期",
+      "key147": "訂單備註",
+      "key148": "客戶姓名",
+      "key149": "會員號",
+      "key150": "檔案號",
+      "key151": "客戶當前型別",
+      "key152": "原訂單開單人",
+      "key153": "原協助開單人",
+      "key154": "公共標籤",
+      "key155": "個人標籤",
+      "key156": "專屬客服",
+      "key157": "消費時客戶型別",
+      "key158": "消費時所在客戶池",
+      "key159": "消費性質",
+      "key160": "原訂單業績標籤",
+      "key161": "原訂單折扣",
+      "key162": "原訂單應支付金額",
+      "key163": "原訂單已付金額",
+      "key164": "原訂單實收",
+      "key165": "原訂單定金支付",
+      "key166": "原訂單贈送餘額支付",
+      "key167": "原訂單尚欠款",
+      "key168": "清訖金額",
+      "key169": "原訂單已退金額",
+      "key170": "報備日期",
+      "key171": "報備人",
+      "key172": "報備部門",
+      "key173": "報備有效期",
+      "key174": "客人來源分類",
+      "key175": "客人具體來源",
+      "key176": "開單日面診醫生",
+      "key177": "開單日接待人",
+      "key178": "開單日協助接待人",
+      "key179": "初診日期",
+      "key180": "客戶首次消費日期",
+      "key181": "客戶首次治療劃扣日期",
+      "key182": "客戶電話",
+      "key183": "訂單來源",
+      "key184": "客戶所屬門店",
+      "key185": "當前專屬客服",
+      "key186": "本次業績結算金額",
+      "key187": "其他業務人",
+      "key188": "劃扣操作人",
+      "key189": "實際劃扣人",
+      "key190": "專案編碼",
+      "key191": "劃扣數量",
+      "key192": "治療時間",
+      "key193": "核銷時間",
+      "key194": "跨院諮詢師",
+      "key195": "客戶型別",
+      "key196": "專案次數",
+      "key197": "專案原價",
+      "key198": "專案折扣率",
+      "key199": "專案折扣",
+      "key200": "專案尚欠費",
+      "key201": "專案已退款",
+      "key202": "專案業績",
+      "key203": "服務商開發人",
+      "key204": "服務商諮詢師",
+      "key205": "手工費計次",
+      "key206": "手工費",
+      "key207": "訂單專案是否首次治療",
+      "key208": "當前負責崗位",
+      "key209": "客戶搜尋",
+      "key210": "請選擇",
+      "key211": "業績發生科室",
+      "key212": "請輸入",
+      "key213": "業務發生門店",
+      "key214": "請選擇門店",
+      "key215": "專案開單人",
+      "key216": "請選擇開單人",
+      "key217": "已清訖",
+      "key218": "本次業績結算金額",
+      "key219": "開單來源",
+      "key220": "專案開單門店",
+      "key221": "業務人",
+      "key222": "業務人崗位",
+      "key223": "消費時所在客戶池",
+      "key224": "業績來源",
+      "key225": "產品",
+      "key226": "專案",
+      "key227": "請選擇專案分類",
+      "key228": "請選擇專案",
+      "key229": "商/藥品",
+      "key230": "請選擇商/藥品分類",
+      "key231": "請選擇商/藥品",
+      "key232": "年卡",
+      "key233": "次卡",
+      "key234": "業務發生查詢",
+      "key235": "客戶來源",
+      "key236": "關聯訂單資訊查詢",
+      "key237": "員工姓名",
+      "key238": "{{name}}負責人",
+      "key239": "開單時歸屬{{name}}",
+      "key240": "客戶所屬（建檔）門店",
+      "key241": "{{name}}諮詢師",
+      "key242": "當前歸屬{{name}}",
+      "key243": "{{name}}所屬服務商",
+      "key244": "關聯訂單",
+      "key245": "請輸入",
+      "key246": "原訂單開單人",
+      "key247": "原協助開單人",
+      "key248": "客戶當前型別",
+      "key249": "消費性質",
+      "key250": "原訂單是否退款",
+      "key251": "報備人部門",
+      "key252": "初診日期",
+      "key253": "當前負責崗位",
+      "key254": "開單日期",
+      "key255": "智慧標籤分類",
+      "key256": "請選擇智慧標籤分類",
+      "key257": "原訂單業績標籤",
+      "key258": "報備日期",
+      "key259": "開單日接待人",
+      "key260": "客戶首次消費日期",
+      "key261": "客戶首次治療劃扣",
+      "key262": "開單日面診醫生",
+      "key263": "客戶姓名",
+      "key264": "跨院諮詢師",
+      "key265": "智慧標籤",
+      "key266": "請選擇智慧標籤",
+      "key267": "消費時客戶型別",
+      "key268": "訂單來源",
+      "key269": "請選擇",
+      "key270": "原訂單是否欠費",
+      "key271": "報備人",
+      "key272": "開單日協助接待人",
+      "key273": "當前專屬客服",
+      "key274": "專案是否退款",
+      "key275": "服務商諮詢師",
+      "key276": "治療時間",
+      "key277": "訂單專案是否首次治療",
+      "key278": "服務商開發人",
+      "key279": "客戶型別",
+      "key280": "專案是否欠費",
+      "key281": "核銷日期",
+      "key282": "歸屬套餐",
+      "key283": "套"
+    }
+  },
+  "customerPool": {
+    "customerArea": {
+      "columnsList": [
+        {
+          "value": "name",
+          "label": "客戶"
+        },
+        {
+          "value": "vipNum",
+          "label": "會員號"
+        },
+        {
+          "value": "area",
+          "label": "地址"
+        }
+      ],
+      "key0": "初始化地圖失敗",
+      "key1": "熱力圖目前只支援有canvas支援的瀏覽器,您所使用的瀏覽器不能使用熱力圖功能~",
+      "key2": "距離機構(km)：",
+      "key3": "最小值",
+      "key4": "最大值",
+      "key5": "熱力密集值",
+      "key6": "區域人數，越接近該值，顏色越深",
+      "key7": "：機構所在位置",
+      "key8": "客戶列表",
+      "key9": "客戶",
+      "key10": "會員號",
+      "key11": "地址"
+    },
+    "customerDetailsOfTreatment": {
+      "billingTypeOptions": [
+        {
+          "label": "普通",
+          "value": 0
+        },
+        {
+          "label": "贈送",
+          "value": 1
+        },
+        {
+          "label": "轉贈",
+          "value": 2
+        },
+        {
+          "label": "轉項",
+          "value": 3
+        }
+      ],
+      "isDoneOptions": [
+        {
+          "label": "未完成",
+          "value": false
+        },
+        {
+          "label": "已完成",
+          "value": true
+        }
+      ],
+      "key0": "開單時間",
+      "key1": "客戶",
+      "key2": "請選擇",
+      "key3": "專案",
+      "key4": "請輸入專案名",
+      "key5": "訂單型別",
+      "key6": "狀態",
+      "key7": "是否欠費",
+      "key8": "訂單號",
+      "key9": "請輸入訂單號",
+      "key10": "開單時間",
+      "key11": "客戶",
+      "key12": "電話",
+      "key13": "專案型別",
+      "key14": "專案",
+      "key15": "類別",
+      "key16": "所屬套餐",
+      "key17": "總次數",
+      "key18": "剩餘次數",
+      "key19": "成交價",
+      "key20": "是否欠費",
+      "key21": "開單人",
+      "key22": "訂單號",
+      "key23": "訂單型別",
+      "key24": "狀態"
+    },
+    "customerInfoCorrection": {
+      "tabList": [
+        "客戶糾錯-發起確認明細",
+        "客戶糾錯-確認明細"
+      ],
+      "key0": "時間",
+      "key1": "操作人",
+      "key2": "請搜尋姓名、電話篩選",
+      "key3": "操作人",
+      "key4": "發起確認次數",
+      "key5": "確認客戶次數",
+      "key6": "確認客戶數",
+      "key7": "發起確認時間",
+      "key8": "發起確認人",
+      "key9": "客戶",
+      "key10": "電話",
+      "key11": "諮詢師",
+      "key12": "所在客戶池",
+      "key13": "確認時間",
+      "key14": "確認人"
+    },
+    "customerStatistics": {
+      "key0": "支付方式彙總",
+      "key1": "支付人數:",
+      "key2": "支付人數佔比：",
+      "key3": "人數",
+      "key4": "客戶池"
+    },
+    "oldAndNew": {
+      "key0": "老帶新人數排行",
+      "key1": "萬",
+      "key2": "客戶姓名",
+      "key3": "會員號",
+      "key4": "來院年限",
+      "key5": "消費總額",
+      "key6": "最近到院時間",
+      "key7": "介紹客戶",
+      "key8": "新客消費總額",
+      "key9": "客戶池",
+      "key10": "歸屬諮詢師",
+      "key11": "專屬客服",
+      "key12": "介紹客戶數",
+      "key13": "老帶新人數排行",
+      "key14": "人數",
+      "key15": "老帶新金額排行",
+      "key16": "金額",
+      "key17": "客戶:",
+      "key18": "客戶池:",
+      "key19": "客戶池查詢僅支援預設列表即第一級客戶的查詢:",
+      "key20": "請輸入客戶池",
+      "key21": "歸屬諮詢師:",
+      "key22": "請輸入歸屬諮詢師",
+      "key23": "專屬客服:",
+      "key24": "請輸入專屬客服",
+      "key25": "老帶新繫結日期:",
+      "key26": "消費總額:",
+      "key27": "排序:",
+      "key28": "人數",
+      "key29": "金額"
+    },
+    "smartLabelStatic": {
+      "key0": "的標籤客戶客戶數量",
+      "key1": "啟用時{{name}}",
+      "key2": "客戶",
+      "key3": "所屬諮詢",
+      "key4": "客戶池",
+      "key5": "啟用標籤日期",
+      "key6": "消費總額",
+      "key7": "標籤",
+      "key8": "客戶",
+      "key9": "客戶池",
+      "key10": "請選擇客戶池",
+      "key11": "啟用日期",
+      "key12": "智慧標籤",
+      "key13": "請選擇智慧標籤"
+    }
+  },
+  "controlCabin": {
+    "moreChart": "更多圖表",
+    "searchPlaceholder": "請按下回車或點選搜尋按鈕進行搜尋",
+    "seriesData2": [
+      {
+        "name": "老客人",
+        "value": 200
+      },
+      {
+        "name": "複診",
+        "value": 30
+      },
+      {
+        "name": "初診",
+        "value": 80
+      },
+      {
+        "name": "其他",
+        "value": 222
+      }
+    ],
+    "dateOptions": [
+      {
+        "label": "日",
+        "value": "day"
+      },
+      {
+        "label": "周",
+        "value": "week"
+      },
+      {
+        "label": "月",
+        "value": "month"
+      },
+      {
+        "label": "年",
+        "value": "year"
+      }
+    ],
+    "dateOptions2": [
+      {
+        "label": "日",
+        "value": "day"
+      },
+      {
+        "label": "周",
+        "value": "week"
+      },
+      {
+        "label": "月",
+        "value": "month"
+      }
+    ],
+    "dateOptions3": [
+      {
+        "label": "周",
+        "value": "week"
+      },
+      {
+        "label": "月",
+        "value": "month"
+      }
+    ],
+    "radioOptions": [
+      {
+        "label": "全部",
+        "value": ""
+      },
+      {
+        "label": "{{operatingMedia}}",
+        "value": "0"
+      },
+      {
+        "label": "{{marketChannel}}",
+        "value": "1"
+      },
+      {
+        "label": "其他",
+        "value": "2"
+      }
+    ],
+    "legendMesObj": {
+      "成交量": "僅統計新客成交量",
+      "接待量": "僅統計新客接待量"
+    },
+    "weekday": [
+      "週日",
+      "週一",
+      "週二",
+      "週三",
+      "週四",
+      "週五",
+      "週六"
+    ],
+    "allOptions": {
+      "controlCabinDealStatics": "成交統計圖",
+      "controlCabinQuarterContrast": "季度收支對比圖",
+      "controlCabinStoreManage": "門店經營表",
+      "controlCabinCustomerIncrease": "客戶消費圖",
+      "controlCabinTreatAchieve": "治療業績圖",
+      "controlCabinStorageAsset": "倉儲資產表",
+      "controlCabinOldCustomer": "老客戶指標（今日）",
+      "controlCabinNewCustomer": "新客戶指標（今日）",
+      "controlCabinProjectTransactions": "專案(二級)成交TOP5",
+      "controlCabinConsultantTransactions": "諮詢師成交TOP5",
+      "controlCabinTodaysTurnover": "今日成交金額",
+      "controlCabinTodaysTurnoverPeople": "今日成交人數",
+      "controlCabinAddAppointmentToday": "今日新增預約",
+      "controlCabinDeductions": "劃扣業績",
+      "controlTollAndRefund": "今日收銀",
+      "controlProjectAveragePrice": "專案平均成交單價TOP5",
+      "controlCustomerCassification": "到院客戶分類(今日)",
+      "controlChannelsToTheHospital": "到院人數(按客戶來源)",
+      "controlNewCustomerTransactionRate": "新客成交率"
+    },
+    "infoList": {
+      "key0": "進銷存統計表（按出入庫單據查詢）",
+      "key1": "客戶資產保有統計（含定金、{{name}}、贈送金、積分）",
+      "key2": "定金及{{name}}收支統計",
+      "key3": "101 全院業績概況(僅專案)",
+      "key4": "102 科室業績概況(僅專案)",
+      "key5": "104 客戶來源業績概況",
+      "key6": "105A{{name}}業績概況(按訂單開單人)",
+      "key7": "105B{{name}}業績概況(按歸屬諮詢)",
+      "key8": "106 科室執行/劃扣業績",
+      "key9": "107 主治醫生執行/劃扣業績",
+      "key10": "109 賬務收銀報表（支付方式）",
+      "key11": "110 全院日經營報表",
+      "key12": "111 全院業績日/月報表",
+      "key13": "業績報表（B）",
+      "key14": "駕駛艙",
+      "key15": "客戶報表",
+      "key16": "治療專案明細",
+      "key17": "老帶新",
+      "key18": "客戶資訊糾錯彙總及明細",
+      "key19": "智慧標籤統計表",
+      "key20": "客戶區域熱力圖",
+      "key21": "庫存報表",
+      "key22": "出庫統計表",
+      "key23": "出庫明細表",
+      "key24": "入庫明細表",
+      "key25": "調撥明細表",
+      "key26": "盤點明細表",
+      "key27": "進銷存統計表",
+      "key28": "運營報表",
+      "key29": "訂單開單人業績",
+      "key30": "客戶消費明細統計",
+      "key31": "訂單欠費明細",
+      "key32": "分診諮詢明細統計",
+      "key33": "客戶線索點贊統計",
+      "key34": "財務報表",
+      "key35": "支付方式統計",
+      "key36": "未劃扣業績統計及明細",
+      "key37": "出納結算單",
+      "key38": "預收及收入確認表",
+      "key39": "業績報表",
+      "key40": "科室治療劃扣明細",
+      "key41": "科室治療核銷明細",
+      "key42": "全院業績明細",
+      "key43": "銷售工作成果表",
+      "key44": "收入成本表",
+      "key45": "711銷售業績結算明細",
+      "key46": "712執行業績結算明細"
+    },
+    "key0": "今日新增預約",
+    "key1": "門診量",
+    "key2": "客戶分類",
+    "key3": "來源",
+    "key4": "到院人數",
+    "key5": "成交金額",
+    "key6": "到院人數（按客戶來源)",
+    "key7": "僅統計新客上門量",
+    "key8": "季度收支對比",
+    "key9": "收入",
+    "key10": "支出",
+    "key11": "諮詢師成交TOP5",
+    "key12": "諮詢師",
+    "key13": "成交金額(元)",
+    "key14": "客戶分類",
+    "key15": "到院客戶分類(今日)",
+    "key16": "客戶增長",
+    "key17": "客戶數",
+    "key18": "增長率",
+    "key19": "已消費",
+    "key20": "客戶消費佔比",
+    "key21": "客戶消費",
+    "key22": "{{name}}客戶來源佔比",
+    "key23": "客戶來源",
+    "key24": "劃扣業績",
+    "key25": "新客戶指標(今日)",
+    "key26": "成交金額",
+    "key27": "成交人數",
+    "key28": "成交轉化率",
+    "key29": "成交量",
+    "key30": "接待量",
+    "key31": "成交率",
+    "key32": "新客成交率",
+    "key33": "水光針",
+    "key34": "歷史平均成交價(三個月)",
+    "key35": "當前成交價",
+    "key36": "專案平均成交單價TOP5",
+    "key37": "專案(二級)成交TOP5",
+    "key38": "專案",
+    "key39": "成交金額(元)",
+    "key40": "門店經營",
+    "key41": "初診",
+    "key42": "複診",
+    "key43": "老客人",
+    "key44": "其他",
+    "key45": "今日新增預約",
+    "key46": "比本月均值",
+    "key47": "門店經營",
+    "key48": "今日成交",
+    "key49": "今日到院",
+    "key50": "預約到院",
+    "key51": "臨時到院",
+    "key52": "就診人數",
+    "key53": "劃扣業績",
+    "key54": "預約今日",
+    "key55": "收費完成",
+    "key56": "退費完成",
+    "key57": "比昨日",
+    "key58": "老客人",
+    "key59": "同比上",
+    "key60": "待治療",
+    "key61": "治療中",
+    "key62": "已治療",
+    "key63": "已到院",
+    "key64": "待到院",
+    "key65": "已取消",
+    "key66": "初診",
+    "key67": "複診",
+    "key68": "其他",
+    "key69": "在院",
+    "key70": "離院",
+    "key71": "今日成交金額",
+    "key72": "周同比",
+    "key73": "上{{name}}成交金額：",
+    "key74": "本月總成交金額",
+    "key75": "今日成交人數",
+    "key76": "周同比",
+    "key77": "上{{name}}成交人數：",
+    "key78": "目前在院",
+    "key79": "離院",
+    "key80": "收費完成",
+    "key81": "退費完成",
+    "key82": "成交統計",
+    "key83": "成交額",
+    "key84": "單位（萬元）",
+    "key85": "治療業績",
+    "key86": "{{num}}萬",
+    "key87": "暫無資料",
+    "key88": "倉儲資產",
+    "key89": "合計"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "columns": {
+    "title": "标题",
+    "userName": "发布人",
+    "publishDate": "发布时间",
+    "type": "状态",
+    "isTop": "是否置顶",
+    "options": "操作"
+  },
+  "options": {
+    "detail": "详情",
+    "edit": "编辑",
+    "cancel": "取消发布",
+    "public": "发布",
+    "delete": "删除"
+  },
+  "typeOptions": [
+    { "label": "全部", "value": "" },
+    { "label": "未发布", "value": 0 },
+    { "label": "已发布", "value": 1 }
+  ],
+  "hasPublic": "已发布",
+  "unPublic": "未发布",
+  "edit": "编辑公告",
+  "add": "新增公告",
+  "titleWarn": "请输入公告标题",
+  "contentWarn": "请输入公告内容",
+  "aTitle": "公告管理",
+  "title": "公告标题",
+  "titlePlaceholder": "请输入标题",
+  "top": "置顶至",
+  "upload": "文件上传",
+  "back": "返回",
+  "detailTitle": "公告",
+  "deleteConfirm": "确认删除?",
+  "publicConfirm": "确定发布？",
+  "unPublicConfirm": "确定取消发布？"
+}

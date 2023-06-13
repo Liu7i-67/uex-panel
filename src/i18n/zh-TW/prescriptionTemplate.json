@@ -1,0 +1,84 @@
+{
+  "module": "處方模版",
+  "button": {
+    "add": "新建模版",
+    "confirm": "確認"
+  },
+  "searchList": {
+    "name": {
+      "label": "模版名稱",
+      "placeholder": "請輸入模版名稱"
+    },
+    "typeId": {
+      "label": "處方型別",
+      "placeholder": "請選擇模版型別"
+    }
+  },
+  "addTemplate": "新增模版",
+  "editTemplate": "編輯模版",
+  "detailTemplate": "模版詳情",
+  "keyword": {
+    "modalTitle": "模版詳情",
+    "moduleName": "模版",
+    "prescriptionText": "處方正文"
+  },
+  "columns": {
+    "key": "",
+    "name": "處方模版名稱",
+    "content": "處方內容",
+    "typeName": "處方型別",
+    "createUserName": "建立人",
+    "createTime": "建立時間",
+    "options": "操作"
+  },
+  "prescriptionTemplateText": {
+    "button": {
+      "addText": "新增處方正文",
+      "saveToTemplate": "儲存為處方模版",
+      "addMedicine": "新增藥品",
+      "chooseTemplate": "選擇處方模版"
+    }
+  },
+  "renderItem": {
+    "materialName": "藥品名稱",
+    "giveMedicineWayConfigName": "給藥方式",
+    "useMedicineFrequencyConfigName": "用藥頻率",
+    "singleAmount": "單次用量",
+    "useDay": "用藥天數(天)",
+    "singleDayAmount": "每天用量",
+    "totalAmount": "總量",
+    "remark": "備註",
+    "signFlag": "是否雙簽字"
+  },
+  "remark": {
+    "noRemark": "無備註",
+    "skinFlag": "皮試",
+    "skinResultFlag": "皮試結果",
+    "remarkContent": "備註內容"
+  },
+  "tooltip": {
+    "singleDayAmount": "每天用量計算方法為根據用藥頻率計算出每天次數後，再乘以單次用量得出，且最終值向上取整",
+    "totalAmount": "總量計算方法為用藥頻次乘以單次用量，再乘以總天數得出，且最終值向上取整"
+  },
+  "warning": {
+    "noName": "請輸入模版名稱",
+    "noTemplateText": "請新增處方模版的模版正文！",
+    "noText": "模版必須要有一個處方正文！",
+    "noSalePrice": "所選物料未配置售價單位，不可開處方",
+    "noMedicine": "處方正文必須有藥品，不能為空",
+    "noGiveMedicineWay": "藥品的給藥方式必填",
+    "noFrequency": "藥品的用藥頻率必填",
+    "noSingleAmount": "藥品的單次用量必填",
+    "noUseDay": "藥品的用藥天數必填",
+    "noSingleDayAmount": "藥品的每天用量必填",
+    "noSingleDayAmountUnit": "藥品的每天用量單位必填",
+    "noTotalAmountUnit": "藥品的總量單位必填",
+    "noTotalAmount": "藥品的總量必填",
+    "remarkTooLong": "藥品備註過長",
+    "overshoot": "藥品的總量數值太大，請選擇合適的用藥單位"
+  },
+  "changeBefore": "修改處方型別，會導致已填寫的所有處方模版內容清空，是否繼續？",
+  "deleteBefore": "確定要刪除處方模版嗎？",
+  "addSuccessMsg": "增加處方模版成功",
+  "editSuccessMsg": "編輯處方模版成功"
+}

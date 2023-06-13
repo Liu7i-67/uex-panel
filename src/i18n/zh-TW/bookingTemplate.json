@@ -1,0 +1,47 @@
+{
+  "deleteConfirmTitle": "確認刪除改模版分類？",
+  "handleCheckedMsg": "無檢視許可權!",
+  "title": "模版分類!",
+  "add": "新增",
+  "empty": "暫時沒有資料哦～",
+  "day": "天",
+  "num": "第",
+  "components": {
+    "addEditModal": {
+      "editTitle": "編輯模版分類",
+      "addTitle": "新增模版分類"
+    },
+    "formList": {
+      "categoryName": "分類名稱",
+      "categoryNamePlaceholder": "請輸入分類名稱",
+      "parent": "上級分類",
+      "department": "所屬部門",
+      "departmentRequired": "請選擇所屬部門"
+    },
+    "projectList": {
+      "name": "模版名稱",
+      "namePlaceholder": "請輸入模版名稱",
+      "custom": "專案",
+      "parent": "所屬分類"
+    },
+    "templateContent": {
+      "addTitle": "新增模版",
+      "editTitle": "編輯模版"
+    },
+    "templateDetail": {
+      "deleteConfirm": "確認刪除?",
+      "saveTemplateMsg": "預約療程不能選擇同一天",
+      "addLabel": "預約療程",
+      "addLabelRules": "療程不能為空",
+      "maxNum": "輸入內容不超過500字",
+      "departmentName": "模版所屬科室",
+      "project": "專案",
+      "tips": "注:預約療程第一天，代表第一次預約時間的第二天，以此類推，自動生成預約時間。",
+      "return": "還原"
+    },
+    "templateList": {
+      "addTemplate": "新增模版",
+      "deleteTitle": "刪除後無法恢復，確認刪除？"
+    }
+  }
+}

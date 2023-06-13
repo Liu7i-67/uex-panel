@@ -1,0 +1,106 @@
+{
+  "key0": "全部",
+  "key1": "取消复单",
+  "key2": "复单",
+  "key3": "修改成功",
+  "key4": "请输入小数不超过两位的最大八位非负数",
+  "key5": "请输入起始金额",
+  "key6": "请输入结束金额",
+  "key7": "部分复单成功",
+  "key8": "请选择",
+  "key9": "包含",
+  "key10": "不包含",
+  "key11": "部分复单",
+  "key12": "取消选择",
+  "key13": "获取客户抽屉",
+  "key14": "关闭客户抽屉",
+  "key15": "该条订单项",
+  "key16": "复单管理",
+  "key17": "该条订单",
+  "key18": "全部复单",
+  "key19": "确定选择",
+  "key20": "复单金额",
+  "key21": "基础",
+  "key22": "配置",
+  "key23": "开始",
+  "key24": "是否",
+  "key25": "显隐",
+  "key26": "从",
+  "button": {
+    "cancelDuplicateOrder": "取消复单",
+    "duplicateOrder": "复单"
+  },
+  "keyword": {
+    "order": "订单",
+    "deposit": "定金",
+    "hasDuplicateOrder": "已复单",
+    "someDuplicateOrder": "部分复单",
+    "noDuplicateOrder": "未复单",
+    "charge": "收费"
+  },
+  "columns": {
+    "customerName": "客户姓名",
+    "phoneNumber": "电话",
+    "actualPayMoney": "实收",
+    "type": "收银类型",
+    "totalPrice": "订单金额",
+    "deductMoney": "抵扣金",
+    "virtualMoney": "虚拟金",
+    "payWay": "实收支付方式",
+    "lastChargeTime": "最新收费时间",
+    "createDate": "开单时间",
+    "billingUserName": "订单开单人",
+    "copyFlag": "复单状态",
+    "copyDate": "复单时间",
+    "billingNo": "订单号",
+    "options": "操作"
+  },
+  "expandColumns": {
+    "copyFlag": "复单",
+    "billingItemName": "项目",
+    "numberOfTime": "次数",
+    "totalPrice": "总价",
+    "payWayStr": "支付方式"
+  },
+  "searchList": {
+    "customerId": {
+      "label": "客户"
+    },
+    "billingDate": {
+      "label": "开单时间"
+    },
+    "billingUserId": {
+      "label": "订单开单人",
+      "placeholder": "请选择订单开单人"
+    },
+    "copyFlag": {
+      "label": "复单状态",
+      "placeholder": "请选择是否复单",
+      "options": [
+        { "label": "部分复单", "value": 2 },
+        { "label": "已复单", "value": 1 },
+        { "label": "未复单", "value": 0 }
+      ]
+    },
+    "billingNo": {
+      "label": "订单号",
+      "placeholder": "请输入订单号"
+    },
+    "receiveRange": {
+      "label": "实际支付金额"
+    },
+    "chargeTime": {
+      "label": "收费时间"
+    },
+    "copyDate": {
+      "label": "复单时间"
+    },
+    "payMark": {
+      "label": "收银类型",
+      "placeholder": "请选择收银类型"
+    },
+    "payWay": {
+      "label": "实收支付方式"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "pageCrash": "頁面崩潰了!",
+  "paramsRoute": [
+    {
+      "key": "medicalRecordTemplate",
+      "name": "病歷模版",
+      "path": "/portal/medicalRecord/medicalRecordTemplate",
+      "params": ["fromList"]
+    },
+    {
+      "key": "true",
+      "name": "客戶檔案",
+      "path": "/portal/customerList/customerDetail",
+      "params": ["type", "id"]
+    },
+    {
+      "key": "report",
+      "name": "報備",
+      "path": "/portal/report",
+      "params": ["id", "phone"]
+    },
+    {
+      "key": "appointment",
+      "name": "預約",
+      "path": "/portal/appointment",
+      "params": ["id"]
+    },
+    {
+      "key": "receptionList",
+      "name": "接待",
+      "path": "/portal/receptionList",
+      "params": ["id"]
+    },
+    {
+      "key": "staff",
+      "name": "員工模組",
+      "path": "/portal/staff",
+      "params": ["type"]
+    },
+    {
+      "key": "projectBase",
+      "name": "專案管理",
+      "path": "/portal/projectBase",
+      "params": ["type", "id"]
+    },
+    {
+      "key": "projectBaseGroup",
+      "name": "門店專案",
+      "path": "/portal/projectBaseGroup",
+      "params": ["type", "id"]
+    },
+    {
+      "key": "projectPackage",
+      "name": "套餐管理",
+      "path": "/portal/projectPackage",
+      "params": ["type", "id"]
+    },
+    {
+      "key": "true",
+      "name": "渠道型別",
+      "path": "/portal/channelType",
+      "params": ["category"]
+    },
+    {
+      "key": "inventory",
+      "name": "庫存管理",
+      "path": "/portal/inventorySystem/inventory",
+      "params": ["id"]
+    },
+    {
+      "key": "procurementApply",
+      "name": "採購申請",
+      "path": "/portal/inventorySystem/procurementApply",
+      "params": ["id", "oldId"]
+    },
+    {
+      "key": "procurementRecord",
+      "name": "採購記錄",
+      "path": "/portal/inventorySystem/procurementRecord",
+      "params": ["status"]
+    },
+    {
+      "key": "transfer",
+      "name": "調撥",
+      "path": "/portal/inventorySystem/transfer",
+      "params": ["id", "oldId"]
+    },
+    {
+      "key": "storageManage",
+      "name": "入庫",
+      "path": "/portal/inventorySystem/storageManage",
+      "params": ["id", "oldId"]
+    },
+    {
+      "key": "material",
+      "name": "物料目錄",
+      "path": "/portal/inventorySystem/material",
+      "params": ["type"]
+    },
+    {
+      "key": "returnVisitRules",
+      "name": "回訪規則",
+      "path": "/portal/returnVisitRules",
+      "params": ["type"]
+    },
+    {
+      "key": "returnVisit",
+      "name": "回訪",
+      "path": "/portal/returnVisit",
+      "params": ["type", "id", "customerId"]
+    },
+    {
+      "key": "outBound",
+      "name": "出庫管理",
+      "path": "/portal/inventorySystem/outBound",
+      "params": ["id", "type"]
+    },
+    {
+      "key": "treatment",
+      "name": "核銷劃扣",
+      "path": "/portal/treatment",
+      "params": ["active"]
+    },
+    {
+      "key": "true",
+      "name": "訂單糾正",
+      "path": "/portal/billingEntry",
+      "params": ["customerId", "customerName", "id"]
+    },
+    {
+      "key": "true",
+      "name": "模型對比",
+      "path": "/portal/modelCompared",
+      "params": ["customId", "comparedId", "isDetail"]
+    },
+    {
+      "key": "chatRecordPage",
+      "name": "聊天記錄檢視",
+      "path": "/portal/enterpriseWeChat/chatRecord",
+      "params": ["data"]
+    },
+    {
+      "key": "claimGoods",
+      "name": "取貨管理",
+      "path": "/portal/inventorySystem/customerPickUp",
+      "params": ["id"]
+    },
+    {
+      "key": "openBilling",
+      "name": "訂單",
+      "path": "/portal/openBilling",
+      "params": ["type", "id", "customerId"]
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "module": "遠程服務",
+  "button": {
+    "confirm": "確認",
+    "closeBatch": "關閉批量",
+    "batchDel": "批量刪除",
+    "close": "關閉",
+    "batchOperate": "批量操作",
+    "immediatelyReply": "立即回覆",
+    "startFaceDiagnose": "開始面診",
+    "confirmAppoint": "確認面診預約"
+  },
+  "msg": {
+    "addSuccess": "添加成功",
+    "noAdmin": "請先選擇管理員",
+    "integralOrCash": "請至少設置現金或者積分中的一項",
+    "integral": "積分必須大於0",
+    "cash": "現金必須大於0",
+    "addConclusionSuccess": "添加結論成功",
+    "dealSuccess": "處理成功",
+    "noContent": "請先添加評論內容",
+    "noDoctor": "請先選擇醫生",
+    "noCustomer": "請先選擇客户",
+    "assignDoctorSuccess": "分配成功",
+    "noMemberLevel": "請先選擇會員等級",
+    "settingSuccess": "設置成功",
+    "appointSuccess": "確認面診預約成功",
+    "assignSuccess": "分配成功",
+    "modifyTimeSuccess": "修改預約時間成功"
+  },
+  "weeks": ["週日", "週一", "週二", "週三", "週四", "週五", "週六"],
+  "doctorList": [
+    { "label": "全部", "value": null },
+    { "label": "未分配醫生", "value": "" }
+  ],
+  "recoilState": {
+    "waitForReply": "待回覆",
+    "replied": "已回覆",
+    "noDeal": "不處理"
+  },
+  "confirm": {
+    "delete": "確定要刪除該管理員嗎？",
+    "noDeal": "是否確定進行不處理？",
+    "appoint": "確定面診預約?"
+  },
+  "key0": "在線面診",
+  "key1": "皮膚檢測",
+  "key2": "圖文問診",
+  "key3": "遠程服務配置",
+  "key4": "診斷",
+  "keyword": {
+    "before": "前",
+    "after": "後",
+    "yes": "是",
+    "no": "否",
+    "assignDoctor": "分配醫生",
+    "yuan": "元",
+    "all": "全部",
+    "integral": "積分",
+    "consultingSatisfaction": "諮詢滿意度",
+    "responseTime": "回覆及時度",
+    "videoQuality": "視頻質量",
+    "callQuality": "通話質量",
+    "toBeAllocated": "待分配",
+    "modifyTime": "修改預約時間",
+    "isFull": "已滿",
+    "inHospital": "不在院"
+  },
+  "addCaseDrawer": {
+    "key0": "請輸入關鍵詞",
+    "key1": "暫時沒有數據哦",
+    "key2": "添加案例",
+    "key3": "推薦案例",
+    "key4": "已添加"
+  },
+  "adGoodsDrawer": {
+    "key0": "商",
+    "key1": "項",
+    "key2": "暫時沒有數據哦",
+    "key3": "線上售價",
+    "key4": "院內售價",
+    "key5": "推薦項目",
+    "key6": "定金",
+    "key7": "商品",
+    "key8": "添加"
+  },
+  "columns": {
+    "sysUserName": "管理員姓名",
+    "options": "操作"
+  },
+  "graphicConsultation": {
+    "teletextInterrogation": "圖文問診評估",
+    "teletextInterrogation_config": "圖文問診配置",
+    "key0": "圖文問診配置",
+    "key1": "配置一",
+    "key2": "是否有分配人員環節",
+    "key3": "設置管理員",
+    "key4": "請選擇管理員",
+    "key5": "圖文問診",
+    "key6": "問診信息",
+    "key7": "問診醫生",
+    "key8": "請選擇分配醫生",
+    "key9": "問診類目",
+    "key10": "主訴説明",
+    "key11": "附件",
+    "key12": "問診評價",
+    "key13": "諮詢滿意度",
+    "key14": "回覆及時度",
+    "key15": "問診結論",
+    "key16": "不處理",
+    "key17": "你還沒有填寫結論喲~",
+    "key18": "填寫結論",
+    "key19": "請輸入問診結論"
+  },
+  "graphicConsultationList": {
+    "searchList": {
+      "customerId": {
+        "label": "客户姓名"
+      },
+      "levelName": {
+        "label": "會員等級",
+        "placeholder": "請輸入會員等級"
+      },
+      "isNoticeByMiniProgram": {
+        "label": "小程序是否可通知",
+        "options": [
+          { "label": "是", "value": "0" },
+          { "label": "否", "value": "1" }
+        ]
+      },
+      "isCustomerCommented": {
+        "label": "評價狀態",
+        "options": [
+          { "label": "已評價", "value": "0" },
+          { "label": "未評價", "value": "1" }
+        ]
+      },
+      "status": {
+        "label": "問診狀態",
+        "options": [
+          { "label": "待回覆", "value": 0 },
+          { "label": "已回覆", "value": 1 },
+          { "label": "不處理", "value": -1 }
+        ]
+      },
+      "applyTime": {
+        "label": "申請時間"
+      },
+      "counselorIds": {
+        "label": "所屬",
+        "placeholder": "請輸入姓名搜索"
+      },
+      "doctorId": {
+        "label": "諮詢醫生",
+        "placeholder": "請輸入姓名搜索"
+      }
+    },
+    "columns": {
+      "phoneNumber": "客户",
+      "sex": "性別",
+      "age": "年齡",
+      "poolName": "所在客户池",
+      "counselor": "",
+      "sourceType": "客户來源",
+      "customerType": "客户類型",
+      "applyTime": "申請時間",
+      "memberLevelName": "會員等級",
+      "noticeFlag": "小程序是否可通知",
+      "doctorName": "問診醫生",
+      "faceConsultationProjectNames": "問診類目",
+      "applyRemark": "主訴説明",
+      "haveImg": "是否帶有附件",
+      "faceConsultationTime": "回覆時間",
+      "doctorConclusion": "問診結論",
+      "evaluateSatisfied": "面診滿意度",
+      "status": "問診狀態",
+      "options": "操作"
+    }
+  },
+  "onlineConsultation": {
+    "online": "在線面診",
+    "config": "在線面診配置",
+    "needPay": "是否需要付費使用",
+    "settingMemberLevel": "設置會員等級",
+    "settingMemberLevelPlace": "請選擇會員等級",
+    "costPerVisit": "每次面診消耗",
+    "chooseAllTips": "兩個都勾上表示每次申請在線面診都需同時支付積分和現金",
+    "key0": "當前在線面診可用總時間",
+    "key1": "分鐘",
+    "key2": "分鐘！為不影響小程序該功能正常使用，請聯繫您的客户經理及時",
+    "key3": "配置一",
+    "key4": "可申請在線面診對象",
+    "key5": "全部",
+    "key6": "按會員等級",
+    "key7": "配置二",
+    "key8": "限制單日最多可發起申請人數",
+    "key9": "無限制",
+    "key10": "限制",
+    "key11": "人",
+    "key12": "最大可申請時長，每日可申請時段均由預約配置進行控制",
+    "key13": "視頻面診",
+    "key14": "面診信息",
+    "key15": "面診醫生",
+    "key16": "面診類目",
+    "key17": "其他説明",
+    "key18": "面診評價",
+    "key19": "面診結論",
+    "key20": "請輸入面診結論",
+    "facialDiagnosisStatus": {
+      "toBeSeen": "待面診",
+      "interview": "已面診",
+      "applyFailed": "申請失敗",
+      "toBeConfirmed": "待確認"
+    },
+    "columns": {
+      "phoneNumber": "客户",
+      "appointmentStartTime": "預約時間",
+      "sex": "性別",
+      "age": "年齡",
+      "poolName": "所在客户池",
+      "counselor": "所屬",
+      "sourceType": "客户來源",
+      "customerType": "客户類型",
+      "applyTime": "申請時間",
+      "memberLevelName": "會員等級",
+      "noticeFlag": "小程序是否可通知",
+      "doctorName": "面診醫生",
+      "faceConsultationProjectNames": "面診類目",
+      "applyRemark": "其他説明",
+      "faceConsultationTime": "面診時間",
+      "doctorConclusion": "面診結論",
+      "score": "面診滿意度",
+      "status": "面診狀態",
+      "options": "操作"
+    },
+    "searchList": {
+      "customerId": {
+        "label": "客户姓名"
+      },
+      "levelName": {
+        "label": "會員等級",
+        "placeholder": "請輸入會員等級"
+      },
+      "isNoticeByMiniProgram": {
+        "label": "小程序是否可通知",
+        "options": [
+          { "label": "是", "value": "0" },
+          { "label": "否", "value": "1" }
+        ]
+      },
+      "isCustomerCommented": {
+        "label": "評價狀態",
+        "options": [
+          { "label": "已評價", "value": "0" },
+          { "label": "未評價", "value": "1" }
+        ]
+      },
+      "status": {
+        "label": "面診狀態",
+        "options": [
+          { "label": "待面診", "value": 0 },
+          { "label": "已面診", "value": 1 },
+          { "label": "申請失敗", "value": 2 },
+          { "label": "待確認", "value": 3 }
+        ]
+      },
+      "applyTime": {
+        "label": "申請時間"
+      },
+      "counselorIds": {
+        "label": "所屬",
+        "placeholder": "請輸入姓名搜索"
+      },
+      "doctorId": {
+        "label": "面診醫生",
+        "placeholder": "請輸入姓名搜索"
+      }
+    }
+  },
+  "remoteServiceConfiguration": {},
+  "skinDetection": {},
+  "threeDDiagnosis": {},
+  "btnDisabledKeys": {
+    "remoteServiceGraphicConsultationUpdateDis": {
+      "moduleName": "遠程服務-圖文問診",
+      "name": "填寫結論",
+      "tips": "",
+      "reason": "沒有開始圖文問診的權限"
+    },
+    "remoteServiceGraphicConsultationAssignDis": {
+      "moduleName": "遠程服務-圖文問診",
+      "name": "分配醫生",
+      "tips": "",
+      "reason": "原因1：沒有分配權限 原因2：問診狀態是已回覆 代碼為!that.state.operateFlag || item.status,status 0:待回覆 1: 已回覆 -1: 不處理"
+    },
+    "remoteServiceGraphicConsultationConsultationDis": {
+      "moduleName": "遠程服務-圖文問診",
+      "name": "立即回覆",
+      "tips": "",
+      "reason": "代碼為 item.status, status 0:待回覆 1: 已回覆 -1: 不處理"
+    },
+    "remoteServiceOnlineConsultationConfirmDis": {
+      "moduleName": "遠程服務-在線面診",
+      "name": "確認面診預約",
+      "tips": "",
+      "reason": "面診狀態不是待確認 代碼為item.status !== 3  status 0: 待面診 1: 已面診 2: 申請失敗 3:待確認"
+    }
+  }
+}

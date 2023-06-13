@@ -1,0 +1,31 @@
+{
+  "returnAndPickUp": {
+    "successMsg": "确认成功！",
+    "pickUpInquiry": "取货单内物料未选择仓库，请选择后重试",
+    "voidSuccess": "作废成功！"
+  },
+  "appointment": {
+    "statusObj": {
+      "0": "预约",
+      "1": "确认",
+      "2": "到院",
+      "3": "已取消"
+    }
+  },
+  "init": {
+    "list": {
+      "flowAppointmentView": "预约",
+      "flowPendingReceptionView": "待接待",
+      "flowReceptionView": "接待",
+      "flowToConView": "待分诊",
+      "flowConsultationView": "咨询",
+      "flowAssessmentView": "面诊",
+      "flowPaymentView": "收银",
+      "flowTreatmentView": "治疗",
+      "flowBuckleView": "划扣",
+      "flowClaimView": "退取货",
+      "flow_exit_view": "离院",
+      "flowReturnVisitView": "回访"
+    }
+  }
+}

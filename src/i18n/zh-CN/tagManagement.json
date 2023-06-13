@@ -1,0 +1,332 @@
+{
+  "key": "序号",
+  "tagName": "标签名称",
+  "tagNameRequired": "请输入标签名称",
+  "inputRequired": "请输入",
+  "allType": "全部分类",
+  "all": "全部",
+  "yes": "是",
+  "no": "否",
+  "selectPlaceholder": "请选择",
+  "add": "添加",
+  "more": "更多",
+  "tabs": {
+    "commonLabel": "普通标签",
+    "smartTags": "智慧标签",
+    "enterpriseWeChatLabel": "企业微信标签",
+    "skinTestingLabel": "皮肤检测标签",
+    "personalityTags": "性格标签",
+    "personalityTag": "个性标签",
+    "allergyLabel": "过敏标签",
+    "clueLabels": "线索标签",
+    "valueTag": "价值标签"
+  },
+  "customer": {
+    "getListErrorMsg": "该类型的标签数量超过15个!",
+    "customer": "顾客",
+    "tagItem": {
+      "addTagErrorMsg": "请输入标签内容～",
+      "addTagErrorMsg2": "已经添加该标签！",
+      "closableTagConfirmTitle": "确认删除客户标签吗",
+      "placeholder": "请输入标签内容",
+      "maxTagMsg": "最多支持添加15个标签",
+      "canAdd": "还可添加",
+      "numTag": "个标签"
+    }
+  },
+  "personality": {
+    "tagName": "标签名称",
+    "tagNameRequired": "请输入标签名称",
+    "addTag": "新增标签",
+    "editTag": "编辑标签",
+    "tableColumns": {
+      "createBy": "创建人",
+      "updateDate": "最后更新时间"
+    },
+    "addTagModal": {
+      "colorCustom": "标签颜色",
+      "colorCustomRequired": "请选择标签颜色"
+    },
+    "drawerPersonalityTag": {
+      "title": "添加标签",
+      "personalityTags": "性格标签"
+    },
+    "store": {
+      "drawerStore": {
+        "handleDeleteConfirmTitle": "是否确定取消标签?",
+        "cancelSuccess": "取消成功"
+      },
+      "listStore": {
+        "columnsClickOptionsConfirmTitle": "确认删除该标签吗?"
+      }
+    }
+  },
+  "skinDetectionTag": {
+    "tableColumns": {
+      "degreeStr": "程度",
+      "validDays": "有效天数",
+      "indefinitePeriod": "无限期",
+      "updateDate": "最后更新时间"
+    },
+    "store": {
+      "handleDeleteConfirmContent": "确定删除该标签吗?",
+      "handleErrorMsg": "操作失败，请重试",
+      "validatorColor": "请选择标签颜色",
+      "addTagWarning": "程度名称不能重复"
+    },
+    "addDegreeModal": {
+      "degreePlaceholder": "最多允许输入4个字",
+      "custom": "标签颜色",
+      "title": "程度"
+    },
+    "editSkinDetectionTag": {
+      "title": "编辑皮肤检测标签",
+      "getPopOver": "有效天数(天)",
+      "getPopOverContent": "在给客户激活（标注）此标签，多少天后该标签将自动变为非激活（失效）状态，0表示无限期",
+      "custom": "程度",
+      "validDaysRequired": "请输入有效天数"
+    }
+  },
+  "tagConfig": {
+    "deleteConfirmTitle": "确认删除该类型吗?",
+    "deleteTagGroupConfirmTitle": "确认删除该标签组吗?",
+    "addTag": "新增标签",
+    "authGroup": "标签权限组",
+    "title": "智慧标签分类",
+    "formList": {
+      "name": "分类名称",
+      "nameRequired": "分类名称必须填写",
+      "namePlaceholder": "请输入名称",
+      "pid": "上级分类",
+      "pidPlaceholder": "请选择上级分类"
+    },
+    "searchList": {
+      "day": "有效天数",
+      "isPerformance": "业绩标签",
+      "isPerformancePlaceholder": "请选择业绩标签",
+      "effectiveType": "生效日期",
+      "effectiveTypePlaceholder": "生效日期",
+      "effectiveType1": "次月生效",
+      "effectiveType0": "即时生效",
+      "isAutoActiveList": "是否自动激活/标注标签"
+    },
+    "tableColumns": {
+      "typeName": "标签分类",
+      "name": "标签名称",
+      "validDay": "有效天数",
+      "isPerformance": "业绩标签",
+      "effectiveTypeName": "生效日期",
+      "activateName": "激活权限",
+      "cancelActivateName": "取消激活权限",
+      "visibleName": "非失效状态可见权限",
+      "nonEffectVisibleName": "失效状态可见权限",
+      "createByName": "创建人",
+      "updateDate": "最后更新时间",
+      "isAutoActive": "是否自动激活/标注标签",
+      "isShow": "标签显示到列表中",
+      "indefinitePeriod": "无限期",
+      "labelActivator": "标签激活人",
+      "noPermissionsAll": "全部无权限"
+    },
+    "authorityGroupConfig": {
+      "name": "标签组名",
+      "nameRequired": "请输入标签组名",
+      "users": "包含员工",
+      "usersRequired": "请选择包含员工",
+      "deleteConfirmTitle": "确认删除标签组吗?",
+      "breadcrumbTitle": "标签管理",
+      "breadcrumbTitle2": "标签权限组",
+      "btnText": "新增标签组",
+      "title": "标签组"
+    },
+    "addForm": {
+      "errorMsg": "请至少编辑一条自动激活/标注标签规则",
+      "errorMsg2": "请至少编辑一条失效规制规则",
+      "validatorColor": "请选择标签颜色",
+      "labelColor": "标签颜色",
+      "renderExtraNode": "同激活权限",
+      "activeTypeGroup": "请选择指定员工",
+      "group": "标签权限组",
+      "position": "指定岗位",
+      "user": "指定个人",
+      "labelGroupRequired": "选择标签权限组",
+      "activeRoleIdsRequired": "选择岗位",
+      "person": "个人",
+      "personPlaceholder": "请选择指定个人",
+      "intersection1": "标签交集",
+      "intersection2": "标签并集",
+      "addConditions": "添加条件",
+      "selectedConditions": "已选条件",
+      "prompt": "提示",
+      "deleteMsg": "请确定是否删除该规则?",
+      "addNewRuleItemError": "还存在未编辑的规则块。",
+      "smartTags": "智慧标签",
+      "auto": "自动激活/标注标签",
+      "autoTips": "开启后，每日定时进行规制判断，满足激活规制则自动标注本标签；具备权限者可随时手动激活标签；自动激活标签将不进行审批流程",
+      "rule": "激活规则",
+      "ruleTips": "（以下规制满足任意一项即 激活）",
+      "autoActive": "自动激活的标签失效配置",
+      "autoActiveTips": "本配置仅约束自动失效，具备权限者可随时手动取消激活",
+      "labelDay": "按标签“有效天数”",
+      "labelDayTips": "即自动激活的标签，有效天数到期后自动失效",
+      "notRule": "按不满足激活规则",
+      "notRuleTips": "即自动激活的标签，每日规则判断时，不满足规则时自动失效",
+      "customRule": "按自定义失效规则",
+      "customRuleTips": "即自动激活的标签，不受“有效天数”和激活规则控制失效，仅当每日规则判断时，满足失效规则时即标签失效",
+      "ineffectiveRegulation": "失效规制",
+      "ineffectiveRegulationTips": "（以下规制满足任意一项即 失效）"
+    },
+    "addFormList": {
+      "key0": "标签分类",
+      "key1": "请选择标签分类",
+      "key2": "标签名称",
+      "key3": "请输入标签名称",
+      "key4": "请输入有效天数",
+      "key5": "生效时间",
+      "key6": "请选择生效时间",
+      "key7": "次月生效",
+      "key8": "即时生效",
+      "key9": "是否属于业绩标签",
+      "key10": "是",
+      "key11": "否",
+      "key12": "标签是否置顶",
+      "key13": "置顶",
+      "key14": "不置顶",
+      "key15": "员工激活标签权限",
+      "key16": "请选择员工激活标签权限",
+      "key17": "所有员工",
+      "key18": "指定员工",
+      "key19": "员工取消激活权限",
+      "key20": "表示可以对该标签进行取消激活操作的员工",
+      "key21": "请选择员工取消激活权限",
+      "key22": "不指定",
+      "key23": "非失效状态可见权限",
+      "key24": "请选择员工可见标签权限",
+      "key25": "标签激活人",
+      "key26": "同步历史已标注的非失效标签权限",
+      "key27": "失效状态可见权限",
+      "key28": "同步历史已标注的失效标签权限",
+      "key29": "激活智慧标签审批",
+      "key30": "激活业绩标签审批",
+      "key31": "标签显示到列表中",
+      "key32": "客户如果拥有此标签将会优先展示在流水牌和对应模块的列表中",
+      "key33": "该标签将同步到客户当时已交费订单的消息内",
+      "key34": "该标签是下一个月生效还是当时立即生效",
+      "key35": "多少天后该标签将自动变为非激活",
+      "key36": "标签编辑时部分字段不可编辑",
+      "key37": "在员工申请给客户订单激活",
+      "key38": "在员工申请给客户激活",
+      "key39": "业绩标签是否需要审批",
+      "key40": "可查看该标签的员工",
+      "key41": "默认包含标签激活人",
+      "key42": "表示标签处于失效时",
+      "key43": "此标签是否需要审批",
+      "key44": "如标签为业绩标签",
+      "key45": "表示标签处于激活",
+      "key46": "标签激活审批配置",
+      "key47": "可以给客户激活",
+      "key48": "在给客户激活",
+      "key49": "此标签的员工",
+      "key50": "表示无限期",
+      "key51": "有效天数",
+      "key52": "待激活时",
+      "key53": "此标签",
+      "key54": "标注",
+      "key55": "失效",
+      "key56": "状态",
+      "key57": "勾选",
+      "key58": "以后",
+      "key59": "天",
+      "key60": "'在给客户激活（标注）此标签，该标签是下一个月生效还是当时立即生效'",
+      "key61": "如标签为业绩标签，该标签将同步到客户当时已交费订单的消息内",
+      "key62": "可以给客户激活（标注）此标签的员工",
+      "key63": "表示标签处于激活、待激活时，可查看该标签的员工，默认包含标签激活人",
+      "key64": "表示标签处于失效时，可查看该标签的员工，默认包含标签激活人",
+      "key65": "在员工申请给客户激活（标注）此标签是否需要审批",
+      "key66": "在员工申请给客户订单激活（标注）业绩标签是否需要审批",
+      "key67": "勾选“是”以后，客户如果拥有此标签将会优先展示在流水牌和对应模块的列表中"
+    },
+    "labelDrawer": {
+      "activationTagging": "激活标签"
+    },
+    "tagDetailDrawer": {
+      "title": "标签详情",
+      "tagDetail": {
+        "approvalSubmitMsg": "请输入审批意见！",
+        "refuseMsg": "拒绝意见",
+        "passMsg": "通过意见",
+        "status0": "【待审批】",
+        "status1": "【审批中】",
+        "status2": "【已通过】",
+        "status3": "【已拒绝】",
+        "typeName": "标签分类",
+        "smartLabelName": "标签",
+        "labelStatusName": "状态",
+        "validDay": "有效期（天）",
+        "validDayValue": "无限期",
+        "effectiveStartDate": "生效时间",
+        "remark": "标签备注",
+        "applyUser": "申请人",
+        "createDate": "申请时间",
+        "approval": "审核信息",
+        "stratePass": "直接通过",
+        "refuse": "拒绝",
+        "pass": "通过"
+      }
+    }
+  },
+  "weChatTag": {
+    "tagStatistics": "标签统计",
+    "sync": "同步",
+    "tableColumns": {
+      "groupName": "标签组",
+      "tagList": "标签",
+      "updateUserName": "最近编辑人"
+    },
+    "addTag": {
+      "editGroup": "编辑标签组",
+      "addGroup": "新增标签组",
+      "tips": "相同标签只会保留一个",
+      "groupName": "标签组名称",
+      "groupNamePlaceholder": "请输入标签组名称",
+      "labelNum": "标签{{num}}",
+      "placeholder": "请输入标签",
+      "addTag": "添加标签"
+    },
+    "weChatTagStore": {
+      "syncSuccess": "同步成功",
+      "syncError": "同步失败",
+      "deleteConfirm": "确定要删除标签组吗？",
+      "onCloseConfirm": "点击确定会同时删除该标签组，是否继续？",
+      "onCloseConfirm2": "确定要删除该标签吗？"
+    },
+    "tagDrawer": {
+      "groupName": "标签组",
+      "groupNamePlaceholder": "请输入标签组名称",
+      "countMin": "打标人数",
+      "tableColumns": {
+        "key0": "打标人",
+        "key1": "客户",
+        "key2": "会员号",
+        "key3": "所属咨询",
+        "key4": "所属门店",
+        "key5": "客户池",
+        "key6": "打标形式",
+        "key7": "自动打标",
+        "key8": "手动打标"
+      },
+      "searchList": {
+        "key0": "所属门店",
+        "key1": "打标人",
+        "key2": "客户",
+        "key3": "打标形式",
+        "key4": "请选择打标形式",
+        "key5": "手动打标",
+        "key6": "自动打标",
+        "key7": "请搜索所属门店",
+        "key8": "请输入客户名称",
+        "key9": "请搜索打标人"
+      }
+    }
+  }
+}

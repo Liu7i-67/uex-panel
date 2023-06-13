@@ -1,0 +1,70 @@
+{
+  "customActiveEchart": {
+    "title": "活跃度概览",
+    "activeLine": {
+      "7day": "7日",
+      "15day": "15日",
+      "30day": "30日",
+      "unit": "分",
+      "ecTitle": "折线图堆叠",
+      "ecName": "日期",
+      "titleSty": "客户活跃度变化趋势图",
+      "radioName": "近",
+      "startPlaceholder": "开始时间",
+      "endPlaceholder": "结束时间"
+    },
+    "activePie": {
+      "titleSty": "客户触发场景饼状图"
+    },
+    "provider": {
+      "customActiveLine": {
+        "warningTips": "日期跨度不能超过120天"
+      }
+    }
+  },
+  "customerActivity": {
+    "tableColumns": {
+      "customerName": "客户",
+      "customerTypeName": "客户类型",
+      "membershipGradeName": "会员等级",
+      "currentActiveStatusName": "当前活跃度状态",
+      "lastActiveStatusName": "前一次活跃度状态",
+      "statusChangeTime": "活跃度状态变化时间",
+      "currentActiveScore": "当前活跃分值",
+      "lastActiveScore": "前一次活跃分值",
+      "scoreChangeTime": "活跃分值变化时间",
+      "onlineTime": "线上活跃时间(最近)",
+      "offlineTime": "线下活跃时间(最近)",
+      "notTriggerDay": "未活跃天数",
+      "notTriggerDayTooltip": "已配置的触发场景，未触发任何场景的天数",
+      "nextTime": "下次计算时间"
+    },
+    "formList": {
+      "customerId": "客户",
+      "activeStatus": "活跃度状态",
+      "customerType": "客户类型",
+      "membershipGrade": "会员等级",
+      "statusChange": "活跃度状态变化时间",
+      "scoreChange": "活跃度分值变化时间",
+      "online": "线上活跃时间(最近)",
+      "offline": "线下活跃时间(最近)",
+      "noScoreDay": "未活跃度天数",
+      "noScoreDayRules1": "输入天数是正整数",
+      "noScoreDayRules2": "最大值为2147483647"
+    },
+    "activeStatusOptions": {
+      "0": "超活",
+      "1": "活跃",
+      "2": "浅睡",
+      "3": "深睡"
+    },
+    "customerTypeOptions": {
+      "-1": "空",
+      "0": "初诊",
+      "1": "复诊",
+      "2": "老客人",
+      "3": "其他"
+    },
+    "nameAndPhone": "客户"
+  }
+}

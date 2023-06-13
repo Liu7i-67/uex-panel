@@ -1,0 +1,161 @@
+{
+  "module": "修復治療配置",
+  "button": {
+    "key0": "新增对账单",
+    "key1": "导出",
+    "key2": "刷新列表",
+    "settlement": "结算",
+    "submit": "提交"
+  },
+  "keyword": {
+    "to": "至",
+    "unsettled": "未结算",
+    "invalid": "已作废",
+    "haveSettled": "已结算",
+    "detailTitle": "对账单详情"
+  },
+  "columns": {
+    "accountStatementNo": "对账单号",
+    "endTime": "起止日期",
+    "machinedManufacturerName": "厂商",
+    "status": "结算状态",
+    "settlementPrice": "结算金额",
+    "billingPrice": "订单金额",
+    "createDate": "创建日期",
+    "settlementUserName": "结算人",
+    "settlementDate": "结算日期",
+    "typeStr": "结算方式",
+    "contact": "联系人",
+    "phone": "联系电话",
+    "payeeName": "收款人",
+    "options": "操作"
+  },
+  "addColumns": {
+    "machinedPartsBillingNo": "加工件订单号",
+    "status": "状态",
+    "machinedManufacturerName": "厂商",
+    "machinedPartsName": "名称",
+    "totalPrice": "总价",
+    "partsBillingUserName": "下单人",
+    "createDate": "下单时间"
+  },
+  "addDetailColumns": {
+    "machinedPartsBillingNo": "加工件订单号",
+    "customerName": "客户",
+    "status": "状态",
+    "toothPosition": "牙位",
+    "toothColor": "牙色",
+    "machinedManufacturerName": "厂商",
+    "machinedPartsName": "名称",
+    "singlePrice": "单价",
+    "num": "数量",
+    "totalPrice": "总价",
+    "partsBillingUserName": "下单人",
+    "createDate": "下单时间",
+    "actualSettlement": "实际结算"
+  },
+  "detailColumns": {
+    "accountStatementNo": "对账单号",
+    "endTime": "起止日期",
+    "machinedManufacturerName": "厂商",
+    "status": "结算状态",
+    "settlementPrice": "结算金额",
+    "billingPrice": "订单金额",
+    "createDate": "创建日期",
+    "settlementUserName": "结算人",
+    "settlementDate": "结算日期",
+    "type": "结算方式",
+    "contact": "联系人",
+    "phone": "联系电话",
+    "payeeName": "收款人"
+  },
+  "searchList": {
+    "status": {
+      "label": "结算状态",
+      "option": [
+        { "label": "未结算", "value": 0 },
+        { "label": "已结算", "value": 1 },
+        { "label": "已作废", "value": 2 }
+      ]
+    },
+    "manufacturerId": {
+      "label": "厂商"
+    },
+    "createDate": {
+      "label": "创建日期"
+    },
+    "settlementDate": {
+      "label": "结算日期"
+    },
+    "accountStatementNo": {
+      "label": "对账单号"
+    },
+    "type": {
+      "label": "结算方式"
+    },
+    "contact": {
+      "label": "下单时间"
+    },
+    "machinedPartsBillingNo": {
+      "label": "加工件订单号",
+      "placeholder": "请输入加工件订单号"
+    },
+    "machinedManufacturerId": {
+      "label": "厂商",
+      "placeholder": "请选择加工厂商"
+    }
+  },
+  "btnDisabledKeys": {
+    "processPartsSettlementSettleDis": {
+      "moduleName": "加工件结算",
+      "name": "结算",
+      "tips": "该结算单已结算",
+      "reason": "该数据不是未结算即(status != 0)"
+    },
+    "processPartsSettlementInvalidDis": {
+      "moduleName": "加工件结算",
+      "name": "作废",
+      "tips": "该结算单已作废",
+      "reason": "该数据已作废即(status == 2)"
+    },
+    "processPartsSettlementEditDis": {
+      "moduleName": "加工件结算",
+      "name": "编辑",
+      "tips": "该结算单已作废不支持编辑",
+      "reason": "该数据已作废即(status == 2)"
+    }
+  },
+  "detailForm": {
+    "settlementPrice": {
+      "label": "结算金额",
+      "message": "结算金额不能为空"
+    },
+    "settlementDate": {
+      "label": "结算日期",
+      "message": "请选择结算日期",
+      "placeholder": "请选择结算日期"
+    },
+    "type": {
+      "label": "结算方式",
+      "placeholder": "请选择结算方式"
+    },
+    "payeeName": {
+      "label": "收款人"
+    },
+    "remark": {
+      "label": "结算说明",
+      "placeholder": "请输入不超过300字"
+    },
+    "settlementUserId": {
+      "label": "结算人",
+      "message": "请选择结算人",
+      "placeholder": "请选择结算人"
+    },
+    "settlementVoucher": {
+      "label": "结算凭证"
+    }
+  },
+  "warning": {
+    "settlementPriceExceed": "结算金额不能大于99999999"
+  }
+}

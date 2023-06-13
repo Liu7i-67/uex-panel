@@ -6,6 +6,7 @@ import 'primereact/resources/themes/md-light-indigo/theme.css';
 // core
 import 'primereact/resources/primereact.min.css';
 import './normalize.scss';
+import { initLang } from '@/i18n/index';
 
 import { addLocale, locale } from 'primereact/api';
 addLocale('zh-CN', {
@@ -70,6 +71,11 @@ addLocale('zh-CN', {
 });
 locale('zh-CN');
 
-const domNode = document.getElementById('root');
-const root = createRoot(domNode);
-root.render(<ColumnsI18next />);
+export async function RenderPage() {
+  const domNode = document.getElementById('root');
+  const root = createRoot(domNode);
+  await initLang();
+  root.render(<ColumnsI18next />);
+}
+
+RenderPage();

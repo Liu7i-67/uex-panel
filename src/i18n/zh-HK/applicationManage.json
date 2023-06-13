@@ -1,0 +1,120 @@
+{
+  "table": {
+    "recipientApplyNumber": "領用申請單號",
+    "warehouseName": "倉庫",
+    "applyDate": "申請時間",
+    "sysUserName": "領用申請人",
+    "departmentName": "申請科室",
+    "customerName": "相關客户",
+    "status": "領用申請單狀態",
+    "action": "操作"
+  },
+  "search": {
+    "recipientApplyNumber": {
+      "label": "領用申請單號",
+      "placeholder": "請輸入領用申請單號"
+    },
+    "warehouseId": { "label": "倉庫", "placeholder": "請輸入倉庫" },
+    "date": "申請時間",
+    "sysUserId": { "label": "領用申請人", "placeholder": "請輸入領用申請人" },
+    "departmentId": { "label": "申請科室", "placeholder": "請輸入申請科室" },
+    "customerId": "相關客户",
+    "status": {
+      "label": "領用申請狀態",
+      "placeholder": "請選擇領用申請單狀態",
+      "options": { "key1": "待出庫", "key2": "已出庫", "key3": "已作廢" }
+    }
+  },
+  "other": {
+    "key1": "詳情",
+    "key2": "打印",
+    "key3": "編輯",
+    "key4": "作廢",
+    "key5": "新增領用申請",
+    "key6": "打印",
+    "key7": "取消",
+    "key8": "打印完成",
+    "key9": "暫不打印",
+    "key10": "打印預覽",
+    "key11": "縱向",
+    "key12": "橫向",
+    "key13": "再次打印",
+    "key14": "無法獲取打印數據",
+    "key15": "編輯領用申請",
+    "key16": "新增領用申請",
+    "key17": "領用申請詳情",
+    "key18": "操作成功",
+    "key19": "操作失敗",
+    "key20": "確定要作廢？",
+    "key21": "確定",
+    "key22": "取消"
+  },
+  "detail": {
+    "key1": "領用申請單號",
+    "key2": "倉庫",
+    "key3": "申請時間",
+    "key4": "申請科室",
+    "key5": "領用申請人",
+    "key6": "相關客户",
+    "key7": "領用申請單狀態",
+    "key8": "未完成",
+    "key9": "作廢",
+    "key10": "完成",
+    "key11": "備註",
+    "key12": "領用申請詳情",
+    "key13": "領用申請物料",
+    "table": {
+      "materialCode": "物料編碼",
+      "name": "物料名稱",
+      "anotherName": "物料別名",
+      "specification": "規格",
+      "unitType": "型號",
+      "applySum": "出庫量/單位",
+      "inventory": "庫存數量/單位",
+      "outInventoryRemark": "出庫備註"
+    }
+  },
+  "add": {
+    "table": {
+      "materialCode": "物料編碼",
+      "name": "物料名稱",
+      "anotherName": "物料別名",
+      "specification": "規格",
+      "unitType": "型號",
+      "applySum": "出庫量/單位",
+      "unitList": "庫存數量/單位",
+      "outInventoryRemark": "備註",
+      "action": "操作"
+    },
+    "form": {
+      "warehouseId": { "label": "倉庫", "placeholder": "請選擇倉庫" },
+      "departmentId": {
+        "label": "領用申請科室",
+        "placeholder": "請選擇領用申請科室"
+      },
+      "sysUserId": { "label": "領用申請人", "placeholder": "請選擇領用申請人" },
+      "customerId": "相關客户",
+      "remark": {
+        "label": "備註",
+        "placeholder": "輸入內容不超過300字"
+      }
+    },
+    "other": {
+      "key1": "刪除",
+      "key2": "領用申請詳情",
+      "key3": "申請物料",
+      "key4": "添加",
+      "key5": "取消",
+      "key6": "保存",
+      "key7": "保存並新增",
+      "key8": "你還沒有添加任何物料哦",
+      "key9": "添加物料",
+      "key10": "請選擇要出庫的倉庫!",
+      "key11": "物料的出庫量超過採購數量，不能出庫！",
+      "key12": "操作成功",
+      "key13": "領用申請物料不能為空",
+      "key14": "備註內容不能超過300字",
+      "key15": "請輸入合適的出庫量"
+    }
+  }
+}

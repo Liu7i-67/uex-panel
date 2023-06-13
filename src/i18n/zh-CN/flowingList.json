@@ -1,0 +1,115 @@
+{
+  "table": {
+    "paymentFlowNo": "流水单号",
+    "incomeFlag": "类型",
+    "paymentFlowConfigName": "具体类目",
+    "payMoney": "金额",
+    "operatorName": "财务",
+    "createDate": "时间",
+    "invoiceMoney": "开具发票",
+    "paymentInfo": "业务发生单号",
+    "departmentName": "发生科室",
+    "customerPhone": "相关客户",
+    "remark": "备注",
+    "dataType": "数据类型",
+    "options": "操作"
+  },
+  "otherText": {
+    "key1": "详情",
+    "key2": "编辑",
+    "key3": "删除",
+    "key4": "新建流水单",
+    "key5": "总收入",
+    "key6": "总支出",
+    "key7": "今日收入",
+    "key8": "今日支出",
+    "key9": "等",
+    "key10": "项目",
+    "key11": "费用方式",
+    "key12": "支付金额",
+    "key13": "支付备注",
+    "key14": "确定删除该财务流水吗？",
+    "key15": "确定",
+    "key16": "删除成功",
+    "key17": "收入",
+    "key18": "支出",
+    "yes": "是",
+    "no": "否"
+  },
+  "search": {
+    "paymentFlowNo": { "label": "流水单号", "placeholder": "请输入流水单号" },
+    "incomeFlag": { "label": "类型", "placeholder": "请输入流水单类型" },
+    "invoiceFlag": {
+      "label": "开具发票(是否)",
+      "placeholder": "请选择是否开具发票"
+    },
+    "payMoney": "金额范围",
+    "createByName": { "label": "财务", "placeholder": "请输入财务姓名" },
+    "createDate": "时间",
+    "paymentInfo": {
+      "label": "业务发生单号",
+      "placeholder": "请输入业务发生单号"
+    },
+    "customerInfo": "客户",
+    "dataTypeList": {
+      "label": "数据类型",
+      "options": { "key1": "手动", "key2": "自动" }
+    },
+    "departmentId": { "label": "科室", "placeholder": "请选择科室" },
+    "paymentFlowConfigIds": {
+      "label": "具体类目",
+      "placeholder": "请选择具体类目"
+    }
+  },
+  "addModal": {
+    "key1": "编辑",
+    "key2": "新建",
+    "key3": "流水单",
+    "key4": "保存"
+  },
+  "addForm": {
+    "key1": "流水类型",
+    "key2": "请选择流水类型",
+    "key3": "收入",
+    "key4": "支出",
+    "key5": "操作人员",
+    "key6": "请选择操作人员",
+    "key7": "具体类目",
+    "key8": "请选择具体类目",
+    "key9": "相关客户",
+    "key10": "业务发生单号",
+    "key11": "请选择业务发生单号",
+    "key12": "发生科室",
+    "key13": "请选择发生科室",
+    "key14": "操作成功",
+    "key15": "确定",
+    "key16": "取消",
+    "key17": "支出",
+    "key18": "收入",
+    "key19": "流水金额最大不能超过8位数字",
+    "key20": "流水金额",
+    "key21": "发票金额",
+    "key22": "请输入正数,最大输入8位,最多不超过两位小数",
+    "key23": "请输入发票金额",
+    "key24": "是否开具发票",
+    "key25": "请输入备注",
+    "key26": "字符不得超过240个字",
+    "key27": "请选择支付方式",
+    "key28": "请输入支付金额"
+  },
+  "detail": {
+    "key1": "流水单详情",
+    "key2": "关闭",
+    "key3": "流水类型",
+    "key4": "流水金额",
+    "key5": "财务",
+    "key6": "具体类目",
+    "key7": "发生科室",
+    "key8": "发票金额",
+    "key9": "相关客户",
+    "key10": "业务发生单号",
+    "key11": "金额",
+    "key12": "费用方式",
+    "key13": "备注"
+  }
+}

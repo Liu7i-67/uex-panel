@@ -1,0 +1,263 @@
+{
+  "activeReports": {
+    "allergyFlag": "过敏史",
+    "bedNo": "床号",
+    "diagnosis": "诊断",
+    "loadingTip": "请稍等,预览生成中...",
+    "errLoad": "加载失败!",
+    "title": "腕带打印"
+  },
+  "errorBoundary": "模块崩溃了",
+  "neForm": {
+    "errMsg": "参数异常",
+    "innerReportMonth": "最大时间范围不能超出{{time}}个月",
+    "errType": "错误类型",
+    "minNum": "最小值",
+    "maxNum": "最大值",
+    "await": "等",
+    "unit": "项"
+  },
+  "neScroll": {
+    "noMore": "没有更多了..."
+  },
+  "neToothPositionMap": {
+    "baseType": {
+      "DECIDUOUS": "全口-乳",
+      "DECIDUOUS_UP": "上半口-乳",
+      "DECIDUOUS_DOWN": "下半口-乳",
+      "PERMANENT": "全口-恒",
+      "PERMANENT_UP": "上半口-恒",
+      "PERMANENT_DOWN": "下半口-恒",
+      "UPPER_JAW": "上颌",
+      "LOWER_JAW": "下颌"
+    }
+  },
+  "neApprovalSteps": {
+    "end": "已结束审批",
+    "reject": "共拒绝",
+    "effectTime": "生效时间",
+    "personNum": "等{{num}}人",
+    "unit": "人",
+    "rejectMsg": "拒绝意见",
+    "passMsg": "通过意见",
+    "rejectMsgWarn": "请填写拒绝意见"
+  },
+  "ngApprovalStepsPopover": {
+    "list": {
+      "0": "待审批",
+      "1": "审批中",
+      "2": "已通过",
+      "3": "已拒绝",
+      "6": "滞后拒绝",
+      "7": "自动拒绝"
+    }
+  },
+  "ngBraftEditor": {
+    "placeholder": "请输入正文内容",
+    "errMsg": "生成加密地址失败",
+    "warnMsg": "该富文本不能上传视频"
+  },
+  "ngCardItem": {
+    "onlyOnline": "仅线上订单可用",
+    "onlyOffline": "仅线上订单可用",
+    "activeTime": "活动时间",
+    "expirationDate": "有效期",
+    "project": "适用项目",
+    "all": "全部",
+    "rule": "适用规则",
+    "limit": "领取限制",
+    "total": "已领取/总数",
+    "unLimit": "不限量",
+    "unLimitTime": "无限期",
+    "alwaysPut": "始终投放",
+    "notPut": "暂不投放",
+    "immediately": "领取后立即生效,有效期{{effective}}天",
+    "expirationDateInfo": "领取后{{takeEffect}}天生效,有效期{{effective}}天",
+    "into": "至",
+    "cardTypeText": "代金券",
+    "conditionsOfUse": "满{{consumeAmount}}元可用，抵扣{{deductionAmount}}元",
+    "discountCard": "折扣券",
+    "conditionsOfUseDiscount": "{{headInfo}}，满{{consumeAmount }}可用`",
+    "count": "折",
+    "upperLimit": "，最高优惠{{upperLimit}}元",
+    "experienceCoupon": "体验券",
+    "experienceMsg": "0元体验"
+  },
+  "ngCustomerActivityBadge": {
+    "list": {
+      "superLive": "超活",
+      "active": "活跃",
+      "lightSleep": "浅睡",
+      "deepSleep": "深睡"
+    }
+  },
+  "ngCustomerInfoModal": {
+    "customerDetail": "档案详情",
+    "customerFile": "客户档案"
+  },
+  "ngCustomerPicker": {
+    "reception": " 接待",
+    "createTenant": "建档门店",
+    "addCustomer": "新建客户",
+    "shared": "共享客户",
+    "notShared": "非共享客户",
+    "customerTypeObj": {
+      "初诊": "#5dd7b7",
+      "复诊": "#f29878",
+      "老客人": "#819cea"
+    },
+    "recentVisit": "最近到访",
+    "todayVisit": "最近到访",
+    "notFile": "报备未建档",
+    "latestTreatDoctorName": "最近面诊医生",
+    "sourcePathName": "来源",
+    "firstTreatDoctorName": "初诊医生",
+    "latestArriveDate": "最近到访：未到院",
+    "year": "岁",
+    "notFund": "未找到",
+    "notFoundLeft": "很抱歉，没有找到与",
+    "notFoundRight": "相关的数据",
+    "placeholder": "请输入客户姓名(拼音)、电话、会员号、档案号进行搜索"
+  },
+  "ngCustomerSourceType": {
+    "placeholder": "请输入客户姓名或电话"
+  },
+  "ngDatePicker": { "startTime": "开始时间", "endTime": "结束时间" },
+  "ngDownBtn": {
+    "msgInfo": "由于您导出的内容过多，请稍后到HOME页-任务-导出记录内进行导出文件的下载。"
+  },
+  "ngIatTextArea": {
+    "errMsg": "该浏览器不支持语音输入，请更换谷歌浏览器",
+    "devicesErrMsg": "获取麦克风失败",
+    "add": "语音录入",
+    "pending": "正在录入"
+  },
+  "ngIntBillingSituation": {
+    "titleLeft": "您今日已为客户{{customerName}}开具{{titleMsg}}订单",
+    "hasPay": "已缴费",
+    "notPay": "未缴费",
+    "and": "且",
+    "billing": "开单",
+    "viewNow": "立即查看",
+    "continue": "继续开单",
+    "normal": "普通",
+    "deposit": "定金"
+  },
+  "ngMesList": {
+    "avatar": "头像"
+  },
+  "ngModal": {
+    "saveAndAdd": "保存并新增"
+  },
+  "ngMultiDimension": {
+    "tooltip": "勾选后在{{defaultItem}}基础信息展示",
+    "class": "分类",
+    "title": "分类名称",
+    "titleMsg": "分类名称必须填写",
+    "checkMsg": "默认在{{defaultItem}}基础信息展示",
+    "addClass": " 添加{{defaultItem}}分类维度"
+  },
+  "ngNodata": {
+    "text": "暂时没有数据哦～"
+  },
+  "ngNotSelfContainer": {
+    "noAuth": "无权查看"
+  },
+  "ngSideModal": {
+    "sideBtnText": "侧边按钮",
+    "title": "标题"
+  },
+  "ngSimpleTable": {
+    "tip": "提示：本操作将修改指定所有用户列表项，请谨慎操作；对应用户重新登录后生效",
+    "allUser": "全部用户",
+    "role": "指定岗位",
+    "title": "保存至特定用户",
+    "checkbox": "可选字段",
+    "allCheck": "全选",
+    "checked": "当前选定的字段",
+    "setTitle": "列表项设置",
+    "placeholder": "请输入搜索",
+    "saveUser": "保存至特定用户",
+    "total": "共{{total}}条"
+  },
+  "ngSlider": {
+    "rightRotate": "右旋转",
+    "leftRotate": "左旋转",
+    "prev": "上一张",
+    "next": "下一张"
+  },
+  "ngTableSearch": {
+    "more": "更多"
+  },
+  "ngTextIcon": {
+    "onTime": "准",
+    "reWork": "返工",
+    "urgent": "急",
+    "arrears": "欠",
+    "arrearsTip": "存在欠费订单，欠费金额合计",
+    "forward": "转",
+    "wxBind": "已绑定小程序",
+    "noWxBind": "未绑定小程序",
+    "confirm": "绑定小程序，完成客户确认",
+    "noConfirm": "绑定小程序，未进行客户确认",
+    "popover": "未添加任何员工",
+    "tenantName": "建档医院{{tenantName}}",
+    "and": "共",
+    "not": "非",
+    "special": "特",
+    "expired": "过",
+    "activeW": "已与HIS系统档案同步",
+    "seed": "种",
+    "seedTip": "种子客户",
+    "initial": "始",
+    "initialTip": "初始客户",
+    "initSeed": "始/种",
+    "initSeedTip": "初始客户和种子客户",
+    "activities": "活",
+    "circle": "关联账户"
+  },
+  "ngThumbnail": {
+    "nodata": "没有文件需要展示"
+  },
+  "ngTimeText": {
+    "timeAgo": "之前"
+  },
+  "ngTree": {
+    "placeholder": "请输入分类名称"
+  },
+  "ngUpload": {
+    "nodata": "没有添加文件",
+    "aliOssErr": "生成加密地址失败!",
+    "success": "成功获取数据，数据非空",
+    "uploadInfo": "请添加上传文件",
+    "tips": "添加图片或文件"
+  },
+  "ngUploadImg": {
+    "takePhotoTip": "部分型号相机无法自动获取拍摄照片，请点击【获取照片】按钮手动获取",
+    "err": "文件上传失败",
+    "maxLen": "上传图片超出最多数量限制!",
+    "fileSize": "{{name}}的文件大小超过{{fileSize}}M限制!",
+    "video": "视频预览",
+    "uploadHideStatus": "超过上传数量限制，无法上传",
+    "changeHeaderImg": "更改头像",
+    "takePhotoErr": {
+      "title": "错误",
+      "content": "相机未打开或相机网络设备未连接，请确认连接相机网络并打开相机后重连",
+      "okText": "重连",
+      "cancelText": "取消"
+    },
+    "takePic": "请打开相机和相机网络再进行拍摄操作",
+    "reconnect": "重连",
+    "connecting": "正在连接相机中",
+    "noMore": "没有啦~",
+    "kafei": "卡菲照片库",
+    "return": "单击返回拍照",
+    "upload": "上传",
+    "getPhoto": "获取照片",
+    "getPhotoTip": "部分型号相机无法自动获取拍摄照片，请点击【获取照片】按钮手动获取",
+    "total": "共选择",
+    "picNumber": "张照片",
+    "allCheck": "全选",
+    "notStart": "你还未开始拍照～"
+  }
+}

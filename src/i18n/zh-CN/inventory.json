@@ -1,0 +1,118 @@
+{
+  "table": {
+    "key": "",
+    "typeId": "物料类别",
+    "name": "物料名称",
+    "anotherName": "物料别名",
+    "specification": "规格",
+    "materialCode": "物料编码",
+    "warehouseName": "仓库名称",
+    "warehouseInventoryList": "仓库库量",
+    "takeNotUseList": "仓库预领未用+未还量",
+    "offlineSumList": "仓库线下实际库量",
+    "disableFlag": "是否禁用",
+    "validityPeriodFlag": "是否过期",
+    "adventFlag": "是否临期",
+    "amountWarnFlag": "是否缺货",
+    "purchasePrice": "进价(元)/单位",
+    "purchaseTotalPrice": "进价合计(元)",
+    "sellingPrice": "售价(元)",
+    "unitType": "型号",
+    "options": "操作"
+  },
+  "other": {
+    "key1": "临期",
+    "key2": "高值",
+    "key3": "仓库预领未用+未还量",
+    "key4": "仓库线下实际库量",
+    "key5": "是",
+    "key6": "否",
+    "key7": "隐藏所有进价",
+    "key8": "查看所有进价",
+    "key9": "详情",
+    "key10": "暂无导出的数据",
+    "key11": "导出物料",
+    "key12": "由于您导出的内容过多，请稍后到首页-我的下载内进行导出文件的下载。",
+    "key13": "网络异常",
+    "key14": "全部导出",
+    "key15": "部分导出",
+    "key16": "导出操作",
+    "key17": "确定选择",
+    "key18": "条",
+    "key19": "取消选择",
+    "key20": "数量预警",
+    "key21": "效期预警",
+    "key22": "高值耗材",
+    "key23": "物料进价总计",
+    "key24": "库存详情",
+    "key25": "删除"
+  },
+  "search": {
+    "name": { "label": "商品名称", "placeholder": "按照名称/编码/规格搜索" },
+    "warehouse": { "label": "仓库", "placeholder": "请选择仓库" },
+    "materialType": {
+      "label": "请选择物料类别",
+      "placeholder": "请选择物料类别"
+    },
+    "validTime": "过期时间",
+    "disableFlag": {
+      "label": "是否禁用",
+      "options": { "key1": "是", "key2": "否" }
+    },
+    "validityPeriodFlag": {
+      "label": "是否过期",
+      "options": { "key1": "是", "key2": "否" }
+    },
+    "adventFlag": {
+      "label": "是否临期",
+      "options": { "key1": "是", "key2": "否" }
+    },
+    "amountWarnFlag": {
+      "label": "是否缺货",
+      "options": { "key1": "是", "key2": "否" }
+    }
+  },
+  "detail": {
+    "key1": "物料类别",
+    "key2": "物料名称",
+    "key3": "物料编码",
+    "key4": "物料别名",
+    "key5": "规格",
+    "key6": "有效期",
+    "key7": "总库存量/单位",
+    "key8": "售价",
+    "key9": "型号",
+    "key10": "默认预警量/单位",
+    "key11": "所在仓库数",
+    "key12": "状态",
+    "key13": "基本信息",
+    "key14": "库存物料",
+    "key15": "显示库存为0的批次",
+    "key16": "返回",
+    "table": {
+      "warehouseName": "所在仓库",
+      "batchNumber": "批次",
+      "manufacturerName": "生产厂家",
+      "placeOrigin": "产地",
+      "approvalNumber": "批准文号",
+      "supplier": "供应商",
+      "status": "状态",
+      "validityPeriod": "有效期",
+      "inventoryAmountList": "库存量/单位",
+      "purchasePrice": "进价(元)单位",
+      "options": "操作"
+    }
+  },
+  "expandTable": {
+    "tenantName": "所在门店",
+    "batchNumber": "批次",
+    "manufacturer": "生产厂家",
+    "placeOrigin": "产地",
+    "validityPeriod": "有效期",
+    "purchasePrice": "进价(元)/单位",
+    "supplier": "供应商",
+    "warehouseInventoryList": "库存量/单位",
+    "statusText": "状态",
+    "approvalNumber": "批准文号"
+  }
+}

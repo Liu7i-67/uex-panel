@@ -1,0 +1,161 @@
+{
+  "module": "修復治療配置",
+  "button": {
+    "key0": "新增對賬單",
+    "key1": "導出",
+    "key2": "刷新列表",
+    "settlement": "結算",
+    "submit": "提交"
+  },
+  "keyword": {
+    "to": "至",
+    "unsettled": "未結算",
+    "invalid": "已作廢",
+    "haveSettled": "已結算",
+    "detailTitle": "對賬單詳情"
+  },
+  "columns": {
+    "accountStatementNo": "對賬單號",
+    "endTime": "起止日期",
+    "machinedManufacturerName": "廠商",
+    "status": "結算狀態",
+    "settlementPrice": "結算金額",
+    "billingPrice": "訂單金額",
+    "createDate": "創建日期",
+    "settlementUserName": "結算人",
+    "settlementDate": "結算日期",
+    "typeStr": "結算方式",
+    "contact": "聯繫人",
+    "phone": "聯繫電話",
+    "payeeName": "收款人",
+    "options": "操作"
+  },
+  "addColumns": {
+    "machinedPartsBillingNo": "加工件訂單號",
+    "status": "狀態",
+    "machinedManufacturerName": "廠商",
+    "machinedPartsName": "名稱",
+    "totalPrice": "總價",
+    "partsBillingUserName": "下單人",
+    "createDate": "下單時間"
+  },
+  "addDetailColumns": {
+    "machinedPartsBillingNo": "加工件訂單號",
+    "customerName": "客户",
+    "status": "狀態",
+    "toothPosition": "牙位",
+    "toothColor": "牙色",
+    "machinedManufacturerName": "廠商",
+    "machinedPartsName": "名稱",
+    "singlePrice": "單價",
+    "num": "數量",
+    "totalPrice": "總價",
+    "partsBillingUserName": "下單人",
+    "createDate": "下單時間",
+    "actualSettlement": "實際結算"
+  },
+  "detailColumns": {
+    "accountStatementNo": "對賬單號",
+    "endTime": "起止日期",
+    "machinedManufacturerName": "廠商",
+    "status": "結算狀態",
+    "settlementPrice": "結算金額",
+    "billingPrice": "訂單金額",
+    "createDate": "創建日期",
+    "settlementUserName": "結算人",
+    "settlementDate": "結算日期",
+    "type": "結算方式",
+    "contact": "聯繫人",
+    "phone": "聯繫電話",
+    "payeeName": "收款人"
+  },
+  "searchList": {
+    "status": {
+      "label": "結算狀態",
+      "option": [
+        { "label": "未結算", "value": 0 },
+        { "label": "已結算", "value": 1 },
+        { "label": "已作廢", "value": 2 }
+      ]
+    },
+    "manufacturerId": {
+      "label": "廠商"
+    },
+    "createDate": {
+      "label": "創建日期"
+    },
+    "settlementDate": {
+      "label": "結算日期"
+    },
+    "accountStatementNo": {
+      "label": "對賬單號"
+    },
+    "type": {
+      "label": "結算方式"
+    },
+    "contact": {
+      "label": "下單時間"
+    },
+    "machinedPartsBillingNo": {
+      "label": "加工件訂單號",
+      "placeholder": "請輸入加工件訂單號"
+    },
+    "machinedManufacturerId": {
+      "label": "廠商",
+      "placeholder": "請選擇加工廠商"
+    }
+  },
+  "btnDisabledKeys": {
+    "processPartsSettlementSettleDis": {
+      "moduleName": "加工件結算",
+      "name": "結算",
+      "tips": "該結算單已結算",
+      "reason": "該數據不是未結算即(status != 0)"
+    },
+    "processPartsSettlementInvalidDis": {
+      "moduleName": "加工件結算",
+      "name": "作廢",
+      "tips": "該結算單已作廢",
+      "reason": "該數據已作廢即(status == 2)"
+    },
+    "processPartsSettlementEditDis": {
+      "moduleName": "加工件結算",
+      "name": "編輯",
+      "tips": "該結算單已作廢不支持編輯",
+      "reason": "該數據已作廢即(status == 2)"
+    }
+  },
+  "detailForm": {
+    "settlementPrice": {
+      "label": "結算金額",
+      "message": "結算金額不能為空"
+    },
+    "settlementDate": {
+      "label": "結算日期",
+      "message": "請選擇結算日期",
+      "placeholder": "請選擇結算日期"
+    },
+    "type": {
+      "label": "結算方式",
+      "placeholder": "請選擇結算方式"
+    },
+    "payeeName": {
+      "label": "收款人"
+    },
+    "remark": {
+      "label": "結算説明",
+      "placeholder": "請輸入不超過300字"
+    },
+    "settlementUserId": {
+      "label": "結算人",
+      "message": "請選擇結算人",
+      "placeholder": "請選擇結算人"
+    },
+    "settlementVoucher": {
+      "label": "結算憑證"
+    }
+  },
+  "warning": {
+    "settlementPriceExceed": "結算金額不能大於99999999"
+  }
+}

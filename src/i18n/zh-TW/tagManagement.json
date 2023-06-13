@@ -1,0 +1,332 @@
+{
+  "key": "序號",
+  "tagName": "標籤名稱",
+  "tagNameRequired": "請輸入標籤名稱",
+  "inputRequired": "請輸入",
+  "allType": "全部分類",
+  "all": "全部",
+  "yes": "是",
+  "no": "否",
+  "selectPlaceholder": "請選擇",
+  "add": "新增",
+  "more": "更多",
+  "tabs": {
+    "commonLabel": "普通標籤",
+    "smartTags": "智慧標籤",
+    "enterpriseWeChatLabel": "企業微信標籤",
+    "skinTestingLabel": "皮膚檢測標籤",
+    "personalityTags": "性格標籤",
+    "personalityTag": "個性標籤",
+    "allergyLabel": "過敏標籤",
+    "clueLabels": "線索標籤",
+    "valueTag": "價值標籤"
+  },
+  "customer": {
+    "getListErrorMsg": "該型別的標籤數量超過15個!",
+    "customer": "顧客",
+    "tagItem": {
+      "addTagErrorMsg": "請輸入標籤內容～",
+      "addTagErrorMsg2": "已經新增該標籤！",
+      "closableTagConfirmTitle": "確認刪除客戶標籤嗎",
+      "placeholder": "請輸入標籤內容",
+      "maxTagMsg": "最多支援新增15個標籤",
+      "canAdd": "還可新增",
+      "numTag": "個標籤"
+    }
+  },
+  "personality": {
+    "tagName": "標籤名稱",
+    "tagNameRequired": "請輸入標籤名稱",
+    "addTag": "新增標籤",
+    "editTag": "編輯標籤",
+    "tableColumns": {
+      "createBy": "建立人",
+      "updateDate": "最後更新時間"
+    },
+    "addTagModal": {
+      "colorCustom": "標籤顏色",
+      "colorCustomRequired": "請選擇標籤顏色"
+    },
+    "drawerPersonalityTag": {
+      "title": "新增標籤",
+      "personalityTags": "性格標籤"
+    },
+    "store": {
+      "drawerStore": {
+        "handleDeleteConfirmTitle": "是否確定取消標籤?",
+        "cancelSuccess": "取消成功"
+      },
+      "listStore": {
+        "columnsClickOptionsConfirmTitle": "確認刪除該標籤嗎?"
+      }
+    }
+  },
+  "skinDetectionTag": {
+    "tableColumns": {
+      "degreeStr": "程度",
+      "validDays": "有效天數",
+      "indefinitePeriod": "無限期",
+      "updateDate": "最後更新時間"
+    },
+    "store": {
+      "handleDeleteConfirmContent": "確定刪除該標籤嗎?",
+      "handleErrorMsg": "操作失敗，請重試",
+      "validatorColor": "請選擇標籤顏色",
+      "addTagWarning": "程度名稱不能重複"
+    },
+    "addDegreeModal": {
+      "degreePlaceholder": "最多允許輸入4個字",
+      "custom": "標籤顏色",
+      "title": "程度"
+    },
+    "editSkinDetectionTag": {
+      "title": "編輯皮膚檢測標籤",
+      "getPopOver": "有效天數(天)",
+      "getPopOverContent": "在給客戶啟用（標註）此標籤，多少天后該標籤將自動變為非啟用（失效）狀態，0表示無限期",
+      "custom": "程度",
+      "validDaysRequired": "請輸入有效天數"
+    }
+  },
+  "tagConfig": {
+    "deleteConfirmTitle": "確認刪除該型別嗎?",
+    "deleteTagGroupConfirmTitle": "確認刪除該標籤組嗎?",
+    "addTag": "新增標籤",
+    "authGroup": "標籤許可權組",
+    "title": "智慧標籤分類",
+    "formList": {
+      "name": "分類名稱",
+      "nameRequired": "分類名稱必須填寫",
+      "namePlaceholder": "請輸入名稱",
+      "pid": "上級分類",
+      "pidPlaceholder": "請選擇上級分類"
+    },
+    "searchList": {
+      "day": "有效天數",
+      "isPerformance": "業績標籤",
+      "isPerformancePlaceholder": "請選擇業績標籤",
+      "effectiveType": "生效日期",
+      "effectiveTypePlaceholder": "生效日期",
+      "effectiveType1": "次月生效",
+      "effectiveType0": "即時生效",
+      "isAutoActiveList": "是否自動啟用/標註標籤"
+    },
+    "tableColumns": {
+      "typeName": "標籤分類",
+      "name": "標籤名稱",
+      "validDay": "有效天數",
+      "isPerformance": "業績標籤",
+      "effectiveTypeName": "生效日期",
+      "activateName": "啟用許可權",
+      "cancelActivateName": "取消啟用許可權",
+      "visibleName": "非失效狀態可見許可權",
+      "nonEffectVisibleName": "失效狀態可見許可權",
+      "createByName": "建立人",
+      "updateDate": "最後更新時間",
+      "isAutoActive": "是否自動啟用/標註標籤",
+      "isShow": "標籤顯示到列表中",
+      "indefinitePeriod": "無限期",
+      "labelActivator": "標籤啟用人",
+      "noPermissionsAll": "全部無許可權"
+    },
+    "authorityGroupConfig": {
+      "name": "標籤組名",
+      "nameRequired": "請輸入標籤組名",
+      "users": "包含員工",
+      "usersRequired": "請選擇包含員工",
+      "deleteConfirmTitle": "確認刪除標籤組嗎?",
+      "breadcrumbTitle": "標籤管理",
+      "breadcrumbTitle2": "標籤許可權組",
+      "btnText": "新增標籤組",
+      "title": "標籤組"
+    },
+    "addForm": {
+      "errorMsg": "請至少編輯一條自動啟用/標註標籤規則",
+      "errorMsg2": "請至少編輯一條失效規制規則",
+      "validatorColor": "請選擇標籤顏色",
+      "labelColor": "標籤顏色",
+      "renderExtraNode": "同啟用許可權",
+      "activeTypeGroup": "請選擇指定員工",
+      "group": "標籤許可權組",
+      "position": "指定崗位",
+      "user": "指定個人",
+      "labelGroupRequired": "選擇標籤許可權組",
+      "activeRoleIdsRequired": "選擇崗位",
+      "person": "個人",
+      "personPlaceholder": "請選擇指定個人",
+      "intersection1": "標籤交集",
+      "intersection2": "標籤並集",
+      "addConditions": "新增條件",
+      "selectedConditions": "已選條件",
+      "prompt": "提示",
+      "deleteMsg": "請確定是否刪除該規則?",
+      "addNewRuleItemError": "還存在未編輯的規則塊。",
+      "smartTags": "智慧標籤",
+      "auto": "自動啟用/標註標籤",
+      "autoTips": "開啟後，每日定時進行規制判斷，滿足啟用規制則自動標註本標籤；具備許可權者可隨時手動啟用標籤；自動啟用標籤將不進行審批流程",
+      "rule": "啟用規則",
+      "ruleTips": "（以下規制滿足任意一項即 啟用）",
+      "autoActive": "自動啟用的標籤失效配置",
+      "autoActiveTips": "本配置僅約束自動失效，具備許可權者可隨時手動取消啟用",
+      "labelDay": "按標籤“有效天數”",
+      "labelDayTips": "即自動啟用的標籤，有效天數到期後自動失效",
+      "notRule": "按不滿足啟用規則",
+      "notRuleTips": "即自動啟用的標籤，每日規則判斷時，不滿足規則時自動失效",
+      "customRule": "按自定義失效規則",
+      "customRuleTips": "即自動啟用的標籤，不受“有效天數”和啟用規則控制失效，僅當每日規則判斷時，滿足失效規則時即標籤失效",
+      "ineffectiveRegulation": "失效規制",
+      "ineffectiveRegulationTips": "（以下規制滿足任意一項即 失效）"
+    },
+    "addFormList": {
+      "key0": "標籤分類",
+      "key1": "請選擇標籤分類",
+      "key2": "標籤名稱",
+      "key3": "請輸入標籤名稱",
+      "key4": "請輸入有效天數",
+      "key5": "生效時間",
+      "key6": "請選擇生效時間",
+      "key7": "次月生效",
+      "key8": "即時生效",
+      "key9": "是否屬於業績標籤",
+      "key10": "是",
+      "key11": "否",
+      "key12": "標籤是否置頂",
+      "key13": "置頂",
+      "key14": "不置頂",
+      "key15": "員工啟用標籤許可權",
+      "key16": "請選擇員工啟用標籤許可權",
+      "key17": "所有員工",
+      "key18": "指定員工",
+      "key19": "員工取消啟用許可權",
+      "key20": "表示可以對該標籤進行取消啟用操作的員工",
+      "key21": "請選擇員工取消啟用許可權",
+      "key22": "不指定",
+      "key23": "非失效狀態可見許可權",
+      "key24": "請選擇員工可見標籤許可權",
+      "key25": "標籤啟用人",
+      "key26": "同步歷史已標註的非失效標籤許可權",
+      "key27": "失效狀態可見許可權",
+      "key28": "同步歷史已標註的失效標籤許可權",
+      "key29": "啟用智慧標籤審批",
+      "key30": "啟用業績標籤審批",
+      "key31": "標籤顯示到列表中",
+      "key32": "客戶如果擁有此標籤將會優先展示在流水牌和對應模組的列表中",
+      "key33": "該標籤將同步到客戶當時已交費訂單的訊息內",
+      "key34": "該標籤是下一個月生效還是當時立即生效",
+      "key35": "多少天后該標籤將自動變為非啟用",
+      "key36": "標籤編輯時部分欄位不可編輯",
+      "key37": "在員工申請給客戶訂單啟用",
+      "key38": "在員工申請給客戶啟用",
+      "key39": "業績標籤是否需要審批",
+      "key40": "可檢視該標籤的員工",
+      "key41": "預設包含標籤啟用人",
+      "key42": "表示標籤處於失效時",
+      "key43": "此標籤是否需要審批",
+      "key44": "如標籤為業績標籤",
+      "key45": "表示標籤處於啟用",
+      "key46": "標籤啟用審批配置",
+      "key47": "可以給客戶啟用",
+      "key48": "在給客戶啟用",
+      "key49": "此標籤的員工",
+      "key50": "表示無限期",
+      "key51": "有效天數",
+      "key52": "待啟用時",
+      "key53": "此標籤",
+      "key54": "標註",
+      "key55": "失效",
+      "key56": "狀態",
+      "key57": "勾選",
+      "key58": "以後",
+      "key59": "天",
+      "key60": "'在給客戶啟用（標註）此標籤，該標籤是下一個月生效還是當時立即生效'",
+      "key61": "如標籤為業績標籤，該標籤將同步到客戶當時已交費訂單的訊息內",
+      "key62": "可以給客戶啟用（標註）此標籤的員工",
+      "key63": "表示標籤處於啟用、待啟用時，可檢視該標籤的員工，預設包含標籤啟用人",
+      "key64": "表示標籤處於失效時，可檢視該標籤的員工，預設包含標籤啟用人",
+      "key65": "在員工申請給客戶啟用（標註）此標籤是否需要審批",
+      "key66": "在員工申請給客戶訂單啟用（標註）業績標籤是否需要審批",
+      "key67": "勾選“是”以後，客戶如果擁有此標籤將會優先展示在流水牌和對應模組的列表中"
+    },
+    "labelDrawer": {
+      "activationTagging": "啟用標籤"
+    },
+    "tagDetailDrawer": {
+      "title": "標籤詳情",
+      "tagDetail": {
+        "approvalSubmitMsg": "請輸入審批意見！",
+        "refuseMsg": "拒絕意見",
+        "passMsg": "透過意見",
+        "status0": "【待審批】",
+        "status1": "【審批中】",
+        "status2": "【已透過】",
+        "status3": "【已拒絕】",
+        "typeName": "標籤分類",
+        "smartLabelName": "標籤",
+        "labelStatusName": "狀態",
+        "validDay": "有效期（天）",
+        "validDayValue": "無限期",
+        "effectiveStartDate": "生效時間",
+        "remark": "標籤備註",
+        "applyUser": "申請人",
+        "createDate": "申請時間",
+        "approval": "稽覈資訊",
+        "stratePass": "直接透過",
+        "refuse": "拒絕",
+        "pass": "透過"
+      }
+    }
+  },
+  "weChatTag": {
+    "tagStatistics": "標籤統計",
+    "sync": "同步",
+    "tableColumns": {
+      "groupName": "標籤組",
+      "tagList": "標籤",
+      "updateUserName": "最近編輯人"
+    },
+    "addTag": {
+      "editGroup": "編輯標籤組",
+      "addGroup": "新增標籤組",
+      "tips": "相同標籤只會保留一個",
+      "groupName": "標籤組名稱",
+      "groupNamePlaceholder": "請輸入標籤組名稱",
+      "labelNum": "標籤{{num}}",
+      "placeholder": "請輸入標籤",
+      "addTag": "新增標籤"
+    },
+    "weChatTagStore": {
+      "syncSuccess": "同步成功",
+      "syncError": "同步失敗",
+      "deleteConfirm": "確定要刪除標籤組嗎？",
+      "onCloseConfirm": "點選確定會同時刪除該標籤組，是否繼續？",
+      "onCloseConfirm2": "確定要刪除該標籤嗎？"
+    },
+    "tagDrawer": {
+      "groupName": "標籤組",
+      "groupNamePlaceholder": "請輸入標籤組名稱",
+      "countMin": "打標人數",
+      "tableColumns": {
+        "key0": "打標人",
+        "key1": "客戶",
+        "key2": "會員號",
+        "key3": "所屬諮詢",
+        "key4": "所屬門店",
+        "key5": "客戶池",
+        "key6": "打標形式",
+        "key7": "自動打標",
+        "key8": "手動打標"
+      },
+      "searchList": {
+        "key0": "所屬門店",
+        "key1": "打標人",
+        "key2": "客戶",
+        "key3": "打標形式",
+        "key4": "請選擇打標形式",
+        "key5": "手動打標",
+        "key6": "自動打標",
+        "key7": "請搜尋所屬門店",
+        "key8": "請輸入客戶名稱",
+        "key9": "請搜尋打標人"
+      }
+    }
+  }
+}

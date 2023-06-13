@@ -1,0 +1,39 @@
+{
+  "module": "集團--人力--崗位",
+  "groupTitle": "集團崗位",
+  "areaTitle": "區域崗位",
+  "addStaff": "新增崗位",
+  "editStaff": "編輯崗位",
+  "searchCondition": {
+    "label": "崗位名稱",
+    "placeholder": "請輸入崗位名稱"
+  },
+  "addModal": {
+    "title": {
+      "label": "崗位：",
+      "placeholder": "請輸入崗位名稱",
+      "msg": "必填！"
+    },
+    "tips": {
+      "label": "崗位職責：",
+      "placeholder": "最多240個字符"
+    }
+  },
+  "detailModal": {
+    "title": "崗位詳情",
+    "columns": {
+      "title": "崗位名稱",
+      "updateDate": "更新時間",
+      "createDate": "創建時間",
+      "tips": "崗位職責"
+    }
+  },
+  "deleteTablePostTitle": "確認刪除該崗位嗎?",
+  "tableList": {
+    "title": "崗位名稱",
+    "tips": "崗位職責",
+    "createDate": "創建時間",
+    "updateDate": "更新時間",
+    "options": "操作"
+  }
+}

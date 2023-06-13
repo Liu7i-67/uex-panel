@@ -1,0 +1,81 @@
+{
+  "search": {
+    "customerId": "客戶姓名",
+    "machinedPartsName": {
+      "label": "加工件",
+      "placeholder": "請輸入加工件名稱"
+    },
+    "status": { "label": "狀態", "placeholder": "請選擇加工件的訂單狀態" },
+    "reworkFlag": { "label": "訂單型別", "placeholder": "請選擇訂單型別" },
+    "rangePicker": "下單時間",
+    "machinedManufacturerId": { "label": "廠商", "placeholder": "請選擇廠商" },
+    "machinedPartsBillingNo": {
+      "label": "加工件訂單號",
+      "placeholder": "請輸入加工件訂單號"
+    },
+    "check": { "key1": "急用", "key2": "需準時" }
+  },
+  "table_1": {
+    "machinedPartsBillingNo": "加工件訂單號",
+    "customerName": "客戶",
+    "status": "狀態",
+    "toothPosition": "牙位",
+    "toothColor": "牙色",
+    "machinedManufacturerName": "廠商",
+    "machinedPartsName": "名稱",
+    "singlePrice": "單價",
+    "num": "數量",
+    "totalPrice": "總價",
+    "partsBillingUserName": "下單人",
+    "doctorName": "醫生",
+    "createDate": "下單時間",
+    "billingNo": "相關訂單",
+    "billingProjectName": "訂單專案",
+    "depositBillingNo": "相關定金單",
+    "depositBillingProjectName": "定金專案",
+    "options": "操作"
+  },
+  "other": {
+    "key1": "詳情",
+    "key2": "作廢",
+    "key3": "編輯",
+    "key4": "新增加工件訂單",
+    "key5": "上頜",
+    "key6": "下頜",
+    "key7": "確認該加工件訂單作廢?",
+    "key8": "取消",
+    "key9": "作廢",
+    "statusOptions": {
+      "key1": "待提交",
+      "key2": "製作中",
+      "key3": "已回件",
+      "key4": "作廢",
+      "key5": "已使用",
+      "key6": "部分使用",
+      "key7": "已試戴",
+      "key8": "已核對",
+      "key9": "已寄回"
+    },
+    "orderTypeOptions": {
+      "key1": "返工",
+      "key2": "普通"
+    }
+  },
+  "overdue": {
+    "key1": "超期未回件提醒",
+    "key2": "以下加工件超期未回件，請關注並聯系加工廠",
+    "key3": "下次不在提醒（取消提醒後可以點選列表右上方的通知按鈕進行檢視）"
+  },
+  "table_2": {
+    "customerName": "客戶姓名",
+    "machinedPartsBillingNo": "加工件訂單號",
+    "wishReturnTime": "期望返回時間",
+    "mailDate": "寄件日期",
+    "manufacturerName": "加工件廠商"
+  },
+  "storeMsg": {
+    "key1": "新增加工件訂單",
+    "key2": "編輯加工件訂單",
+    "key3": "暫無許可權操作"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "module": "修复治疗配置",
+  "button": {
+    "addStaff": "添加员工"
+  },
+  "keyword": {
+    "project": "项目",
+    "shortProject": "项",
+    "package": "套餐",
+    "shortPackage": "套",
+    "title": "在院营销",
+    "setting": "配置",
+    "allChoose": "全选",
+    "lookForward": "尽情期待!",
+    "pleaseSearch": "请搜索",
+    "pleaseSearchSuffix": "名,按下回车进行搜索",
+    "surgery": "手术类",
+    "nonSurgical": "非手术类",
+    "approvalProcessSetting": "审批流设置",
+    "noApprovalRequired": "无需审批",
+    "addApprovalProcess": "添加审批流程",
+    "allowCloseApproval": "允许结束审批"
+  },
+  "deleteBefore": {
+    "title": "删除配置?",
+    "batchContent": "确定批量删除所选数据",
+    "content": "确定删除该员工的",
+    "contentSuffix": "配置数据",
+    "deleteItemTitle": "删除数据",
+    "deleteItemContent": "确定删除该条数据"
+  },
+  "resetContent": "取消将会重置到上一次保存的状态",
+  "removeContent": "是否删除该流程环节",
+  "staff": {
+    "placeholder": "请输入需要搜索的员工",
+    "noData": "暂无可配置员工，请先添加",
+    "searchPlaceHolder": "按下enter健,搜索员工"
+  },
+  "msg": {
+    "hasAddProject": "该项目已经添加过了",
+    "hasAddPackage": "该员工已添加过配送套餐!",
+    "addSuccess": "添加成功",
+    "noApprover": "审批人不能为空"
+  },
+  "btnDisabledKeys": {
+    "presentOrderAddDis": {
+      "moduleName": "修复治疗配置",
+      "name": "添加",
+      "tips": "",
+      "reason": "没有选择员工"
+    },
+    "presentOrderSaveDis": {
+      "moduleName": "修复治疗配置",
+      "name": "保存",
+      "tips": "",
+      "reason": "原因1：没有选择员工  原因2：项目列表没有数据"
+    },
+    "presentOrderDelDis": {
+      "moduleName": "修复治疗配置",
+      "name": "删除",
+      "tips": "",
+      "reason": "原因1：没有选择员工  原因2：项目列表没有数据"
+    }
+  }
+}

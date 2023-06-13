@@ -1,0 +1,192 @@
+{
+  "layout": {
+    "phoneBox": {
+      "startingUp": "呼叫中心啓動中,請稍等",
+      "plugInInstallationFailure": "插件安裝失敗,請聯繫管理員",
+      "callNotification": "來電通知",
+      "name": "姓名",
+      "phone": "手機號",
+      "started": "呼叫中心已啓動!",
+      "disconnected": "呼叫中心已斷開!",
+      "recordingError": "獲取(生成)錄音文件失敗,可能是沒有權限!",
+      "checkEvenNiuYun": "請確認是否開通七牛雲!"
+    },
+    "record": {
+      "cancelRecording": "取消錄音",
+      "recording": "正在錄音",
+      "pauseRecording": "暫停錄音",
+      "endRecording": "結束錄音",
+      "beingRecorded": "正在錄音中...",
+      "continueRecording": "繼續錄音",
+      "modalTitle": "提示",
+      "modalContent": "當前諮詢或面診已完成，是否結束錄音",
+      "reupload": "重新上傳",
+      "uploadSuccess": "上傳成功!",
+      "cancelConfirmation": "確認取消本次錄音嗎?",
+      "noMicrophone": "獲取麥克風失敗!"
+    },
+    "sidebar": {
+      "password": {
+        "passwordFormatCheck": "18位字母數字或特殊字符的密碼！",
+        "passwordInconsistency": "兩次密碼輸入不一致!",
+        "originalPassword": "原密碼",
+        "originalPasswordPlaceholder": "請輸入原密碼",
+        "newPassword": "新密碼",
+        "newPasswordPlaceholder": "請輸入新密碼",
+        "newPasswordConfirm": "請再次輸入新密碼",
+        "changePassword": "修改密碼",
+        "editSuccess": "密碼修改成功",
+        "reLogin": "重新登錄"
+      },
+      "collect": {
+        "myCollection": "我的收藏",
+        "dragPrompt": "拖動圖標可調整左側欄顯示順序"
+      },
+      "router": {
+        "agileReport": "敏捷報表",
+        "approve": "審批",
+        "cloudClassroom": "雲課堂"
+      },
+      "userInfo": {
+        "currentStore": "當前門店",
+        "changePassword": "修改密碼",
+        "logOut": "退出登錄"
+      }
+    },
+    "tabs": {
+      "endOfCountdown": "倒計時已結束，請關注。",
+      "setTheCountdown": "請設置倒計時！",
+      "voiceReminder": "請輸入語音提醒！",
+      "cancelTheTiming": "取消計時",
+      "timeOut": "暫停計時",
+      "continue": "繼續",
+      "setTheCountdownTitle": "設置倒計時",
+      "countdownUnderway": "倒計時進行中",
+      "reminders": "提醒事項：",
+      "voiceReminderTips": "語音提醒：",
+      "voiceReminderPlaceholder": "請輸入語音提醒內容",
+      "timerListModalColumns": {
+        "key": "序號",
+        "customerName": "客户姓名",
+        "duration": "倒計時",
+        "matter": "提醒事項",
+        "options": "操作",
+        "noCustomer": "無指定客户",
+        "pause": "暫停",
+        "continue": "繼續"
+      },
+      "timerListModal": {
+        "title": "倒計時列表",
+        "addedCountdown": "新增倒計時",
+        "settingSuccess": "設置成功！",
+        "modalTitle": "提示",
+        "modalContent": "確認刪除該計時器嗎?",
+        "reminders": "提醒事項"
+      },
+      "timerTipsModal": {
+        "minuteReminder": "分鐘後提醒",
+        "closeReminder": "關閉提醒",
+        "countdownReminder": "倒計時提醒"
+      },
+      "businessFunc": {
+        "valueAddedService": "增值服務",
+        "logOut": "確定退出登錄嗎",
+        "timer": "計時器",
+        "enquiryCall": "諮詢叫號",
+        "treatmentCall": "治療叫號",
+        "quickSearch": "快速搜索客户(快捷鍵:F1)",
+        "quickSearchF2": "腕帶掃描搜索客户(快捷鍵:F2)",
+        "exitFullScreen": "退出全屏",
+        "fullScreen": "全屏",
+        "quickSearchError": "快速搜索功能異常!",
+        "scanError": "掃碼功能異常!"
+      },
+      "paste": "粘貼",
+      "sweep": "掃一掃",
+      "attention": "關注公眾號",
+      "operatingInstruction": "可隨時查閲系統更新內容及新功能操作指引",
+      "version": "當前版本號",
+      "sharedCustomer": "共享客户",
+      "nonSharedCustomer": "非共享客户",
+      "establishmentStore": "建檔門店"
+    },
+    "quickSearch": {
+      "key0": "請輸入客户完整的電話號碼進行查詢",
+      "key1": "請輸入客户完整的電話號碼或會員號或檔案號進行查詢",
+      "key2": "請輸入客户完整的電話號碼或會員號進行查詢",
+      "key3": "請輸入客户完整的電話號碼或檔案號進行查詢",
+      "key4": "客户檔案",
+      "key5": "客户盤點",
+      "key6": "報備",
+      "key7": "當前號碼無匹配客户",
+      "key12": "新增客户",
+      "key13": "新增報備"
+    },
+    "right": {
+      "key0": "關閉",
+      "key1": "關閉其他",
+      "key2": "關閉到右側",
+      "key3": "全部關閉"
+    },
+    "selfTenant": {
+      "key0": "報備未建檔",
+      "key2": "最近面診醫生",
+      "key4": "最近到訪",
+      "key5": "今日到訪",
+      "key6": "初診醫生",
+      "key7": "老客人",
+      "key8": "未到院",
+      "key9": "會員號",
+      "key10": "檔案號",
+      "key11": "初診",
+      "key12": "複診",
+      "key13": "來源",
+      "key14": "歲"
+    },
+    "setting": { "key0": "閃記", "key1": "檢查更新", "key2": "檢查中" },
+    "key0": "歡迎",
+    "key1": "流水牌",
+    "scan": {
+      "key0": "接待",
+      "key1": "非法二維碼",
+      "key2": "請用掃碼槍掃描二維碼"
+    },
+    "closeConfirmModal": {
+      "key0": "提示",
+      "key1": "我知道了",
+      "key2": "回訪",
+      "key3": "面診",
+      "key4": "諮詢",
+      "key5": "您可以點擊下方名稱完成相應工作內容",
+      "key6": "面診二次確認",
+      "key7": "項目開發計劃",
+      "key8": "待回訪計劃",
+      "key9": "性格標籤",
+      "key10": "關閉系統前請完成以下內容",
+      "key11": "否則無法退出系統",
+      "key12": "您好"
+    },
+    "title": {
+      "key0": "門店選擇",
+      "key1": "請選擇要切換的門店",
+      "key2": "切換",
+      "key3": "打開",
+      "key4": "即將退出登錄",
+      "key5": "當前門店嗎",
+      "key6": "切換失敗",
+      "key7": "請稍等",
+      "key8": "切換中",
+      "key9": "確認",
+      "key10": "提示",
+      "key11": "確認關閉系統嗎"
+    },
+    "index": {
+      "key0": "取消",
+      "key1": "確定",
+      "key2": "前去查看",
+      "key3": "您的權限有變動,需要重新登錄,是否立即重新登錄?",
+      "key4": "取消收藏模塊失敗",
+      "key5": "收藏模塊失敗"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "table": {
+    "key": "",
+    "name": "生产厂家",
+    "placeOfOrigins": "产地",
+    "phoneNumber": "联系电话",
+    "status": "状态",
+    "options": "操作"
+  },
+  "other": {
+    "key1": "编辑",
+    "key2": "禁用",
+    "key3": "启用",
+    "key4": "新增生产厂家",
+    "key5": "操作成功",
+    "key6": "操作失败"
+  },
+  "search": {
+    "name": { "label": "生产厂家", "placeholder": "请输入生产厂家" },
+    "placeOfOrigin": { "label": "产地", "placeholder": "请输入产地" },
+    "phone": { "label": "联系电话", "placeholder": "请输入联系电话" },
+    "status": { "label": "状态", "options": { "key1": "禁用", "key2": "启用" } }
+  },
+  "add": {
+    "key1": "编辑",
+    "key2": "新增",
+    "key3": "保存",
+    "key4": "取消",
+    "key5": "生产厂家",
+    "key6": "请输入生产厂家",
+    "key7": "最大长度100",
+    "key8": "产地",
+    "key9": "请输入产地",
+    "key10": "联系电话",
+    "key11": "请输入联系电话",
+    "key12": "最大长度15",
+    "key13": "状态",
+    "key14": "启用",
+    "key15": "禁用"
+  }
+}

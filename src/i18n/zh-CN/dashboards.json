@@ -1,0 +1,3387 @@
+{
+  "file": "dashboards",
+  "placeholderSelect": "请选择{{name}}",
+  "placeholderInput": "请输入{{name}}",
+  "moreSearch": "更多条件",
+  "noAuth": "暂无权限操作",
+  "true": "是",
+  "false": "否",
+  "have": "有",
+  "not": "无",
+  "all": "全部",
+  "channelLeader": "市场渠道负责人",
+  "people": "人",
+  "printPreview": "打印预览",
+  "datePlaceholder": [
+    "开始日期",
+    "结束日期"
+  ],
+  "dateOptions": [
+    {
+      "label": "年",
+      "value": 0
+    },
+    {
+      "label": "月",
+      "value": 1
+    },
+    {
+      "label": "日",
+      "value": 2
+    }
+  ],
+  "quickTimeOptions": [
+    {
+      "label": "今日",
+      "value": "day"
+    },
+    {
+      "label": "本周",
+      "value": "week"
+    },
+    {
+      "label": "本月",
+      "value": "month"
+    },
+    {
+      "label": "本季度",
+      "value": "quarter"
+    },
+    {
+      "label": "本年度",
+      "value": "yaer"
+    }
+  ],
+  "dateBtnGroup": [
+    "按日统计",
+    "按月统计"
+  ],
+  "flagOptions": [
+    {
+      "label": "是",
+      "value": 1
+    },
+    {
+      "label": "否",
+      "value": 0
+    }
+  ],
+  "flagOptions2": [
+    {
+      "label": "是",
+      "value": true
+    },
+    {
+      "label": "否",
+      "value": false
+    }
+  ],
+  "headTitle": {
+    "title": "智能数据驾驶舱",
+    "controlCabinTitle": "驾驶舱"
+  },
+  "bi": {
+    "loginError": "登录失败",
+    "iframeTitle": "敏捷报表"
+  },
+  "projectSearch": {
+    "belongsPackage": "所属套餐",
+    "project": "项目",
+    "package": "套餐",
+    "annualCard": "年卡",
+    "onceCard": "次卡",
+    "material": "药/商品",
+    "projectType": "项目分类",
+    "packageType": "套餐分类",
+    "annualCardType": "年卡分类",
+    "onceCardType": "次卡分类",
+    "materialType": "药/商品分类",
+    "placeholder": "请选择{{name}}"
+  },
+  "stockControl": {
+    "input": {
+      "title": "入库金额合计",
+      "inventoryDetail": "入库详情",
+      "updateInventory": "修正入库",
+      "addInventory": "新增入库",
+      "tableColumns": {
+        "warehouseName": "仓库",
+        "deptNames": "部门",
+        "materialTypes": "物料分类",
+        "materialName": "入库物料",
+        "materialCode": "物料编码",
+        "anotherName": "物料别名",
+        "manufacturer": "生产厂家",
+        "specification": "规格",
+        "dosageFormName": "剂型",
+        "batchNumber": "批次",
+        "approvalNumber": "批准文号",
+        "validityPeriod": "有效期",
+        "storageAmountAndUnit": "入库数量/业务单位",
+        "purchasePrice": "进价(单价)",
+        "tax": "税金",
+        "taxRate": "税率",
+        "purchaseTotalPrice": "入库金额(总价)",
+        "supplierName": "供应商",
+        "fromDept": "来源部门",
+        "storageTypeName": "入库类别",
+        "createDate": "入库时间",
+        "storageNumber": "入库单号",
+        "remark": "入库单备注",
+        "purchaseNumber": "采购单号",
+        "outWarehouseName": "调出仓库",
+        "responsibleName": "责任人",
+        "detailRemark": "入库物料备注"
+      },
+      "searchList": {
+        "storagendDate": "入库时间",
+        "customDeptId": "部门",
+        "warehouseId": "仓库",
+        "materialTypes": "物料分类",
+        "materialInfo": "物料",
+        "materialInfoOther": "物料名称/编号/规格",
+        "anotherName": "物料别名",
+        "userId": "责任人",
+        "type": "入库类型",
+        "storageNumber": "入库单号",
+        "purchaseNumber": "采购单号",
+        "supplierId": "供应商",
+        "batchNumber": "批次",
+        "materiaSpecification": "规格",
+        "outWarehouseId": "调出仓库"
+      }
+    },
+    "inventory": {
+      "tableColumns": {
+        "warehouseName": "仓库",
+        "materialCode": "物料编码",
+        "materialName": "物料名称",
+        "manufacturer": "生产厂家",
+        "specification": "规格",
+        "batchNumber": "批次",
+        "inventoryDate": "盈亏处理时间",
+        "userName": "盘点人",
+        "inventoryList": "库存量",
+        "checkAmountList": "实际量",
+        "deviationList": "偏差"
+      },
+      "searchList": {
+        "warehouseId": "仓库",
+        "userId": "盘点人",
+        "date": "盈亏处理时间"
+      }
+    },
+    "invoicingStatistics": {
+      "tabList": [
+        "科室仓库进销存统计表",
+        "进销存全局统计表"
+      ],
+      "enterAmountTitle": "入库明细",
+      "outAmountTitle": "出库明细",
+      "statisticalInfo": {
+        "initMoneySumTotal": "初始货值总计",
+        "inMoneySumTotal": "入库货值总计",
+        "outMoneySumTotal": "出库货值总计",
+        "restMoneySumTotal": "剩余货值总计",
+        "taxSumTotal": "税金总计"
+      },
+      "searchList": {
+        "warehouseId": "仓库",
+        "searchParam": "物料名称/编码",
+        "anotherName": "物料别名",
+        "specification": "规格",
+        "supplierId": "供应商",
+        "time": "统计时间",
+        "typeId": "物料分类"
+      },
+      "tableColumns": {
+        "materialCode": "商品编码",
+        "name": "物料名称",
+        "type": "物料分类",
+        "manufacturer": "生产厂家",
+        "specification": "规格",
+        "initAmountUnitList": "初始库存量",
+        "initMoneySum": "初始货值",
+        "inAmountUnitList": "入库数量",
+        "inMoneySum": "入库货值",
+        "outAmountUnitList": "出库数量",
+        "outMoneySum": "出库货值",
+        "restAmountUnitList": "剩余库存数量",
+        "restMoneySum": "剩余货值",
+        "taxSum": "税金",
+        "warehouseName": "仓库",
+        "options": "操作",
+        "purchasePrice": "单价",
+        "storageSum": "总计",
+        "unitList": "出库数量/单位",
+        "outTime": "出库时间",
+        "outBoundTypeText": "出库类型",
+        "deptName": "领用部门",
+        "recipientName": "领用人",
+        "batchNumber": "批次号",
+        "inTime": "入库时间",
+        "inBoundTypeText": "入库类型",
+        "deptName2": "来源部门",
+        "unitList2": "入库数量/单位"
+      }
+    },
+    "invoicingStatisticsInventory": {
+      "receiptId": "具体单据",
+      "unit": "单位",
+      "statisticalInfo": {
+        "initMoneySumTotal": "初始货值总计",
+        "inMoneySumTotal": "入库货值总计",
+        "outMoneySumTotal": "出库货值总计",
+        "restMoneySumTotal": "剩余货值总计",
+        "taxSumTotal": "税金总计"
+      },
+      "typeOptions": [
+        {
+          "label": "入库单",
+          "value": 1
+        },
+        {
+          "label": "出库单",
+          "value": 2
+        }
+      ],
+      "searchList": {
+        "type": "查询单据类型"
+      },
+      "tableColumns": {
+        "materialCode": "商品编码",
+        "name": "物料名称",
+        "type": "物料分类",
+        "manufacturer": "生产厂家",
+        "specification": "规格",
+        "initAmountUnitList": "初始库存量",
+        "initMoneySum": "初始货值",
+        "inAmountUnitList": "入库数量",
+        "inMoneySum": "入库货值",
+        "outAmountUnitList": "出库数量",
+        "outMoneySum": "出库货值",
+        "restAmountUnitList": "剩余库存数量",
+        "restMoneySum": "剩余货值",
+        "taxSum": "税金",
+        "warehouseName": "仓库",
+        "options": "操作"
+      },
+      "extraFields": {
+        "initAmountUnitList": {
+          "key": "initAmount",
+          "title": "初始库存量"
+        },
+        "inAmountUnitList": {
+          "key": "inAmount",
+          "title": "入库数量"
+        },
+        "outAmountUnitList": {
+          "key": "outAmount",
+          "title": "出库数量"
+        },
+        "restAmountUnitList": {
+          "key": "restAmount",
+          "title": "剩余库存数量"
+        }
+      }
+    },
+    "outBoundManage": {
+      "searchList": {
+        "warehouseIds": "仓库",
+        "types": "出库类别",
+        "date": "出库时间",
+        "materialId": "物料名称"
+      },
+      "tableColumns": {
+        "warehouseName": "仓库",
+        "materialCode": "物料编码",
+        "materialName": "物料名称",
+        "anotherName": "别名",
+        "manufacturer": "生产厂家",
+        "specification": "规格",
+        "outInventoryType": "出库类型",
+        "outAmount": "出库数量/业务单位"
+      }
+    },
+    "output": {
+      "outputAmount": "出库金额合计",
+      "tableColumns": {
+        "warehouseName": "仓库",
+        "deptNames": "部门",
+        "materialTypes": "物料分类",
+        "materialName": "出库物料",
+        "materialCode": "物料编码",
+        "anotherName": "物料别名",
+        "manufacturer": "生产厂家",
+        "specification": "规格",
+        "batchNumber": "批次",
+        "approvalNumber": "批准文号",
+        "validityPeriod": "有效期",
+        "supplierName": "供应商",
+        "outAmountNum": "出库数量/业务单位",
+        "purchasePrice": "进价(单价)",
+        "outAmountTotalPrice": "出库金额(总价)",
+        "sellingPrice": "销售价格(总价)",
+        "outBoundTypeName": "出库类别",
+        "createDate": "出库完成时间",
+        "outInventoryNumber": "出库单号",
+        "customer": "客户",
+        "vipNum": "会员号",
+        "outInventoryUser": "出库人",
+        "receiveDeptName": "领用部门",
+        "receiveUserName": "领用人",
+        "remark": "出库单备注",
+        "detailRemark": "出库物料备注",
+        "inWarehouseName": "调入仓库",
+        "outWarehouseName": "调拨出库",
+        "storePrice": "跨店成本单价",
+        "storePriceSum": "跨店成本总价"
+      },
+      "searchList": {
+        "storagendDate": "出库完成时间",
+        "customDept": "部门",
+        "warehouseIds": "仓库",
+        "customerIds": "客户",
+        "materialTypes": "物料分类",
+        "materialInfo": "物料",
+        "materialInfoPlaceholder": "物料名称/编号/规格",
+        "anotherName": "物料别名",
+        "supplierId": "供应商",
+        "userIds": "出库人",
+        "type": "出库类型",
+        "outInventoryNumber": "出库单号",
+        "receiveDeptIds": "领用部门",
+        "receiveUserIds": "领用人",
+        "batchNumber": "批次",
+        "materiaSpecification": "规格",
+        "inWarehouseId": "调入仓库"
+      }
+    },
+    "transferSchedule": {
+      "tableColumns": {
+        "outWarehouseName": "调出仓库",
+        "enterWarehouseName": "调入仓库",
+        "typeName": "物料分类",
+        "name": "物料名称",
+        "anotherName": "物料别名",
+        "specification": "规格",
+        "batchNumber": "批次",
+        "validityPeriodStr": "有效期",
+        "purchasePriceAndUnitStr": "进价/单位",
+        "shiftSum": "调拨成本",
+        "transferAmount": "调拨数量",
+        "transferUnitName": "单位",
+        "supplierName": "供应商",
+        "createDate": "调拨申请日期",
+        "finishDate": "调拨完成日期",
+        "shiftNumber": "调拨单号",
+        "shiftUser": "调拨人",
+        "applicantUser": "申领人",
+        "relatedCustomer": "相关客户",
+        "customerTreatInfo": "客户治疗"
+      },
+      "searchList": {
+        "date": "调拨申请日期",
+        "outWarehouseIds": "调出仓库",
+        "enterWarehouseIds": "调入仓库",
+        "materialTypes": "物料分类",
+        "materialName": "物料名称",
+        "materialNameOther": "物料名称/别名",
+        "endDate": "调拨完成日期",
+        "shiftNumber": "调拨单号",
+        "customerIds": "相关客户"
+      }
+    }
+  },
+  "operatingReports": {
+    "customerConsumptionDetail": {
+      "happenTime": "业务发生时间",
+      "customerInfo": "客户信息",
+      "modalTitle": "客户搜索",
+      "errorMsg": "日期选择不能超过{{month}}个月",
+      "tenantNameOther": "他门店",
+      "tenantName": "本门店",
+      "delete": "已删",
+      "customerSource": "客户来源",
+      "employeeName": "员工姓名",
+      "deptName": "报备部门",
+      "statisticalInfo": {
+        "totalDealNum": "合计人数",
+        "totalDealMoney": "已付金额总计（含虚拟金）",
+        "firstDealNum": "初诊成交人数",
+        "secondDealNum": "复诊成交人数",
+        "oldDealNum": "老客人成交人数",
+        "emptyDealNum": "空成交人数",
+        "otherDealNum": "其他成交人数",
+        "transferCount": "转项人数",
+        "transferMoney": "转项金额总计",
+        "refundCount": "退费人数",
+        "refundMoney": "退费金额总计",
+        "dealNum": "成交金额总计"
+      },
+      "tableColumns": {
+        "date": "消费日期",
+        "customerName": "姓名",
+        "customerPhone": "客户电话",
+        "preparationName": "报备人",
+        "recTypeName": "客人类型",
+        "consumeNature": "消费性质",
+        "cardNo": "客户卡号",
+        "documentId": "档案号",
+        "age": "年龄",
+        "smartLabelsJson": "业绩标签",
+        "billNo": "订单号",
+        "billingNo": "缴费单号",
+        "paymentTenantName": "费用发生门店",
+        "paymentBillingUserName": "费用单开单人",
+        "payMark": "收银类型",
+        "projectDept": "项目所属科室",
+        "projectType": "分类",
+        "type": "类别",
+        "packageName": "套餐名称",
+        "packageNameTip": "归属套餐",
+        "packageNameIcon": "套",
+        "paymentItemName": "项目/商品/药品",
+        "courseFlag": "补疗程",
+        "billItemTenantName": "项目开单门店",
+        "spec": "规格",
+        "unitPrice": "单价",
+        "numberOfTime": "次数",
+        "discount": "折扣",
+        "discountMoney": "折扣金额",
+        "totalPrice": "成交价",
+        "performanceStatisticsStr": "业绩价",
+        "billPrice": "订单金额",
+        "actualPayMoney": "已付金额",
+        "equityMoneyGroup": "{{name}}本金",
+        "givenEquityMoneyGroup": "{{name}}赠送金",
+        "cash": "现金",
+        "nonCash": "非现金",
+        "depositDeductMoney": "定金",
+        "storevalueDeductMoney": "{{name}}余额",
+        "deductGivenBalance": "赠送余额",
+        "cardDeductMoney": "卡券",
+        "integralDeductMoney": "积分",
+        "dynamicDeductMoney": "自定义虚拟金",
+        "dynamicDeductDetail": "自定义虚拟金明细",
+        "debt": "欠款金额",
+        "orderClearMoney": "清讫金额",
+        "doctorName": "计划治疗医生",
+        "poolName": "客户池",
+        "exclusiveServerName": "专属客服",
+        "billingUserName": "订单开单人",
+        "sysAssistantList": "协助开单人",
+        "assistReceiverName": "协助接待人",
+        "chargeUserName": "收费操作人",
+        "preDeptName": "报备部门",
+        "channelType": "客人来源分类",
+        "detailChannel": "客人具体来源",
+        "firstVisitDate": "初诊日期",
+        "firstCostDate": "首次消费日期",
+        "preEndDate": "报备有效期",
+        "departmentName": "计划治疗科室",
+        "operator": "操作员",
+        "channelStatus": "机构状态",
+        "triageToUserName": "现场咨询",
+        "relatedDoctor": "相关医生",
+        "relatedCounselor": "相关{{name}}",
+        "relatedCustomerService": "相关客服",
+        "relatedOther": "其他相关人员",
+        "preparationTargetName": "目标报备人",
+        "checkDetails": "审核信息",
+        "tenantName": "客户所属门店",
+        "rePay": "（补缴）",
+        "dynamicColumnTitle": "负责{{name}}"
+      },
+      "searchList": {
+        "customerType": "客户类型",
+        "consumeType": "消费性质",
+        "smartLabelIds": "业绩标签",
+        "billItemTenantIds": "项目开单门店",
+        "tenantIds": "费用发生门店",
+        "billingUserIds": "订单开单人",
+        "paymentBillingUserIds": "费用单开单人",
+        "packageIds": "套餐名称",
+        "projectTypes": "项目分类",
+        "projectIds": "项目名称",
+        "type": "类别",
+        "courseFlag": "是否补疗程",
+        "billingNo": "订单号",
+        "customPreDeptIds": "报备部门",
+        "orderClearFlagList": "已清讫"
+      },
+      "returnVisitLabel": {
+        "0": "无",
+        "1": "有"
+      },
+      "consumeTypeOptions": [
+        {
+          "label": "首单消费",
+          "value": "0"
+        },
+        {
+          "label": "再消费",
+          "value": "1"
+        },
+        {
+          "label": "其他",
+          "value": "2"
+        }
+      ],
+      "typeOptions": [
+        {
+          "value": "0",
+          "label": "项目"
+        },
+        {
+          "value": "1",
+          "label": "套餐"
+        },
+        {
+          "value": "2",
+          "label": "商品"
+        },
+        {
+          "value": "3",
+          "label": "药品"
+        },
+        {
+          "value": "4",
+          "label": "年卡"
+        },
+        {
+          "value": "5",
+          "label": "次卡"
+        }
+      ],
+      "courseFlagOptions": [
+        {
+          "label": "是",
+          "value": 1
+        },
+        {
+          "label": "否",
+          "value": 0
+        }
+      ]
+    },
+    "customerLikeStatistics": {
+      "time": "时间维度",
+      "data": "录入日期",
+      "preview": "员工维度查看",
+      "employeeName": "员工姓名",
+      "dept": "部门",
+      "tableColumns": {
+        "entryTime": "录入日期",
+        "createClueUser": "员工姓名",
+        "deptName": "部门",
+        "deptTotal": "部门录入线索量",
+        "total": "录入线索量",
+        "totalTooltip": "该日期内，该员工录入的线索总数量",
+        "appTotal": "移动端录入数量",
+        "appTotalTooltip": "该日期内，该员工录入通过移动端录入的线索总数量",
+        "pcTotal": "PC端录入数量",
+        "pcTotalTooltip": "该日期内，该员工录入通过PC端录入的线索总数量",
+        "liked": "录入线索被点赞数",
+        "likedTooltip": "该日期内，该员工录入的线索被其他同事点赞数",
+        "upNum": "点赞线索数",
+        "upNumTooltip": "该日期内，该员工对其他同事录入线索的点赞数"
+      }
+    },
+    "dailyEndStatistics": {
+      "printFinish": "打印完成",
+      "printFail": "暂不打印",
+      "printPreview": "打印预览",
+      "printAgain": "再次打印",
+      "printTitle": "日结统计清单",
+      "businessTime": "营业时间",
+      "statisticsTime": "统计时间",
+      "printSecondTitle": "营业收支明细汇总",
+      "businessDetail": "业务明细",
+      "amount": "总额",
+      "cash": "现金",
+      "bankCard": "银行卡",
+      "card": "券/其他",
+      "deposit": "划定金",
+      "businessType": "预收款",
+      "debt": "欠款"
+    },
+    "departmentDeductDetail": {
+      "countInfo": "合计划扣业绩",
+      "treatDepts": "治疗科室",
+      "deductDepts": "划扣科室",
+      "employeeName": "员工姓名",
+      "tenant": "本门店",
+      "otherTenant": "他门店",
+      "tableColumns": {
+        "deductTime": "划扣日期",
+        "customerName": "客户",
+        "phoneNumber": "客户电话",
+        "vipNum": "会员号",
+        "currentCounselorName": "归属咨询（当前）",
+        "customerType": "客户类型",
+        "treatDeptName": "治疗科室",
+        "projectType": "类别",
+        "packageName": "套餐名称",
+        "projectName": "项目名称",
+        "projectNumber": "项目编码",
+        "billingNo": "关联订单",
+        "billingDate": "开单日期",
+        "billItemTenantName": "项目开单门店",
+        "doctors": "治疗医生",
+        "otherRoleUserName": "其他岗位",
+        "injectionSite": "治疗部位",
+        "anesthesiaName": "麻醉方式",
+        "deviceParam": "设备参数",
+        "deductNum": "划扣次数",
+        "times": "当前剩余/总次数",
+        "unitOriginalPrice": "原价",
+        "unitOrderPrice": "成交价",
+        "deductPerformance": "划扣业绩",
+        "channelType": "客人来源分类",
+        "detailChannel": "客人具体来源",
+        "deductDeptName": "划扣科室",
+        "deductUserName": "划扣人",
+        "deductRemark": "划扣说明",
+        "treatmentTime": "治疗日期",
+        "tenantName": "客户所属门店",
+        "treatmentNo": "业务单号",
+        "manualNum": "手工费计次",
+        "manualPrice": "手工费",
+        "isFirstDeductFlag": "订单项目是否首次治疗"
+      },
+      "searchList": {
+        "times": "治疗日期",
+        "deductTimes": "划扣日期",
+        "customerType": "客户类型",
+        "customTreatDeptIds": "治疗科室",
+        "treatDoctorIds": "治疗医生",
+        "otherRoleIds": "参与岗位",
+        "otherRoleUserIds": "参与人员",
+        "customerIds": "客户",
+        "projectName": "项目名称",
+        "billingDate": "开单日期",
+        "customDeductDeptIds": "划扣科室",
+        "deductUserIds": "划扣人",
+        "anesthesiaValue": "麻醉方式",
+        "billItemTenantIds": "项目开单门店",
+        "isFirstDeductFlagList": "订单项目是否首次治疗",
+        "channelType": "客户来源"
+      },
+      "isFirstDeductFlagList": [
+        {
+          "label": "全部",
+          "value": "all"
+        },
+        {
+          "label": "是",
+          "value": "1"
+        },
+        {
+          "label": "否",
+          "value": "0"
+        }
+      ]
+    },
+    "departmentVerificationDetail": {
+      "treatDeptIds": "治疗科室",
+      "verificationDeptIds": "核销科室",
+      "tenant": "本门店",
+      "otherTenant": "他门店",
+      "tableColumns": {
+        "treatmentTime": "治疗日期",
+        "customerName": "客户姓名",
+        "phoneNumber": "客户电话",
+        "vipNum": "会员号",
+        "currentCounselorName": "归属咨询（当前）",
+        "treatDeptName": "治疗科室",
+        "projectName": "项目",
+        "projectNumber": "项目编码",
+        "billingNo": "关联订单",
+        "injectionSite": "治疗部位",
+        "anesthesiaName": "麻醉方式",
+        "doctors": "治疗医生",
+        "otherRoleUserName": "其他岗位",
+        "deviceParam": "设备参数",
+        "verificationDeptName": "核销科室",
+        "verificationUserName": "核销人",
+        "verificationTime": "核销日期",
+        "verificationRemark": "核销说明",
+        "materialName": "核销物品",
+        "materialCode": "物料编码",
+        "specification": "物品规格",
+        "standard": "标准量",
+        "verificationNumber": "核销量",
+        "isOverVerifyNumberFlag": "是否超量核销",
+        "verificationUnitName": "核销单位",
+        "purchaseUnitName": "采购单位",
+        "purchasePrice": "进价",
+        "verificationValue": "核销成本",
+        "tenantName": "客户所属门店"
+      },
+      "searchList": {
+        "times": "治疗日期",
+        "customerIds": "客户",
+        "projectName": "项目名称",
+        "customerType": "客人类型",
+        "customTreatDeptIds": "治疗科室",
+        "treatDoctorIds": "治疗医生",
+        "otherRoleIds": "参与岗位",
+        "otherRoleUserIds": "参与人员",
+        "verificationMaterial": "核销物品",
+        "customVerificationDeptIds": "核销科室",
+        "verificationUserIds": "核销人",
+        "anesthesiaValue": "麻醉方式",
+        "billItemTenantIds": "项目开单门店",
+        "isOverVerifyNumberFlagList": "是否超量核销",
+        "verifyTime": "核销日期"
+      },
+      "isOverVerifyNumberFlagList": [
+        {
+          "label": "否",
+          "value": 0
+        },
+        {
+          "label": "是",
+          "value": 1
+        }
+      ]
+    },
+    "depositAndStoredRetentionStatistics": {
+      "type": "有（含负）",
+      "statisticalInfo": {
+        "totalDepositAmountTotal": "定金累计",
+        "totalRefundDepositAmount": "定金退款",
+        "totalDeductDepositAmount": "定金抵扣",
+        "totalDepositAmount": "定金保有",
+        "totalBalanceTotal": "{{name}}累计",
+        "totalRefundBalanceAmount": "{{name}}退款",
+        "totalDeductBalanceAmount": "{{name}}抵扣",
+        "totalBalance": "{{name}}保有",
+        "totalGivenBalanceTotal": "赠送金累计",
+        "totalRefundGivenBalanceAmount": "赠送金退款",
+        "totalDeductGivenBalanceAmount": "赠送金抵扣",
+        "totalGivenBalance": "赠送金保有",
+        "totalIntegralTotal": "积分累计",
+        "totalConsumeIntegral": "积分消费",
+        "totalIntegral": "积分保有"
+      },
+      "tableColumns": {
+        "name": "客户",
+        "vipNum": "会员号",
+        "vipLevel": "会员等级",
+        "customerTypeName": "客户类型",
+        "belongCounselorName": "归属咨询",
+        "deposit": "定金",
+        "depositAmount": "定金保有",
+        "depositAmountTotal": "定金累计",
+        "refundDepositAmount": "定金退款",
+        "deductDepositAmount": "定金抵扣",
+        "balanceTotal": "{{name}}累计",
+        "refundBalanceAmount": "{{name}}退款",
+        "deductBalanceAmount": "{{name}}抵扣",
+        "balance": "{{name}}保有",
+        "givenBalances": "赠送金",
+        "givenBalanceTotal": "赠送金累计",
+        "refundGivenBalanceAmount": "赠送金退款",
+        "deductGivenBalanceAmount": "赠送金抵扣",
+        "givenBalance": "赠送金保有",
+        "jifen": "积分",
+        "integralTotal": "积分累计",
+        "consumeIntegral": "积分消耗",
+        "integral": "积分保有"
+      },
+      "searchList": {
+        "customerId": "客户",
+        "vipNum": "会员号",
+        "memberLevelId": "会员等级",
+        "customerTypeList": "客人类型",
+        "deposit": "定金保有",
+        "balance": "{{name}}保有",
+        "givenBalance": "赠送金保有",
+        "integral": "积分保有"
+      }
+    },
+    "hospitalPerformanceB": {
+      "employeeName": "员工姓名",
+      "tableColumns": {
+        "createDate": "开单日期",
+        "customerName": "客户",
+        "phoneNumber": "客户电话",
+        "customerType": "客户类型",
+        "sysUserName": "归属{{name}}",
+        "userService": "{{name}}对应客服",
+        "feeProp": "消费性质",
+        "payType": "类型",
+        "objType": "项目类型",
+        "objName": "项目/产品",
+        "departmentName": "开单/治疗科室",
+        "actualMoney": "业绩",
+        "billingUserName": "开单人",
+        "treatDoctor": "治疗医生",
+        "otherDoctor": "辅助医生",
+        "preUserName": "报备人",
+        "sourceTypeName": "来源分类",
+        "sourceDetail": "具体来源",
+        "opUserName": "操作人"
+      },
+      "searchList": {
+        "customerId": "客户",
+        "times": "开单日期",
+        "customerType": "客户类型",
+        "feeProp": "消费性质",
+        "payMark": "类型",
+        "payItemMark": "项目类型",
+        "objName": "项目/产品",
+        "deptId": "开单/治疗科室",
+        "billingUserId": "开单人",
+        "sysUserId": "归属{{name}}",
+        "serviceId": "{{name}}对应客服",
+        "doctorId": "治疗医生",
+        "otherDoctorId": "辅助医生",
+        "preUserId": "报备人",
+        "opUserId": "操作人",
+        "channelType": "客户来源"
+      },
+      "customerTypeOptions": [
+        {
+          "label": "初诊",
+          "value": 0
+        },
+        {
+          "label": "复诊",
+          "value": 1
+        },
+        {
+          "label": "老客人",
+          "value": 2
+        }
+      ]
+    },
+    "incomeConfirmation": {
+      "warningMsg": "日期范围请勿超过{{num}}个月！",
+      "tableColumns": {
+        "chargeTime": "月份",
+        "deductThisMonth": "预收金额",
+        "dealMonthNoDeductMoney": "本月项目成交未划扣金额",
+        "dealHisNoDeductMoney": "历史项目未划扣金额",
+        "dealTotalNoDeductMoney": "累计未划扣金额",
+        "inMonthDepositMoney": "本月定金收入（含开单、退入）",
+        "outMonthDepositMoney": "本月定金支出（含抵扣、退款）",
+        "totalNoDeductDepositMoney": "累计未抵扣定金",
+        "inMonthBalanceMoney": "本月{{name}}收入（含开单、退入）",
+        "outMonthBalanceMoney": "本月{{name}}支出（含抵扣、退款）",
+        "totalNoUseBalanceMoney": "累计未使用{{name}}金",
+        "monthCollectMoney": "本月预收金额",
+        "collectSurplusMoney": "预收账款余额总计",
+        "confirmMoney": "收入确认金额",
+        "dealMonthDeductMoney": "本月成交本月已划扣",
+        "dealHisMonthDeductMoney": "历史成交本月已划扣",
+        "totalMonthDeductMoney": "本月累计划扣",
+        "goodsMoney": "本月商品收支",
+        "pillMoney": "本月药品收支",
+        "inMonthConfirmMoney": "本月确认收入",
+        "totalHisDeductMoney": "历史累计划扣金额",
+        "inHisConfirmMoney": "历史累计确认收入",
+        "monthPaymentMoney": "本月收银金额"
+      }
+    },
+    "openingOrder": {
+      "warningMsg": "月份请勿超过24个月！",
+      "warningMsg2": "日期请勿超过31天！",
+      "dateDimension": "时间维度",
+      "date": "时间",
+      "billingUser": "订单开单人",
+      "isConsulFlag": "仅咨询师",
+      "tableColumns": {
+        "pid": "时间",
+        "billingUserName": "订单开单人",
+        "totalIncome": "总营收",
+        "billingMoney": "开单实收",
+        "depositMoney": "定金金额",
+        "balanceMoney": "{{name}}金额",
+        "goodsPillMoney": "商/药品金额",
+        "actualRefundMoney": "退款金额",
+        "performanceMoney": "业绩金额",
+        "firstNum": "初诊人数",
+        "firstTypeDealNum": "初诊成交人数",
+        "firstTypeDealRate": "初诊成交率",
+        "firstTypeDealMoney": "初诊金额",
+        "firstTypeCusNum": "初诊客单",
+        "secondNum": "复诊人数",
+        "secondTypeDealNum": "复诊成交人数",
+        "secondTypeDealRate": "复诊成交率",
+        "secondTypeDealMoney": "复诊金额",
+        "secondTypeCusNum": "复诊客单",
+        "threeNum": "老客人人数",
+        "oldTypeDealNum": "老客人成交人数",
+        "oldTypeDealRate": "老客人成交率",
+        "oldTypeDealMoney": "老客人金额",
+        "oldTypeCusNum": "老客人客单",
+        "notArrDealNum": "未到院成交人数",
+        "notArrDealMoney": "未到院成交金额",
+        "totalIncomeTooltip": "开单实收+定金金额+{{name}}金额的合计金额",
+        "billingMoneyTooltip": "开单实收来源为项目+套餐+商品+药品的金额，且包括转项补缴金额，不含定金{{name}}的购买和抵扣，不包含任何退款",
+        "depositMoneyTooltip": "定金金额为定金类金额，不包括定金退款",
+        "balanceMoneyTooltip": "{{StoredValueName}}金额为{{RechargeName}}金额，不包括{{RechargeName}}赠送金额，不包括{{StoredValueName}}退款",
+        "goodsPillMoneyTooltip": "商品药品金额，不包商品药品的退款",
+        "actualRefundMoneyTooltip": "包括项目类、定金{{name}}类、商品药品类的退款，且包括转项退款",
+        "performanceMoneyTooltip": "业绩金额为项目类（参与业绩统计的）开单金额，不含商品药品和定金{{name}}及其抵扣金额，不包括项目类退款",
+        "firstNumTooltip": "初诊客户接诊人数，同天客户去重（只包含已到院客户）",
+        "firstTypeDealNumTooltip": "初诊客户消费人数，同天客户去重（只包含已到院客户）",
+        "firstTypeDealRateTooltip": "初诊成交人数除以初诊人数（只包含已到院客户）",
+        "firstTypeDealMoneyTooltip": "初诊客户消费项目类的金额（只包含已到院客户）",
+        "secondNumTooltip": "复诊客户接诊人数，同天客户去重",
+        "secondTypeDealNumTooltip": "复诊客户消费人数，同天客户去重",
+        "secondTypeDealRateTooltip": "复诊成交人数除以复诊人数",
+        "secondTypeDealMoneyTooltip": "复诊客户消费项目类的金额",
+        "threeNumTooltip": "老客人接诊人数，同天客户去重",
+        "oldTypeDealNumTooltip": "老客人消费人数，同天客户去重",
+        "oldTypeDealRateTooltip": "老客人成交人数除以老客人人数",
+        "oldTypeDealMoneyTooltip": "老客人客户消费项目类的金额",
+        "notArrDealNumTooltip": "客户未到院，项目类开单人数",
+        "notArrDealMoneyTooltip": "客户未到院，项目类开单金额"
+      }
+    },
+    "orderArrears": {
+      "people": "人",
+      "statisticalInfo": {
+        "oweFeeCustomerNum": "欠费人数",
+        "oewFeeTotalMoney": "欠费总额",
+        "totalMoney": "订单金额总和",
+        "actualRecieveTotalMoney": "订单实收总和"
+      },
+      "searchList": {
+        "date": "开单时间",
+        "customerIds": "客户",
+        "billingUserIds": "订单开单人",
+        "arrearsRange": "欠费合计",
+        "approvalStatus": "审批状态",
+        "billingNo": "订单号"
+      },
+      "tableColumns": {
+        "customerName": "客户",
+        "phoneNumber": "电话",
+        "counselor": "咨询师",
+        "billingNo": "订单号",
+        "approvalStatus": "审批状态",
+        "billingUserName": "订单开单人",
+        "billDate": "开单时间",
+        "billPrice": "订单总价",
+        "billingActualRecieveTotal": "实收合计",
+        "billingOweFeeTotal": "欠费合计",
+        "itemName": "费用项",
+        "unitPrice": "单价",
+        "numberOfTime": "数量",
+        "discountPrice": "折扣",
+        "projectTotalPrice": "总价",
+        "projectActualRecieveMoney": "实收",
+        "uncollectedPrice": "欠费"
+      }
+    },
+    "revenueCostReport": {
+      "errorMsg": "日期选择不能超过{{num}}个月",
+      "hospitalPlatform": "院内平台",
+      "hospitalBilling": "院内开单",
+      "verifyTime": "核销时间",
+      "totalPerformanceMoneySum": "本次业绩结算金额合计",
+      "first": "(一)",
+      "two": "(二)",
+      "searchModalTitle": "客户搜索",
+      "product": "产品",
+      "projectType": "项目分类",
+      "project": "项目",
+      "dateInfoTitle": "业务发生查询",
+      "employeeName": "员工姓名",
+      "searchInitData": {
+        "firstTreatDate": {
+          "label": "初诊日期",
+          "filed": "firstTreatDate",
+          "pFiled": "dateInfo",
+          "optionKey": "firstTreatDate"
+        },
+        "latestArriveDate": {
+          "label": "最近到院日期",
+          "filed": "latestArriveDate",
+          "optionKey": "latestArriveDate",
+          "pFiled": "dateInfo"
+        },
+        "firstCostDate": {
+          "label": "首次消费日期",
+          "filed": "firstCostDate",
+          "optionKey": "firstCostDate",
+          "pFiled": "dateInfo"
+        },
+        "latestCostDate": {
+          "label": "最近消费日期",
+          "filed": "latestCostDate",
+          "optionKey": "latestCostDate",
+          "pFiled": "dateInfo"
+        },
+        "firstVisitedDate": {
+          "label": "首次回访日期",
+          "filed": "firstVisitedDate",
+          "optionKey": "firstVisitedDate",
+          "pFiled": "dateInfo"
+        },
+        "latestVisitedDate": {
+          "label": "最近回访日期",
+          "filed": "latestVisitedDate",
+          "optionKey": "latestVisitedDate",
+          "pFiled": "dateInfo"
+        },
+        "name": {
+          "label": "姓名",
+          "filed": "name",
+          "optionKey": "name",
+          "noShow": true,
+          "pFiled": "baseInfo"
+        },
+        "phone": {
+          "label": "电话",
+          "filed": "phone",
+          "optionKey": "phoneNumber",
+          "noShow": true,
+          "pFiled": "baseInfo"
+        },
+        "documentId": {
+          "label": "档案号",
+          "filed": "documentId",
+          "optionKey": "documentId",
+          "pFiled": "baseInfo"
+        },
+        "sex": {
+          "label": "性别",
+          "filed": "sex",
+          "optionKey": "sex",
+          "pFiled": "baseInfo"
+        },
+        "age": {
+          "label": "年龄",
+          "filed": "age",
+          "optionKey": "age",
+          "pFiled": "baseInfo"
+        },
+        "area": {
+          "label": "现住地址",
+          "filed": "area",
+          "optionKey": "area",
+          "pFiled": "baseInfo"
+        },
+        "marriedFlag": {
+          "label": "婚姻状况",
+          "filed": "marriedFlag",
+          "optionKey": "marriedFlag",
+          "pFiled": "baseInfo"
+        },
+        "fertilityFlag": {
+          "label": "生育状况",
+          "filed": "fertilityFlag",
+          "optionKey": "fertilityFlag",
+          "pFiled": "baseInfo"
+        },
+        "career": {
+          "label": "职业",
+          "filed": "career",
+          "optionKey": "career",
+          "pFiled": "baseInfo"
+        },
+        "income": {
+          "label": "收入",
+          "filed": "income",
+          "optionKey": "income",
+          "pFiled": "baseInfo"
+        },
+        "birthday": {
+          "label": "出生日期",
+          "filed": "birthday",
+          "optionKey": "birthday",
+          "pFiled": "baseInfo"
+        },
+        "perResidence": {
+          "label": "所属地域",
+          "filed": "perResidence",
+          "optionKey": "perResidence",
+          "pFiled": "baseInfo"
+        },
+        "nickName": {
+          "label": "昵称",
+          "filed": "nickName",
+          "optionKey": "nickName",
+          "pFiled": "baseInfo"
+        },
+        "country": {
+          "label": "国籍",
+          "filed": "country",
+          "optionKey": "country",
+          "pFiled": "baseInfo"
+        },
+        "address": {
+          "label": "详细住址",
+          "filed": "address",
+          "optionKey": "address",
+          "pFiled": "baseInfo"
+        },
+        "idCardNumber": {
+          "label": "身份证号",
+          "filed": "idCardNumber",
+          "optionKey": "idCardNumber",
+          "pFiled": "baseInfo"
+        },
+        "weiXin": {
+          "label": "微信",
+          "filed": "weiXin",
+          "optionKey": "weiXin",
+          "pFiled": "baseInfo"
+        },
+        "urgentContactName": {
+          "label": "紧急联系人",
+          "filed": "urgentContactName",
+          "optionKey": "urgentContactName",
+          "pFiled": "baseInfo"
+        },
+        "urgentContactCall": {
+          "label": "紧急联系人电话",
+          "filed": "urgentContactCall",
+          "optionKey": "urgentContactCall",
+          "pFiled": "baseInfo"
+        },
+        "passportType": {
+          "label": "护照",
+          "filed": "passportType",
+          "optionKey": "passportType",
+          "pFiled": "baseInfo"
+        },
+        "passportNum": {
+          "label": "护照号码",
+          "filed": "passportNum",
+          "optionKey": "passportNum",
+          "pFiled": "baseInfo"
+        },
+        "smartLabelTypeIds": {
+          "label": "智慧标签分类",
+          "filed": "smartLabelTypeIds",
+          "optionKey": "",
+          "pFiled": "labelInfo"
+        },
+        "smartLabelIds": {
+          "label": "智慧标签",
+          "filed": "smartLabelIds",
+          "optionKey": "",
+          "pFiled": "labelInfo"
+        },
+        "smartLabelRemarkFlag": {
+          "label": "标签是否备注",
+          "filed": "smartLabelRemarkFlag",
+          "optionKey": "",
+          "pFiled": "labelInfo"
+        },
+        "smartLabelStatus": {
+          "label": "标签是否备注",
+          "filed": "smartLabelStatus",
+          "optionKey": "",
+          "pFiled": "labelInfo"
+        },
+        "allergyLabels": {
+          "label": "过敏标签",
+          "filed": "allergyLabels",
+          "optionKey": "",
+          "pFiled": "labelInfo"
+        },
+        "personalityLabels": {
+          "label": "个性标签",
+          "filed": "personalityLabels",
+          "optionKey": "",
+          "pFiled": "labelInfo"
+        },
+        "type": {
+          "label": "客户类型",
+          "filed": "type",
+          "optionKey": "type",
+          "pFiled": "consultInfo"
+        },
+        "sysUserId": {
+          "label": "{{name}}",
+          "filed": "sysUserId",
+          "optionKey": "sysUserName",
+          "pFiled": "consultInfo"
+        },
+        "poolId": {
+          "label": "客户池",
+          "filed": "poolId",
+          "optionKey": "poolName",
+          "noShow": true,
+          "pFiled": "consultInfo"
+        },
+        "propensity": {
+          "label": "意向项目",
+          "filed": "propensity",
+          "optionKey": "propensity",
+          "pFiled": "consultInfo"
+        },
+        "sourceType": {
+          "label": "客户来源",
+          "filed": "sourceType",
+          "optionKey": "sourceType",
+          "pFiled": "consultInfo"
+        },
+        "onlineChannel": {
+          "label": "运营媒体",
+          "filed": "onlineChannel",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "underlineChannel": {
+          "label": "市场渠道",
+          "filed": "underlineChannel",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "oldNew": {
+          "label": "老带新",
+          "filed": "oldNew",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "sourceTypeUser": {
+          "label": "员工",
+          "filed": "sourceTypeUser",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "other": {
+          "label": "其他",
+          "filed": "other",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "preUserId": {
+          "label": "报备人",
+          "filed": "preUserId",
+          "optionKey": "preUserName",
+          "pFiled": "consultInfo"
+        },
+        "preDeptId": {
+          "label": "报备部门",
+          "filed": "preDeptId",
+          "optionKey": "preDeptName",
+          "pFiled": "consultInfo"
+        },
+        "preDate": {
+          "label": "报备时间",
+          "filed": "preDate",
+          "optionKey": "preDate",
+          "pFiled": "consultInfo"
+        },
+        "consulProject": {
+          "label": "咨询项目",
+          "filed": "consulProject",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "costProject": {
+          "label": "消费项目",
+          "filed": "costProject",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "atLestUnDone": {
+          "label": "最近几天未成交",
+          "filed": "atLestUnDone",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "existVisitFlag": {
+          "label": "回访计划",
+          "filed": "existVisitFlag",
+          "optionKey": "existVisitFlag",
+          "pFiled": "consultInfo"
+        },
+        "unDoneReson": {
+          "label": "未成交原因",
+          "filed": "unDoneReson",
+          "optionKey": "",
+          "pFiled": "consultInfo"
+        },
+        "noVisitDay": {
+          "label": "未回访天数",
+          "filed": "noVisitDay",
+          "optionKey": "noVisitDay",
+          "pFiled": "consultInfo"
+        },
+        "deposit": {
+          "label": "定金金额",
+          "filed": "deposit",
+          "optionKey": "deposit",
+          "pFiled": "consultInfo"
+        },
+        "arrearsFlag": {
+          "label": "欠费记录",
+          "filed": "arrearsFlag",
+          "optionKey": "arrearsFlag",
+          "pFiled": "consultInfo"
+        },
+        "arrears": {
+          "label": "欠费金额",
+          "filed": "arrears",
+          "optionKey": "arrears",
+          "pFiled": "consultInfo"
+        },
+        "doctorId": {
+          "label": "相关医生",
+          "filed": "doctorId",
+          "optionKey": "relatedDoctor",
+          "pFiled": "consultInfo"
+        },
+        "consulId": {
+          "label": "相关{{name}}",
+          "filed": "consulId",
+          "optionKey": "relatedConsul",
+          "pFiled": "consultInfo"
+        },
+        "serverId": {
+          "label": "相关客服",
+          "filed": "serverId",
+          "optionKey": "relatedServer",
+          "pFiled": "consultInfo"
+        },
+        "propensityFriend": {
+          "label": "朋友意向",
+          "filed": "propensityFriend",
+          "optionKey": "propensityFriend",
+          "pFiled": "consultInfo"
+        },
+        "costAmount": {
+          "label": "消费总额",
+          "filed": "costAmount",
+          "optionKey": "costAmount",
+          "pFiled": "valueInfo"
+        },
+        "costThisYear": {
+          "label": "本年消费",
+          "filed": "costThisYear",
+          "optionKey": "costThisYear",
+          "pFiled": "valueInfo"
+        },
+        "costPower": {
+          "label": "消费能力",
+          "filed": "costPower",
+          "optionKey": "costPower",
+          "pFiled": "valueInfo"
+        },
+        "newCount": {
+          "label": "介绍客户数",
+          "filed": "newCount",
+          "optionKey": "newCount",
+          "pFiled": "valueInfo"
+        },
+        "newName": {
+          "label": "介绍客户",
+          "filed": "newName",
+          "optionKey": "newName",
+          "pFiled": "valueInfo"
+        },
+        "oldName": {
+          "label": "推荐人",
+          "filed": "oldName",
+          "optionKey": "oldName",
+          "pFiled": "valueInfo"
+        },
+        "vipNum": {
+          "label": "会员号",
+          "filed": "vipNum",
+          "optionKey": "vipNum",
+          "pFiled": "valueInfo"
+        },
+        "vipGrade": {
+          "label": "VIP等级",
+          "filed": "vipGrade",
+          "optionKey": "vipGrade",
+          "pFiled": "valueInfo"
+        },
+        "balance": {
+          "label": "账户余额",
+          "filed": "balance",
+          "optionKey": "balance",
+          "pFiled": "valueInfo"
+        },
+        "integral": {
+          "label": "可用积分",
+          "filed": "integral",
+          "optionKey": "integral",
+          "pFiled": "valueInfo"
+        },
+        "vipActiveDate": {
+          "label": "会员有效期",
+          "filed": "vipActiveDate",
+          "optionKey": "vipActiveDate",
+          "pFiled": "valueInfo"
+        },
+        "responseFlag": {
+          "label": "客诉",
+          "filed": "responseFlag",
+          "optionKey": "",
+          "pFiled": "othertInfo"
+        },
+        "plasticFlag": {
+          "label": "皮肤/整形治疗史",
+          "filed": "plasticFlag",
+          "optionKey": "plasticFlag",
+          "pFiled": "othertInfo"
+        },
+        "clueContent": {
+          "label": "客户线索",
+          "filed": "clueContent",
+          "optionKey": "",
+          "pFiled": "othertInfo"
+        },
+        "visitContent": {
+          "label": "回访信息",
+          "filed": "visitContent",
+          "optionKey": "",
+          "pFiled": "othertInfo"
+        },
+        "allergyFlag": {
+          "label": "过敏史",
+          "filed": "allergyFlag",
+          "optionKey": "allergyFlag",
+          "pFiled": "othertInfo"
+        },
+        "reviewContent": {
+          "label": "复查信息",
+          "filed": "reviewContent",
+          "optionKey": "",
+          "pFiled": "othertInfo"
+        },
+        "responseContent": {
+          "label": "客诉信息",
+          "filed": "responseContent",
+          "optionKey": "",
+          "pFiled": "othertInfo"
+        },
+        "sickHistory": {
+          "label": "既往病史",
+          "filed": "sickHistory",
+          "optionKey": "",
+          "pFiled": "othertInfo"
+        }
+      },
+      "tableColumns": {
+        "date": "业务发生时间",
+        "businessTenantName": "业务发生门店",
+        "settlementSourceName": "业绩来源",
+        "totalPerformanceMoney": "本次业绩结算金额",
+        "serviceNo": "业务单号",
+        "serviceUserName": "业务人",
+        "serviceUserRoleNames": "业务人岗位",
+        "otherServiceInfo": "其他业务人",
+        "deductOperateUserName": "划扣操作人",
+        "serviceCustomerType": "业务发生时客户类型",
+        "packageName": "所属套餐",
+        "firstType": "科室(一级分类)",
+        "secondType": "产品(二级分类)",
+        "thirdType": "项目(三级分类)",
+        "billingItemName": "产品名称",
+        "billingItemCode": "项目编码",
+        "billItemTenantName": "项目开单门店",
+        "billingSourceConfigName": "开单来源",
+        "numberOfTime": "划扣数量",
+        "residueNum": "剩余次数",
+        "treatmentTime": "治疗时间",
+        "historyTotalPerformanceMoney": "截止目前该项目累计结算业绩金额（截止该行）",
+        "projectActualPerformanceMoney": "该项目应结算业绩金额（最终结果值）",
+        "performanceDeptName": "业绩发生科室",
+        "billingNo": "关联订单",
+        "billingDate": "开单日期",
+        "customerName": "客户姓名",
+        "vipNum": "会员号",
+        "documentId": "档案号",
+        "billingUserName": "原订单开单人",
+        "exclusiveServerName": "专属客服",
+        "sysAssistantList": "原协助开单人",
+        "customerLabelNamesPublic": "公共标签",
+        "customerLabelNamesPrivate": "个人标签",
+        "counsolerName": "开单时归属{{name}}",
+        "currentSysUserName": "当前归属{{name}}",
+        "crossCounselorName": "跨院咨询师",
+        "customerTypeName": "客户类型",
+        "feePropName": "消费性质",
+        "smartLabelsNames": "原订单业绩标签",
+        "projectNumOfTime": "项目次数",
+        "projectOriginalTotalPrice": "项目原价",
+        "discountPercent": "项目折扣率",
+        "projectDiscountPrice": "项目折扣",
+        "projectTotalPrice": "项目成交价",
+        "projectOweFeeMoney": "项目尚欠费",
+        "projectRefundMoney": "项目已退款",
+        "projectPerformanceMoney": "项目业绩",
+        "preDate": "报备日期",
+        "preUserName": "报备人",
+        "preDeptName": "报备部门",
+        "preEndDate": "报备有效期",
+        "channelType": "客人来源分类",
+        "detailChannel": "客人具体来源",
+        "channelPerson": "{{name}}负责人",
+        "channelConsoler": "{{name}}咨询师",
+        "channelServiceProvider": "{{name}}所属服务商",
+        "channelServiceProviderDeveloper": "服务商开发人",
+        "channelServiceProviderConsoler": "服务商咨询师",
+        "receiverName": "开单日接待人",
+        "assistReceiverName": "开单日协助接待人",
+        "firstTreatDate": "初诊日期",
+        "firstCostDate": "客户首次消费日期",
+        "firstDeductTime": "客户首次治疗划扣日期",
+        "customerPhone": "客户电话",
+        "dataSource": "订单来源",
+        "manualNum": "手工费计次",
+        "manualPrice": "手工费",
+        "tenantName": "客户所属门店",
+        "isFirstDeductFlag": "订单项目是否首次治疗",
+        "currentExclusiveServerName": "当前专属客服",
+        "currentManagerNames": "当前负责岗位",
+        "verifyTime": "核销时间",
+        "verificationCost": "业务成本(总核销成本)",
+        "grossProfitMargin": "毛利率",
+        "verifyDeptName": "核销科室",
+        "verifyUserName": "核销人",
+        "verifyRemark": "核销说明",
+        "materialName": "核销物品",
+        "materialCode": "物料编码",
+        "specification": "物品规格",
+        "standard": "标准量",
+        "verificationNumber": "核销量",
+        "isOverVerifyNumberFlag": "是否超量核销",
+        "verificationUnitName": "核销单位",
+        "purchaseUnitName": "采购单位",
+        "purchasePriceAndName": "进价",
+        "verificationValue": "核销成本",
+        "outInventoryNumber": "核销出库单",
+        "receptionRole": "负责{{name}}"
+      },
+      "feePropNameOptions": [
+        {
+          "label": "首单消费",
+          "value": "0"
+        },
+        {
+          "label": "再消费",
+          "value": "1"
+        },
+        {
+          "label": "其他",
+          "value": "2"
+        }
+      ],
+      "performanceSourceOptions": [
+        {
+          "label": "缴费",
+          "value": "0"
+        },
+        {
+          "label": "退款",
+          "value": "1"
+        },
+        {
+          "label": "执行划扣",
+          "value": "3"
+        },
+        {
+          "label": "取消执行划扣",
+          "value": "4"
+        }
+      ],
+      "billItemTenantIdsOptions": [
+        {
+          "label": "他门店",
+          "value": "other"
+        },
+        {
+          "label": "本门店",
+          "value": "{{tenantId}}"
+        }
+      ],
+      "returnVisitLabel": {
+        "0": "无",
+        "1": "有"
+      },
+      "consumeTypeOptions": [
+        {
+          "label": "首单消费",
+          "value": "0"
+        },
+        {
+          "label": "再消费",
+          "value": "1"
+        },
+        {
+          "label": "其他",
+          "value": "2"
+        }
+      ],
+      "projectIsRefundOptions": [
+        {
+          "label": "全部",
+          "value": "all"
+        },
+        {
+          "label": "是",
+          "value": "1"
+        },
+        {
+          "label": "否",
+          "value": "0"
+        }
+      ],
+      "isFirstDeductFlagListOptions": [
+        {
+          "label": "全部",
+          "value": "all"
+        },
+        {
+          "label": "是",
+          "value": "1"
+        },
+        {
+          "label": "否",
+          "value": "0"
+        }
+      ],
+      "customerTypeOptions": [
+        {
+          "label": "初诊",
+          "value": "0"
+        },
+        {
+          "label": "复诊",
+          "value": "1"
+        },
+        {
+          "label": "老客人",
+          "value": "2"
+        },
+        {
+          "label": "其它",
+          "value": "3"
+        }
+      ],
+      "cusBelongTenantIdsOptions": [
+        {
+          "label": "他门店",
+          "value": "other"
+        },
+        {
+          "label": "本门店",
+          "value": "{{tenantId}}"
+        }
+      ],
+      "key0": "业绩来源",
+      "key1": "业绩发生科室",
+      "key2": "业务发生门店",
+      "key3": "门店",
+      "key4": "业务发生时间",
+      "key5": "本次业绩结算金额",
+      "key6": "开单来源",
+      "key7": "项目开单门店",
+      "key8": "他门店",
+      "key9": "本门店",
+      "key10": "业务人",
+      "key11": "业务人岗位",
+      "key12": "消费时所在客户池",
+      "key13": "客户来源",
+      "key14": "关联订单信息查询",
+      "key15": "开单时归属{{name}}",
+      "key16": "当前归属{{name}}",
+      "key17": "{{name}}所属服务商",
+      "key18": "{{name}}负责人",
+      "key19": "{{name}}咨询师",
+      "billingNo": "关联订单",
+      "billingUserIds": "原订单开单人",
+      "billingAssistUserId": "原协助开单人",
+      "consumeType": "消费性质",
+      "projectIsRefund": "项目是否退款",
+      "dataSources": "订单来源",
+      "preDeptIds": "报备人部门",
+      "firstTreatDate": "初诊日期",
+      "channelServiceProviderConsolerIds": "服务商咨询师",
+      "treatmentTime": "治疗时间",
+      "currentManagerIds": "当前负责岗位",
+      "billingDate": "开单日期",
+      "labelType": "智慧标签分类",
+      "smartLabelIds": "原订单业绩标签",
+      "isFirstDeductFlagList": "订单项目是否首次治疗",
+      "preDate": "报备日期",
+      "receptionUserIds": "开单日接待人",
+      "firstDealDate": "客户首次消费日期",
+      "channelServiceProviderDeveloperIds": "服务商开发人",
+      "currentExclusiveServerId": "当前专属客服",
+      "customerIds": "客户姓名",
+      "crossCounselorIds": "跨院咨询师",
+      "labels": "智慧标签",
+      "customerType": "客户类型",
+      "projectIsOwe": "项目是否欠费",
+      "preUserIds": "报备人",
+      "assistReceptionUserIds": "开单日协助接待人",
+      "firstDeductDate": "客户首次治疗划扣",
+      "cusBelongTenantIds": "客户所属（建档）门店"
+    },
+    "salesPerformanceReport": {
+      "key0": "销售",
+      "key1": "新增客户数",
+      "key2": "已回访/应回访",
+      "key3": "新增客户线索数量（按客户计）",
+      "key4": "成交业绩",
+      "key5": "实收业绩",
+      "key6": "定金"
+    },
+    "triageStatistics": {
+      "handledTypesOptions": [
+        {
+          "label": "未就诊",
+          "value": 0
+        },
+        {
+          "label": "已就诊",
+          "value": 1
+        },
+        {
+          "label": "就诊中",
+          "value": 2
+        }
+      ],
+      "key0": "接待人部门",
+      "key1": "员工姓名",
+      "key2": "客户姓名或电话",
+      "key3": "初诊人数/成交人数/成交率",
+      "key4": "初诊人数/成交人数/成交率",
+      "key5": "老客人数/成交人数/成交率",
+      "key6": "客户",
+      "key7": "咨询日期",
+      "key8": "就诊类型",
+      "key9": "咨询人员",
+      "key10": "客户类型",
+      "key11": "接待人部门",
+      "key12": "报备部门",
+      "key13": "协助接待人",
+      "key14": "咨询项目",
+      "key15": "就诊状态",
+      "key16": "消费状态",
+      "key17": "分诊项目科室",
+      "key18": "未成交原因分类",
+      "key19": "客户来源",
+      "key20": "未就诊",
+      "key21": "已就诊",
+      "key22": "就诊中",
+      "key23": "姓名",
+      "key24": "客人电话",
+      "key25": "客人类型",
+      "key26": "就诊类型",
+      "key27": "消费状态",
+      "key28": "就诊状态",
+      "key29": "客户卡号",
+      "key30": "地区",
+      "key31": "咨询日期",
+      "key32": "咨询时间",
+      "key33": "就诊项目",
+      "key34": "咨询项目",
+      "key35": "客人主诉",
+      "key36": "处理方案",
+      "key37": "未成交原因分类",
+      "key38": "未成交原因",
+      "key39": "报备说明",
+      "key40": "分诊项目科室",
+      "key41": "客人来源分类",
+      "key42": "客人具体来源",
+      "key43": "咨询人员",
+      "key44": "协助接待人",
+      "key45": "报备人",
+      "key46": "报备日期",
+      "key47": "客服人员",
+      "key48": "分诊接待",
+      "key49": "接待人部门",
+      "key50": "前次咨询",
+      "key51": "预约时间",
+      "key52": "预约人员",
+      "key53": "接待时间",
+      "key54": "接待备注",
+      "key55": "操作人",
+      "key56": "报备部门",
+      "key57": "所属门店"
+    },
+    "unDeductedPerformanceStatisticsAndDetails": {
+      "warningMsg": "日期范围请勿超过{{num}}个月！",
+      "key0": "月份",
+      "key1": "本月已划扣",
+      "key2": "本月未划扣",
+      "key3": "历史项目本月转项退款",
+      "key4": "本月缴费",
+      "key5": "上月缴费",
+      "key6": "商品",
+      "key7": "药品",
+      "key8": "历史已经划扣",
+      "key9": "历史未划扣",
+      "key10": "本月合计划扣",
+      "key11": "历史累计划扣",
+      "key12": "累计未划扣",
+      "key13": "本月定金汇总",
+      "key14": "本月收银汇总",
+      "key15": "本月{{num}}汇总"
+    },
+    "hospitalPerformanceDetails": {
+      "customerType": "客户类型",
+      "payWay": "支付方式",
+      "queryTime": "查询时间",
+      "employeeName": "员工姓名",
+      "key0": "101 全院业绩概况(仅项目)",
+      "key1": "102 科室业绩概况(仅项目)",
+      "key2": "104 客户来源业绩概况",
+      "key3": "105A{{name}}业绩概况(按订单开单人)",
+      "key4": "105B{{name}}业绩概况(按归属咨询)",
+      "key5": "106 科室执行/划扣业绩",
+      "key6": "107 主治医生执行/划扣业绩",
+      "key7": "109 账务收银报表（支付方式）",
+      "key8": "110 全院日经营报表",
+      "key9": "111 全院业绩日/月报表",
+      "channel": {
+        "channelOptions": [
+          {
+            "label": "按来源类型",
+            "value": "channelType"
+          },
+          {
+            "label": "按具体来源",
+            "value": "channel"
+          }
+        ],
+        "key0": "104 客户来源业绩概况",
+        "key1": "总计",
+        "key2": "客户来源",
+        "key3": "来源(一级)",
+        "key4": "来源名",
+        "key5": "所属分类",
+        "key6": "来院人数",
+        "key7": "全院项目成交量",
+        "key8": "全院项目成交业绩",
+        "key9": "人均消费",
+        "key10": "商品",
+        "key11": "药品",
+        "key12": "定金",
+        "key13": "营收金额",
+        "key14": "新增客户数"
+      },
+      "commodityPerformance": {
+        "key0": "商品销售业绩"
+      },
+      "comprehensive": {
+        "key0": "101 全院业绩概况",
+        "key1": "分诊客人开单成交，同时满足以下条件的客户数（按天去重）：",
+        "key2": "1. 当天经前台分诊至咨询",
+        "key3": "2. 由咨询或其助理开单（不含定金和{{name}}单）",
+        "key4": "3. 已完成缴费",
+        "key5": "即门诊成交客人的成交业绩－退款业绩之和，需同时满足：",
+        "key6": "1. 当天经前台分诊至咨询",
+        "key7": "2. 由咨询或其助理开单（不含定金和{{name}}单）",
+        "key8": "开单成交客户中同时满足以下条件的客户数（按天去重）：",
+        "key9": "1. 由非咨询及关联岗位开单（不含定金和{{name}}单）",
+        "key10": "2. 已完成缴费",
+        "key11": "新老客",
+        "key12": "全院业绩",
+        "key13": "来院人数",
+        "key14": "有效到院客户人数之和，按天去重（包含所有未经前台人工接待的客户）",
+        "key15": "全院成交量",
+        "key16": "来院客户中开单成交项目（不参与业绩统计的项目除外）并且完成缴费的客户人数",
+        "key17": "全院成交业绩",
+        "key18": "来院客户中开单成交且完成缴费的项目业绩金额之和－当日项目退费业绩之和",
+        "key19": "人均消费",
+        "key20": "开单客户的人均消费金额",
+        "key21": "门诊咨询业绩",
+        "key22": "门诊量",
+        "key23": "经前台分诊至咨询的客户人数之和（按天去重）",
+        "key24": "门诊成交量",
+        "key25": "门诊成交率",
+        "key26": "现场咨询接待客户的成交率（门诊成交量/门诊量）",
+        "key27": "门诊成交业绩",
+        "key28": "门诊成交占比",
+        "key29": "二开业绩",
+        "key30": "二开成交量",
+        "key31": "二开成交业绩",
+        "key32": "非咨询或咨询关联的客服、助理开单的项目成交业绩－项目退款业绩之和",
+        "key33": "二开成交占比"
+      },
+      "consultant": {
+        "key0": "105A{{name}}业绩概况(按订单开单人)",
+        "key1": "105B{{name}}业绩概况(按归属咨询)",
+        "key2": "分诊客人开单成交，同时满足以下条件的客户数（按天去重）：",
+        "key3": "1. 当天经前台分诊至咨询",
+        "key4": "2. 由咨询或其助理开单",
+        "key5": "3. 已完成缴费",
+        "key6": "即门诊成交客人的成交业绩－退款业绩之和，需同时满足：",
+        "key7": "1. 当天经前台分诊至咨询",
+        "key8": "2. 由咨询或其助理开单",
+        "key9": "科室(项目一级分类)",
+        "key10": "经前台分诊至咨询的客户人数之和（按天去重）",
+        "key11": "现场咨询接待客户的成交率（门诊成交量/门诊量）",
+        "key12": "科室(项目一级分类)",
+        "key13": "有效到院客户人数之和，按天去重（包含所有未经前台人工接待的客户）",
+        "key14": "来院客户中开单成交项目（不参与业绩统计的项目除外）并且完成缴费的客户人数",
+        "key15": "新老客",
+        "key16": "门诊量",
+        "key17": "门诊成交量",
+        "key18": "门诊成交率",
+        "key19": "门诊成交金额",
+        "key20": "门诊成交业绩",
+        "key21": "人均成交金额",
+        "key22": "人均成交业绩",
+        "key23": "来院量",
+        "key24": "总成交量",
+        "key25": "总成交率",
+        "key26": "总成交金额",
+        "key27": "总成交业绩"
+      },
+      "dailyOperation": {
+        "key0": "110 全院日经营报表",
+        "key1": "有效到院客户人数之和，按天去重（包含所有未经前台人工接待的客户）",
+        "key2": "来院客户中开单成交项目（不参与业绩统计的项目除外）并且完成缴费的客户人数",
+        "key3": "来院客户中开单成交且完成缴费的项目业绩金额之和－当日项目退费业绩之和",
+        "key4": "本各科室/分类占比统计规则",
+        "key5": "新客-初诊占比：新客-初诊 / 新客小计 *100*",
+        "key6": "新客-复诊占比：新客-复诊 / 新客小计 *100*",
+        "key7": "新客小计占比：新客小计/ 本科室（分类）合计合计 *100%",
+        "key8": "老客小计占比：老客小计/ 本科室（分类）合计合计 *100%",
+        "key9": "合计占比：本科室（分类）合计合计 *100% / 全院总成交 *100",
+        "key10": "科室",
+        "key11": "新老客",
+        "key12": "来院量",
+        "key13": "总成交量",
+        "key14": "总成交率",
+        "key15": "总成交业绩",
+        "key16": "人均消费",
+        "key17": "开单客户的人均消费金额",
+        "key18": "来院量占比",
+        "key19": "成交量占比",
+        "key20": "成交额占比",
+        "key21": "日均来院量",
+        "key22": "日均成交量",
+        "key23": "日均成交额"
+      },
+      "dailyOrMonthOperation": {
+        "key0": "111 全院业绩日/月报表",
+        "key1": "全院业绩(仅项目)",
+        "key2": "有效到院客户人数之和，按天去重（包含所有未经前台人工接待的客户）",
+        "key3": "来院客户中开单成交项目（不参与业绩统计的项目除外）并且完成缴费的客户人数",
+        "key4": "来院客户中开单成交且完成缴费的项目业绩金额之和－当日项目退费业绩之和",
+        "key5": "新客(仅项目)",
+        "key6": "有效到院客户人数之和，按天去重（包含所有未经前台人工接待的客户）",
+        "key7": "经前台分诊至咨询的客户人数之和（按天去重）",
+        "key8": "分诊客人开单成交，同时满足以下条件的客户数（按天去重）：",
+        "key9": "1. 当天经前台分诊至咨询",
+        "key10": "2. 由咨询或其助理开单（不含定金和{{name}}单）",
+        "key11": "3. 已完成缴费",
+        "key12": "现场咨询接待客户的成交率（门诊成交量/门诊量）",
+        "key13": "即门诊成交客人的成交业绩－退款业绩之和，需同时满足：",
+        "key14": "1. 当天经前台分诊至咨询",
+        "key15": "2. 由咨询或其助理开单（不含定金和{{name}}单）",
+        "key16": "老客(仅项目)",
+        "key17": "有效到院客户人数之和，按天去重（包含所有未经前台人工接待的客户）",
+        "key18": "经前台分诊至咨询的客户人数之和（按天去重）",
+        "key19": "分诊客人开单成交，同时满足以下条件的客户数（按天去重）：",
+        "key20": "1. 当天经前台分诊至门诊",
+        "key21": "2. 由门诊或其助理开单（不含定金、{{name}}单和{{name2}}订单）",
+        "key22": "3. 已完成缴费",
+        "key23": "现场咨询接待客户的成交率（门诊成交量/门诊量）",
+        "key24": "即门诊成交客人的成交业绩－退款业绩之和，需同时满足：",
+        "key25": "1. 当天经前台分诊至咨询",
+        "key26": "2. 由咨询或其助理开单（不含定金和{{name}}单）",
+        "key27": "{{name}}收支",
+        "key28": "来院人数",
+        "key29": "全院成交量",
+        "key30": "全院成交业绩",
+        "key31": "门诊量",
+        "key32": "门诊成交量",
+        "key33": "门诊成交率",
+        "key34": "门诊成交业绩",
+        "key35": "门诊人均消费",
+        "key36": "商品销售业绩",
+        "key37": "药品销售业绩",
+        "key38": "定金收支"
+      },
+      "departmentPerformance": {
+        "key0": "102 科室业绩概况",
+        "key1": "总计",
+        "key2": "科室（一级分类）",
+        "key3": "有效到院客户人数之和，按天去重（只包含前台人工接待的客户）",
+        "key4": "来院客户中开单成交项目（不参与业绩统计的项目除外）并且完成缴费的客户人数",
+        "key5": "来院客户中开单成交且完成缴费的项目业绩金额之和－当日项目退费业绩之和",
+        "key6": "经前台分诊至咨询的客户人数之和（按天去重）",
+        "key7": "分诊客人开单成交，同时满足以下条件的客户数（按天去重）：",
+        "key8": "1. 当天经前台分诊至门诊",
+        "key9": "2. 由门诊或其助理开单（不含定金、{{name}}单和{{name2}}订单）",
+        "key10": "3. 已完成缴费",
+        "key11": "现场咨询接待客户的成交率（门诊成交量/门诊量）",
+        "key12": "即门诊成交客人的成交业绩－退款业绩之和，需同时满足：",
+        "key13": "1. 当天经前台分诊至咨询",
+        "key14": "2. 由咨询或其助理开单（不含定金和{{name}}单）",
+        "key15": "开单成交客户中同时满足以下条件的客户数（按天去重）：",
+        "key16": "1. 由非咨询及关联岗位开单（不含定金和{{name}}单）",
+        "key17": "2. 已完成缴费",
+        "key18": "非咨询或咨询关联的客服、助理开单的项目成交业绩－项目退款业绩之和",
+        "key19": "总业绩",
+        "key20": "门诊咨询业绩",
+        "key21": "门诊成交占比",
+        "key22": "二开业绩",
+        "key23": "二开成交量",
+        "key24": "二开成交业绩",
+        "key25": "二开成交占比"
+      },
+      "doctors": {
+        "key0": "107 主治医生执行/划扣业绩",
+        "key1": "总计",
+        "key2": "合计",
+        "key3": "科室",
+        "key4": "主治医生",
+        "key5": "产品（二级分类）",
+        "key6": "执行/划扣客户数",
+        "key7": "执行/划扣客户数",
+        "key8": "执行/划扣客户数"
+      },
+      "finance": {
+        "key0": "业绩（万元）：",
+        "key1": "退款",
+        "key2": "开单业绩",
+        "key3": "产品（一级)",
+        "key4": "产品（二级)",
+        "key5": "开单业绩（万元）",
+        "key6": "开单业绩：当天（查询日期范围内）所有开单业绩总金额",
+        "key7": "开单实收（万元）",
+        "key8": "开单实收：当天（查询日期范围内）所有开单已缴费金额总和",
+        "key9": "补缴费（万元）",
+        "key10": "补缴费：当天（查询日期范围内）缴费的，非当天（非查询日期范围内）开单缴费的金额之和。例：前两天开单，今天补缴费",
+        "key11": "项目退款（万元）",
+        "key12": "项目退款：当天（查询日期范围内）的项目/商品/套餐退款金额之和",
+        "key13": "实收业绩（万元）",
+        "key14": "实收业绩 = 开单实收 + 补缴费 - 项目退款"
+      },
+      "financialPaymentMethod": {
+        "key0": "109 账务收银报表（支付方式）",
+        "key1": "实收",
+        "key2": "实退",
+        "key3": "收支汇总"
+      },
+      "financialSubject": {
+        "key0": "108 账务收银报表（科目）",
+        "key1": "收入",
+        "key2": "收入包括：",
+        "key3": "1. 项目/商品/定金/{{name}}成交支付",
+        "key4": "2. 项目转项转入",
+        "key5": "3. 退款转入",
+        "key6": "支出",
+        "key7": "支出包括：",
+        "key8": "1. 项目/商品/定金/{{name}}退款",
+        "key9": "2. 项目转项转出",
+        "key10": "3. 用于项目抵扣",
+        "key11": "收支汇总"
+      },
+      "product": {
+        "key0": "产品业绩概况",
+        "key1": "合计",
+        "key2": "总成交业绩（万元）",
+        "key3": "总成交业绩：查询日期范围内院内所有完成缴费且未退款的总业绩金额（含咨询接待开单、到院直接开单及各岗位二开）",
+        "key4": "咨询接待量：查询日期范围内现场咨询接待人数之和（按咨询记录统计）",
+        "key5": "咨询成交量：查询日期范围内现场咨询接待人数中开单的客户人数之和",
+        "key6": "咨询成交率：查询日期范围内现场咨询接待客户的成交率",
+        "key7": "咨询成交业绩（万元）",
+        "key8": "咨询成交业绩：查询日期范围内现场咨询接待客户中咨询开单且完成缴费且未退费的业绩金额",
+        "key9": "产品类型",
+        "key10": "新老客",
+        "key11": "全院业绩",
+        "key12": "人均消费",
+        "key13": "开单客户的人均消费金额",
+        "key14": "门诊咨询业绩",
+        "key15": "咨询接待量",
+        "key16": "咨询成交量",
+        "key17": "咨询成交率"
+      },
+      "sectionExecution": {
+        "key0": "106 科室执行/划扣业绩",
+        "key1": "总计",
+        "key2": "科室",
+        "key3": "产品（二级分类）",
+        "key4": "执行/划扣客户数",
+        "key5": "执行/划扣量",
+        "key6": "执行/划扣业绩"
+      }
+    }
+  },
+  "financialStatement": {
+    "cashierStatement": {
+      "errorMsg": "日期选择不能超过{{num}}个月",
+      "consumeTypeOption": [
+        {
+          "label": "首单消费",
+          "value": "0"
+        },
+        {
+          "label": "再消费",
+          "value": "1"
+        },
+        {
+          "label": "其他",
+          "value": "2"
+        }
+      ],
+      "billItemTenantIdsOptions": [
+        {
+          "label": "他门店",
+          "value": "other"
+        },
+        {
+          "label": "本门店",
+          "value": "{{tenantId}}"
+        }
+      ],
+      "key0": "客户姓名或电话",
+      "key1": "产品类型",
+      "key2": "项目",
+      "key3": "项目分类",
+      "key4": "商/药品",
+      "key5": "商/药品分类",
+      "key6": "年卡",
+      "key7": "次卡",
+      "key8": "定金",
+      "key9": "总{{name}}抵扣金额",
+      "key10": "{{name}}本金支付合计",
+      "key11": "{{name}}赠送金支付合计",
+      "key12": "总结余",
+      "key13": "初诊人数",
+      "key14": "初诊实收",
+      "key15": "复诊人数",
+      "key16": "复诊实收",
+      "key17": "老客人人数",
+      "key18": "老客人实收",
+      "key19": "其他人数",
+      "key20": "其他实收",
+      "key21": "总定金抵扣金额",
+      "key22": "总实收",
+      "key23": "总实退",
+      "key24": "本次结算业绩汇总",
+      "key25": "数据异常，无法修改客户类型",
+      "key26": "修改消费时客户类型",
+      "key27": "消费时客户类型",
+      "key28": "修改为",
+      "key29": "接诊时{{name}}",
+      "key30": "当前归属{{name}}",
+      "key31": "开单时{{name}}",
+      "key32": "客户所属（建档）门店",
+      "key33": "缴费时间",
+      "key34": "实际入账时间",
+      "key35": "客户",
+      "key36": "当前客户类型",
+      "key37": "请选择当前客户类型",
+      "key38": "专属客服",
+      "key39": "请选择专属客服",
+      "key40": "消费性质",
+      "key41": "消费时客户类型",
+      "key42": "请选择消费时客户类型",
+      "key43": "消费时所在客户池",
+      "key44": "请选择消费时所在客户池",
+      "key45": "原订单开单时客户类型",
+      "key46": "请选择原订单开单时客户类型",
+      "key47": "请选择",
+      "key48": "原订单开单人",
+      "key49": "原订单业绩标签",
+      "key50": "订单号",
+      "key51": "请输入订单号",
+      "key52": "费用发生门店",
+      "key53": "请选择门店",
+      "key54": "报备项目",
+      "key55": "请搜索报备项目",
+      "key56": "支付方式备注",
+      "key57": "请输入支付方式备注",
+      "key58": "原协助开单人",
+      "key59": "智慧标签分类",
+      "key60": "请选择智慧标签分类",
+      "key61": "智慧标签",
+      "key62": "请选择智慧标签",
+      "key63": "报备人",
+      "key64": "报备部门",
+      "key65": "请选择所属部门",
+      "key66": "协助接待人",
+      "key67": "开单日期",
+      "key68": "订单来源",
+      "key69": "项目开单门店",
+      "key70": "计划治疗科室",
+      "key71": "费用单类型",
+      "key72": "请选择费用单类型",
+      "key73": "客户负责岗",
+      "key74": "请输入姓名",
+      "key75": "当前会员等级",
+      "key76": "请选择当前会员等级",
+      "key77": "已清讫",
+      "key78": "客户来源",
+      "key79": "客户第二来源",
+      "key80": "客户第三来源",
+      "key81": "接诊{{name}}",
+      "key82": "当前归属{{name}}",
+      "key83": "{{name}}本金",
+      "key84": "{{name}}赠送金",
+      "key85": "{{name}}订单的收退直接显示正负费用；",
+      "key86": "定金的退入{{name}}记0，其余显示正负费用；",
+      "key87": "普通订单首次收费记订单金额（正），补费记0，转项或退款是转/退入{{name}}/定金的记0，其余显示正负费用",
+      "key88": "本次实付/实退",
+      "key89": "定金支付/转入定金",
+      "key90": "{{name}}余额支付/转入{{name}}余额",
+      "key91": "将{{name}}修改为",
+      "key92": "来源（一级）",
+      "key93": "来源（二级）",
+      "key94": "科室（一级分类）",
+      "key95": "产品（二级分类）",
+      "key96": "项目（三级分类）",
+      "key97": "项目/商品/药品编码",
+      "key98": "项目定金支付/转入定金",
+      "key99": "项目{{name}}余额支付/转入{{name}}余额",
+      "key100": "开单时{{name}}",
+      "key101": "项目本次实付/实退",
+      "key102": "(一)",
+      "key103": "(二)",
+      "key104": "缴费时间",
+      "key105": "费用单类型",
+      "key106": "实际入账时间",
+      "key107": "客户姓名",
+      "key108": "会员号",
+      "key109": "档案号",
+      "key110": "电话号码",
+      "key111": "当前客户类型",
+      "key112": "当前会员等级",
+      "key113": "初诊日期",
+      "key114": "客户首次消费日期",
+      "key115": "客户首次治疗划扣日期",
+      "key116": "缴费单号",
+      "key117": "费用发生门店",
+      "key118": "费用单备注",
+      "key119": "收银员",
+      "key120": "缴费金额",
+      "key121": "欠费金额",
+      "key122": "费用单对应当时的欠费金额",
+      "key123": "清讫金额",
+      "key124": "应收金额",
+      "key125": "现金",
+      "key126": "非现金",
+      "key127": "实收明细",
+      "key128": "赠送余额支付",
+      "key129": "卡券支付",
+      "key130": "积分支付",
+      "key131": "自定义虚拟金支付明细",
+      "key132": "支付方式备注",
+      "key133": "原协助开单人",
+      "key134": "公共标签",
+      "key135": "个人标签",
+      "key136": "关联订单",
+      "key137": "订单来源",
+      "key138": "开单日期",
+      "key139": "原订单开单人",
+      "key140": "原订单开单时客户类型",
+      "key141": "订单备注",
+      "key142": "原订单业绩标签",
+      "key143": "消费时客户类别",
+      "key144": "消费时所在客户池",
+      "key145": "消费性质",
+      "key146": "专属客服",
+      "key147": "客户负责岗",
+      "key148": "报备日期",
+      "key149": "报备人",
+      "key150": "报备有效期",
+      "key151": "客户来源类型",
+      "key152": "客户具体来源",
+      "key153": "老带新老客来源",
+      "key154": "开单日接待人",
+      "key155": "开单日协助接待人",
+      "key156": "报备部门",
+      "key157": "报备项目",
+      "key158": "产品类别",
+      "key159": "所属套餐",
+      "key160": "产品名称",
+      "key161": "项目实收明细",
+      "key162": "项目赠送余额支付",
+      "key163": "项目卡券支付",
+      "key164": "项目积分支付",
+      "key165": "项目自定义虚拟金支付明细",
+      "key166": "项目开单门店",
+      "key167": "规格",
+      "key168": "数量",
+      "key169": "成交单价",
+      "key170": "项目原单价",
+      "key171": "折扣",
+      "key172": "开单来源",
+      "key173": "是否重单",
+      "key174": "项目成交价",
+      "key175": "本次结算业绩",
+      "key176": "计划治疗科室",
+      "key177": "计划治疗医生",
+      "key178": "开单项目备注",
+      "key179": "客户第二来源",
+      "key180": "客户第三来源",
+      "key181": "客户所属门店",
+      "key182": "市场渠道负责人",
+      "key183": "归属套餐",
+      "key184": "套"
+    },
+    "depositAndStoredStatistics": {
+      "quickTimeOptions": [
+        {
+          "label": "今日",
+          "value": "day"
+        },
+        {
+          "label": "本月",
+          "value": "month"
+        }
+      ],
+      "typeOptions": [
+        {
+          "label": "{{name}}",
+          "value": "储值"
+        },
+        {
+          "label": "定金",
+          "value": "定金"
+        },
+        {
+          "label": "赠送金",
+          "value": "赠送金"
+        }
+      ],
+      "type2Options": [
+        {
+          "label": "收入（开单）",
+          "value": "收入（开单）"
+        },
+        {
+          "label": "收入（转项转入）",
+          "value": "收入（转项转入）"
+        },
+        {
+          "label": "收入（退款转入）",
+          "value": "收入（退款转入）"
+        },
+        {
+          "label": "收入（抵扣退返）",
+          "value": "收入（抵扣退返）"
+        },
+        {
+          "label": "收入（返利）",
+          "value": "收入（返利）"
+        },
+        {
+          "label": "收入（转赠）",
+          "value": "收入（转赠）"
+        },
+        {
+          "label": "支出（抵扣）",
+          "value": "支出（抵扣）"
+        },
+        {
+          "label": "支出（退款）",
+          "value": "支出（退款）"
+        },
+        {
+          "label": "支出（失效）",
+          "value": "支出（失效）"
+        },
+        {
+          "label": "支出（返利）",
+          "value": "支出（返利）"
+        },
+        {
+          "label": "支出（转赠）",
+          "value": "支出（转赠）"
+        }
+      ],
+      "key0": "定金及{{name}}收支统计",
+      "key1": "定金及{{name}}收支明细",
+      "key2": "时间",
+      "key3": "客户",
+      "key4": "类型",
+      "key5": "请选择",
+      "key6": "收支类型",
+      "key7": "业务单号",
+      "key8": "请输入业务单号",
+      "key9": "费用单号",
+      "key10": "请输入费用单号",
+      "key11": "收支项/类型",
+      "key12": "收入",
+      "key13": "开单",
+      "key14": "返利",
+      "key15": "转项转入",
+      "key16": "退款转入",
+      "key17": "转赠",
+      "key18": "抵扣退返",
+      "key19": "收入小计",
+      "key20": "支出",
+      "key21": "退款",
+      "key22": "抵扣",
+      "key23": "失效",
+      "key24": "支出小计",
+      "key25": "收支汇总",
+      "key26": "时间",
+      "key27": "客户",
+      "key28": "会员号",
+      "key29": "类型",
+      "key30": "收支类型",
+      "key31": "金额",
+      "key32": "业务单号",
+      "key33": "费用单号",
+      "key34": "收支项"
+    },
+    "financialMethod": {
+      "chargeTypeOptions": [
+        {
+          "label": "订单收费",
+          "value": 0
+        },
+        {
+          "label": "退单收费",
+          "value": 1
+        },
+        {
+          "label": "定金收费",
+          "value": 2
+        },
+        {
+          "label": "转项收费",
+          "value": 3
+        },
+        {
+          "label": "定金收费",
+          "value": 4
+        },
+        {
+          "label": "{{name}}收费",
+          "value": 5
+        },
+        {
+          "label": "{{name}}收费",
+          "value": 6
+        },
+        {
+          "label": "转项退费",
+          "value": 7
+        }
+      ],
+      "key0": "月份请勿超过24个月！",
+      "key1": "日期请勿超过31天！",
+      "key2": "请选择收费员",
+      "key3": "请选择收银类型",
+      "key4": "入账日期维度",
+      "key5": "入账日期",
+      "key6": "收银类型",
+      "key7": "收费员",
+      "key8": "总计",
+      "key9": "年",
+      "key10": "月",
+      "key11": "日",
+      "key12": "入账日期",
+      "key13": "收银类型",
+      "key14": "收费员",
+      "key15": "小计(元)",
+      "key16": "总计(元)"
+    },
+    "paymentMethod": {
+      "chargeTypeOptions": [
+        {
+          "label": "订单收费",
+          "value": 0
+        },
+        {
+          "label": "退单收费",
+          "value": 1
+        },
+        {
+          "label": "定金收费",
+          "value": 2
+        },
+        {
+          "label": "转项收费",
+          "value": 3
+        },
+        {
+          "label": "定金收费",
+          "value": 4
+        },
+        {
+          "label": "{{name}}收费",
+          "value": 5
+        },
+        {
+          "label": "{{name}}收费",
+          "value": 6
+        },
+        {
+          "label": "转项退费",
+          "value": 7
+        }
+      ],
+      "key0": "月份请勿超过24个月！",
+      "key1": "日期请勿超过31天！",
+      "key2": "请选择收费员",
+      "key3": "请选择收银类型",
+      "key4": "请选择支付方式",
+      "key5": "入账日期维度",
+      "key6": "入账日期",
+      "key7": "收银类型",
+      "key8": "支付方式",
+      "key9": "收费员",
+      "key10": "总计",
+      "key11": "年",
+      "key12": "月",
+      "key13": "日"
+    },
+    "paymentStatistics": {
+      "tabOptions": [
+        "收银统计",
+        "财务统计"
+      ]
+    },
+    "salesAndExecution": {
+      "dateConfig": [
+        {
+          "label": "今日",
+          "start": [
+            "YYYY-MM-DD"
+          ],
+          "end": [
+            "YYYY-MM-DD"
+          ]
+        },
+        {
+          "label": "本月",
+          "start": [
+            "YYYY-MM-01"
+          ],
+          "end": [
+            "YYYY-MM-DD"
+          ]
+        },
+        {
+          "label": "上月",
+          "start": [
+            "YYYY-MM-01",
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "end": [
+            "YYYY-MM-01",
+            [
+              0,
+              0,
+              -1
+            ]
+          ]
+        }
+      ],
+      "feePropNameOptions": [
+        {
+          "label": "首单消费",
+          "value": "0"
+        },
+        {
+          "label": "再消费",
+          "value": "1"
+        },
+        {
+          "label": "其他",
+          "value": "2"
+        }
+      ],
+      "billItemTenantIdsOptions": [
+        {
+          "label": "他门店",
+          "value": "other"
+        },
+        {
+          "label": "本门店",
+          "value": "{{tenantId}}"
+        }
+      ],
+      "performanceSourceOptions": [
+        {
+          "label": "缴费",
+          "value": "0"
+        },
+        {
+          "label": "退款",
+          "value": "1"
+        },
+        {
+          "label": "转项",
+          "value": "2"
+        }
+      ],
+      "performanceSourceOptions2": [
+        {
+          "label": "缴费",
+          "value": "0"
+        },
+        {
+          "label": "退款",
+          "value": "1"
+        },
+        {
+          "label": "执行划扣",
+          "value": "3"
+        },
+        {
+          "label": "取消执行划扣",
+          "value": "4"
+        }
+      ],
+      "currentCustomerTypeOptions": [
+        {
+          "label": "初诊",
+          "value": "0"
+        },
+        {
+          "label": "复诊",
+          "value": "1"
+        },
+        {
+          "label": "老客人",
+          "value": "2"
+        },
+        {
+          "label": "其它",
+          "value": "3"
+        }
+      ],
+      "consumeTypeOptions": [
+        {
+          "label": "首单消费",
+          "value": "0"
+        },
+        {
+          "label": "再消费",
+          "value": "1"
+        },
+        {
+          "label": "其他",
+          "value": "2"
+        }
+      ],
+      "billingIsRefundOptions": [
+        {
+          "label": "全部",
+          "value": "all"
+        },
+        {
+          "label": "是",
+          "value": "1"
+        },
+        {
+          "label": "否",
+          "value": "0"
+        }
+      ],
+      "key0": "日期选择不能超过{{num}}个月",
+      "key1": "711销售业绩结算明细",
+      "key2": "712执行业绩结算明细",
+      "key3": "实付/实退合计",
+      "key4": "定金支付/转入定金合计",
+      "key5": "{{name}}余额支付/转入{{name}}余额",
+      "key6": "{{name}}本金支付合计",
+      "key7": "{{name}}赠送金支付合计",
+      "key8": "业务发生时间：",
+      "key9": "本次业绩结算金额合计",
+      "key10": "本次业绩结算金额合计",
+      "key11": "自定义虚拟金支付合计",
+      "key12": "赠送余额支付合计",
+      "key13": "卡券支付合计",
+      "key14": "积分支付合计",
+      "key15": "相关{{name}}",
+      "key16": "皮肤/整形治疗史",
+      "key17": "初诊日期",
+      "key18": "最近到院日期",
+      "key19": "首次消费日期",
+      "key20": "最近消费日期",
+      "key21": "首次回访日期",
+      "key22": "最近回访日期",
+      "key23": "姓名",
+      "key24": "电话",
+      "key25": "档案号",
+      "key26": "性别",
+      "key27": "年龄",
+      "key28": "现住地址",
+      "key29": "婚姻状况",
+      "key30": "生育状况",
+      "key31": "职业",
+      "key32": "收入",
+      "key33": "出生日期",
+      "key34": "所属地域",
+      "key35": "昵称",
+      "key36": "国籍",
+      "key37": "详细住址",
+      "key38": "身份证号",
+      "key39": "微信",
+      "key40": "紧急联系人",
+      "key41": "紧急联系人电话",
+      "key42": "护照",
+      "key43": "护照号码",
+      "key44": "智慧标签分类",
+      "key45": "智慧标签",
+      "key46": "标签是否备注",
+      "key47": "过敏标签",
+      "key48": "个性标签",
+      "key49": "客户类型",
+      "key50": "客户池",
+      "key51": "意向项目",
+      "key52": "客户来源",
+      "key53": "运营媒体",
+      "key54": "市场渠道",
+      "key55": "老带新",
+      "key56": "员工",
+      "key57": "其他",
+      "key58": "报备人",
+      "key59": "报备部门",
+      "key60": "报备时间",
+      "key61": "咨询项目",
+      "key62": "消费项目",
+      "key63": "最近几天未成交",
+      "key64": "回访计划",
+      "key65": "未成交原因",
+      "key66": "未回访天数",
+      "key67": "定金金额",
+      "key68": "欠费记录",
+      "key69": "欠费金额",
+      "key70": "相关医生",
+      "key71": "相关客服",
+      "key72": "朋友意向",
+      "key73": "消费总额",
+      "key74": "本年消费",
+      "key75": "消费能力",
+      "key76": "介绍客户数",
+      "key77": "介绍客户",
+      "key78": "推荐人",
+      "key79": "会员号",
+      "key80": "账户余额",
+      "key81": "可用积分",
+      "key82": "会员有效期",
+      "key83": "客诉",
+      "key84": "客户线索",
+      "key85": "回访信息",
+      "key86": "过敏史",
+      "key87": "复查信息",
+      "key88": "客诉信息",
+      "key89": "既往病史",
+      "key90": "VIP等级",
+      "key91": "本次业绩结算金额（总）",
+      "key92": "实付/实退",
+      "key93": "{{name}}本金",
+      "key94": "{{name}}赠送金",
+      "key95": "定金支付/转入定金",
+      "key96": "{{name}}余额支付/转入{{name}}余额",
+      "key97": "科室(一级分类)",
+      "key98": "产品(二级分类)",
+      "key99": "项目(三级分类)",
+      "key100": "项目/商品编码",
+      "key101": "院内平台",
+      "key102": "若是转项转入的项目，取值转项操作人，转出的取值原项目开单人",
+      "key103": "本次结算业绩金额（该项目）",
+      "key104": "截止目前该项目累计结算业绩金额（截止该行）",
+      "key105": "该项目应结算业绩金额（最终结果值）",
+      "key106": "(一)",
+      "key107": "(二)",
+      "key108": "开单时归属{{name}}",
+      "key109": "原订单{{name}}余额支付",
+      "key110": "{{name}}负责人",
+      "key111": "接诊{{name}}",
+      "key112": "负责{{name}}",
+      "key113": "在项目划扣时，进行划扣操作的员工，非系统内记录的实际选择的划扣人",
+      "key114": "在项目划扣时，实际选择的划扣人，非进行划扣操作的员工",
+      "key115": "",
+      "key116": "",
+      "key117": "业务成本(核销成本)",
+      "key118": "当前归属{{name}}",
+      "key119": "{{name}}咨询师",
+      "key120": "{{name}}所属服务商",
+      "key121": "业务发生时间",
+      "key122": "业务发生门店",
+      "key123": "业绩来源",
+      "key124": "业务单号",
+      "key125": "业务人",
+      "key126": "业务人岗位",
+      "key127": "业务发生时客户类型",
+      "key128": "赠送余额支付",
+      "key129": "卡券支付",
+      "key130": "积分支付",
+      "key131": "自定义虚拟金支付",
+      "key132": "自定义虚拟金支付明细",
+      "key133": "产品类别",
+      "key134": "所属套餐",
+      "key135": "产品名称",
+      "key136": "项目开单门店",
+      "key137": "开单来源",
+      "key138": "院内开单",
+      "key139": "项目开单人",
+      "key140": "规格",
+      "key141": "数量",
+      "key142": "剩余次数",
+      "key143": "项目成交价",
+      "key144": "业绩发生科室",
+      "key145": "关联订单",
+      "key146": "开单日期",
+      "key147": "订单备注",
+      "key148": "客户姓名",
+      "key149": "会员号",
+      "key150": "档案号",
+      "key151": "客户当前类型",
+      "key152": "原订单开单人",
+      "key153": "原协助开单人",
+      "key154": "公共标签",
+      "key155": "个人标签",
+      "key156": "专属客服",
+      "key157": "消费时客户类型",
+      "key158": "消费时所在客户池",
+      "key159": "消费性质",
+      "key160": "原订单业绩标签",
+      "key161": "原订单折扣",
+      "key162": "原订单应支付金额",
+      "key163": "原订单已付金额",
+      "key164": "原订单实收",
+      "key165": "原订单定金支付",
+      "key166": "原订单赠送余额支付",
+      "key167": "原订单尚欠款",
+      "key168": "清讫金额",
+      "key169": "原订单已退金额",
+      "key170": "报备日期",
+      "key171": "报备人",
+      "key172": "报备部门",
+      "key173": "报备有效期",
+      "key174": "客人来源分类",
+      "key175": "客人具体来源",
+      "key176": "开单日面诊医生",
+      "key177": "开单日接待人",
+      "key178": "开单日协助接待人",
+      "key179": "初诊日期",
+      "key180": "客户首次消费日期",
+      "key181": "客户首次治疗划扣日期",
+      "key182": "客户电话",
+      "key183": "订单来源",
+      "key184": "客户所属门店",
+      "key185": "当前专属客服",
+      "key186": "本次业绩结算金额",
+      "key187": "其他业务人",
+      "key188": "划扣操作人",
+      "key189": "实际划扣人",
+      "key190": "项目编码",
+      "key191": "划扣数量",
+      "key192": "治疗时间",
+      "key193": "核销时间",
+      "key194": "跨院咨询师",
+      "key195": "客户类型",
+      "key196": "项目次数",
+      "key197": "项目原价",
+      "key198": "项目折扣率",
+      "key199": "项目折扣",
+      "key200": "项目尚欠费",
+      "key201": "项目已退款",
+      "key202": "项目业绩",
+      "key203": "服务商开发人",
+      "key204": "服务商咨询师",
+      "key205": "手工费计次",
+      "key206": "手工费",
+      "key207": "订单项目是否首次治疗",
+      "key208": "当前负责岗位",
+      "key209": "客户搜索",
+      "key210": "请选择",
+      "key211": "业绩发生科室",
+      "key212": "请输入",
+      "key213": "业务发生门店",
+      "key214": "请选择门店",
+      "key215": "项目开单人",
+      "key216": "请选择开单人",
+      "key217": "已清讫",
+      "key218": "本次业绩结算金额",
+      "key219": "开单来源",
+      "key220": "项目开单门店",
+      "key221": "业务人",
+      "key222": "业务人岗位",
+      "key223": "消费时所在客户池",
+      "key224": "业绩来源",
+      "key225": "产品",
+      "key226": "项目",
+      "key227": "请选择项目分类",
+      "key228": "请选择项目",
+      "key229": "商/药品",
+      "key230": "请选择商/药品分类",
+      "key231": "请选择商/药品",
+      "key232": "年卡",
+      "key233": "次卡",
+      "key234": "业务发生查询",
+      "key235": "客户来源",
+      "key236": "关联订单信息查询",
+      "key237": "员工姓名",
+      "key238": "{{name}}负责人",
+      "key239": "开单时归属{{name}}",
+      "key240": "客户所属（建档）门店",
+      "key241": "{{name}}咨询师",
+      "key242": "当前归属{{name}}",
+      "key243": "{{name}}所属服务商",
+      "key244": "关联订单",
+      "key245": "请输入",
+      "key246": "原订单开单人",
+      "key247": "原协助开单人",
+      "key248": "客户当前类型",
+      "key249": "消费性质",
+      "key250": "原订单是否退款",
+      "key251": "报备人部门",
+      "key252": "初诊日期",
+      "key253": "当前负责岗位",
+      "key254": "开单日期",
+      "key255": "智慧标签分类",
+      "key256": "请选择智慧标签分类",
+      "key257": "原订单业绩标签",
+      "key258": "报备日期",
+      "key259": "开单日接待人",
+      "key260": "客户首次消费日期",
+      "key261": "客户首次治疗划扣",
+      "key262": "开单日面诊医生",
+      "key263": "客户姓名",
+      "key264": "跨院咨询师",
+      "key265": "智慧标签",
+      "key266": "请选择智慧标签",
+      "key267": "消费时客户类型",
+      "key268": "订单来源",
+      "key269": "请选择",
+      "key270": "原订单是否欠费",
+      "key271": "报备人",
+      "key272": "开单日协助接待人",
+      "key273": "当前专属客服",
+      "key274": "项目是否退款",
+      "key275": "服务商咨询师",
+      "key276": "治疗时间",
+      "key277": "订单项目是否首次治疗",
+      "key278": "服务商开发人",
+      "key279": "客户类型",
+      "key280": "项目是否欠费",
+      "key281": "核销日期",
+      "key282": "归属套餐",
+      "key283": "套"
+    }
+  },
+  "customerPool": {
+    "customerArea": {
+      "columnsList": [
+        {
+          "value": "name",
+          "label": "客户"
+        },
+        {
+          "value": "vipNum",
+          "label": "会员号"
+        },
+        {
+          "value": "area",
+          "label": "地址"
+        }
+      ],
+      "key0": "初始化地图失败",
+      "key1": "热力图目前只支持有canvas支持的浏览器,您所使用的浏览器不能使用热力图功能~",
+      "key2": "距离机构(km)：",
+      "key3": "最小值",
+      "key4": "最大值",
+      "key5": "热力密集值",
+      "key6": "区域人数，越接近该值，颜色越深",
+      "key7": "：机构所在位置",
+      "key8": "客户列表",
+      "key9": "客户",
+      "key10": "会员号",
+      "key11": "地址"
+    },
+    "customerDetailsOfTreatment": {
+      "billingTypeOptions": [
+        {
+          "label": "普通",
+          "value": 0
+        },
+        {
+          "label": "赠送",
+          "value": 1
+        },
+        {
+          "label": "转赠",
+          "value": 2
+        },
+        {
+          "label": "转项",
+          "value": 3
+        }
+      ],
+      "isDoneOptions": [
+        {
+          "label": "未完成",
+          "value": false
+        },
+        {
+          "label": "已完成",
+          "value": true
+        }
+      ],
+      "key0": "开单时间",
+      "key1": "客户",
+      "key2": "请选择",
+      "key3": "项目",
+      "key4": "请输入项目名",
+      "key5": "订单类型",
+      "key6": "状态",
+      "key7": "是否欠费",
+      "key8": "订单号",
+      "key9": "请输入订单号",
+      "key10": "开单时间",
+      "key11": "客户",
+      "key12": "电话",
+      "key13": "项目类型",
+      "key14": "项目",
+      "key15": "类别",
+      "key16": "所属套餐",
+      "key17": "总次数",
+      "key18": "剩余次数",
+      "key19": "成交价",
+      "key20": "是否欠费",
+      "key21": "开单人",
+      "key22": "订单号",
+      "key23": "订单类型",
+      "key24": "状态"
+    },
+    "customerInfoCorrection": {
+      "tabList": [
+        "客户纠错-发起确认明细",
+        "客户纠错-确认明细"
+      ],
+      "key0": "时间",
+      "key1": "操作人",
+      "key2": "请搜索姓名、电话筛选",
+      "key3": "操作人",
+      "key4": "发起确认次数",
+      "key5": "确认客户次数",
+      "key6": "确认客户数",
+      "key7": "发起确认时间",
+      "key8": "发起确认人",
+      "key9": "客户",
+      "key10": "电话",
+      "key11": "咨询师",
+      "key12": "所在客户池",
+      "key13": "确认时间",
+      "key14": "确认人"
+    },
+    "customerStatistics": {
+      "key0": "支付方式汇总",
+      "key1": "支付人数:",
+      "key2": "支付人数占比：",
+      "key3": "人数",
+      "key4": "客户池"
+    },
+    "oldAndNew": {
+      "key0": "老带新人数排行",
+      "key1": "万",
+      "key2": "客户姓名",
+      "key3": "会员号",
+      "key4": "来院年限",
+      "key5": "消费总额",
+      "key6": "最近到院时间",
+      "key7": "介绍客户",
+      "key8": "新客消费总额",
+      "key9": "客户池",
+      "key10": "归属咨询师",
+      "key11": "专属客服",
+      "key12": "介绍客户数",
+      "key13": "老带新人数排行",
+      "key14": "人数",
+      "key15": "老带新金额排行",
+      "key16": "金额",
+      "key17": "客户:",
+      "key18": "客户池:",
+      "key19": "客户池查询仅支持默认列表即第一级客户的查询:",
+      "key20": "请输入客户池",
+      "key21": "归属咨询师:",
+      "key22": "请输入归属咨询师",
+      "key23": "专属客服:",
+      "key24": "请输入专属客服",
+      "key25": "老带新绑定日期:",
+      "key26": "消费总额:",
+      "key27": "排序:",
+      "key28": "人数",
+      "key29": "金额"
+    },
+    "smartLabelStatic": {
+      "key0": "的标签客户客户数量",
+      "key1": "激活时{{name}}",
+      "key2": "客户",
+      "key3": "所属咨询",
+      "key4": "客户池",
+      "key5": "激活标签日期",
+      "key6": "消费总额",
+      "key7": "标签",
+      "key8": "客户",
+      "key9": "客户池",
+      "key10": "请选择客户池",
+      "key11": "激活日期",
+      "key12": "智慧标签",
+      "key13": "请选择智慧标签"
+    }
+  },
+  "controlCabin": {
+    "moreChart": "更多图表",
+    "searchPlaceholder": "请按下回车或点击搜索按钮进行搜索",
+    "seriesData2": [
+      {
+        "name": "老客人",
+        "value": 200
+      },
+      {
+        "name": "复诊",
+        "value": 30
+      },
+      {
+        "name": "初诊",
+        "value": 80
+      },
+      {
+        "name": "其他",
+        "value": 222
+      }
+    ],
+    "dateOptions": [
+      {
+        "label": "日",
+        "value": "day"
+      },
+      {
+        "label": "周",
+        "value": "week"
+      },
+      {
+        "label": "月",
+        "value": "month"
+      },
+      {
+        "label": "年",
+        "value": "year"
+      }
+    ],
+    "dateOptions2": [
+      {
+        "label": "日",
+        "value": "day"
+      },
+      {
+        "label": "周",
+        "value": "week"
+      },
+      {
+        "label": "月",
+        "value": "month"
+      }
+    ],
+    "dateOptions3": [
+      {
+        "label": "周",
+        "value": "week"
+      },
+      {
+        "label": "月",
+        "value": "month"
+      }
+    ],
+    "radioOptions": [
+      {
+        "label": "全部",
+        "value": ""
+      },
+      {
+        "label": "{{operatingMedia}}",
+        "value": "0"
+      },
+      {
+        "label": "{{marketChannel}}",
+        "value": "1"
+      },
+      {
+        "label": "其他",
+        "value": "2"
+      }
+    ],
+    "legendMesObj": {
+      "成交量": "仅统计新客成交量",
+      "接待量": "仅统计新客接待量"
+    },
+    "weekday": [
+      "周日",
+      "周一",
+      "周二",
+      "周三",
+      "周四",
+      "周五",
+      "周六"
+    ],
+    "allOptions": {
+      "controlCabinDealStatics": "成交统计图",
+      "controlCabinQuarterContrast": "季度收支对比图",
+      "controlCabinStoreManage": "门店经营表",
+      "controlCabinCustomerIncrease": "客户消费图",
+      "controlCabinTreatAchieve": "治疗业绩图",
+      "controlCabinStorageAsset": "仓储资产表",
+      "controlCabinOldCustomer": "老客户指标（今日）",
+      "controlCabinNewCustomer": "新客户指标（今日）",
+      "controlCabinProjectTransactions": "项目(二级)成交TOP5",
+      "controlCabinConsultantTransactions": "咨询师成交TOP5",
+      "controlCabinTodaysTurnover": "今日成交金额",
+      "controlCabinTodaysTurnoverPeople": "今日成交人数",
+      "controlCabinAddAppointmentToday": "今日新增预约",
+      "controlCabinDeductions": "划扣业绩",
+      "controlTollAndRefund": "今日收银",
+      "controlProjectAveragePrice": "项目平均成交单价TOP5",
+      "controlCustomerCassification": "到院客户分类(今日)",
+      "controlChannelsToTheHospital": "到院人数(按客户来源)",
+      "controlNewCustomerTransactionRate": "新客成交率"
+    },
+    "infoList": {
+      "key0": "进销存统计表（按出入库单据查询）",
+      "key1": "客户资产保有统计（含定金、{{name}}、赠送金、积分）",
+      "key2": "定金及{{name}}收支统计",
+      "key3": "101 全院业绩概况(仅项目)",
+      "key4": "102 科室业绩概况(仅项目)",
+      "key5": "104 客户来源业绩概况",
+      "key6": "105A{{name}}业绩概况(按订单开单人)",
+      "key7": "105B{{name}}业绩概况(按归属咨询)",
+      "key8": "106 科室执行/划扣业绩",
+      "key9": "107 主治医生执行/划扣业绩",
+      "key10": "109 账务收银报表（支付方式）",
+      "key11": "110 全院日经营报表",
+      "key12": "111 全院业绩日/月报表",
+      "key13": "业绩报表（B）",
+      "key14": "驾驶舱",
+      "key15": "客户报表",
+      "key16": "治疗项目明细",
+      "key17": "老带新",
+      "key18": "客户信息纠错汇总及明细",
+      "key19": "智慧标签统计表",
+      "key20": "客户区域热力图",
+      "key21": "库存报表",
+      "key22": "出库统计表",
+      "key23": "出库明细表",
+      "key24": "入库明细表",
+      "key25": "调拨明细表",
+      "key26": "盘点明细表",
+      "key27": "进销存统计表",
+      "key28": "运营报表",
+      "key29": "订单开单人业绩",
+      "key30": "客户消费明细统计",
+      "key31": "订单欠费明细",
+      "key32": "分诊咨询明细统计",
+      "key33": "客户线索点赞统计",
+      "key34": "财务报表",
+      "key35": "支付方式统计",
+      "key36": "未划扣业绩统计及明细",
+      "key37": "出纳结算单",
+      "key38": "预收及收入确认表",
+      "key39": "业绩报表",
+      "key40": "科室治疗划扣明细",
+      "key41": "科室治疗核销明细",
+      "key42": "全院业绩明细",
+      "key43": "销售工作成果表",
+      "key44": "收入成本表",
+      "key45": "711销售业绩结算明细",
+      "key46": "712执行业绩结算明细"
+    },
+    "key0": "今日新增预约",
+    "key1": "门诊量",
+    "key2": "客户分类",
+    "key3": "来源",
+    "key4": "到院人数",
+    "key5": "成交金额",
+    "key6": "到院人数（按客户来源)",
+    "key7": "仅统计新客上门量",
+    "key8": "季度收支对比",
+    "key9": "收入",
+    "key10": "支出",
+    "key11": "咨询师成交TOP5",
+    "key12": "咨询师",
+    "key13": "成交金额(元)",
+    "key14": "客户分类",
+    "key15": "到院客户分类(今日)",
+    "key16": "客户增长",
+    "key17": "客户数",
+    "key18": "增长率",
+    "key19": "已消费",
+    "key20": "客户消费占比",
+    "key21": "客户消费",
+    "key22": "{{name}}客户来源占比",
+    "key23": "客户来源",
+    "key24": "划扣业绩",
+    "key25": "新客户指标(今日)",
+    "key26": "成交金额",
+    "key27": "成交人数",
+    "key28": "成交转化率",
+    "key29": "成交量",
+    "key30": "接待量",
+    "key31": "成交率",
+    "key32": "新客成交率",
+    "key33": "水光针",
+    "key34": "历史平均成交价(三个月)",
+    "key35": "当前成交价",
+    "key36": "项目平均成交单价TOP5",
+    "key37": "项目(二级)成交TOP5",
+    "key38": "项目",
+    "key39": "成交金额(元)",
+    "key40": "门店经营",
+    "key41": "初诊",
+    "key42": "复诊",
+    "key43": "老客人",
+    "key44": "其他",
+    "key45": "今日新增预约",
+    "key46": "比本月均值",
+    "key47": "门店经营",
+    "key48": "今日成交",
+    "key49": "今日到院",
+    "key50": "预约到院",
+    "key51": "临时到院",
+    "key52": "就诊人数",
+    "key53": "划扣业绩",
+    "key54": "预约今日",
+    "key55": "收费完成",
+    "key56": "退费完成",
+    "key57": "比昨日",
+    "key58": "老客人",
+    "key59": "同比上",
+    "key60": "待治疗",
+    "key61": "治疗中",
+    "key62": "已治疗",
+    "key63": "已到院",
+    "key64": "待到院",
+    "key65": "已取消",
+    "key66": "初诊",
+    "key67": "复诊",
+    "key68": "其他",
+    "key69": "在院",
+    "key70": "离院",
+    "key71": "今日成交金额",
+    "key72": "周同比",
+    "key73": "上{{name}}成交金额：",
+    "key74": "本月总成交金额",
+    "key75": "今日成交人数",
+    "key76": "周同比",
+    "key77": "上{{name}}成交人数：",
+    "key78": "目前在院",
+    "key79": "离院",
+    "key80": "收费完成",
+    "key81": "退费完成",
+    "key82": "成交统计",
+    "key83": "成交额",
+    "key84": "单位（万元）",
+    "key85": "治疗业绩",
+    "key86": "{{num}}万",
+    "key87": "暂无数据",
+    "key88": "仓储资产",
+    "key89": "合计"
+  }
+}

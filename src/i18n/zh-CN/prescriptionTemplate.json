@@ -1,0 +1,84 @@
+{
+  "module": "处方模版",
+  "button": {
+    "add": "新建模版",
+    "confirm": "确认"
+  },
+  "searchList": {
+    "name": {
+      "label": "模版名称",
+      "placeholder": "请输入模版名称"
+    },
+    "typeId": {
+      "label": "处方类型",
+      "placeholder": "请选择模版类型"
+    }
+  },
+  "addTemplate": "新增模版",
+  "editTemplate": "编辑模版",
+  "detailTemplate": "模版详情",
+  "keyword": {
+    "modalTitle": "模版详情",
+    "moduleName": "模版",
+    "prescriptionText": "处方正文"
+  },
+  "columns": {
+    "key": "",
+    "name": "处方模版名称",
+    "content": "处方内容",
+    "typeName": "处方类型",
+    "createUserName": "创建人",
+    "createTime": "创建时间",
+    "options": "操作"
+  },
+  "prescriptionTemplateText": {
+    "button": {
+      "addText": "新增处方正文",
+      "saveToTemplate": "保存为处方模版",
+      "addMedicine": "添加药品",
+      "chooseTemplate": "选择处方模版"
+    }
+  },
+  "renderItem": {
+    "materialName": "药品名称",
+    "giveMedicineWayConfigName": "给药方式",
+    "useMedicineFrequencyConfigName": "用药频率",
+    "singleAmount": "单次用量",
+    "useDay": "用药天数(天)",
+    "singleDayAmount": "每天用量",
+    "totalAmount": "总量",
+    "remark": "备注",
+    "signFlag": "是否双签字"
+  },
+  "remark": {
+    "noRemark": "无备注",
+    "skinFlag": "皮试",
+    "skinResultFlag": "皮试结果",
+    "remarkContent": "备注内容"
+  },
+  "tooltip": {
+    "singleDayAmount": "每天用量计算方法为根据用药频率计算出每天次数后，再乘以单次用量得出，且最终值向上取整",
+    "totalAmount": "总量计算方法为用药频次乘以单次用量，再乘以总天数得出，且最终值向上取整"
+  },
+  "warning": {
+    "noName": "请输入模版名称",
+    "noTemplateText": "请添加处方模版的模版正文！",
+    "noText": "模版必须要有一个处方正文！",
+    "noSalePrice": "所选物料未配置售价单位，不可开处方",
+    "noMedicine": "处方正文必须有药品，不能为空",
+    "noGiveMedicineWay": "药品的给药方式必填",
+    "noFrequency": "药品的用药频率必填",
+    "noSingleAmount": "药品的单次用量必填",
+    "noUseDay": "药品的用药天数必填",
+    "noSingleDayAmount": "药品的每天用量必填",
+    "noSingleDayAmountUnit": "药品的每天用量单位必填",
+    "noTotalAmountUnit": "药品的总量单位必填",
+    "noTotalAmount": "药品的总量必填",
+    "remarkTooLong": "药品备注过长",
+    "overshoot": "药品的总量数值太大，请选择合适的用药单位"
+  },
+  "changeBefore": "修改处方类型，会导致已填写的所有处方模版内容清空，是否继续？",
+  "deleteBefore": "确定要删除处方模版吗？",
+  "addSuccessMsg": "增加处方模版成功",
+  "editSuccessMsg": "编辑处方模版成功"
+}

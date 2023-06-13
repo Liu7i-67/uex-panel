@@ -1,0 +1,54 @@
+{
+  "module": "集团--部门",
+  "groupTitle": "集团部门",
+  "areaTitle": "区域部门",
+  "typeTitle": "部门分类",
+  "dragError": "拖动失败~",
+  "addSuccess": "新增成功",
+  "delSuccess": "删除成功！",
+  "delConfirmContent": "你确定删除该部门吗！",
+  "noDataText": "还没有选中的内容哦~",
+  "typeOperation": {
+    "add": "新增部门",
+    "del": "删除部门"
+  },
+  "addModalTitle": "新增部门",
+  "editModalTitle": "编辑部门",
+  "detailItems": {
+    "title": "部门名称",
+    "pTitle": "上级部门",
+    "useSum": "部门人数",
+    "tips": "备注"
+  },
+  "addModal": {
+    "title": {
+      "label": "部门名称",
+      "message": "部门名称必须填写",
+      "placeholder": "请输入名称"
+    },
+    "pid": {
+      "label": "上级部门",
+      "message": "请选择上级部门",
+      "placeholder": "请选择上级部门"
+    }
+  },
+  "editModal": {
+    "title": {
+      "label": "部门名称",
+      "message": "部门名称必须填写",
+      "placeholder": "请输入名称"
+    },
+    "pid": {
+      "label": "上级部门",
+      "message": "请选择上级部门",
+      "placeholder": "请选择上级部门"
+    },
+    "userSum": {
+      "label": "部门人数"
+    },
+    "tips": {
+      "label": "备注",
+      "placeholder": "最多240个字符"
+    }
+  }
+}

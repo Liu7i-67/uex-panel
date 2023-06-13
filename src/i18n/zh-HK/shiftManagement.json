@@ -1,0 +1,165 @@
+{
+  "module": "shiftManagement排班管理",
+  "date": {
+    "week": "周"
+  },
+  "weekTime": [
+    "星期天",
+    "星期一",
+    "星期二",
+    "星期三",
+    "星期四",
+    "星期五",
+    "星期六"
+  ],
+  "weekTimeValue": [
+    { "value": 2, "label": "週一" },
+    { "value": 3, "label": "週二" },
+    { "value": 4, "label": "週三" },
+    { "value": 5, "label": "週四" },
+    { "value": 6, "label": "週五" },
+    { "value": 7, "label": "週六" },
+    { "value": 1, "label": "周天" }
+  ],
+  "keyword": {
+    "chooseNormalShift": "選擇普通班次",
+    "chooseDefaultShift": "選擇默認班次",
+    "shiftTime": "排班時間(周)",
+    "shiftDoctor": "排班醫生",
+    "to": "至",
+    "normalShift": "普通班次",
+    "defaultShift": "默認班次",
+    "normalDefaultShift": "普通默認班次",
+    "enable": "啓用",
+    "disable": "禁用",
+    "doctorSelected": "醫生選擇",
+    "notSelected": "未選",
+    "selected": "已選"
+  },
+  "button": {
+    "backThisWeek": "返回本週",
+    "copyLastWeek": "複製上週排班",
+    "backThisMonth": "返回本月",
+    "copyLastMonth": "複製上月排班",
+    "shiftManage": "班次管理",
+    "addNormalShift": "新建普通班次",
+    "addDefaultShift": "新建默認班次",
+    "add": "新建",
+    "confirm": "確認"
+  },
+  "searchList": {
+    "expertIds": {
+      "label": "員工",
+      "placeholder": "請輸入員工姓名"
+    },
+    "deptIds": {
+      "label": "部門",
+      "placeholder": "請選擇部門"
+    }
+  },
+  "key0": "無指定醫生",
+  "key": "個員工未排班",
+  "key2": "暫無數據",
+  "key3": "本月剩餘",
+  "key4": "複製班次",
+  "key5": "粘貼班次",
+  "key7": "本週剩餘",
+  "key8": "是否複製",
+  "key9": "的班次，到",
+  "key10": "的班次",
+  "key11": "當前",
+  "key12": "排班數據將會被替換，是否複製",
+  "columns": {
+    "name": "普通班次名稱",
+    "color": "標籤顏色",
+    "startTime": "班次時間",
+    "status": "狀態",
+    "options": "操作"
+  },
+  "defaultColumns": {
+    "key": "",
+    "name": "默認班次名稱",
+    "startTime": "班次時間",
+    "weekDays": "排班時間(周)",
+    "expertInfo": "所屬醫生",
+    "status": "狀態",
+    "options": "操作"
+  },
+  "btnDisabledKeys": {
+    "shiftManagementDelDis": {
+      "moduleName": "班次管理",
+      "name": "刪除",
+      "tips": "",
+      "reason": "該班次名稱是'默認班次'，不能刪除"
+    }
+  },
+  "statusDesc": "班次狀態説明",
+  "enableDesc": "啓用：啓用後，則展示在排班管理界面",
+  "disableDesc": "禁用：禁用後，則不展示在排班管理界面，班次狀態不會影響已設置的排班時間",
+  "timeConfig": "時間配置",
+  "tagColor": "標籤顏色",
+  "tagColorSuggest": "標籤顏色設置建議",
+  "msg": {
+    "endBefore": "結束時間需小於",
+    "startOverEnd": "配置開始時間需小於配置結束時間",
+    "timeOver": "日期跨度不能超過120天",
+    "maxEffectTime": "生效時間最大間隔時間段為五年",
+    "copyLastSuccess": "複製上週排班成功",
+    "copySuccess": "複製成功",
+    "noShift": "請選擇班次",
+    "overThreeShift": "當天已滿3個班次，無法再添加排班",
+    "repeatShift": "不能重複填充班次"
+  },
+  "colorData": [
+    { "note": "淺藍色", "shift": "早班", "color": "#7ecef4" },
+    { "note": "淡黃色", "shift": "午班", "color": "#f7bd20" },
+    { "note": "淡紫色", "shift": "晚班", "color": "#a89bda" },
+    { "note": "紅色", "shift": "警示班次", "color": "#dc4c40" },
+    { "note": "灰色", "shift": "其他班次", "color": "#a0a4ad" }
+  ],
+  "formList": {
+    "name": {
+      "label": "普通班次名稱",
+      "placeholder": "請輸入普通班次名稱",
+      "message": "普通班次名稱必須填寫"
+    },
+    "status": {
+      "label": "狀態",
+      "options": [
+        { "label": "啓用", "value": 1 },
+        { "label": "禁用", "value": 0 }
+      ]
+    },
+    "effectiveTime": {
+      "label": "生效時間",
+      "tips": "生效時間最大間隔時間段為五年",
+      "message": "生效時間必選"
+    }
+  },
+  "defaultFormList": {
+    "name": {
+      "label": "默認班次名稱",
+      "placeholder": "請輸入普通默認班次名稱",
+      "message": "普通默認班次名稱必須填寫"
+    },
+    "weekDay": {
+      "label": "排班時間",
+      "message": "排班時間必選"
+    },
+    "doctor": {
+      "label": "所屬醫生"
+    },
+    "status": {
+      "label": "狀態",
+      "options": [
+        { "label": "啓用", "value": 1 },
+        { "label": "禁用", "value": 0 }
+      ],
+      "message": "狀態必選"
+    }
+  },
+  "confirm": {
+    "title": "提示信息",
+    "content": "刪除排班會一併刪除員工已安排的班次，確定刪除該班次？"
+  }
+}

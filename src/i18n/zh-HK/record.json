@@ -1,0 +1,60 @@
+{
+  "module": "錄音管理",
+  "button": {
+    "record": "錄音",
+    "download": "下載錄音",
+    "voice2text": "錄音轉文字"
+  },
+  "voice2textBalance": "語音轉文字餘額",
+  "tariffDesc": "資費標準説明",
+  "tariffDescOne": "按照錄音時間進行收費，收費標準：3.00元/小時（不足一分鐘按一分鐘計算）",
+  "tariffDescTwo": "建議100.00元起充（最低需要有10.00元餘額）",
+  "insufficientBalance": "餘額不足，將無法使用語音轉文字功能,請聯繫客户經理,進行",
+  "keyword": {
+    "yuan": "元",
+    "consult": "諮詢",
+    "faceDiagnose": "面診",
+    "tips": "提示"
+  },
+  "columns": {
+    "key": "key",
+    "customerId": "客户",
+    "customerTypeName": "客户類型",
+    "receptionTypeName": "來院類型",
+    "startTime_fmt": "錄音開始時間",
+    "endTime_fmt": "錄音結束時間",
+    "recordingDuration_fmt": "錄音時長",
+    "userName": "錄音人",
+    "_id": "操作"
+  },
+  "searchList": {
+    "date": {
+      "label": "錄音時間"
+    },
+    "customerId": {
+      "label": "客户信息"
+    },
+    "userId": {
+      "label": "錄音人",
+      "placeholder": "請輸入錄音人姓名"
+    },
+    "type": {
+      "label": "模塊",
+      "placeholder": "請選擇模塊"
+    }
+  },
+  "msg": {
+    "downloading": "請稍等,錄音下載中...",
+    "downloadError": "下載失敗",
+    "isTrans": "轉換中，請稍候查看!",
+    "transTextError": "轉換文字失敗!"
+  },
+  "needTimeDeal": "轉文字需要時間處理，請稍後進行查看",
+  "recordTitle": "錄音文字",
+  "modalTitle": "錄音收聽",
+  "chooseRecord": "請選擇要播放的錄音",
+  "clickToLookDetail": "單擊查看轉換文字",
+  "isLooking": "轉化文字中,請稍候查看",
+  "playRecording": "播放錄音",
+  "nowPlaying": "(播放中)"
+}

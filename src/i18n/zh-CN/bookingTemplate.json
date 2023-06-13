@@ -1,0 +1,47 @@
+{
+  "deleteConfirmTitle": "确认删除改模版分类？",
+  "handleCheckedMsg": "无查看权限!",
+  "title": "模版分类!",
+  "add": "添加",
+  "empty": "暂时没有数据哦～",
+  "day": "天",
+  "num": "第",
+  "components": {
+    "addEditModal": {
+      "editTitle": "编辑模版分类",
+      "addTitle": "新增模版分类"
+    },
+    "formList": {
+      "categoryName": "分类名称",
+      "categoryNamePlaceholder": "请输入分类名称",
+      "parent": "上级分类",
+      "department": "所属部门",
+      "departmentRequired": "请选择所属部门"
+    },
+    "projectList": {
+      "name": "模版名称",
+      "namePlaceholder": "请输入模版名称",
+      "custom": "项目",
+      "parent": "所属分类"
+    },
+    "templateContent": {
+      "addTitle": "新增模版",
+      "editTitle": "编辑模版"
+    },
+    "templateDetail": {
+      "deleteConfirm": "确认删除?",
+      "saveTemplateMsg": "预约疗程不能选择同一天",
+      "addLabel": "预约疗程",
+      "addLabelRules": "疗程不能为空",
+      "maxNum": "输入内容不超过500字",
+      "departmentName": "模版所属科室",
+      "project": "项目",
+      "tips": "注:预约疗程第一天，代表第一次预约时间的第二天，以此类推，自动生成预约时间。",
+      "return": "还原"
+    },
+    "templateList": {
+      "addTemplate": "新增模版",
+      "deleteTitle": "删除后无法恢复，确认删除？"
+    }
+  }
+}

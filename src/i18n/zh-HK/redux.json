@@ -1,0 +1,31 @@
+{
+  "returnAndPickUp": {
+    "successMsg": "確認成功！",
+    "pickUpInquiry": "取貨單內物料未選擇倉庫，請選擇後重試",
+    "voidSuccess": "作廢成功！"
+  },
+  "appointment": {
+    "statusObj": {
+      "0": "預約",
+      "1": "確認",
+      "2": "到院",
+      "3": "已取消"
+    }
+  },
+  "init": {
+    "list": {
+      "flowAppointmentView": "預約",
+      "flowPendingReceptionView": "待接待",
+      "flowReceptionView": "接待",
+      "flowToConView": "待分診",
+      "flowConsultationView": "諮詢",
+      "flowAssessmentView": "面診",
+      "flowPaymentView": "收銀",
+      "flowTreatmentView": "治療",
+      "flowBuckleView": "劃扣",
+      "flowClaimView": "退取貨",
+      "flow_exit_view": "離院",
+      "flowReturnVisitView": "回訪"
+    }
+  }
+}

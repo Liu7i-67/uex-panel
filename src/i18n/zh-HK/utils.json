@@ -1,0 +1,235 @@
+{
+  "axios": {
+    "errorTips": "出現了一些未知異常，請重新嘗試!",
+    "permissionException": "權限錯誤",
+    "parameterError": "參數錯誤",
+    "error": "異常",
+    "timeout": "當前查詢超時，後台數據查詢中，請稍後再試!",
+    "outLoginTips": "2秒後退出登錄!"
+  },
+  "callCenterHelper": {
+    "normal": "普通",
+    "unknown": "未知",
+    "callIn": "呼入",
+    "callOut": "呼出",
+    "followUp": "回訪",
+    "dysfunction": "暫時無法使用該功能!",
+    "callConfirmed": "你確定撥打",
+    "call": "呼叫",
+    "calling": "呼叫中,請稍等!",
+    "balanceReminder": "帳户餘額不足(最低10元),請聯繫管理{{name}}",
+    "abnormalReminder": "功能異常!"
+  },
+  "nas": {
+    "loginError": "Nas登陸失敗!",
+    "uploadError": "上傳失敗!"
+  },
+  "shuoXun": {
+    "keysList": [
+      { "name": "報備", "key": "report" },
+      { "name": "預約", "key": "appointment" },
+      { "name": "開單", "key": "openBilling" },
+      { "name": "財務流水(支出)", "key": "flowList" },
+      { "name": "病歷", "key": "medicalRecord" },
+      { "name": "照片", "key": "photos" },
+      { "name": "短信管理", "key": "shortMessage" },
+      { "name": "雲呼", "key": "cloudCall" },
+      { "name": "坐席管理", "key": "agentManage_cloud" },
+      { "name": "錄音管理", "key": "recordingManagement" },
+      { "name": "報表中心", "key": "dashboards" },
+      { "name": "敏感詞管理", "key": "sensitiveWordPage" },
+      { "name": "聊天記錄", "key": "chatRecordPage" },
+      { "name": "客户盤點", "key": "customerList" },
+      { "name": "會員權益", "key": "scrmVIPRight" },
+      { "name": "部門", "key": "department" },
+      { "name": "崗位", "key": "tablePost" },
+      { "name": "員工管理", "key": "staff" },
+      { "name": "物料目錄", "key": "material" },
+      { "name": "庫存管理", "key": "inventory" },
+      { "name": "客户退貨", "key": "returnGoodsManage" },
+      { "name": "入庫管理", "key": "storageManage" },
+      { "name": "出庫管理", "key": "outBound" },
+      { "name": "物料盤點", "key": "stockTaking" },
+      { "name": "耗材模版", "key": "templateManage" },
+      { "name": "供應商管理", "key": "supplierManage" },
+      { "name": "排班管理", "key": "shiftManagement" },
+      { "name": "回訪模版", "key": "returnTemplate" },
+      { "name": "回訪規則", "key": "returnVisitRules" },
+      { "name": "問卷管理", "key": "questionnaireMenu" },
+      { "name": "項目管理", "key": "projectBase" },
+      { "name": "權益卡", "key": "equityCard" },
+      { "name": "套餐管理", "key": "projectPackage" },
+      { "name": "運營媒體", "key": "onlineChannel" },
+      { "name": "市場渠道", "key": "offLineChannel" },
+      { "name": "權限管理", "key": "permissionManage" },
+      { "name": "標籤管理", "key": "tagConfig" },
+      { "name": "基礎配置", "key": "basicConfig" },
+      { "name": "審批流配置", "key": "approval" },
+      { "name": "開單折扣配置", "key": "billingDiscount" },
+      { "name": "數據字典", "key": "dataConfig" },
+      { "name": "新氧數據同步", "key": "soYangDataSync" },
+      { "name": "live800同步", "key": "liveDataSync" },
+      { "name": "有贊數據同步", "key": "youZanDataSync" },
+      { "name": "微盟數據同步", "key": "weiMoDataSync" },
+      { "name": "客户管理", "key": "scrmCustomerService" },
+      { "name": "線上預約", "key": "scrmOnlieAppointment" },
+      { "name": "商城管理", "key": "scrmMallManage" },
+      { "name": "卡券管理", "key": "scrmTicketManage" },
+      { "name": "內容管理", "key": "scrmMarketingManage" },
+      { "name": "遠程服務", "key": "romoteService" },
+      { "name": "返利配置", "key": "rebateConfig" },
+      { "name": "我的治療配置", "key": "scrmtreatconfig" },
+      { "name": "提現管理", "key": "withdrawalManagement" },
+      { "name": "公眾號推送", "key": "noticeTemplateConfig" }
+    ]
+  },
+  "tools": {
+    "appointmentHelper": {
+      "before": "前",
+      "after": "後"
+    },
+    "closeManagement": {
+      "errorInfo": "修改失敗，請重試或者聯繫管理員"
+    },
+    "city": {
+      "11": "北京",
+      "12": "天津",
+      "13": "河北",
+      "14": "山西",
+      "15": "內蒙古",
+      "21": "遼寧",
+      "22": "吉林",
+      "23": "黑龍江",
+      "31": "上海",
+      "32": "江蘇",
+      "33": "浙江",
+      "34": "安徽",
+      "35": "福建",
+      "36": "江西",
+      "37": "山東",
+      "41": "河南",
+      "42": "湖北",
+      "43": "湖南",
+      "44": "廣東",
+      "45": "廣西",
+      "46": "海南",
+      "50": "重慶",
+      "51": "四川",
+      "52": "貴州",
+      "53": "雲南",
+      "54": "西藏",
+      "61": "陝西",
+      "62": "甘肅",
+      "63": "青海",
+      "64": "寧夏",
+      "65": "新疆",
+      "71": "台灣",
+      "81": "香港",
+      "82": "澳門",
+      "91": "國外"
+    },
+    "chineseNumber": [
+      "零",
+      "壹",
+      "貳",
+      "叁",
+      "肆",
+      "伍",
+      "陸",
+      "柒",
+      "捌",
+      "玖"
+    ],
+    "singeChineseNumber": [
+      "",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十"
+    ],
+    "chineseMoneyUnit": ["", "拾", "佰", "仟"],
+    "chineseMoneyUnitBigger": ["", "萬", "億", "兆"],
+    "chineseMoneyUnitSmaller": ["角", "分", "毫", "釐"],
+    "mirageName": {
+      "yiPuYun": "3D影像",
+      "mirage": "美際影像"
+    },
+    "keyword": {
+      "gift": "贈送",
+      "recharge": "充值",
+      "storedValue": "儲值",
+      "full": "整",
+      "moneyUnit": "元"
+    },
+    "idCard": {
+      "lengthError": "你輸入的身份證長度或格式錯誤",
+      "areaError": "你的身份證地區非法",
+      "birthError": "身份證上的出生日期非法",
+      "error": "你輸入的身份證號非法"
+    },
+    "lifeCosmetology": {
+      "normal": "普通",
+      "star": "星"
+    },
+    "weekNum": {
+      "monday": "週一",
+      "tuesday": "週二",
+      "wednesday": "週三",
+      "thursday": "週四",
+      "friday": "週五",
+      "saturday": "週六",
+      "sunday": "週日"
+    },
+    "weekDay": {
+      "monday": "星期一",
+      "tuesday": "星期二",
+      "wednesday": "星期三",
+      "thursday": "星期四",
+      "friday": "星期五",
+      "saturday": "星期六",
+      "sunday": "星期日"
+    }
+  },
+  "websocket": {
+    "linkError": "websocket鏈接異常!"
+  },
+  "commonData": {
+    "orderSource": {
+      "0": "院內",
+      "1": "系統小程序",
+      "2": "app",
+      "3": "有贊微商城",
+      "4": "微盟智慧零售",
+      "5": "新氧平台",
+      "6": "美際諮詢助手",
+      "7": "有讚美業",
+      "8": "{{name}}贈送"
+    },
+    "appointmentSource": [
+      { "label": "院內申請", "value": 0 },
+      { "label": "SCRM", "value": 1 },
+      { "label": "app", "value": 2 },
+      { "label": "新氧預約", "value": 5 }
+    ],
+    "appointmentSourceVal": ["院內申請", "SCRM", "app", "", "", "新氧預約"],
+    "orderType": ["項目", "套", "活動", "年", "次", "權"],
+    "cashierType": {
+      "0": "訂單收費",
+      "1": "訂單退費",
+      "2": "轉項收費",
+      "3": "定金收費",
+      "4": "定金退費",
+      "5": "{{name}}收費",
+      "6": "{{name}}退費",
+      "7": "轉項退費",
+      "8": "{{name}}收費",
+      "9": "{{name}}退費"
+    }
+  }
+}

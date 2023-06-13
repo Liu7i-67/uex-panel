@@ -1,0 +1,81 @@
+{
+  "search": {
+    "customerId": "客户姓名",
+    "machinedPartsName": {
+      "label": "加工件",
+      "placeholder": "请输入加工件名称"
+    },
+    "status": { "label": "状态", "placeholder": "请选择加工件的订单状态" },
+    "reworkFlag": { "label": "订单类型", "placeholder": "请选择订单类型" },
+    "rangePicker": "下单时间",
+    "machinedManufacturerId": { "label": "厂商", "placeholder": "请选择厂商" },
+    "machinedPartsBillingNo": {
+      "label": "加工件订单号",
+      "placeholder": "请输入加工件订单号"
+    },
+    "check": { "key1": "急用", "key2": "需准时" }
+  },
+  "table_1": {
+    "machinedPartsBillingNo": "加工件订单号",
+    "customerName": "客户",
+    "status": "状态",
+    "toothPosition": "牙位",
+    "toothColor": "牙色",
+    "machinedManufacturerName": "厂商",
+    "machinedPartsName": "名称",
+    "singlePrice": "单价",
+    "num": "数量",
+    "totalPrice": "总价",
+    "partsBillingUserName": "下单人",
+    "doctorName": "医生",
+    "createDate": "下单时间",
+    "billingNo": "相关订单",
+    "billingProjectName": "订单项目",
+    "depositBillingNo": "相关定金单",
+    "depositBillingProjectName": "定金项目",
+    "options": "操作"
+  },
+  "other": {
+    "key1": "详情",
+    "key2": "作废",
+    "key3": "编辑",
+    "key4": "新增加工件订单",
+    "key5": "上颌",
+    "key6": "下颌",
+    "key7": "确认该加工件订单作废?",
+    "key8": "取消",
+    "key9": "作废",
+    "statusOptions": {
+      "key1": "待提交",
+      "key2": "制作中",
+      "key3": "已回件",
+      "key4": "作废",
+      "key5": "已使用",
+      "key6": "部分使用",
+      "key7": "已试戴",
+      "key8": "已核对",
+      "key9": "已寄回"
+    },
+    "orderTypeOptions": {
+      "key1": "返工",
+      "key2": "普通"
+    }
+  },
+  "overdue": {
+    "key1": "超期未回件提醒",
+    "key2": "以下加工件超期未回件，请关注并联系加工厂",
+    "key3": "下次不在提醒（取消提醒后可以点击列表右上方的通知按钮进行查看）"
+  },
+  "table_2": {
+    "customerName": "客户姓名",
+    "machinedPartsBillingNo": "加工件订单号",
+    "wishReturnTime": "期望返回时间",
+    "mailDate": "寄件日期",
+    "manufacturerName": "加工件厂商"
+  },
+  "storeMsg": {
+    "key1": "新增加工件订单",
+    "key2": "编辑加工件订单",
+    "key3": "暂无权限操作"
+  }
+}

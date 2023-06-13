@@ -1,0 +1,44 @@
+{
+  "dataSync": "划扣数据同步",
+  "doctorConfig": "九阵医生名单配置",
+  "syncStatus": "同步状态",
+  "syncStatusPlaceholder": "选择同步状态",
+  "syncStatusSuccess": "同步成功",
+  "syncStatusError": "同步失败",
+  "tableColumns": {
+    "key": "序号",
+    "customerName": "客户姓名",
+    "customerNameTooltip": "()内为客户在睿美云系统的名字，()外为当时划扣时传的客户姓名。若姓名一致则只展示当时数据",
+    "mainPhone": "手机号",
+    "genderName": "性别",
+    "age": "年龄",
+    "billingTypeName": "订单类型",
+    "billingNo": "关联订单号",
+    "totalPrice": "订单总金额",
+    "deductRecordNo": "关联划扣记录号",
+    "doctorName": "治疗医生",
+    "doctorNameTooltip": "涉及多个主导治疗医生时,只会传第一个主导治疗医生数据",
+    "syncStatus": "同步状态",
+    "syncStatusSuccess": "同步成功",
+    "syncStatusError": "同步失败",
+    "updateDate": "同步时间",
+    "sync": "同步"
+  },
+  "formList": {
+    "deductRecordNo": "划扣记录号",
+    "deductRecordNoPlaceholder": "请输入划扣记录号",
+    "syncTime": "同步时间",
+    "billingNo": "订单号",
+    "billingNoPlaceholder": "请输入订单号",
+    "billingType": "订单类型",
+    "billingTypePlaceholder": "请选择订单类型"
+  },
+  "doctorConfigPage": {
+    "addDoctor": "添加医生名单",
+    "staff": "员工",
+    "staffPlaceholder": "请输入姓名、电话号码",
+    "roster": "医院医师花名册",
+    "name": "姓名"
+  },
+  "selectStaff": "请选择员工"
+}

@@ -1,0 +1,89 @@
+{
+  "title": "流水牌-體",
+  "navButtons": [
+    {
+      "num": 0,
+      "keyName": "appointment",
+      "key": "flowAppointmentView",
+      "name": "預約",
+      "label": "預約"
+    },
+    {
+      "num": 0,
+      "keyName": "toReceive",
+      "key": "flowPendingReceptionView",
+      "name": "待接待",
+      "label": "待接待"
+    },
+    {
+      "num": 0,
+      "keyName": "reception",
+      "key": "flowReceptionView",
+      "name": "接待",
+      "label": "接待"
+    },
+    {
+      "num": 0,
+      "keyName": "flowToConView",
+      "key": "flowToConView",
+      "name": "待分診",
+      "label": "待分診"
+    },
+    {
+      "num": 0,
+      "keyName": "consultation",
+      "key": "flowConsultationView",
+      "name": "諮詢",
+      "label": "諮詢"
+    },
+    {
+      "num": 0,
+      "keyName": "consultation_face",
+      "key": "flowAssessmentView",
+      "name": "面診",
+      "label": "面診"
+    },
+    {
+      "num": 0,
+      "keyName": "payment",
+      "key": "flowPaymentView",
+      "name": "收銀",
+      "label": "收銀"
+    },
+    {
+      "num": 0,
+      "keyName": "treatment",
+      "key": "flowTreatmentView",
+      "name": "治療",
+      "label": "治療"
+    },
+    {
+      "num": 0,
+      "keyName": "deduct",
+      "key": "flowBuckleView",
+      "name": "劃扣",
+      "label": "劃扣"
+    },
+    {
+      "num": 0,
+      "keyName": "refund",
+      "key": "flowClaimView",
+      "name": "退取貨",
+      "label": "退取貨"
+    },
+    {
+      "num": 0,
+      "keyName": "leave",
+      "key": "flow_exit_view",
+      "name": "離院",
+      "label": "離院"
+    },
+    {
+      "num": 0,
+      "keyName": "backVisit",
+      "key": "flowReturnVisitView",
+      "name": "回訪",
+      "label": "回訪"
+    }
+  ]
+}

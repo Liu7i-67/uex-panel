@@ -1,0 +1,365 @@
+{
+  "module": "處方",
+  "button": {
+    "add": "開具處方",
+    "template": "處方模版",
+    "deal": "處理",
+    "close": "關閉",
+    "cancel": "取消打印",
+    "print": "打印",
+    "confirm": "確認",
+    "determine": "確定",
+    "retry": "重新提交",
+    "handleDistributeMedicine": "暫不發藥",
+    "confirmDistributeMedicine": "確認發藥",
+    "increase": "增加"
+  },
+  "drugWaiting": "待發藥",
+  "continueMedicine": " 複診續藥（待處理）",
+  "tabName": {
+    "continueMedicine": "複診購藥",
+    "prescriptionTemplate": "處方模版",
+    "claimGoods": "取貨管理"
+  },
+  "warning": {
+    "noPerm": "抱歉，您沒有查看取貨管理權限！"
+  },
+  "searchList": {
+    "customerId": {
+      "label": "姓名"
+    },
+    "diagnosis": {
+      "label": "臨牀診斷"
+    },
+    "userId": {
+      "label": "開具醫生"
+    },
+    "approvalStatus": {
+      "label": "審核狀態"
+    },
+    "distributeMedicineFlag": {
+      "label": "發藥狀態"
+    },
+    "time": {
+      "label": "開具時間"
+    },
+    "printNo": {
+      "label": "處方箋編號"
+    },
+    "status": {
+      "label": "處方狀態",
+      "placeholder": "請選擇處方狀態"
+    },
+    "billingStatus": {
+      "label": "訂單狀態",
+      "placeholder": "請選擇收銀狀態"
+    },
+    "typeId": {
+      "label": "處方類型",
+      "placeholder": "請選擇處方類型"
+    }
+  },
+  "orderStatus": {
+    "unpaid": "未付款",
+    "paid": "已付款",
+    "invalid": "已作廢",
+    "overdue": "欠費",
+    "suspended": "掛起",
+    "refunded": "已退款"
+  },
+  "unknownSex": "未知",
+  "distributeMedicineStatus": {
+    "waitMedicine": "待發藥",
+    "dispensedMedicine": "已發藥",
+    "notYetMedicine": "暫不發藥",
+    "someMedicine": "部分發藥",
+    "cancelled": "已取消",
+    "beingFunded": "簽署中",
+    "signatureFailure": "簽署失敗"
+  },
+  "approvalStatus": {
+    "beingAbolished": "作廢中",
+    "notInEffect": "未生效",
+    "becameEffect": "已生效",
+    "hasInvalid": "已作廢",
+    "havePassed": "已通過"
+  },
+  "tableList": {
+    "customerPhoneNo": "電話",
+    "customerName": "客户姓名",
+    "customerSex": "性別",
+    "customerAge": "年齡",
+    "poolName": "所在客户池",
+    "advisoryPersonName": "所屬諮詢師",
+    "diagnosis": "臨牀診斷",
+    "userName": "開具醫師",
+    "typeName": "處方類型",
+    "printNo": "處方箋編號",
+    "billingNo": "訂單號",
+    "approvalStatus": "審核狀態",
+    "createTime": "開具時間",
+    "status": "處方狀態",
+    "distributeMedicineFlag": "發藥狀態",
+    "billingStatus": "訂單狀態",
+    "detail": "詳情",
+    "print": "打印111111",
+    "giveMedicine": "確認發藥",
+    "invalid": "作廢"
+  },
+  "invalidPrescription": {
+    "title": "作廢處方",
+    "form": {
+      "reason": {
+        "label": "作廢理由",
+        "message": "請輸入理由",
+        "placeholder": "請輸入理由"
+      }
+    },
+    "warning": "請填寫作廢理由"
+  },
+  "printModal": {
+    "title": "打印預覽"
+  },
+  "approveModal": {
+    "title": {
+      "zero": "審批通過",
+      "one": "審批拒絕",
+      "two": "作廢處方"
+    },
+    "label": {
+      "zero": "通過意見",
+      "one": "拒絕意見",
+      "two": "作廢原因"
+    }
+  },
+  "prescriptionDrawer": {
+    "title": "開具處方",
+    "subTitle": "處方醫囑",
+    "closeWarn": "關閉抽屜會導致當前開具處方內容丟失，是否繼續？",
+    "baseInfo": {
+      "name": "姓名",
+      "sex": "性別",
+      "age": "年齡",
+      "userName": "開具醫師"
+    }
+  },
+  "prescriptionDetail": {
+    "approve": {
+      "title": "審核信息",
+      "havePassed": "審批通過",
+      "rejected": "審批拒絕"
+    },
+    "warning": {
+      "errInput": "輸入信息有誤！",
+      "noSign": "當前數據需進行電子簽名，請開通電子簽名在進行處理"
+    },
+    "approveReason": {
+      "message": "最多輸入300個字！",
+      "messagePrefix": "請輸入正確的"
+    }
+  },
+  "timeLine": {
+    "stepType": {
+      "zero": "開具處方",
+      "one": "處方編輯",
+      "two": "待審批",
+      "three": "審批中",
+      "four": "已通過",
+      "five": "已拒絕",
+      "six": "已作廢",
+      "seven": "已打印",
+      "eight": "已發藥",
+      "nine": "暫不發藥",
+      "ten": "部分發藥"
+    },
+    "updateUserName": "操作人",
+    "remark": "操作説明"
+  },
+  "formConfig": {
+    "chargeType": {
+      "label": "費別"
+    },
+    "departmentId": {
+      "label": "科室",
+      "message": "請選擇科室"
+    },
+    "medicalRecordNo": {
+      "label": "門診/病歷號",
+      "placeholder": "請輸入門診/病歷號",
+      "message": "病歷號不能為空,請完善客户檔案!"
+    },
+    "bedNo": {
+      "label": "牀號",
+      "placeholder": "請輸入牀號"
+    },
+    "createTime": {
+      "label": "開具日期",
+      "placeholder": "請輸入開具日期",
+      "message": "請輸入開具日期"
+    },
+    "diagnosisType": {
+      "label": "臨牀診斷",
+      "message": "請選擇臨牀診斷"
+    },
+    "diagnosis": {
+      "label": "臨牀診斷",
+      "message": "請輸入臨牀診斷",
+      "placeholder": "請輸入(最多50個字)"
+    },
+    "needApprovalFlag": {
+      "label": "需要審批"
+    },
+    "totalPrice": {
+      "label": "處方總價"
+    },
+    "chargeFlag": {
+      "label": "需要收費",
+      "message": "請選擇是否需要收費"
+    },
+    "customerAddress": {
+      "label": "地址",
+      "message": "請輸入地址!",
+      "placeholder": "請輸入地址"
+    },
+    "phone": {
+      "label": "電話"
+    },
+    "proxyName": {
+      "label": "代辦人姓名"
+    },
+    "proxySex": {
+      "label": "代辦人性別"
+    },
+    "proxyAge": {
+      "label": "代辦人年齡"
+    },
+    "customerIdCardNo": {
+      "label": "患者身份證號",
+      "validMessage": "請輸入正確身份證號碼!",
+      "message": "患者身份證號不正確,請完善客户檔案!"
+    },
+    "proxyIdCardNo": {
+      "label": "代辦人身份證號"
+    }
+  },
+  "templateForm": {
+    "title": "保存為處方模版",
+    "name": {
+      "label": "",
+      "message": "請輸入模版名稱",
+      "placeholder": "請輸入模版名稱"
+    },
+    "warning": {
+      "noPrescriptionText": "正文不可為空",
+      "prescriptionTextFalsy": "處方正文填寫有誤，無法保存為模版",
+      "noName": "請先輸入模版名稱"
+    },
+    "saveSuccess": "保存處方模版成功"
+  },
+  "templateDrawer": {
+    "title": "選擇處方模版",
+    "searchPlaceholder": "請輸入模版名稱"
+  },
+  "prescriptionHistory": {
+    "title": "就診歷史",
+    "doctor": "醫生",
+    "createTime": "時間",
+    "diagnosis": "診斷"
+  },
+  "preOperation": "術前",
+  "inOperation": "術中",
+  "afterOperation": "術後",
+  "yes": "是",
+  "no": "否",
+  "frequency": "次",
+  "oneFrequency": "一次",
+  "prescriptionText": "處方正文",
+  "needToCharge": "是否需要收費",
+  "treatDoctor": "治療醫生",
+  "treatProject": "治療項目",
+  "totalPrice": "總價",
+  "dynamics": "處方動態",
+  "updatePrescription": {
+    "hasChoose": "已選擇",
+    "needAuditPop": "當前賬號無開具對應處方資質，需有對應資質的賬户審核後，處方才可生效",
+    "dynamics": "處方動態",
+    "success": {
+      "save": "保存成功",
+      "giveMedicine": "確認發藥成功"
+    },
+    "confirm": {
+      "changeType": "修改處方類型，會導致已填寫的所有處方內容清空，是否繼續？",
+      "beforeGiveMedicine": "確定要發藥嗎？",
+      "beforeSave": "該操作會導致已填寫的處方內容被覆蓋，是否繼續？",
+      "beforeDistributeMedicine": "需選擇對應倉庫出庫後，才能確認發藥，是否前往取貨出庫？"
+    },
+    "warning": {
+      "pleaseRefund": "請進行後續退款操作",
+      "noInvalidReason": "請填寫作廢理由",
+      "exceedOriginPrice": "輸入的總價不能比實際處方總價大, 請重新輸入!",
+      "diagnosisFalsy": "請輸入正確的臨牀診斷!",
+      "noText": "請輸入處方正文",
+      "overshoot": "藥品的處方總價不能超過99999999.99元",
+      "idFalsy": "該患者身份證號異常，請查實！",
+      "noMedicalRecordNo": "客户病歷號為空，不能開具處方，請先完善客户病歷號後，再開具處方",
+      "noSalePrice": "所選物料未配置售價單位，不可開處方",
+      "noWarehouse": "處方所選模版中有藥品倉庫為空，無法開具處方，請重新開藥！"
+    }
+  },
+  "btnDisabledKeys": {
+    "prescriptionPrintDis": {
+      "moduleName": "處方",
+      "name": "打印",
+      "tips": "",
+      "reason": "不能打印未生效的處方(即record.status!== 1)"
+    },
+    "prescriptionGiveMedicineDis": {
+      "moduleName": "處方",
+      "name": "確認發藥",
+      "tips": "",
+      "reason": "原因1：處方狀態不是已生效 原因2：發藥狀態是已發藥    原因2：發藥狀態是簽署中 代碼為 record.status !== 1 || record.distributeMedicineFlag === 1 || record.distributeMedicineFlag === 8"
+    },
+    "prescriptionInvalidDis": {
+      "moduleName": "處方",
+      "name": "作廢",
+      "tips": "",
+      "reason": "原因1：發藥狀態是已發藥  原因2：發藥狀態是部分發藥   原因3：發藥狀態是簽署中 原因4：處方狀態是已作廢 原因5：處方狀態是簽署中   原因6：處方狀態是作廢中 代碼為 record.distributeMedicineFlag === 1 || record.distributeMedicineFlag === 3 || record.distributeMedicineFlag === 8|| record.status === 2|| record.status === 8|| record.status === -1"
+    },
+    "continueMedicineDealDis": {
+      "moduleName": "處方-複診購藥",
+      "name": "處理",
+      "tips": "",
+      "reason": "原因1：處方狀態是已處理原因2：處方狀態是已拒絕 原因3：處方狀態是簽署中原因4：處方的開具人不是當前登錄用户 代碼為 record.status === 1 || record.status === 2 || record.status === 8  || record.userId !== userInfo.id  "
+    },
+    "prescriptionDetailInvalidDis": {
+      "moduleName": "處方-處方詳情",
+      "name": "作廢",
+      "tips": "",
+      "reason": " 原因1：處方狀態是已作廢 原因2：處方狀態是作廢中"
+    },
+    "prescriptionDetailApprovalDis": {
+      "moduleName": "處方-處方詳情的審批操作",
+      "name": "通過/拒絕",
+      "tips": "",
+      "reason": "處方狀態是簽署中"
+    },
+    "prescriptionRecommitDis": {
+      "moduleName": "處方-處方詳情",
+      "name": "重新提交",
+      "tips": "",
+      "reason": "處方狀態是簽署中"
+    },
+    "prescriptionDetailPrintDis": {
+      "moduleName": "處方-處方詳情-處方歷史的打印或者處方詳情裏面的打印",
+      "name": "打印",
+      "tips": "不是已生效的處方，不能打印",
+      "reason": "不是已生效的處方，不能打印"
+    },
+    "prescriptionTempNotGiveMedicineDis": {
+      "moduleName": "處方-處方詳情",
+      "name": "暫不發藥",
+      "tips": "不是已生效的處方，不能打印",
+      "reason": "處方狀態是作廢中"
+    }
+  }
+}

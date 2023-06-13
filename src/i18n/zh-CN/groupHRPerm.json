@@ -1,0 +1,59 @@
+{
+  "module": "集团--权限",
+  "role": "岗位",
+  "staff": "员工",
+  "searchStaffPlaceholder": "请输入姓名添加员工",
+  "searchRolePlaceholder": "请搜索岗位名称",
+  "deletePerm": {
+    "title": "删除权限",
+    "content": "确定删除该员工的所有权限?"
+  },
+  "changePerm": {
+    "title": "权限有改变",
+    "content": "当前权限以发生变更,是否保存!"
+  },
+  "savePermMsg": {
+    "noChoose": "请先选择岗位或员工之后进行保存!",
+    "noPerm": "该员工已经删除该权限,请选择其他员工设置对应权限,保存!",
+    "saveSuccess": "保存成功!",
+    "saveError": "保存失败!请重新保存!"
+  },
+  "copyPerm": {
+    "title": "权限复制",
+    "copyTitle": "选择复制权限的岗位",
+    "copied": "复制到",
+    "beCopiedTitle": "被复制权限的岗位",
+    "copyError": "复制失败",
+    "noSetPerm": "(未设置权限)",
+    "warnMsg": "请选择复制权限的岗位",
+    "whetherWill": "是否将",
+    "copyTo": "的权限配置复制给"
+  },
+  "noSetting": "未设置权限",
+  "tablePostItem": {
+    "depart": "部门",
+    "position": "职位",
+    "userNo": "工号"
+  },
+  "personItemTips": "权限复制",
+  "permTree": {
+    "all": "全部",
+    "dataPerm": "数据权限",
+    "batchEnable": "批量启用",
+    "batchDisable": "批量禁用",
+    "allEnable": "全部启用",
+    "noneEnable": "未启用",
+    "othersEnable": "部分启用"
+  },
+  "search": {
+    "searchBtn": "查询",
+    "searchPlaceholder": "仅支持第三级权限查询",
+    "searchMsg": "未找到对应三级权限"
+  },
+  "sync": {
+    "syncRefresh": "同步刷新",
+    "tips": "同步刷新",
+    "title": "同步权限提示",
+    "content": "请先保存所设置的权限，再进行同步。"
+  }
+}
