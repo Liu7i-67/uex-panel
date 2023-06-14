@@ -1,6 +1,6 @@
 import { initReactI18next } from 'react-i18next';
 import type { Resource } from 'i18next';
-
+import axios from 'axios';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import i18next from 'i18next';
 import { ns } from './resources';
@@ -9,17 +9,45 @@ type TKey = 'zh-CN' | 'zh-TW' | 'zh-HK';
 
 const supportedLanguages = new Set(['zh-CN', 'zh-TW', 'zh-HK']);
 
+const isDev = process.env.NODE_ENV === 'development';
+
 async function initI18N(lang: string) {
   let resources: Resource = { 'zh-CN': {}, 'zh-TW': {}, 'zh-HK': {} };
 
   let r = {} as any;
   try {
-    r = await import(/* webpackChunkName: 'i18n' */ `./resources/${lang}`);
+    if (isDev) {
+      r = await import(/* webpackChunkName: 'i18n' */ `./resources/${lang}`);
+      r = r.default;
+    } else {
+      await axios({
+        method: 'get',
+        url: `https://realmerit-client-static.oss-cn-shanghai.aliyuncs.com/i18n/test/${lang}.json`,
+      }).then((response) => {
+        // 响应数据自动解压缩
+        r[lang] = response.data;
+      }).catch((error) => {
+        console.error(error);
+      });
+    }
   } catch (error) {
-    r = await import(/* webpackChunkName: 'i18n' */ `./resources/zh-CN`);
+    if (isDev) {
+      r = await import(/* webpackChunkName: 'i18n' */ `./resources/zh-CN`);
+      r = r.default;
+    } else {
+      await axios({
+        method: 'get',
+        url: `https://realmerit-client-static.oss-cn-shanghai.aliyuncs.com/i18n/test/zh-CN.json`,
+      }).then((response) => {
+        // 响应数据自动解压缩
+        r[lang] = response.data;
+      }).catch((error) => {
+        console.error(error);
+      });
+    }
   }
 
-  resources = r.default;
+  resources = r;
 
   return i18next
     .use(LanguageDetector)

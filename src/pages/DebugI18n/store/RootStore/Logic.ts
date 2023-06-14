@@ -5,17 +5,18 @@ import { RootStore } from './';
 import { getJSONToParse } from '@/utils/Tools';
 import { seactStr } from '../../tools';
 import { ChangeEvent } from 'react';
+import axios from 'axios';
 
 export class Logic implements ILogic {
   loadingStore: TLoadingStore;
   rootStore: RootStore;
-  cnString: string = '\u5173\u8D26\u8BB0\u5F55';
+  cnString: string = '';
   stringType: TI18n = 'zh-CN';
   resource: { 'zh-CN': string; 'zh-TW': string; 'zh-HK': string } = { 'zh-CN': '', 'zh-HK': '', 'zh-TW': '' };
   matchType: TMatch = 'FM';
   result: IResult[] = [];
   showCustom: boolean = false;
-  diyUrl: string = '';
+  diyUrl: string = 'https://realmerit-client-static.oss-cn-shanghai.aliyuncs.com/i18n/test/zh-CN.json';
 
   constructor(rootStore: RootStore) {
     this.rootStore = rootStore;
@@ -123,29 +124,26 @@ export class Logic implements ILogic {
   loadResource() {
     const that = this;
     return new Promise((res, rej) => {
-      let url = 'http://192.168.2.138:8367/lang/i18nCN.json';
-      switch (this.stringType) {
-        case 'zh-TW':
-          {
-            url = 'http://192.168.2.138:8367/lang/i18nTW.json';
-          }
-          break;
-        case 'zh-HK':
-          {
-            url = 'http://192.168.2.138:8367/lang/i18nHK.json';
-          }
-          break;
-      }
+      let url = `https://realmerit-client-static.oss-cn-shanghai.aliyuncs.com/i18n/test/${this.stringType}.json`;
 
       const diyUrl = localStorage.getItem('url');
       if (diyUrl) {
         url = diyUrl;
       }
+      message({
+        severity: 'info',
+        summary: '提示',
+        detail: '正在加载数据源，请耐心等待...',
+        life: 3000,
+      });
 
-      const xhr = new XMLHttpRequest();
-      xhr.open('GET', url, true);
-      xhr.onload = function() {
-        if (xhr.status !== 200) {
+      axios({
+        method: 'get',
+        url,
+      }).then((response) => {
+        // 响应数据自动解压缩
+        console.log('response:', response);
+        if (response.status !== 200) {
           message({
             severity: 'error',
             summary: '错误',
@@ -161,11 +159,10 @@ export class Logic implements ILogic {
           life: 3000,
         });
         runInAction(() => {
-          that.resource[that.stringType] = xhr.responseText || '';
+          that.resource[that.stringType] = JSON.stringify(response.data) || '';
           res('success');
         });
-      };
-      xhr.onerror = function() {
+      }).catch(() => {
         message({
           severity: 'error',
           summary: '错误',
@@ -173,13 +170,6 @@ export class Logic implements ILogic {
           life: 3000,
         });
         return res('error');
-      };
-      xhr.send();
-      message({
-        severity: 'info',
-        summary: '提示',
-        detail: '正在加载数据源，请耐心等待...',
-        life: 3000,
       });
     });
   }

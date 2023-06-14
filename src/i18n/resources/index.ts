@@ -117,4 +117,9 @@ export const ns = [
   'material',
   'outBoundManage',
   'photoEdit',
+  'procurement',
+  'procurementApply',
+  'purchaseRecord',
+  'marketingVariousActivities',
+  'payment',
 ];

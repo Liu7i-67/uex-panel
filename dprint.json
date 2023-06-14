@@ -11,6 +11,7 @@
   "markdown": {},
   "includes": [
     "./src/**/*.{*.js,ts,tsx,jsx,json}",
+    "./config/*.{*.js,ts,tsx,jsx,json}",
     "package.json",
     "dprint.json"
   ],

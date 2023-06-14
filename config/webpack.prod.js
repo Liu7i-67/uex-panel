@@ -2,6 +2,7 @@
 const path = require("path");
 // 生成html  文档地址https://github.com/jantimon/html-webpack-plugin
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MyPlugin = require("./mergeI18Plugin");
 
 module.exports = {
   // 开发模式
@@ -42,6 +43,7 @@ module.exports = {
       title: "uex-panel",
       template: "src/index.html",
     }),
+    new MyPlugin("../src/i18n"),
   ],
   module: {
     rules: [

@@ -24,7 +24,7 @@ const ColumnsI18next = observer(function ColumnsI18next_() {
     logic.initShowUpdate();
   }, []);
 
-  // 挂载事件
+  // 挂载事件2
   useEffect(() => {
     formatterWorker.addOnFormat(logic.onFormat);
     formatterWorker.addOnError(logic.onError);
@@ -60,7 +60,7 @@ const ColumnsI18next = observer(function ColumnsI18next_() {
 
   return (
     <div className='page-ColumnsI18next'>
-      <div>{t('accountClosingManagement:test')}</div>
+      <div>{t('accountClosingManagement:closeAccountRefreshBtnText')}</div>
       <div>
         <Button className='mr-8' onClick={() => changeLocale('zh-CN')}>zh-CN</Button>
         <Button className='mr-8' onClick={() => changeLocale('zh-TW')}>zh-TW</Button>

@@ -8,6 +8,7 @@ declare module "*.scss" {
   export default css;
 }
 
+declare module "*.gz";
 declare module "workerize-loader!*" {
   function createInstance(): Worker;
   export = createInstance;

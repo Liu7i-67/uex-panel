@@ -18,7 +18,8 @@
       "Router": ["src/Router/index.ts"],
       "pages/*": ["src/pages/*"],
       "utils/*": ["src/utils/*"]
-    }
+    },
+    "resolveJsonModule":true
   },
   "include": ["./**/*.ts", "./**/*.tsx"],
   "exclude": ["node_modules/**/*"]
