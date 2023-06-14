@@ -43,7 +43,10 @@ module.exports = {
       title: "uex-panel",
       template: "src/index.html",
     }),
-    new MyPlugin("../src/i18n"),
+    new MyPlugin({
+      i18Dir: "../src/i18n",
+      lang: ["zh-CN", "zh-TW", "zh-HK"],
+    }),
   ],
   module: {
     rules: [

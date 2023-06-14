@@ -6,6 +6,7 @@ import { getJSONToParse } from '@/utils/Tools';
 import { seactStr } from '../../tools';
 import { ChangeEvent } from 'react';
 import axios from 'axios';
+import { baseUrl } from '@/../config/variable';
 
 export class Logic implements ILogic {
   loadingStore: TLoadingStore;
@@ -16,7 +17,7 @@ export class Logic implements ILogic {
   matchType: TMatch = 'FM';
   result: IResult[] = [];
   showCustom: boolean = false;
-  diyUrl: string = 'https://realmerit-client-static.oss-cn-shanghai.aliyuncs.com/i18n/test/zh-CN.json';
+  diyUrl: string = `${baseUrl}zh-CN.json`;
 
   constructor(rootStore: RootStore) {
     this.rootStore = rootStore;
@@ -123,8 +124,8 @@ export class Logic implements ILogic {
 
   loadResource() {
     const that = this;
-    return new Promise((res, rej) => {
-      let url = `https://realmerit-client-static.oss-cn-shanghai.aliyuncs.com/i18n/test/${this.stringType}.json`;
+    return new Promise((res) => {
+      let url = `${baseUrl}${this.stringType}.json`;
 
       const diyUrl = localStorage.getItem('url');
       if (diyUrl) {

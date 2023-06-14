@@ -4,12 +4,11 @@ import axios from 'axios';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import i18next from 'i18next';
 import { ns } from './resources';
+import { baseUrl, isDev } from '../../config/variable';
 
 type TKey = 'zh-CN' | 'zh-TW' | 'zh-HK';
 
 const supportedLanguages = new Set(['zh-CN', 'zh-TW', 'zh-HK']);
-
-const isDev = process.env.NODE_ENV === 'development';
 
 async function initI18N(lang: string) {
   let resources: Resource = { 'zh-CN': {}, 'zh-TW': {}, 'zh-HK': {} };
@@ -22,7 +21,7 @@ async function initI18N(lang: string) {
     } else {
       await axios({
         method: 'get',
-        url: `https://realmerit-client-static.oss-cn-shanghai.aliyuncs.com/i18n/test/${lang}.json`,
+        url: `${baseUrl}${lang}.json`,
       }).then((response) => {
         // 响应数据自动解压缩
         r[lang] = response.data;
@@ -37,7 +36,7 @@ async function initI18N(lang: string) {
     } else {
       await axios({
         method: 'get',
-        url: `https://realmerit-client-static.oss-cn-shanghai.aliyuncs.com/i18n/test/zh-CN.json`,
+        url: `${baseUrl}${lang}.json`,
       }).then((response) => {
         // 响应数据自动解压缩
         r[lang] = response.data;
@@ -53,19 +52,26 @@ async function initI18N(lang: string) {
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
+      // 如果没有可用的用户语言翻译，要使用的语言。将其显式设置为false将根本不会触发加载fallbackLng。
       fallbackLng: 'zh-CN',
-      debug: true,
+      // 将信息级别记录到控制台
+      debug: isDev,
+      // 插值
       interpolation: {
+        // escape传递值以避免XSS注入
         escapeValue: false,
       },
+      // 要使用的语言(覆盖语言检测)。如果设置为'cimode'，则输出文本将是密钥
       lng: lang,
-      partialBundledLanguages: true,
+      // 允许在初始化时设置一些资源，而其他资源可以使用后端连接器加载
+      partialBundledLanguages: false,
+      // 要加载的名称空间的字符串或数组
       ns,
+      // 如果没有传递给转换函数，则使用默认命名空间
       defaultNS: false,
       react: {
         useSuspense: true,
       },
-
       resources: resources,
     })
     .catch((e) => {

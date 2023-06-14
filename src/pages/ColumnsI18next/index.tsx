@@ -60,12 +60,6 @@ const ColumnsI18next = observer(function ColumnsI18next_() {
 
   return (
     <div className='page-ColumnsI18next'>
-      <div>{t('accountClosingManagement:closeAccountRefreshBtnText')}</div>
-      <div>
-        <Button className='mr-8' onClick={() => changeLocale('zh-CN')}>zh-CN</Button>
-        <Button className='mr-8' onClick={() => changeLocale('zh-TW')}>zh-TW</Button>
-        <Button onClick={() => changeLocale('zh-HK')}>zh-HK</Button>
-      </div>
       <Suspense fallback='loading'>{logic.debugMode && <DebugI18n toTrans={logic.changeDebugMode} />}</Suspense>
       <div className={classNames({ hidden: logic.debugMode })}>
         <ToolBar />
@@ -95,6 +89,14 @@ const ColumnsI18next = observer(function ColumnsI18next_() {
           onDoubleClick={() => logic.copyOutPut('replace')}
         >
           {logic.output.replace}
+        </div>
+        <div>
+          <div>{t('applicationManage:other.key14')}</div>
+          <div>
+            <Button className='mr-8' onClick={() => changeLocale('zh-CN')}>zh-CN</Button>
+            <Button className='mr-8' onClick={() => changeLocale('zh-TW')}>zh-TW</Button>
+            <Button onClick={() => changeLocale('zh-HK')}>zh-HK</Button>
+          </div>
         </div>
       </div>
     </div>

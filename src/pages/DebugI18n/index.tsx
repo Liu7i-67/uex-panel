@@ -5,6 +5,7 @@ import { Button } from 'primereact/button';
 import { InputRow } from './modules/InputRow';
 import { DataView } from './modules/DataView';
 import { InputText } from 'primereact/inputtext';
+import { baseUrl } from '@/../config/variable';
 
 interface IProps {
   /** @function 去翻译 */
@@ -36,7 +37,7 @@ const DebugI18n = observer(function DebugI18n_(props: IProps) {
           onKeyDown={onKeyDown}
           className='url-input'
           size={40}
-          tooltip='示例：https://realmerit-client-static.oss-cn-shanghai.aliyuncs.com/i18n/test/zh-CN.json  设置后该参数将覆盖文本类型对应的数据源'
+          tooltip={`示例：${baseUrl}zh-CN.json  设置后该参数将覆盖文本类型对应的数据源`}
         />
       )}
       <Button onClick={logic.changeShowCustom} className='ml-8'>
