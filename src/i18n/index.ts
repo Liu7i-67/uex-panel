@@ -5,48 +5,68 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import i18next from 'i18next';
 import { ns } from './resources';
 import { baseUrl, isDev } from '../../config/variable';
+import { i18nDB } from '../database/I18nBase';
 
-type TKey = 'zh-CN' | 'zh-TW' | 'zh-HK';
+export const langArr = ['zh-CN', 'zh-TW', 'zh-HK'] as const;
+export type TKey = typeof langArr[number];
 
-const supportedLanguages = new Set(['zh-CN', 'zh-TW', 'zh-HK']);
+const supportedLanguages = new Set<TKey>(langArr);
 
-async function initI18N(lang: string) {
-  let resources: Resource = { 'zh-CN': {}, 'zh-TW': {}, 'zh-HK': {} };
-
-  let r = {} as any;
+async function loadResource(lang: TKey): Promise<Resource> {
   try {
+    // 判断是否为开发环境
     if (isDev) {
-      r = await import(/* webpackChunkName: 'i18n' */ `./resources/${lang}`);
-      r = r.default;
-    } else {
-      await axios({
-        method: 'get',
-        url: `${baseUrl}${lang}.json`,
-      }).then((response) => {
-        // 响应数据自动解压缩
-        r[lang] = response.data;
-      }).catch((error) => {
-        console.error(error);
-      });
+      const res = await import(/* webpackChunkName: 'i18n' */ `./resources/${lang}`);
+      return res.default;
     }
+    // 生产环境首先尝试从indexDB获取resource
+    const oldData = await i18nDB.get('data') as unknown as Resource;
+    if (oldData && oldData[lang]) {
+      return oldData;
+    }
+    // indexDB中没有，从CDN获取
+    await axios({
+      method: 'get',
+      url: `${baseUrl}${lang}.json`,
+    }).then((response) => {
+      const newData = Object.assign({}, oldData, { [lang]: response.data });
+      i18nDB.set('data', newData);
+      return {
+        [lang]: response.data,
+      };
+    }).catch((error) => {
+      console.error(`${lang} loading failure:`, error);
+    });
   } catch (error) {
+    console.error(`${lang} loading failure catch:`, error);
+    // 如果发生了异常，加载中文兜底
     if (isDev) {
-      r = await import(/* webpackChunkName: 'i18n' */ `./resources/zh-CN`);
-      r = r.default;
-    } else {
-      await axios({
-        method: 'get',
-        url: `${baseUrl}${lang}.json`,
-      }).then((response) => {
-        // 响应数据自动解压缩
-        r[lang] = response.data;
-      }).catch((error) => {
-        console.error(error);
-      });
+      const res = await import(/* webpackChunkName: 'i18n' */ `./resources/zh-CN`);
+      return res.default;
     }
+    // 生产环境首先尝试从indexDB获取resource
+    const oldData = await i18nDB.get('data') as unknown as Resource;
+    if (oldData && oldData['zh-CN']) {
+      return oldData;
+    }
+    // indexDB中没有，从CDN获取
+    await axios({
+      method: 'get',
+      url: `${baseUrl}zh-CN.json`,
+    }).then((response) => {
+      const newData = Object.assign({}, oldData, { [lang]: response.data });
+      i18nDB.set('data', newData);
+      return {
+        [lang]: response.data,
+      };
+    }).catch((error) => {
+      console.error(`base ${lang} loading failure:`, error);
+    });
   }
+}
 
-  resources = r;
+async function initI18N(lang: TKey) {
+  const resources = await loadResource(lang);
 
   return i18next
     .use(LanguageDetector)
@@ -83,13 +103,13 @@ function g_lang(_lang?: TKey) {
   let lang = _lang
     || window.localStorage.getItem('realmerit_language')
     || navigator.language;
-  if (!supportedLanguages.has(lang)) {
+  if (!supportedLanguages.has(lang as TKey)) {
     lang = 'zh-CN';
   }
 
   return {
     lang,
-  };
+  } as { lang: TKey };
 }
 export async function initLang() {
   try {

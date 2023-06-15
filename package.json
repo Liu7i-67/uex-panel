@@ -37,6 +37,7 @@
     "@dprint/formatter": "^0.2.0",
     "@quarkunlimit/qu-mobx": "^1.0.0",
     "axios": "^1.4.0",
+    "dexie": "4.0.0-alpha.4",
     "dprint": "^0.26.0",
     "i18next": "^22.5.1",
     "i18next-browser-languagedetector": "^7.0.2",

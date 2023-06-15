@@ -13,6 +13,7 @@ specifiers:
   axios: ^1.4.0
   babel-loader: ^9.1.2
   css-loader: ^6.7.3
+  dexie: 4.0.0-alpha.4
   dprint: ^0.26.0
   html-webpack-plugin: ^5.5.1
   i18next: ^22.5.1
@@ -36,6 +37,7 @@ dependencies:
   '@dprint/formatter': 0.2.0
   '@quarkunlimit/qu-mobx': 1.0.0_biqbaboplfbrettd7655fr4n2y
   axios: 1.4.0
+  dexie: 4.0.0-alpha.4
   dprint: 0.26.0
   i18next: 22.5.1
   i18next-browser-languagedetector: 7.0.2
@@ -2188,6 +2190,11 @@ packages:
 
   /detect-node/2.1.0:
     resolution: {integrity: sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g==}
+
+  /dexie/4.0.0-alpha.4:
+    resolution: {integrity: sha512-xYABeT5ctG7WAJtyr/6gKhWXD6NY8ydZieQlvLQkFV6KXY33I+ShE39pToGzQw+3/xs760rW+opxhoVZ/yzVxQ==}
+    engines: {node: '>=6.0'}
+    dev: false
 
   /dns-equal/1.0.0:
     resolution: {integrity: sha512-z+paD6YUQsk+AbGCEM4PrOXSss5gd66QfcVBFTKR/HpFL9jCqikS94HYwKww6fQyO7IxrIIyUu+g0Ka9tUS2Cg==}
