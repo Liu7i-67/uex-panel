@@ -66,38 +66,7 @@ export class Logic implements ILogic {
   async search() {
     const dataSource = this.resource[this.stringType];
     if (!dataSource) {
-      const res = await this.loadResource();
-      if (res !== 'success') {
-        return;
-      }
-    }
-    runInAction(() => {
-      const str = dataSource || this.resource[this.stringType];
-
-      let reg = new RegExp(`("[^"]*?"): *("[^"]*${this.cnString}[^"]*")`, 'gu');
-      if (this.matchType === 'PM') {
-        reg = new RegExp(`("[^"]*?"): *("${this.cnString}")`, 'gu');
-      }
-      const match = str.matchAll(reg);
-      let index = 1;
-      const result: IResult[] = [];
-      for (let item of match) {
-        result.push({
-          index,
-          full: item[2],
-          key: item[1],
-          findIndex: item.index,
-          path: [],
-        });
-        index++;
-      }
-      this.result = result;
-    });
-  }
-  async search2() {
-    const dataSource = this.resource[this.stringType];
-    if (!dataSource) {
-      const res = await this.loadResource();
+      const res = await this.beforeLoadResource();
       if (res !== 'success') {
         return;
       }
@@ -118,6 +87,15 @@ export class Logic implements ILogic {
 
       this.result = result;
     });
+  }
+
+  beforeLoadResource() {
+    const langStr = localStorage.getItem(this.stringType);
+    if (langStr) {
+      this.resource[this.stringType] = langStr;
+      return 'success';
+    }
+    return this.loadResource();
   }
 
   loadResource() {
@@ -150,6 +128,7 @@ export class Logic implements ILogic {
         });
         runInAction(() => {
           that.resource[that.stringType] = xhr.responseText || '';
+          localStorage.setItem(that.stringType, xhr.responseText);
           res('success');
         });
       };

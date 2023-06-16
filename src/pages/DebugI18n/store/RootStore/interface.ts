@@ -37,6 +37,8 @@ export interface ILogic {
   diyUrl: string;
   changeDiyUrl: (e: React.ChangeEvent<HTMLInputElement>) => void;
   saveDiyUrl: () => void;
+  /** @function 载入资源之前检查一下本地有没有 */
+  beforeLoadResource: () => Promise<unknown> | string;
 }
 
 /** 计算属性接口 */

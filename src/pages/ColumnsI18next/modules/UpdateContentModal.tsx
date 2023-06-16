@@ -16,6 +16,18 @@ const UpdateContentModal = observer(function UpdateContentModal_() {
       style={{ width: '50vw', maxHeight: '500px' }}
     >
       <h4>
+        v1.3.0 <span className='ml-8'>更新时间：2023年6月16日16点27分</span>
+      </h4>
+      <ul>
+        <li>
+          1.
+          中文回溯地址默认指向https://static.web.realmerit.com.cn/i18n/test/lang.json。这个地址也不是最新的json数据（需要更新可以找67），后面这个功能上到正式之后会更新优化获取最新的数据源。
+        </li>
+        <li>
+          2. 搜索后将数据源缓存到本地，如果要获取最新的信息请点击重载数据源
+        </li>
+      </ul>
+      <h4>
         v1.2.0 <span className='ml-8'>更新时间：2023年6月13日10点36分</span>
       </h4>
       <ul>

@@ -24,7 +24,7 @@ export const InputRow = observer(function InputRow_() {
     if (e.key !== 'Enter') {
       return;
     }
-    logic.search2();
+    logic.search();
   }, []);
 
   return (
@@ -58,7 +58,7 @@ export const InputRow = observer(function InputRow_() {
       <Button onClick={logic.loadResource} className='ml-24'>
         重载数据源
       </Button>
-      <Button onClick={logic.search2} className='ml-24'>
+      <Button onClick={logic.search} className='ml-24'>
         搜索
       </Button>
     </div>

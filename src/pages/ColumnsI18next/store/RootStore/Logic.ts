@@ -25,7 +25,7 @@ export class Logic implements ILogic {
   dataSourceKV: IObj = {};
   dataSourceVK: IObj = {};
   debugMode: boolean = false;
-  updateVersion = '1.2.0';
+  updateVersion = '1.3.0';
 
   dprintError = false;
   formData: IFormData = {
