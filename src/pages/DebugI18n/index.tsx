@@ -36,7 +36,7 @@ const DebugI18n = observer(function DebugI18n_(props: IProps) {
           onKeyDown={onKeyDown}
           className='url-input'
           size={40}
-          tooltip='示例：http://192.168.2.138:8367/lang/i18nCN.json  设置后该参数将覆盖文本类型对应的数据源'
+          tooltip='示例：https://static.web.realmerit.com.cn/i18n/test/zh-CN.json  设置后该参数将覆盖文本类型对应的数据源'
         />
       )}
       <Button onClick={logic.changeShowCustom} className='ml-8'>

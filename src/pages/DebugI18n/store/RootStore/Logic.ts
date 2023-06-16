@@ -9,7 +9,7 @@ import { ChangeEvent } from 'react';
 export class Logic implements ILogic {
   loadingStore: TLoadingStore;
   rootStore: RootStore;
-  cnString: string = '\u5173\u8D26\u8BB0\u5F55';
+  cnString: string = '';
   stringType: TI18n = 'zh-CN';
   resource: { 'zh-CN': string; 'zh-TW': string; 'zh-HK': string } = { 'zh-CN': '', 'zh-HK': '', 'zh-TW': '' };
   matchType: TMatch = 'FM';
@@ -123,19 +123,7 @@ export class Logic implements ILogic {
   loadResource() {
     const that = this;
     return new Promise((res, rej) => {
-      let url = 'http://192.168.2.138:8367/lang/i18nCN.json';
-      switch (this.stringType) {
-        case 'zh-TW':
-          {
-            url = 'http://192.168.2.138:8367/lang/i18nTW.json';
-          }
-          break;
-        case 'zh-HK':
-          {
-            url = 'http://192.168.2.138:8367/lang/i18nHK.json';
-          }
-          break;
-      }
+      let url = `https://static.web.realmerit.com.cn/i18n/test/${this.stringType}.json`;
 
       const diyUrl = localStorage.getItem('url');
       if (diyUrl) {
