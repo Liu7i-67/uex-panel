@@ -7,8 +7,10 @@ import { I18JSON } from './modules/I18JSON';
 import { classNames } from 'utils/Tools';
 import { Button } from 'primereact/button';
 import * as formatterWorker from 'utils/FormatterWorker';
-import { changeLocale, t } from '@/i18n';
+import { changeLocale, t, Trans } from '@/i18n';
 import './index.scss';
+import i18next from 'i18next';
+import { publish } from '@/i18n';
 
 const DebugI18n = React.lazy(() => import('../DebugI18n'));
 
@@ -92,6 +94,25 @@ const ColumnsI18next = observer(function ColumnsI18next_() {
         </div>
         <div>
           <div>{t('applicationManage:other.key14')}</div>
+          <Trans i18Key='applicationManage:other.key14'>{(v) => v}</Trans> <br />
+          <Trans i18Key='applicationManage:other.key13'>{(v) => v}</Trans>
+          <br />
+          <Trans i18Key='applicationManage:other.key12'>{(v) => v}</Trans>
+          <br />
+          <Trans i18Key='applicationManage:other.key11'>{(v) => v}</Trans>
+          <br />
+          <Trans i18Key='applicationManage:other.key10'>{(v) => v}</Trans>
+          <br />
+          <Trans i18Key='applicationManage:other.key9'>{(v) => v}</Trans>
+          <br />
+          <Trans i18Key='applicationManage:other.key8'>{(v) => v}</Trans>
+          <br />
+          <Trans i18Key='applicationManage:other.key7'>{(v) => v}</Trans>
+          <br />
+          <Trans i18Key='appointRecord:bespeakStatus.0'>{(v) => v}</Trans>
+          <br />
+          <Trans i18Key='appointRecord:bespeakStatus.all'>{(v) => v}</Trans>
+          <br />
           <div>
             <Button className='mr-8' onClick={() => changeLocale('zh-CN')}>zh-CN</Button>
             <Button className='mr-8' onClick={() => changeLocale('zh-TW')}>zh-TW</Button>

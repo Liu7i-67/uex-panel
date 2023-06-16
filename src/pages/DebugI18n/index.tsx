@@ -6,6 +6,7 @@ import { InputRow } from './modules/InputRow';
 import { DataView } from './modules/DataView';
 import { InputText } from 'primereact/inputtext';
 import { baseUrl } from '@/../config/variable';
+import { changeLocale, t, Trans } from '@/i18n';
 
 interface IProps {
   /** @function 去翻译 */
@@ -26,7 +27,7 @@ const DebugI18n = observer(function DebugI18n_(props: IProps) {
   return (
     <div>
       <Button onClick={props.toTrans}>
-        返回翻译模式
+        返回翻译模式{t('applicationManage:other.key14')}
       </Button>
       {logic.showCustom && (
         <InputText

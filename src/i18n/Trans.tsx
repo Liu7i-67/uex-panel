@@ -1,6 +1,8 @@
-import i18next, { CustomTypeOptions } from 'i18next'; 
-import React from 'react';
+import i18next, { CustomTypeOptions } from 'i18next';
+import { observer } from '@quarkunlimit/qu-mobx';
+import React, { useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { subscribe, unsubscribe } from './index';
 
 type check<P, D> = D extends TMax ? '' extends P ? ':' : ''
   : '' extends P ? ''
@@ -31,6 +33,7 @@ export const isGodModel = window.sessionStorage.getItem('__god_model__') === 'wh
 export function t(key: any, options?: { returnObjects?: boolean; [x: string]: any }): any {
   // @ts-ignore
   const _v = i18next.t(key, options);
+
   if (typeof _v === 'string') {
     return isGodModel ? `{{${key}}}` + _v : _v;
   }
@@ -38,11 +41,17 @@ export function t(key: any, options?: { returnObjects?: boolean; [x: string]: an
 }
 export function Trans(props: IProps) {
   const { t } = useTranslation();
-
+  const [, updateState] = React.useState<any>();
+  const forceUpdate = React.useCallback(() => updateState({}), []);
   const { i18Key, options } = props;
   // @ts-ignore
   const _v = t(props.i18Key, { ...(options ?? {}) });
   const v = isGodModel ? `{{${i18Key}}}` + _v : _v;
+  if (props.i18Key.includes(_v)) {
+    subscribe('load', forceUpdate);
+  } else {
+    unsubscribe('load', forceUpdate);
+  }
   return (
     <>
       <span data-i18={i18Key} style={{ display: 'none' }}></span>

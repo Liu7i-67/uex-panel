@@ -1,73 +1,153 @@
 import { initReactI18next } from 'react-i18next';
-import type { Resource } from 'i18next';
+import { makeAutoObservable } from '@quarkunlimit/qu-mobx';
+import type { ResourceLanguage } from 'i18next';
 import axios from 'axios';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import i18next from 'i18next';
 import { ns } from './resources';
 import { baseUrl, isDev } from '../../config/variable';
-import { i18nDB } from '../database/I18nBase';
+import { i18nDB, I18Record } from '../database/I18nBase';
 
 export const langArr = ['zh-CN', 'zh-TW', 'zh-HK'] as const;
 export type TKey = typeof langArr[number];
 
 const supportedLanguages = new Set<TKey>(langArr);
 
-async function loadResource(lang: TKey): Promise<Resource> {
+// 存储所有订阅者的回调函数
+const subscribers: { [key: string]: Map<Function, Function> } = {};
+
+// 订阅消息
+export function subscribe(topic: string, callback: Function) {
+  if (subscribers[topic]) {
+    subscribers[topic].set(callback, callback);
+  } else {
+    subscribers[topic] = new Map<Function, Function>();
+    subscribers[topic].set(callback, callback);
+  }
+}
+
+// 取消订阅消息
+export function unsubscribe(topic: string, callback: Function) {
+  if (subscribers[topic]) {
+    subscribers[topic].delete(callback);
+  }
+}
+
+// 发布消息
+export function publish(topic: string, data: string | boolean) {
+  if (subscribers[topic]) {
+    for (let [, callback] of subscribers[topic]) {
+      callback(data);
+    }
+  }
+}
+
+function getI18Md5() {
+  const i18nMd5Content = document.head.querySelector('meta[name="i18n"]')?.getAttribute('content') || '';
+  const i18nMd5 = i18nMd5Content.split(' ').reduce((result, current) => {
+    const [key, value] = current.split(':');
+    result[key as TKey] = value;
+    return result;
+  }, {} as { [key in TKey]: string | undefined });
+  return i18nMd5;
+}
+
+async function loadBaseLang() {
+  const res = await loadResource('zh-CN');
+
+  Object.keys(res).forEach((ns) => {
+    i18next.addResourceBundle('zh-TW', ns, res[ns], true);
+  });
+  publish('load', true);
+}
+
+async function loadResource(lang: TKey): Promise<ResourceLanguage> {
   try {
     // 判断是否为开发环境
     if (isDev) {
       const res = await import(/* webpackChunkName: 'i18n' */ `./resources/${lang}`);
-      return res.default;
+      return res.default[lang] as ResourceLanguage;
     }
+    const md5 = getI18Md5();
     // 生产环境首先尝试从indexDB获取resource
-    const oldData = await i18nDB.get('data') as unknown as Resource;
-    if (oldData && oldData[lang]) {
-      return oldData;
+    const oldData = await i18nDB.get(lang) as unknown as (I18Record | undefined);
+    const key = md5[lang] || '';
+    const record = oldData?.[key];
+    if (md5[lang] && record) {
+      return record.resource;
     }
     // indexDB中没有，从CDN获取
-    await axios({
+    const res: { status: number; data: ResourceLanguage } = await axios({
       method: 'get',
-      url: `${baseUrl}${lang}.json`,
-    }).then((response) => {
-      const newData = Object.assign({}, oldData, { [lang]: response.data });
-      i18nDB.set('data', newData);
-      return {
-        [lang]: response.data,
-      };
-    }).catch((error) => {
-      console.error(`${lang} loading failure:`, error);
+      url: `${baseUrl}${lang}.${key ? `${key}.` : ''}json`,
     });
+    if (res.status === 200) {
+      const newData = Object.assign({}, oldData, { [key]: { date: Date.now(), resource: res.data } });
+      let count = 0;
+      let min = 0;
+      let oldItem = '';
+      for (let item in newData) {
+        count += 1;
+        if (newData[item].date < min) {
+          oldItem = item;
+          min = newData[item].date;
+        }
+      }
+      if (count > 4) {
+        delete newData[oldItem];
+      }
+      i18nDB.set(lang, newData);
+
+      return res.data;
+    }
+    return {} as ResourceLanguage;
   } catch (error) {
-    console.error(`${lang} loading failure catch:`, error);
     // 如果发生了异常，加载中文兜底
     if (isDev) {
       const res = await import(/* webpackChunkName: 'i18n' */ `./resources/zh-CN`);
-      return res.default;
+      return res.default[lang] as ResourceLanguage;
     }
+    const md5 = getI18Md5();
     // 生产环境首先尝试从indexDB获取resource
-    const oldData = await i18nDB.get('data') as unknown as Resource;
-    if (oldData && oldData['zh-CN']) {
-      return oldData;
+    const oldData = await i18nDB.get('zh-CN') as unknown as (I18Record | undefined);
+    const key = md5['zh-CN'] || '';
+    const record = oldData?.[key];
+    if (record) {
+      return record.resource;
     }
     // indexDB中没有，从CDN获取
-    await axios({
+    const res: { status: number; data: ResourceLanguage } = await axios({
       method: 'get',
-      url: `${baseUrl}zh-CN.json`,
-    }).then((response) => {
-      const newData = Object.assign({}, oldData, { [lang]: response.data });
-      i18nDB.set('data', newData);
-      return {
-        [lang]: response.data,
-      };
-    }).catch((error) => {
-      console.error(`base ${lang} loading failure:`, error);
+      url: `${baseUrl}zh-CN.${md5['zh-CN'] ? `${md5['zh-CN']}.` : ''}json`,
     });
+    if (res.status === 200) {
+      const newData = Object.assign({}, oldData, { [key]: { date: Date.now(), resource: res.data } });
+      let count = 0;
+      let min = 0;
+      let oldItem = '';
+      for (let item in newData) {
+        count += 1;
+        if (newData[item].date < min) {
+          oldItem = item;
+          min = newData[item].date;
+        }
+      }
+      if (count > 4) {
+        delete newData[oldItem];
+      }
+      i18nDB.set('zh-CN', newData);
+
+      return res.data;
+    }
+    return {} as ResourceLanguage;
   }
 }
 
 async function initI18N(lang: TKey) {
-  const resources = await loadResource(lang);
-
+  // const res = await loadResource(lang);
+  const res = {};
+  const resources = { [lang]: res };
+  loadBaseLang();
   return i18next
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -84,7 +164,7 @@ async function initI18N(lang: TKey) {
       // 要使用的语言(覆盖语言检测)。如果设置为'cimode'，则输出文本将是密钥
       lng: lang,
       // 允许在初始化时设置一些资源，而其他资源可以使用后端连接器加载
-      partialBundledLanguages: false,
+      partialBundledLanguages: true,
       // 要加载的名称空间的字符串或数组
       ns,
       // 如果没有传递给转换函数，则使用默认命名空间
@@ -116,12 +196,10 @@ export async function initLang() {
     const { lang } = g_lang();
     await initI18N(lang);
   } catch (error) {
-    console.error('initLang:Error', error);
   }
 }
 
 export async function changeLocale(_lang: TKey) {
-  console.error('change _lang:', _lang);
   i18next.changeLanguage(_lang).finally(() => {
     window.localStorage.setItem('realmerit_language', _lang);
     window.location.reload();

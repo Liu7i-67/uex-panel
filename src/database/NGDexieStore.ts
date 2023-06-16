@@ -1,16 +1,5 @@
 import Dexie, { Table } from 'dexie';
 
-const getLoginInfo = () => {
-  return {
-    user: {
-      createTenant: '67',
-      tenant: '67',
-      id: '67',
-    },
-    hospital_key: 'test',
-  };
-};
-
 interface ITable {
   id: number;
   hospitalKey: string;
@@ -18,48 +7,25 @@ interface ITable {
   userId: string;
 }
 
-export class NGDexieStore<T> {
-  private hospitalKey: string;
-  private tenant: string;
-  private userId: string;
+export class NGI18Store<T> {
   private tableName: string;
   private moduleName: string;
   private indexName: string[];
   private defaults: T;
   private path: string;
   private _instance: any;
+  private environment: string;
   constructor(defaults: T, name: string, indexName: string[]) {
-    const user = getLoginInfo().user;
-    this.hospitalKey = getLoginInfo().hospital_key;
-    this.tenant = user.createTenant == user.tenant ? '' : user.tenant;
-    this.userId = user.id;
-    this.tableName = getLoginInfo().hospital_key;
+    this.tableName = 'i18n';
     this.moduleName = name;
     this.indexName = indexName;
     this.defaults = defaults;
+    this.environment = 'diy';
     this._instance = new Dexie('RealmeritDatabase');
   }
 
   private get instance() {
     return this._instance;
-  }
-
-  private async getOldData(key?: any) {
-    try {
-      const itemKey = `${this.userId}${this.tenant}-${this.moduleName}`;
-      const data: any = window.localStorage.getItem(itemKey);
-      if (data) {
-        const resData = JSON.parse(data);
-        if (key) {
-          await this.set(key, resData[key]);
-          window.localStorage.removeItem(itemKey);
-        }
-        return resData;
-      }
-      return undefined;
-    } catch (error) {
-      return undefined;
-    }
   }
 
   private async checkOpen() {
@@ -70,7 +36,7 @@ export class NGDexieStore<T> {
       })
       .catch(async (err: any) => {
         await this.instance.version(1).stores({
-          [this.tableName]: `++id, hospitalKey, tenant, userId, moduleType, ${this.indexName.join(',')}`,
+          [this.tableName]: `++id, moduleType, environment, ${this.indexName.join(',')}`,
         });
         await this.instance.open();
       });
@@ -84,7 +50,7 @@ export class NGDexieStore<T> {
       if (isOpen) {
         this.instance.close();
         await this.instance.version(this.instance.verno + 1).stores({
-          [this.tableName]: `++id, hospitalKey, tenant, userId, moduleType, ${this.indexName.join(',')}`,
+          [this.tableName]: `++id, moduleType, environment, ${this.indexName.join(',')}`,
         });
         await this.instance.open();
       } else {
@@ -95,12 +61,10 @@ export class NGDexieStore<T> {
 
   public async get<Key extends keyof T>(key?: Key | string): Promise<ITable | null | undefined> {
     try {
-      if (key) await this.getOldData(key);
       await this.checkTable();
       const res = await this.instance[this.tableName].get({
         moduleType: this.moduleName,
-        tenant: this.tenant,
-        userId: this.userId,
+        environment: this.environment,
       });
       const resData = res ?? this.defaults;
       if (key) {
@@ -125,9 +89,7 @@ export class NGDexieStore<T> {
         });
       } else {
         await this.instance[this.tableName].add({
-          hospitalKey: this.hospitalKey,
-          tenant: this.tenant,
-          userId: this.userId,
+          environment: this.environment,
           moduleType: this.moduleName,
           [key]: { ...value },
         });

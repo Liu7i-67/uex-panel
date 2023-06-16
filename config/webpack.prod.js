@@ -46,6 +46,7 @@ module.exports = {
     new MyPlugin({
       i18Dir: "../src/i18n",
       lang: ["zh-CN", "zh-TW", "zh-HK"],
+      pages: ["index.html"],
     }),
   ],
   module: {
