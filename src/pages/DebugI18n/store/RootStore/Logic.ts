@@ -1,5 +1,5 @@
 import { makeAutoObservable, runInAction } from '@quarkunlimit/qu-mobx';
-import { ILogic, IResult, TI18n, TLoadingStore, TMatch } from './interface';
+import { ILogic, IResult, TI18n, TLoadingStore, TMatch, TTarget } from './interface';
 import { message } from '@/components/message';
 import { RootStore } from './';
 import { getJSONToParse } from '@/utils/Tools';
@@ -13,14 +13,20 @@ export class Logic implements ILogic {
   stringType: TI18n = 'zh-CN';
   resource: { 'zh-CN': string; 'zh-TW': string; 'zh-HK': string } = { 'zh-CN': '', 'zh-HK': '', 'zh-TW': '' };
   matchType: TMatch = 'FM';
+
   result: IResult[] = [];
   showCustom: boolean = false;
   diyUrl: string = '';
+  matchTarget: TTarget = 'key';
 
   constructor(rootStore: RootStore) {
     this.rootStore = rootStore;
     this.loadingStore = rootStore.loadingStore;
     makeAutoObservable(this, {}, { autoBind: true });
+  }
+
+  changeMatchTarget(mode: TTarget) {
+    this.matchTarget = mode;
   }
 
   saveDiyUrl() {
@@ -74,8 +80,39 @@ export class Logic implements ILogic {
     runInAction(() => {
       const str = dataSource || this.resource[this.stringType];
       const strObj = getJSONToParse(str);
-
       const result: IResult[] = [];
+      if (this.matchTarget === 'text') {
+        if (!this.cnString.includes(':')) {
+          message({
+            severity: 'error',
+            summary: '错误',
+            detail: '请输入完整路径，例如：dashboards:controlCabin.infoList.key37',
+            life: 3000,
+          });
+          return;
+        }
+
+        const [ns, path] = this.cnString.split(':');
+        const keyArr = path.split('.');
+        let val: any = strObj[ns];
+        for (let key of keyArr) {
+          if (val) {
+            val = val[key];
+          }
+        }
+
+        if (val) {
+          result.push({
+            full: val,
+            key: keyArr.slice(-1)[0],
+            path: [ns].concat(keyArr.slice(0, keyArr.length - 1)),
+          });
+        }
+
+        this.result = result;
+        return;
+      }
+
       seactStr({
         resource: strObj,
         path: [],
@@ -101,7 +138,7 @@ export class Logic implements ILogic {
   loadResource() {
     const that = this;
     return new Promise((res, rej) => {
-      let url = `https://static.web.realmerit.com.cn/i18n/test/${this.stringType}.json`;
+      let url = `https://static.web.realmerit.com.cn/i18n/test/i18n.${this.stringType}.json`;
 
       const diyUrl = localStorage.getItem('url');
       if (diyUrl) {

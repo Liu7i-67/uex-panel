@@ -16,6 +16,11 @@ const options2 = [
   { name: '精准匹配', value: 'PM' },
 ];
 
+const options3 = [
+  { name: '查找Key', value: 'key' },
+  { name: '查找文本', value: 'text' },
+];
+
 export const InputRow = observer(function InputRow_() {
   const root = useStore();
   const { logic } = root;
@@ -52,6 +57,15 @@ export const InputRow = observer(function InputRow_() {
         value={logic.matchType}
         onChange={(e) => {
           logic.changeMatchType(e.value);
+        }}
+      />
+      <SelectButton
+        className='ml-8'
+        optionLabel='name'
+        options={options3}
+        value={logic.matchTarget}
+        onChange={(e) => {
+          logic.changeMatchTarget(e.value);
         }}
       />
 

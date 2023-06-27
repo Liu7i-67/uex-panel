@@ -36,7 +36,7 @@ export const DataView = observer(function DataView_() {
           filterPlaceholder='请输入'
           body={(record) => {
             let path = record.path?.slice?.(1).join('.');
-            if (!!path && !path.includes('.')) {
+            if (!!path) {
               path += '.';
             }
             const str = `${record.path?.[0]}:${path}${record.key}`;

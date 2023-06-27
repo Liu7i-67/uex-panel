@@ -15,8 +15,12 @@ export interface ILogic {
   stringType: TI18n;
   /** @param 匹配模式 */
   matchType: TMatch;
+  /** @param 匹配目标 */
+  matchTarget: TTarget;
   /** @function 修改匹配模式 */
   changeMatchType: (mode: TMatch) => void;
+  /** @function 修改匹配目标 */
+  changeMatchTarget: (mode: TTarget) => void;
   /** @function 修改目标文本 */
   changeCnString: (e: React.ChangeEvent<HTMLInputElement>) => void;
   /** @function 修改文本类型 */
@@ -57,6 +61,9 @@ export type TI18n = 'zh-CN' | 'zh-TW' | 'zh-HK';
 
 /** @type FM-模糊匹配 PM-精准匹配 */
 export type TMatch = 'FM' | 'PM';
+
+/** @type text-根据key找中文 key-根据中文找key */
+export type TTarget = 'text' | 'key';
 
 export interface IResult {
   /** @param 全部文本 */

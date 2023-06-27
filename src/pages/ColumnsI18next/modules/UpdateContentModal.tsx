@@ -16,6 +16,17 @@ const UpdateContentModal = observer(function UpdateContentModal_() {
       style={{ width: '50vw', maxHeight: '500px' }}
     >
       <h4>
+        v1.4.0 <span className='ml-8'>更新时间：2023年6月27日10点57分</span>
+      </h4>
+      <ul>
+        <li>
+          1. 修复中文回溯标识展示异常问题： test:a.b.key1 会被错误的展示为 test:a.bkey1
+        </li>
+        <li>
+          2. 中文回溯功能支持根据路径去匹配中文
+        </li>
+      </ul>
+      <h4>
         v1.3.0 <span className='ml-8'>更新时间：2023年6月16日16点27分</span>
       </h4>
       <ul>
