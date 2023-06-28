@@ -16,6 +16,17 @@ const UpdateContentModal = observer(function UpdateContentModal_() {
       style={{ width: '50vw', maxHeight: '500px' }}
     >
       <h4>
+        v1.4.1 <span className='ml-8'>更新时间：2023年6月28日17点58分</span>
+      </h4>
+      <ul>
+        <li>
+          1. 修复中文回溯标识如果访问的不是最后一级页面会崩溃的问题
+        </li>
+        <li>
+          2. 中文回溯表格中文字段支持双击复制
+        </li>
+      </ul>
+      <h4>
         v1.4.0 <span className='ml-8'>更新时间：2023年6月27日10点57分</span>
       </h4>
       <ul>

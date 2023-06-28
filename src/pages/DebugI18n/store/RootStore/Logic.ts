@@ -103,7 +103,11 @@ export class Logic implements ILogic {
 
         if (val) {
           result.push({
-            full: val,
+            full: ['[object Object]', '[object Array]'].includes(
+                Object.prototype.toString.call(val),
+              )
+              ? JSON.stringify(val)
+              : val,
             key: keyArr.slice(-1)[0],
             path: [ns].concat(keyArr.slice(0, keyArr.length - 1)),
           });

@@ -53,6 +53,9 @@ export const DataView = observer(function DataView_() {
           filterPlaceholder='请输入'
           style={{ width: '40%' }}
           showAddButton={false}
+          body={(record) => {
+            return <span className='ml-8' onDoubleClick={() => CopyToClipboard(record.full)}>{record.full}</span>;
+          }}
         >
         </Column>
       </DataTable>
