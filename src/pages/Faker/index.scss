@@ -4,7 +4,9 @@
     .tool_bar{
         position: sticky;
         top: 0;
-        background-color: #fff;
+        background-color: #fefbfb;
+        padding: 8px 0;
+        z-index: 99;
     }
     .content{
         padding: 8px;
@@ -21,8 +23,7 @@
     }
     .p-inputtext,
     .p-inputnumber-input{
-        padding: 8px;
-        width: 80px;
+        padding: 8px; 
     }
 
     .row-item{

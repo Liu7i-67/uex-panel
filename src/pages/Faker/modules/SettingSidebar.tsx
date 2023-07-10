@@ -9,7 +9,7 @@ import { Button } from 'primereact/button';
 
 const nameBody = (item: ISaveItem) => item.label;
 const dataBody = (item: ISaveItem) => {
-  return JSON.stringify(item.data);
+  return <div>{JSON.stringify(item.data)}</div>;
 };
 
 export const SettingSidebar = observer(function SettingSidebar_() {
