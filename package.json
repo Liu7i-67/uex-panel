@@ -17,6 +17,7 @@
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "^7.21.5",
     "@babel/preset-react": "^7.18.6",
+    "@faker-js/faker": "^8.0.2",
     "@types/opencc-js": "^1.0.0",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
@@ -35,11 +36,11 @@
   "dependencies": {
     "@dprint/formatter": "^0.2.0",
     "@quarkunlimit/qu-mobx": "^1.0.0",
+    "dprint": "^0.26.0",
     "opencc-js": "^1.0.5",
     "primereact": "^9.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "workerize-loader": "^2.0.2",
-    "dprint": "^0.26.0"
+    "workerize-loader": "^2.0.2"
   }
 }

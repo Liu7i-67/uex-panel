@@ -9,6 +9,7 @@ import * as formatterWorker from 'utils/FormatterWorker';
 import './index.scss';
 
 const DebugI18n = React.lazy(() => import('../DebugI18n'));
+const Faker = React.lazy(() => import('../Faker'));
 
 const UpdateContentModal = React.lazy(
   () => import('./modules/UpdateContentModal'),

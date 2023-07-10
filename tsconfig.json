@@ -3,6 +3,7 @@
     "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "esnext",
+    "esModuleInterop": true,
     "downlevelIteration": true,
     "moduleResolution": "node",
     "target": "ESNext",

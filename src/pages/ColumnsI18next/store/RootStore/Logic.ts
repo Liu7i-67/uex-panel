@@ -99,12 +99,7 @@ export class Logic implements ILogic {
 
   onFormat(str: string) {
     if (this.formData.cleanStr === str) {
-      message({
-        severity: 'info',
-        summary: 'Info',
-        detail: '当前输入内容格式化后无变化',
-        life: 3000,
-      });
+      message.info('当前输入内容格式化后无变化');
       this.formatColumns();
       return;
     }
@@ -118,12 +113,7 @@ export class Logic implements ILogic {
   onError(err: string) {
     console.error(err);
     this.dprintError = true;
-    message({
-      severity: 'error',
-      summary: 'Error',
-      detail: 'Dprint格式化程序工作线程出错，请自行对输入文本进行格式化',
-      life: 3000,
-    });
+    message.error('Dprint格式化程序工作线程出错，请自行对输入文本进行格式化');
   }
 
   addQuickSet() {
@@ -284,12 +274,7 @@ export class Logic implements ILogic {
 
     this.output.jsonHK = HKConverter(this.output.json);
     this.output.jsonTW = TWConverter(this.output.json);
-    message({
-      severity: 'success',
-      summary: 'Success',
-      detail: '转换完成',
-      life: 1000,
-    });
+    message.success('转换完成');
   }
 
   formatAll() {
@@ -470,24 +455,14 @@ export class Logic implements ILogic {
     }
     this.output.jsonHK = HKConverter(this.output.json);
     this.output.jsonTW = TWConverter(this.output.json);
-    message({
-      severity: 'success',
-      summary: 'Success',
-      detail: '转换完成',
-      life: 1000,
-    });
+    message.success('转换完成');
   }
 
   translation() {
     this.output.json = this.formData.str;
     this.output.jsonHK = HKConverter(this.output.json);
     this.output.jsonTW = TWConverter(this.output.json);
-    message({
-      severity: 'success',
-      summary: 'Success',
-      detail: '翻译完成',
-      life: 1000,
-    });
+    message.success('翻译完成');
   }
 
   formatDataSource() {
@@ -503,12 +478,7 @@ export class Logic implements ILogic {
     ) {
       this.dataSourceKV = {};
       this.dataSourceVK = {};
-      message({
-        severity: 'error',
-        summary: 'Error',
-        detail: '数据源不合法或者解析后不是一个对象',
-        life: 3000,
-      });
+      message.error('数据源不合法或者解析后不是一个对象');
       return;
     }
     this.dataSourceKV = cleanSource;
@@ -518,12 +488,7 @@ export class Logic implements ILogic {
     });
 
     this.dataSourceVK = VK;
-    message({
-      severity: 'success',
-      summary: 'Success',
-      detail: '数据源解析成功',
-      life: 1000,
-    });
+    message.success('数据源解析成功');
   }
 
   addOutputJsonToDataSource(index?: number) {

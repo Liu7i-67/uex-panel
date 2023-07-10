@@ -36,24 +36,14 @@ export class Logic implements ILogic {
         return;
       }
       localStorage.removeItem('url');
-      message({
-        severity: 'success',
-        summary: '成功',
-        detail: '自定义数据源已移除',
-        life: 3000,
-      });
+      message.success('自定义数据源已移除');
       return;
     }
     if (url === this.diyUrl) {
       return;
     }
     localStorage.setItem('url', this.diyUrl);
-    message({
-      severity: 'success',
-      summary: '成功',
-      detail: '自定义数据源设置保存成功，请点击重载数据源加载数据',
-      life: 3000,
-    });
+    message.success('自定义数据源设置保存成功，请点击重载数据源加载数据');
   }
 
   changeShowCustom() {
@@ -83,12 +73,7 @@ export class Logic implements ILogic {
       const result: IResult[] = [];
       if (this.matchTarget === 'text') {
         if (!this.cnString.includes(':')) {
-          message({
-            severity: 'error',
-            summary: '错误',
-            detail: '请输入完整路径，例如：dashboards:controlCabin.infoList.key37',
-            life: 3000,
-          });
+          message.error('请输入完整路径，例如：dashboards:controlCabin.infoList.key37');
           return;
         }
 
@@ -153,20 +138,10 @@ export class Logic implements ILogic {
       xhr.open('GET', url, true);
       xhr.onload = function() {
         if (xhr.status !== 200) {
-          message({
-            severity: 'error',
-            summary: '错误',
-            detail: '数据源获取失败',
-            life: 3000,
-          });
+          message.error('数据源获取失败');
           return res('error');
         }
-        message({
-          severity: 'success',
-          summary: '成功',
-          detail: '数据源加载成功',
-          life: 3000,
-        });
+        message.success('数据源加载成功');
         runInAction(() => {
           that.resource[that.stringType] = xhr.responseText || '';
           localStorage.setItem(that.stringType, xhr.responseText);
@@ -174,21 +149,11 @@ export class Logic implements ILogic {
         });
       };
       xhr.onerror = function() {
-        message({
-          severity: 'error',
-          summary: '错误',
-          detail: '数据源获取失败',
-          life: 3000,
-        });
+        message.error('数据源获取失败');
         return res('error');
       };
       xhr.send();
-      message({
-        severity: 'info',
-        summary: '提示',
-        detail: '正在加载数据源，请耐心等待...',
-        life: 3000,
-      });
+      message.info('正在加载数据源，请耐心等待...');
     });
   }
 

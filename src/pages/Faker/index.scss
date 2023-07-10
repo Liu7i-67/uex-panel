@@ -1,0 +1,33 @@
+.page_faker{
+    position: relative;
+    padding: 40px;
+    .tool_bar{
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+    }
+    .content{
+        padding: 8px;
+        margin-top: 20px;
+        background-color: gray; 
+        border-radius: 4px; 
+        .children-box{
+            margin-top: 8px;
+            padding: 8px;
+            background-color: lightblue;
+            border-radius: 4px;
+            border: 1px dashed white;
+        }
+    }
+    .p-inputtext,
+    .p-inputnumber-input{
+        padding: 8px;
+        width: 80px;
+    }
+
+    .row-item{
+        display: flex;
+        align-items: center; 
+        margin-bottom: 4px;
+    }
+}

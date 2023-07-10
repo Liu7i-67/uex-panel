@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import ColumnsI18next from 'pages/ColumnsI18next';
+// import ColumnsI18next from 'pages/ColumnsI18next';
+import Faker from 'pages/Faker';
 // theme
 import 'primereact/resources/themes/md-light-indigo/theme.css';
 // core
@@ -72,4 +73,4 @@ locale('zh-CN');
 
 const domNode = document.getElementById('root');
 const root = createRoot(domNode);
-root.render(<ColumnsI18next />);
+root.render(<Faker />);
